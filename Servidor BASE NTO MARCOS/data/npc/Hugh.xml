@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hugh" script="default.lua" walkinterval="350000" floorchange="0" speed="0">
+<health now="150" max="150"/>
+<look type="523" head="91" body="114" legs="86" feet="0"/>
+<parameters>
+<parameter key="message_greet" value="Hello dear customer! I buy rare items from Pokemon, Want to see my offers? Come on, let {trade}!"/>
+<parameter key="message_farewell" value="Good bye!"/>
+<parameter key="message_idletimeout" value="Good bye!"/>
+<parameter key="message_walkaway" value="Good bye!"/>
+<parameter key="module_shop" value="1"/>
+<parameter key="shop_sellable" value="bag of pollem,12153,8000;Belt of Champion,12195,100000;Bird Beak,12172,10000;Blue Vines,12341,40000;Bone,12208,4000;Bug Antenna,12184,3500;Bulv,12154,3250;Chansey egg,12211,100000;Comb,5946,10000;Crab Claw,12207,2200;Dragon Tooth,12159,61000;Electric Box,12176,2000;Electric Tail,12169,100000;Farfetch'd Stick,12199,61000;Fox Tail,12180,65000;Fur,12181,1300;Future Orb,12194,1550;Gosme,12202,2250;Gyarados Tail,12148,80000;Horn,12178,2500;Ice Orb,12201,3250;Imam,12198,6000;Iron Bracelet,12192,25000;Locksmith of Shell,12203,8000;Luck Medalion,12186,100000;Mimic Clothes,12166,100000;Mushroom,12183,8000;Nail,12157,1000;Onix Tail,12205,100000;Pot Of Lava,12152,1800;Psychic Spoon,12193,4000;Punch Machine,12191,4000;Ruby,12188,2000;Sandbag,12177,1500;Scythe,12167,100000;Slow Tail,12197,8000;Squirtle Hull,12158,3250;Stone Orb,12196,1650;Traces of ghost,12204,2650;Venom Flute,12210,30000;Wool Ball,12187,8000;Thunder Feather,12150,500000;Ice Feather,12149,500000;Fire Feather,12151,500000;Psyduck Mug,12189,61000;Tongue,12209,100000;"/>
+</parameters>
+</npc>

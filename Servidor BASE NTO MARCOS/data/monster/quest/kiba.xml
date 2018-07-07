@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kiba" nameDescription="kiba" race="blood" experience="1966" speed="450" manacost="0">
+	<health now="125000" max="125000"/>
+	<look type="331" head="0" body="94" legs="79" feet="79" corpse="2808"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-380" max="-500"/>
+		<attack name="manadrain" interval="2500" chance="10" range="7" min="-80" max="-115">
+			<attribute key="areaEffect" value="redshimmer"/>
+
+		</attack>
+		<attack name="Tsuuga Kiba" interval="1000" chance="100" radius="4" target="0" min="-40" max="-60">
+		</attack>
+		<attack name="Dual Tsuuga Kiba" interval="2500" chance="100" radius="4" target="0" min="-40" max="-60">
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="40" speedchange="450" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Eu que vou ir pra proxima fase!" yell="1"/>
+		<voice sentence="Hahaha, nunca vai passar por mim"/>
+	</voices>
+	<loot>
+		<item id="2666" countmax="5" chance="2000"/><!-- meat -->
+		<item id="2152" countmax="30" chance="1000"/><!-- dolar=verde -->
+		<item id="2145" countmax="2" chance="1000"/><!-- pilula do soldado -->
+	</loot>
+</monster>

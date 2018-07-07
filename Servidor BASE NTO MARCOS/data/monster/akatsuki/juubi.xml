@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Juubi" nameDescription="juubi" race="blood" experience="45800" speed="950" manacost="0">
+ <health now="107065000" max="107065000"/>
+ <look type="599" head="0" body="94" legs="79" feet="79" corpse="0"/>
+ <targetchange interval="9000" chance="100"/>
+ <strategy attack="90" defense="20"/>
+ <flags>
+  <flag summonable="1"/>
+  <flag attackable="1"/>
+  <flag hostile="1"/>
+  <flag illusionable="0"/>
+  <flag convinceable="1"/>
+  <flag pushable="0"/>
+  <flag canpushitems="1"/>
+  <flag canpushcreatures="1"/>
+  <flag targetdistance="1"/>
+  <flag staticattack="65"/>
+  <flag runonhealth="0"/>
+ </flags>
+<script>
+<event name="juubi"/>
+</script>
+ <attacks>
+  <attack name="melee" interval="1000" min="-1010" max="-1040"/>
+  <attack name="manadrain" interval="1000" chance="10" range="7" min="-1160" max="-1215">
+   <attribute key="areaEffect" value="redshimmer"/>
+
+  </attack>
+  <attack name="bijuu dama" interval="3500" chance="100" radius="4" target="0" min="-2340" max="-3300">
+  </attack>
+  <attack name="juubi ball" interval="20000" chance="100" radius="4" target="0" min="-300" max="-360">  
+  </attack>
+  <attack name="katon dragon furie" interval="2500" chance="100" radius="4" target="0" min="-9440" max="-10100">
+  </attack>
+  <attack name="susano atack" interval="1000" chance="100" radius="4" target="0" min="-14440" max="-15600">
+  </attack>
+  <attack name="Dragon Fire" interval="1500" chance="100" radius="4" target="1" min="-16040" max="-17260">
+  </attack>
+  <attack name="gravity ball" interval="1500" chance="100" radius="4" target="1" min="-16040" max="-17260">
+  </attack>
+  <attack name="Katon Dragon no Jutsu" interval="1500" chance="100" radius="4" target="0" min="-8040" max="-11260">
+  </attack>
+  <attack name="Wrath of Nature" interval="1500" chance="100" radius="4" target="0" min="-8040" max="-11260">
+  </attack>
+  <attack name="Fogofogo" interval="500" chance="100" radius="4" target="0" min="-4040" max="-5260">
+  </attack>     
+ </attacks>
+ <defenses armor="80" defense="80">
+  <defense name="healing" interval="4000" chance="40" min="300" max="300">
+   <attribute key="areaEffect" value="blueshimmer"/>
+ </defense>
+  <defense name="speed" interval="4000" chance="40" speedchange="450" duration="8000">
+   <attribute key="areaEffect" value="redshimmer"/>
+  </defense>
+ </defenses>
+ <elements>
+  <element physicalPercent="20"/>
+  <element icePercent="10"/>
+  <element holyPercent="-15"/>
+  <element deathPercent="35"/>
+ </elements>
+ <immunities>
+  <immunity poison="1"/>
+  <immunity lifedrain="1"/>
+  <immunity outfit="1"/>
+  <immunity drunk="1"/>
+  <immunity invisible="1"/>
+ </immunities>
+ <voices interval="5000" chance="10">
+  <voice sentence="Ahaha, sou o Madara, caiem diante de meu poder" yell="1"/>
+  <voice sentence="Rinegan..."/>
+ </voices>
+ <loot>
+ </loot>
+</monster>

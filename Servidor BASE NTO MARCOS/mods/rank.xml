@@ -1,0 +1,66 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mod name = "Military Ranks" version = "1.0" author = "Teckman" enabled = "yes">
+  <config name = "ranks"><![CDATA[
+   titles = {
+    [5] = "Shinobi Agressive",
+    [10] = "Shinobi Killer",
+    [15] = "Shinobi Advanced Killer",
+    [20] = "Shinobi Advanced",
+    [25] = "Shinobi Nukenin Killer",
+    [30] = "Shinobi Almost Killer",
+    [35] = "Shinobi Nukenin",
+    [40] = "Shinobi Renegade Killer",
+    [45] = "Shinobi Almost Killer",
+    [50] = "Shinobi Renegade",
+    [55] = "Akatsuki Novice",
+    [60] = "Akatsuki Member",
+    [65] = "Akatsuki Espion",
+    [70] = "Akatsuki Infiltration",
+    [75] = "Akatsuki Espadashin",
+    [80] = "Akatsuki Agressive",
+    [85] = "Akatsuki Assassin",
+    [90] = "Akatsuki Killer",
+    [95] = "Akatsuki Espadashin Agressive",
+    [100] = "Akatsuki Espion Agressive",
+    [105] = "Akatsuki Scout",
+    [110] = "Akatsuki Leader"
+   }
+   fragsStorage = 600
+  ]]></config>
+  <event type = "look" name = "ranksLook" event = "script"><![CDATA[
+   domodlib("ranks")
+   function onLook(cid, thing, position, lookDistance)
+    if(isPlayer(thing.uid)) then
+	 local rank = {rank = "Shinobi Passive", frags = 0}
+	 for k, v in pairs(titles) do
+	  if(math.max(0, getPlayerStorageValue(thing.uid, fragsStorage)) > k - 1) then
+	   if(k - 1 > rank.frags) then
+	    rank.rank, rank.frags = v, k - 1
+	   end
+	  end
+	 end
+	 doPlayerSetSpecialDescription(thing.uid, "\n Military rank: " .. rank.rank)
+    end
+    return true
+   end
+  ]]></event>
+  <event type = "kill" name = "ranksKill" event = "script"><![CDATA[
+   domodlib("ranks")
+   function onKill(cid, target)
+    if(isPlayer(target)) then
+	 setPlayerStorageValue(cid, fragsStorage, math.max(0, getPlayerStorageValue(cid, fragsStorage) + 1))
+	 if(titles[getPlayerStorageValue(cid, fragsStorage)]) then
+	  doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You advanced to military rank: " .. titles[getPlayerStorageValue(cid, fragsStorage)] .. ". Congratulations " .. titles[getPlayerStorageValue(cid, fragsStorage)] .. "!")
+	 end
+    end
+    return true
+   end
+  ]]></event>
+  <event type = "login" name = "ranksLogin" event = "script"><![CDATA[
+   function onLogin(cid)
+    registerCreatureEvent(cid, "ranksKill")
+    registerCreatureEvent(cid, "ranksLook")
+    return true
+   end
+  ]]></event>
+</mod>

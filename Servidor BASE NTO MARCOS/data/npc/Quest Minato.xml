@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Quest Akatsuki Ring" script="data/npc/scripts/Minato.lua" walkinterval="2000" speed="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="443" head="19" body="113" legs="95" feet="115" addons="0"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola Eu Posso Te Leva Quest Akatsuki Ring Voce Quer {yes}" />
+  </parameters>
+</npc>

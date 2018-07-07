@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<npc name="Staminer" floorchange="0" speed="0" walkinterval="4000">
+<health now="150" max="150"/>
+<look type="225" head="20" body="120" legs="75" feet="13"/>
+
+<interaction range="3" idletime="30">
+<interact keywords="hi" focus="1">
+<keywords>hello</keywords>
+<response>
+<action name="script">
+<![CDATA[
+selfSay("Olá " .. getCreatureName(cid) .. ", eu vendo {stamina}.", cid)
+]]>
+</action>
+</response>
+</interact>
+
+<interact keywords="bye" focus="0">
+<keywords>farewell</keywords>
+<response text="Good bye."/>
+</interact>
+
+<interact keywords="stamina">
+<response>
+<action name="script">
+<![CDATA[
+selfSay("Você quer regenerar sua stamina?", cid)
+]]>
+</action>
+<interact keywords="yes">
+<response>
+<action name="script">
+<![CDATA[
+local minutes = 42 * 60 * 1000
+local price = 100
+if doPlayerRemoveMoney(cid, price) then
+doPlayerAddStamina(cid, minutes)
+selfSay("Thanks.", cid)
+else
+selfSay("Você não possui "..price.." gold.", cid)
+end
+]]>
+</action>
+</response>
+</interact>
+<interact keywords="no">
+<response>
+<action name="script">
+<![CDATA[
+selfSay("Ok.", cid)
+]]>
+</action>
+</response>
+</interact>
+</response>
+</interact>
+</interaction>
+</npc>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+<globalevent name="save" interval="6000000" event="script" value="save.lua"/>
+<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+<globalevent name="playersrecord" type="record" event="script" value="record.lua"/>
+<globalevent name="AutoBroadcast" interval="1000000" script="autobroadcast.lua"/>
+<globalevent name="arenawar" interval="5000000" event="script" value="pvp.lua"/> 
+</globalevents>

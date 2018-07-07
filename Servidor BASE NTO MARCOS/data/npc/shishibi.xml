@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="shishibi" script="data/npc/scripts/travel/the shishibi boss.lua" walkinterval="2000" speed="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="302" head="19" body="113" legs="95" feet="115" addons="0"/>
+  <parameters>
+    <parameter key="message_greet" value="voce quer captura o meu chakra? {yes}" />
+  </parameters>
+</npc>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kankuro" script="data/npc/scripts/Kankuro.lua" walkinterval="2000" speed="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="324" head="19" body="113" legs="95" feet="115" addons="0"/>
+  <parameters>
+    <parameter key="message_greet" value="Ola Voce Pode Me Ajuda? Preciso Muinto Da Sua Ajuda Para Recupera 1 Coisa Minha." />
+  </parameters>
+</npc>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sound shinobi" nameDescription="sound shinobi" race="blood" experience="780" speed="350" manacost="0">
+	<health now="2850" max="2850"/>
+	<look type="117" head="0" body="94" legs="79" feet="79" corpse="2903"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="90" attack="90"/>
+    <attack name="physical" interval="1500" chance="100" range="7" min="-865" max="-1145">
+      <attribute key="shootEffect" value="POISONARROW"/>
+		</attack>
+  </attacks>
+  <defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Silice!" yell="1"/>
+	</voices>
+			<loot>
+		<item id="2152" countmax="12" chance="10000"/><!-- dolar verde -->
+	</loot>
+	<loot>
+		<item id="2382" countmax="1" chance="2000"/><!-- katana -->
+				<item id="7390" countmax="1" chance="800"/><!-- taijutsu lee legs -->
+	</loot>
+</monster>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="c2" nameDescription="c2" race="blood" experience="45800" speed="750" manacost="0">
+	<health now="9065000" max="9065000"/>
+	<look type="64" head="0" body="94" legs="79" feet="79" corpse="0"/>
+	<targetchange interval="9000" chance="100"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <script>
+    <event name="teamdois"/>
+  </script>
+	<attacks>
+		<attack name="melee" interval="4000" min="-2010" max="-3140"/>
+		<attack name="manadrain" interval="1000" chance="10" range="7" min="-110" max="-125">
+		<attribute key="areaEffect" value="redshimmer"/>
+	    </attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="10" speedchange="450" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Vamos matar todooos.." yell="1"/>
+		<voice sentence="Iahaha...nao somos nojentos, voces que sao!!!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="7" chance="4000"/><!-- gold bar -->
+		<item id="7875" countmax="1" chance="4000"/><!-- dual slayer glove -->
+		<item id="2395" countmax="1" chance="4000"/><!-- akatsuki armor -->
+		<item id="2529" countmax="1" chance="4000"/><!-- akatsuki boots -->
+	</loot>
+</monster>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Madara Rikkudou" nameDescription="Madara Rikkudou" race="blood" experience="45800" speed="750" manacost="0">
+	<health now="9065000" max="9065000"/>
+ <look type="702" head="0" body="94" legs="79" feet="79" corpse="0"/>
+	<targetchange interval="9000" chance="100"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+<event name="questmadara"/>
+</script>
+<script>
+<event name="akat"/>
+</script>
+  <attacks>
+  <attack name="Amaterasu Follow" interval="3500" chance="100" radius="4" target="0" min="-2340" max="-3300"/>
+  <attack name="Kawarimi no Jutsu" interval="20000" chance="100" radius="4" target="0" min="-300" max="-360"/>  
+  <attack name="Dragon Blast" interval="2500" chance="100" radius="4" target="0" min="-9440" max="-10100"/>
+  <attack name="Katon Gamabunta Ryukaa" interval="1000" chance="100" radius="4" target="0" min="-14440" max="-15600"/>
+  <attack name="Dragon Fire" interval="1500" chance="100" radius="4" target="0" min="-16040" max="-17260"/>
+  <attack name="SuitonBomba" interval="4500" chance="100" radius="4" target="0" min="-12040" max="-13260"/>
+  <attack name="Katon Dragon no Jutsu" interval="3500" chance="100" radius="4" target="0" min="-14040" max="-15260"/>
+ </attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+
+	<script>
+<event name="Madara Rikkudou"/>
+</script>
+	</monster>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<npc name="Tsunade" script="data/npc/scripts/simple_task.lua" walkinterval="50000" floorchange="0">
+<health now="100" max="100"/>
+<look type="635" head="95" body="116" legs="121" feet="115" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="ola |PLAYERNAME|. veio aki fazer auguma {missao}?,ou {passa} a missao para otro,ou pega a {recompensa} da missao?" />
+</parameters>
+</npc>

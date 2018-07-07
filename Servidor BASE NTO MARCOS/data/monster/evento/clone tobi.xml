@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Clone Tobi" nameDescription="a clone tobi" race="undead" experience="280" speed="220" manacost="0">
+        <health now="599500" max="599500"/>
+        <look type="311" corpse="9875"/>
+        <targetchange interval="5000" chance="8"/>
+        <strategy attack="100" defense="0"/>
+        <flags>
+                <flag summonable="0"/>
+                <flag attackable="0"/>
+                <flag hostile="1"/>
+                <flag illusionable="0"/>
+                <flag convinceable="1"/>
+                <flag pushable="0"/>
+                <flag canpushitems="1"/>
+                <flag canpushcreatures="1"/>
+                <flag targetdistance="1"/>
+                <flag staticattack="90"/>
+                <flag runonhealth="0"/>
+        </flags>
+        <attacks>
+                <attack name="melee" interval="2000" skill="200" attack="300"/>
+        </attacks>
+        <defenses/>
+        <elements/>
+        <immunities/>
+        <voices interval="5000" chance="10">
+                <voice sentence="Tsuki...."/>
+                <voice sentence="Iremos usar o genjutsu em TODOS"/>
+        </voices>
+        <loot/>
+</monster>

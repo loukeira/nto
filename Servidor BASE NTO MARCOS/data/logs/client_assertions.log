@@ -1,0 +1,88 @@
+----- 30/6/2018 17:15:16 - Anbu Sample (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 150 180 030 109 109 109 109 109 109 109
+Last Packet: 150 001 000 000 000 136 002 251 041 000 000 000 000 000 000 000
+Player Position: [1027,908,7]
+Player Name: Jiraya Sample (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 150) (MainWindow = 43036672), reason:
+Communication.cpp 2619: exception occurred, reason:
+Network.cpp 504: exception occurred, reason:
+Utils.cpp 501: assertion failed (Position = 21) (Size = 21), reason:
+Position<=Size-2
+Sat Jun 30 17:14:37 2018
+Debug Assertion 8.60 Utils.cpp 501
+
+----- 30/6/2018 18:4:10 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 110 109 109 109 131 162 162 162 100 108
+Last Packet: 110 000 129 037 014 000 100 101 109 111 110 032 098 097 099 107
+Player Position: [1030,913,6]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 110) (MainWindow = 41597408), reason:
+Communication.cpp 2177: exception occurred (Container = 0), reason:
+Objects.cpp 280: exception occurred (Type = 25603) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 25603) (ObjectProperties->high() = 10710), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Jun 30 18:03:45 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 1/7/2018 19:27:44 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 011 010 031 100 020 000 000 000 000
+Last Packet: 010 191 011 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [0,0,0]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 40414968), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1001) (PlayerY = 928), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 5774), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268438463), reason:
+Objects.cpp 604: exception occurred (Number = 756), reason:
+Container.h 226: index out of range (original i: 756, i: 755, min: 1, d: 742)
+Sun Jul 01 19:24:43 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 1/7/2018 20:18:22 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 011 010 031 100 020 000 000 000 000
+Last Packet: 010 192 011 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [0,0,0]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 42381048), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1027) (PlayerY = 912), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 408), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268438464), reason:
+Objects.cpp 604: exception occurred (Number = 756), reason:
+Container.h 226: index out of range (original i: 756, i: 755, min: 1, d: 742)
+Sun Jul 01 19:33:04 2018
+Debug Assertion 8.60 Container.h 226
+

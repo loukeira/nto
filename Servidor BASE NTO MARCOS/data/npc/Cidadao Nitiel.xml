@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Cidadao Nitiel" script="data/npc/scripts/npcnormal/cidadaogelodois.lua" walkinterval="0" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="251" head="79" body="118" legs="115" feet="114" corpse="2212"/>
+	<parameters>
+		<parameter key="module_shop" value="3" />
+		<parameter key="shop_sellable" value="fish,2667,15" />
+		<parameter key="shop_buyable" value="short,2469,90" />
+	</parameters>
+</npc>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+	<server id="0" name="Example" versionMin="850" versionMax="850" address="127.0.0.1" port="7171"/>
+<?xml version="1.0"?>
+<otadmin enabled="1">
+<security onlylocalhost="1" maxconnections="2" loginrequired="1" loginpassword="9129706396485747" />
+<encryption required="0" >
+<!-- key type="RSA1024XTEA" file="rsakey.private" -->
+</servers>

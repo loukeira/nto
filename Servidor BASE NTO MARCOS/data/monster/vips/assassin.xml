@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Assasin" nameDescription="Elite Assasin" race="blood" experience="460" speed="260" manacost="0">
+	<health now="1150" max="1150"/>
+	<look type="239" head="0" body="94" legs="79" feet="79" corpse="2874"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="90" attack="90"/>
+  </attacks>
+  <defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Iahhh!" yell="1"/>
+		<voice sentence="Uahh!!!!"/>
+	</voices>
+			<loot>
+		<item id="2152" countmax="8" chance="10000"/><!-- dolar verde -->
+	</loot>
+	<loot>
+		<item id="2434" countmax="1" chance="6000"/><!-- elite taijutsu glove -->
+				<item id="2661" countmax="1" chance="4000"/><!-- sasuke armor blue -->
+	</loot>
+</monster>

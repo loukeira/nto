@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Han" nameDescription="The Han" race="blood" experience="45800" speed="750" manacost="0">
+ <health now="56065000" max="56065000"/>
+	<look type="515" head="0" body="94" legs="79" feet="79" corpse="2887"/>
+	<targetchange interval="9000" chance="100"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="4000" min="-6010" max="-7140"/>
+		<attack name="manadrain" interval="1000" chance="10" range="7" min="-3110" max="-4125">
+			<attribute key="areaEffect" value="redshimmer"/>
+
+		</attack>
+		<attack name="Kyuubi Furie!" interval="8000" chance="100" radius="4" target="0" min="-300" max="-360">
+		</attack>
+		<attack name="Bijuu Dama" interval="1000" chance="100" radius="4" target="0" min="-5040" max="-6260">
+		</attack>
+		<attack name="Biju Rasengan" interval="1000" chance="100" radius="4" target="0" min="-5040" max="-6260">
+		</attack>
+		<attack name="Bijuu Dama" interval="1000" chance="100" radius="4" target="0" min="-5040" max="-6260">
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="10" speedchange="450" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Earth my Life.." yell="1"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="7" chance="5000"/><!-- gold bar -->
+		<item id="2395" countmax="1" chance="1500"/><!-- akatsuki armor -->
+		<item id="2529" countmax="1" chance="1500"/><!-- akatsuki boots -->
+	</loot>
+<script>
+<event name="removewall"/>
+</script>
+</monster>

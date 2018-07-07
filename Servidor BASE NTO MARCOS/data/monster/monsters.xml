@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<monsters>
+	
+
+<!-- Hunt Monsters -->
+	
+<monster name="severium snake" file="hunts/severium snake.xml"/>
+    
+<monster name="Snake" file="hunts/snake.xml"/>
+    
+<monster name="Dog" file="hunts/dog.xml"/>
+    
+<monster name="Dark snake" file="hunts/dark snake.xml"/>
+    
+<monster name="Sand cros" file="hunts/sand cros.xml"/>
+    
+<monster name="Boxer" file="hunts/boxer.xml"/>
+    
+<monster name="Sound shinobi" file="hunts/sound shinobi.xml"/>
+    
+<monster name="Beezer" file="hunts/beezer.xml"/>
+    
+<monster name="Bandit Sword" file="hunts/bandit sword.xml"/>
+    
+<monster name="Giant Fear" file="hunts/giant fear.xml"/>
+    
+<monster name="Sasuke Sc2" file="hunts/sasuke sc2.xml"/>
+    
+<monster name="Shinobi Fire" file="hunts/shinobi fire.xml"/>
+    
+<monster name="Shinobi of Sound" file="hunts/shinobi of sound.xml"/>
+    
+<monster name="Great Snake" file="hunts/great snake.xml"/>
+    
+<monster name="Insecnoide" file="hunts/insecnoide.xml"/>
+    
+<monster name="Nukenin" file="hunts/nukenin.xml"/>
+       
+<monster name="juubi" file="akatsuki/juubi.xml"/>
+ 
+<monster name="the pain boss" file="akatsuki/the pain boss.xml"/>
+
+<monster name="zetsu branco" file="akatsuki/zetsu branco.xml"/>
+
+<monster name="mokuton bunshin" file="akatsuki/mokuton bunshin.xml"/>
+
+<monster name="anbu capitao" file="akatsuki/anbu capitao.xml"/>
+
+<monster name="the sakura boss" file="the sakura boss.xml"/>
+
+<monster name="the sasuke boss" file="the sasuke boss.xml"/>
+
+<monster name="the naruto boss" file="the naruto boss.xml"/>
+
+<monster name="the roushi" file="the roushi.xml"/>
+
+<monster name="the yonbi" file="the yonbi.xml"/>
+
+<monster name="the chakra bijuu control" file="the chakra bijuu control.xml"/>
+
+<monster name="the chakra bijuu 1" file="the chakra bijuu 1.xml"/>
+
+<monster name="the chakra bijuu 2" file="the chakra bijuu 2.xml"/>
+
+<monster name="the obito" file="the obito.xml"/>
+
+
+-- Quest Boss --
+<monster name="deidara da pedra" file="akatsuki/quest/deidara.xml"/>
+
+<monster name="hidan das fonte" file="akatsuki/quest/hidan.xml"/>
+<monster name="itachi da folha" file="akatsuki/quest/itachi.xml"/>
+<monster name="kabuto da folha" file="akatsuki/quest/kabuto.xml"/>
+<monster name="kakuzo da cachoeira" file="akatsuki/quest/kakuzo.xml"/>
+<monster name="kisame da nevoa" file="akatsuki/quest/kisame.xml"/>
+<monster name="konan da chuva" file="akatsuki/quest/konan.xml"/>
+<monster name="kyuuby mode" file="akatsuki/quest/kyuuby mode.xml"/>
+<monster name="madara da folha" file="akatsuki/quest/madara.xml"/>
+<monster name="orochimaru da folha" file="akatsuki/quest/orochimaru.xml"/>
+<monster name="pain da chuva" file="akatsuki/quest/pain.xml"/>
+<monster name="sasori da areia" file="akatsuki/quest/sasori.xml"/>
+<monster name="tobi da folha" file="akatsuki/quest/tobi.xml"/>
+<monster name="tobirama senju" file="akatsuki/quest/tobiramasenju.xml"/>
+
+<monster name="Yoth" file="hunts/yoth.xml"/>
+    
+<monster name="Giante Ice Yoth" file="hunts/giante ice yoth.xml"/>
+    
+<monster name="Renegade" file="hunts/renegade.xml"/>
+    
+<monster name="Gamaguren" file="hunts/gamaguren.xml"/>
+    
+<monster name="Gaara Sc2" file="hunts/gaara sc2.xml"/>
+    
+<monster name="Shinobi Skys" file="hunts/shinobi skys.xml"/>
+    
+<monster name="Sword Man" file="hunts/sword man.xml"/>
+    
+<monster name="Sand Sc2" file="hunts/sand sc2.xml"/>
+    
+<monster name="Karasu" file="hunts/karasu.xml"/>
+    
+<monster name="Skeleton" file="hunts/skeleton.xml"/>
+   
+<monster name="Bandit" file="hunts/bandit.xml"/>
+    
+<monster name="Skeleton Fear" file="hunts/skeleton fear.xml"/>
+    
+<monster name="Dog Fear" file="hunts/dog fear.xml"/>
+    
+<monster name="Akatsuki" file="hunts/akatsuki.xml"/>
+    
+<monster name="Supreme Skeleton" file="hunts/supreme skeleton.xml"/>
+    
+<monster name="Kikkai" file="hunts/kikkai.xml"/>
+
+	
+<!-- Vip Monsters -->
+	
+<monster name="Black Shinobi" file="hunts/black shinobi.xml"/>
+    
+<monster name="Shinobi Archer" file="hunts/shinobi archer.xml"/>
+    
+<monster name="Anbu" file="hunts/anbu.xml"/>
+    
+<monster name="Venom Snake" file="hunts/venom snake.xml"/>
+    
+<monster name="Giant Furie" file="hunts/giant furie.xml"/>
+    
+<monster name="Snake Najin" file="hunts/snake najin.xml"/>
+
+	
+<!-- Boss Monsters -->
+	
+<monster name="Gedou Kay" file="hunts/gedou kay.xml"/>
+    
+<monster name="Tobi" file="hunts/tobi.xml"/>
+    
+<monster name="Orochimaru" file="hunts/orochimaru.xml"/>
+	
+<monster name="Jya Boss" file="hunts/jya boss.xml"/>
+	
+<monster name="Haku" file="hunts/haku.xml"/>
+	
+<monster name="Sasuke Boss" file="hunts/sasuke boss.xml"/>
+	
+	
+<!-- Quest Monsters -->
+	
+<monster name="Mizukii" file="quest/mizukii.xml"/>
+	
+<monster name="Jounin Renegade" file="quest/jounin renegade.xml"/>
+	
+<monster name="Kiba" file="quest/kiba.xml"/>
+	
+<monster name="Neji" file="quest/neji.xml"/>
+	
+<monster name="Temari" file="quest/temari.xml"/>
+	
+<monster name="Shikamaru" file="quest/shikamaru.xml"/>
+	
+<monster name="Sasuke" file="quest/sasuke.xml"/>
+	
+<monster name="Gaara" file="quest/gaara.xml"/>
+	
+<monster name="Uchiha Fugaku" file="Uchiha Fugaku.xml"/>
+ <monster name="Chouza Akimichi" file="Chouza Akimichi.xml"/>
+ <monster name="Anko" file="Anko.xml"/>
+ <monster name="Zabuza" file="Zabuza.xml"/>
+ <monster name="Kakashi" file="Kakashi.xml"/>	
+<monster name="Akatsuke Member" file="quest/akatsuke member.xml"/>
+	
+<monster name="Soldier Anbu" file="quest/soldier anbu.xml"/>
+	
+<monster name="Sargento Anbu" file="quest/sargento anbu.xml"/>
+	
+<monster name="Tenente Anbu" file="quest/tenente anbu.xml"/>
+	
+<monster name="Captao Anbu" file="quest/captao anbu.xml"/>
+	
+<monster name="Prisioneira" file="quest/prisioneira.xml"/>
+	
+<monster name="shukaku" file="quest/shukaku.xml"/>
+	
+<monster name="dark kikkai" file="quest/dark kikkai.xml"/>
+	
+<monster name="mutation" file="quest/mutation.xml"/>
+	
+<monster name="sambi" file="quest/sambi.xml"/>
+
+	
+<!-- Akatsuki Quest Monsters -->
+	
+<monster name="Madara" file="akatsuki/madara.xml"/>
+	
+<monster name="Madara Rikkudou" file="akatsuki/Madara Rikkudou.xml"/>
+	
+<monster name="Nidaime" file="akatsuki/nidaime.xml"/>
+	
+<monster name="Sasori" file="akatsuki/sasori.xml"/>
+
+<monster name="xapulin" file="akatsuki/xapulin.xml"/>
+	
+<monster name="Kisame" file="akatsuki/kisame.xml"/>
+	
+<monster name="Zetsu" file="akatsuki/zetsu.xml"/>
+	
+<monster name="Hidan" file="akatsuki/hidan.xml"/>
+	
+<monster name="Dead Hidan" file="akatsuki/dead hidan.xml"/>
+	
+<monster name="Kakuzo" file="akatsuki/kakuzo.xml"/>
+	
+<monster name="Itachi" file="akatsuki/itachi.xml"/>
+	
+<monster name="Deidara" file="akatsuki/deidara.xml"/>
+	
+<monster name="Pain" file="akatsuki/pain.xml"/>
+	
+<monster name="Pain Two" file="akatsuki/pain two.xml"/>
+	
+<monster name="Pain Three" file="akatsuki/pain three.xml"/>
+	
+<monster name="Pain Four" file="akatsuki/pain four.xml"/>
+	
+<monster name="Pain Five" file="akatsuki/pain five.xml"/>
+	
+<monster name="Pain Six" file="akatsuki/pain six.xml"/>
+
+	
+<!-- Summon Normal Monsters -->
+    
+<monster name="Hearth Summon" file="hunts/hearth summon.xml"/>
+	<monster name="Hearth Sumoon" file="hunts/hearth sumoon.xml"/>
+	
+<monster name="Hearth Sumonn" file="hunts/hearth sumonn.xml"/>
+	<monster name="Hearth Sumon" file="hunts/hearth sumon.xml"/>
+	
+<monster name="Coruja" file="hunts/coruja.xml"/>
+	<monster name="trainer" file="trainer.xml"/>
+	<monster name="Gamatatsu" file="gamatatsu.xml"/>
+	
+<monster name="Gamattatsu" file="gamattatsu.xml"/>
+	<monster name="Gamakichi" file="gamakichi.xml"/>
+	
+	
+<!-- Summon Monsters -->
+	
+<monster name="Clone" file="clone.xml"/>
+	
+<monster name="king" file="king.xml"/>
+	
+<monster name="Clone Das Sombras" file="Clone Das Sombras.xml"/>
+	
+<monster name="Suna Bunchin" file="suna bunchin.xml"/>
+	
+<monster name="Jay Snake" file="jay snake.xml"/>
+	
+<monster name="Jya" file="jya.xml"/>
+	
+<monster name="Manda" file="manda.xml"/>
+	
+<monster name="Katsuyu" file="katsuyu.xml"/>
+	
+	
+<!-- MVP Monsters -->
+	
+<monster name="Gama Bunta" file="gama bunta.xml"/>
+
+	
+<!-- Monster Event -->
+    
+<monster name="Clone Tobi" file="evento/clone tobi.xml"/>
+    
+<monster name="Horned mutant" file="evento/horned mutant.xml"/>
+    
+<monster name="Vile centurion" file="evento/vile centurion.xml"/>
+    
+<monster name="Daidalost" file="evento/daidalost.xml"/>
+    
+<monster name="Mongrel man" file="evento/mongrel man.xml"/>
+    
+<monster name="Propell zombie" file="evento/propell zombie.xml"/>
+    
+<monster name="Scrathclaw" file="evento/scrathclaw.xml"/>
+    
+<monster name="Assassino" file="zombie_event.xml"/>
+	
+<monster name="empe" file="evento/empe.xml"/>
+	
+<monster name="pre1" file="evento/pre1.xml"/>
+	
+<monster name="pre2" file="evento/pre2.xml"/>
+	
+<monster name="guard" file="evento/guard.xml"/>      
+	
+
+	
+<monster name="gobi" file="gobi.xml"/>
+
+	
+<monster name="rokubi" file="rokubi.xml"/>
+
+	
+<monster name="nibi" file="nibi.xml"/>
+
+	
+<monster name="kyuuby" file="kyuuby.xml"/>
+
+	
+<monster name="Kurama" file="Kurama.xml"/>
+
+
+<monster name="Yamato" file="Yamato.xml"/>
+
+
+<monster name="Bijuu 1" file="Manto 1 Bijuu.xml"/>
+
+
+<monster name="Bijuu 2" file="Manto 2 Bijuu.xml"/>
+
+	
+<monster name="Bijuu 3" file="Manto 3 Bijuu.xml"/>
+
+
+<monster name="Bijuu 4" file="Manto 4 Bijuu.xml"/>
+
+			
+<monster name="yonbi" file="yonbi.xml"/>
+
+	
+<monster name="shichibi" file="shichibi.xml"/>
+
+	
+<monster name="hachibi" file="hachibi.xml"/>
+	
+<monster name="Fukasaku" file="Fukasaku.xml"/>
+	
+<monster name="Mizu Bunshin" file="Mizu Bunshin.xml"/>
+
+<monster name="Raiton Bunshin" file="Raiton Bunshin.xml"/>
+
+<monster name="Yugito Nii" file="Yugito Nii.xml"/>
+
+<monster name="Fuu" file="Fuu.xml"/>
+
+<monster name="Utakata" file="Utakata.xml"/>
+
+<monster name="Han" file="Han.xml"/>
+
+<monster name="Roshi" file="Roshi.xml"/>
+
+<monster name="Kuroaki" file="Kuroaki.xml"/>
+
+<monster name="Sanshuo" file="Sanshuo.xml"/>
+
+<monster name="Shima" file="Shima.xml"/>
+
+<monster name="Konan" file="Konan.xml"/>
+
+<monster name="Suigetsu" file="Suigetsu.xml"/>
+
+<monster name="Sasori Form" file="Sasori Quest.xml"/>
+
+<monster name="Danzou" file="Danzou.xml"/>
+
+<monster name="Mokuton Bunshin Madara" file="Mokuton Bunshin Madara.xml"/>
+
+
+</monsters>

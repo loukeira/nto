@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Uchiha Fugaku" nameDescription="a uchiha fugaku" race="blood" experience="0" speed="450" manacost="0">
+	<health now="3455000" max="3455000"/>
+	<look type="129" corpse="0"/>
+	<targetchange interval="5000" chance="10"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="5000" min="-2380" max="-2500"/>
+		<attack name="manadrain" interval="1500" chance="10" range="7" min="-80" max="-515">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="Dragon Fire" interval="3500" chance="100" radius="4" target="0" min="-14040" max="-15260">
+		</attack>
+		<attack name="Suitonagua" interval="500" chance="100" radius="4" target="0" min="-5440" max="-6860">		
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="40" speedchange="450" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="5">
+		<voice sentence="Qui azar o seu, escolherao logo a mim para ser o seu primeiro adversario!" yell="1"/>
+	</voices>
+</monster>

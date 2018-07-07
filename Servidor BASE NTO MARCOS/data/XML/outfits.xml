@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<outfits>
+	<outfit id="1">
+		<list gender="0" lookType="192" name="Naruto"/>
+		<list gender="1" lookType="192" name="Naruto"/>
+	</outfit>
+
+	<outfit id="13">
+		<list gender="0" lookType="2" name="Sasuke"/>
+		<list gender="1" lookType="2" name="Sasuke"/>
+	</outfit>
+
+	<outfit id="3">
+		<list gender="0" lookType="349" name="Neji"/>
+		<list gender="1" lookType="349" name="Neji"/>
+	</outfit>
+
+	<outfit id="4">
+		<list gender="0" lookType="348" name="Lee"/>
+		<list gender="1" lookType="348" name="Lee"/>
+	</outfit>
+	
+	<outfit id="5">
+		<list gender="0" lookType="356" name="Kiba"/>
+		<list gender="1" lookType="356" name="Kiba"/>
+	</outfit>
+	
+	<outfit id="6">
+		<list gender="0" lookType="358" name="Shino"/>
+		<list gender="1" lookType="358" name="Shino"/>
+	</outfit>
+
+	<outfit id="200" access="3" premium="yes">
+		<list gender="0-3" lookType="391" name="Gamemaster"/>
+	</outfit>
+
+	<outfit id="201" access="4" premium="yes">
+		<list gender="0-3" lookType="391" name="Community Manager"/>
+	</outfit>
+
+	<outfit id="202" access="5" premium="yes">
+		<list gender="0-3" lookType="391" name="God"/>
+	</outfit>
+</outfits>

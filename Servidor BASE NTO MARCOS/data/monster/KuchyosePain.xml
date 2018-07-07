@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kuchyose Pain" nameDescription="Kuchyose Pain" race="blood" experience="0" speed="750" manacost="0">
+	<health now="83000" max="83000"/>
+	<look type="346" head="0" body="94" legs="79" feet="79" corpse="2877"/>
+	<targetchange interval="9000" chance="100"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <script>
+    <event name="questakatsukiseis"/>
+  </script>
+	<attacks>
+		<attack name="melee" interval="4000" min="-250" max="-250"/>
+		<attack name="manadrain" interval="1000" chance="10" range="7" min="-110" max="-125">
+			<attribute key="areaEffect" value="redshimmer"/>
+
+            		</attack>
+    <attack name="physical" interval="2000" chance="100" range="4" min="-50" max="-100">
+      <attribute key="shootEffect" value="SMALLHOLY"/>
+		</attack>
+		<attack name="Great Ball" interval="2000" chance="100" radius="4" target="0" min="-3050" max="-3050">
+		</attack>
+		<attack name="Kawarimi no Jutsu" interval="8000" chance="100" radius="4" target="0" min="-300" max="-360">
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="10" speedchange="450" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+  <summons maxSummons="5">
+    <summon name="sPain Two" interval="1000" chance="100" max="1"/>
+    <summon name="sPain Three" interval="1000" chance="100" max="1"/>
+    <summon name="sPain Four" interval="1000" chance="100" max="1"/>
+    <summon name="sPain Five" interval="1000" chance="100" max="1"/>
+    <summon name="sPain Six" interval="1000" chance="100" max="1"/>
+  </summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Shinra Tensei.." yell="1"/>
+		<voice sentence="Banshou teein..."/>
+		<voice sentence="Odio..guerra...so havera paz quando haver dor..."/>
+	</voices>
+	<loot>
+		<item id="2666" countmax="2" chance="20000"/><!-- meat -->
+	</loot>
+</monster>

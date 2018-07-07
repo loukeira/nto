@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shinobi Fire" nameDescription="shinobi fire" race="blood" experience="980" speed="350" manacost="0">
+	<health now="6950" max="6950"/>
+	<look type="116" head="0" body="94" legs="79" feet="79" corpse="2828"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="10" attack="10"/>
+    <attack name="Fogofogo" interval="500" chance="60" range="7" min="-665" max="-725">
+		</attack>
+  </attacks>
+  <defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Silice!" yell="1"/>
+	</voices>
+			<loot>
+		<item id="2152" countmax="12" chance="10000"/><!-- dolar verde -->
+	</loot>
+	<loot>
+		<item id="2416" countmax="1" chance="3700"/><!-- elite kunai -->
+		<item id="3972" countmax="1" chance="2500"/><!-- suna helmet -->
+				<item id="7452" countmax="1" chance="2000"/><!-- kiba blouse -->
+	</loot>
+</monster>
