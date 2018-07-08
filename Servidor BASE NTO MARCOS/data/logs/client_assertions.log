@@ -86,3 +86,87 @@ Container.h 226: index out of range (original i: 756, i: 755, min: 1, d: 742)
 Sun Jul 01 19:33:04 2018
 Debug Assertion 8.60 Container.h 226
 
+----- 7/7/2018 20:55:14 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 108 180 030 170 180 180 030 101 109
+Last Packet: 180 018 019 000 047 103 111 116 111 032 098 097 105 097 107 032
+Player Position: [1003,913,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 42119120), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1005) (PlayerY = 926), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 310), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268437396), reason:
+Objects.cpp 604: exception occurred (Number = 939), reason:
+Container.h 226: index out of range (original i: 939, i: 938, min: 1, d: 903)
+Sat Jul 07 20:54:56 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 21:17:7 - Matheus (186.208.251.102) -----
+
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 106 180 106 108 131 106 180 030 131 106
+Last Packet: 180 018 007 000 047 105 032 052 052 051 051 106 250 003 169 003
+Player Position: [1018,937,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 41662952), reason:
+Communication.cpp 1784: exception occurred (rx = 8) (ry = 6), reason:
+Objects.cpp 280: exception occurred (Type = 10551) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 10551) (ObjectProperties->high() = 10527), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Jul 07 21:09:05 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 7/7/2018 21:20:52 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 132 131 106 108 140 180 140 170 160 131
+Last Packet: 140 151 007 000 064 089 180 024 030 000 089 111 117 032 100 101
+Player Position: [1021,921,8]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 21:20:21 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 21:21:37 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 170 160 131 131 132 131 106 108 140 180
+Last Packet: 131 000 004 149 003 008 003 000 108 000 004 149 003 008 001 100
+Player Position: [1019,919,8]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 21:21:20 2018
+Debug Assertion 8.60 Map.cpp 998
+
