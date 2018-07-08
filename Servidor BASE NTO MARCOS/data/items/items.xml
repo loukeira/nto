@@ -3295,10 +3295,8 @@
         <attribute key="weight" value="5200" />
         <attribute key="defense" value="30" />
         <attribute key="attack" value="800" />
-        <attribute key="attackspeed" value="1000" />
         <attribute key="weaponType" value="sword" />
         <attribute key="slotType" value="two-handed" />
-
     </item>
     <item id="2414" article="a" name="genin shirt">
         <attribute key="description" value="Ninjutsu increases in two." />
@@ -19246,7 +19244,7 @@
     <item id="20028" name="swamp" />
     <item id="20035" name="tea" />
 
-    <item id="2523" article="a" name="Madara Armor">
+    <item id="107" article="a" name="Madara Armor">
         <attribute key="description" value="All skills +25 and Chakra / Health recovery 20000/s and max health +20000." />
         <attribute key="weight" value="350" />
         <attribute key="armor" value="25" />
