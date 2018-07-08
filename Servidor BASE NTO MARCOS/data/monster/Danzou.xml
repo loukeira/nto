@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Danzou" nameDescription="Danzou" race="blood" experience="50000" speed="750" manacost="0">
 	<health now="1065000" max="1065000"/>
-	<look type="357" head="0" body="94" legs="79" feet="79" corpse="2887"/>
+	<look type="357" head="79" body="94" legs="79" feet="79" corpse="2887"/>
 	<targetchange interval="9000" chance="100"/>
 	<strategy attack="90" defense="20"/>
 	<flags>
@@ -19,14 +19,17 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="4000" min="-6010" max="-7140"/>
-		<attack name="manadrain" interval="1000" chance="10" range="7" min="-3110" max="-4125">
-			<attribute key="areaEffect" value="redshimmer"/>
 
+		<attack name="manadrain" interval="1000" chance="10" range="7" min="-3110" max="-4125">
+		<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
+
 		<attack name="Mangekyou Kamui" interval="8000" chance="100" radius="4" target="0" min="-300" max="-360">
 		</attack>
+
 		<attack name="Kamui" interval="1000" chance="100" radius="4" target="0" min="-5040" max="-6260">
 		</attack>
+
 	</attacks>
 	<defenses armor="80" defense="80">
 		<defense name="healing" interval="4000" chance="40" min="300" max="300">

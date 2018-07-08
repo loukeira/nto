@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Nukenin" nameDescription="nukenin" race="blood" experience="3400" speed="450" manacost="0">
 	<health now="75000" max="75000"/>
-	<look type="321" head="0" body="94" legs="79" feet="79" corpse="2938"/>
+	<look type="321" head="140" body="140" legs="140" feet="140" corpse="2693"/>
 	<targetchange interval="5000" chance="8"/>
 	<strategy attack="90" defense="20"/>
 	<flags>

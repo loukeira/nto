@@ -2839,7 +2839,7 @@ void ProtocolGame::AddMagicEffect(NetworkMessage_ptr msg, const Position& pos, u
 {
 	msg->put<char>(0x83);
 	msg->putPosition(pos);
-	msg->put<uint16_t>(type); 
+	msg->put<uint16_t>(type + 1); 
 }
 
 void ProtocolGame::AddCreature(NetworkMessage_ptr msg, const Creature* creature, bool known, uint32_t remove)

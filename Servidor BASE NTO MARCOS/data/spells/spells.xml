@@ -822,7 +822,7 @@
         <vocation id="8"/>    
 </instant>
         
-<instant name="Kamui" words="kamui" lvl="250" mana="9000" aggressive="1" range="7" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui.lua">
+<instant name="Kamui" words="Kamui" lvl="250" mana="9000" aggressive="1" range="7" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui.lua">
         <vocation id="8"/>
         <vocation id="14"/>		
     </instant>
@@ -935,9 +935,10 @@
         <vocation id="15"/>
     </instant>
     
-<instant name="Mangekyou Kamui" words="Mangekyou Kamui" lvl="225" mana="11000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="Kakashi/Mangekyou Kamui.lua">
+<instant name="Mangekyou Kamui" words="Mangekyou Kamui" lvl="225" mana="11000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/Mangekyou Kamui.lua">
         <vocation id="14"/>
-        <vocation id="8"/>             
+        <vocation id="8"/>
+        <vocation id="0"/>             
        </instant>
          
 <instant name="Raiton Flash Sword" words="Raiton Flash Sword" lvl="185" mana="6200" aggressive="1" range="5" blockwalls="1" needtarget="1" exhaustion="1000" needlearn="0" event="script" value="Killer/Raiton Flash Sword.lua">

@@ -3,6 +3,7 @@
 
 <monsters>
 	
+<monster name="Danteste" file="Danteste.xml"/>
 
 <!-- Hunt Monsters -->
 	

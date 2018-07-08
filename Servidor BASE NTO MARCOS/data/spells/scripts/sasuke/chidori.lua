@@ -58,7 +58,7 @@ local position1 = {x=getThingPosition(getCreatureTarget(cid)).x+1, y=getThingPos
 target = getCreatureTarget(cid)
 if target then
   spell.start(cid, target, getThingPos(cid), config.hits)
-doSendMagicEffect(position1, 138)
+doSendMagicEffect(position1, 139)
 end
 return true
 end
