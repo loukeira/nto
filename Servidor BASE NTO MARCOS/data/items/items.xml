@@ -4283,7 +4283,7 @@
     <item id="2588" article="a" name="ship's telescope">
         <attribute key="rotateTo" value="2585" />
     </item>
-    <item fromid="2589" toid="2592" article="a" name="locker">
+    <item fromid="11533" toid="11536" article="a" name="locker">
         <attribute key="type" value="depot" />
         <attribute key="containerSize" value="30" />
     </item>
