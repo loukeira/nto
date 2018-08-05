@@ -8,5 +8,5 @@ local position1 = {x=getThingPosition(getCreatureTarget(cid)).x+1, y=getThingPos
 local position2 = {x=getThingPosition(getCreatureTarget(cid)).x, y=getThingPosition(getCreatureTarget(cid)).y+1, z=getThingPosition(getCreatureTarget(cid)).z}
 doSendMagicEffect(position1, 25)
 doSendMagicEffect(position2, 25)
-return doCombat(cid, combat, var), setCooldown(cid, "rasenrengan", 10)
+return doCombat(cid, combat, var)
 end

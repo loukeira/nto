@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+<talkaction words="/bug;!bug" event="script" value="reportbug.lua"/>
  <talkaction words="!cid" event="script" value="cid.lua"/>
 
  <talkaction log="yes" words="/addskill" access="3" event="function" value="addSkill"/>

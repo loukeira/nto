@@ -86,7 +86,7 @@
 
 	-- Connection config
 	worldId = 0
-	ip = "189.5.172.60"
+	ip = "189.5.151.211"
 	loginPort = 7171
 	gamePort = 7172
 	loginTries = 10
@@ -189,8 +189,8 @@
 	-- Spells
 	formulaLevel = 5.0
 	formulaMagic = 1.0
-	bufferMutedOnSpellFailure = false
-	spellNameInsteadOfWords = false
+	bufferMutedOnSpellFailure = true
+	spellNameInsteadOfWords = true
 	emoteSpells = true
 
 	-- Outfits

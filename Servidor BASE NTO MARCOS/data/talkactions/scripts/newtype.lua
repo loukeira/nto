@@ -20,7 +20,7 @@ function onSay(cid, words, param, channel)
   end
  end
 
- if(t[1] <= 1 or t[1] == 200 or (t[1] > 400 and t[1] < 500) or t[1] > 903) then
+ if(t[1] <= 1 or t[1] == 200 or (t[1] > 400 and t[1] < 500) or t[1] > 934) then
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Such outfit does not exist.")
   return true
  end
