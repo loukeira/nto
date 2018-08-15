@@ -194,11 +194,11 @@
 	emoteSpells = true
 
 	-- Outfits
-	allowChangeOutfit = true
-	allowChangeColors = true
-	allowChangeAddons = true
+	allowChangeOutfit = false
+	allowChangeColors = false
+	allowChangeAddons = false
 	disableOutfitsForPrivilegedPlayers = false
-	addonsOnlyPremium = true
+	addonsOnlyPremium = false
 
 	-- Miscellaneous
 	-- NOTE: promptExceptionTracerErrorBox works only with precompiled support feature,
@@ -206,7 +206,7 @@
 	dataDirectory = "data/"
 	logsDirectory = "data/logs/"
 	bankSystem = true
-	displaySkillLevelOnAdvance = false
+	displaySkillLevelOnAdvance = true
 	promptExceptionTracerErrorBox = true
 	maximumDoorLevel = 500
 	maxMessageBuffer = 4

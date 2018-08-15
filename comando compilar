@@ -1,0 +1,1 @@
+sh ./autogen.sh && ./configure --enable-server-diag --enable-mysql --enable-root-permission && make -j $(nproc)

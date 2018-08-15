@@ -643,7 +643,20 @@ void Player::addSkillAdvance(skills_t skill, uint32_t count, bool useMultiplier/
 		skills[skill][SKILL_LEVEL]++;
 
 		s.str("");
-		s << "You advanced in " << getSkillName(skill);
+		if (getSkillName(skill) == "sword fighting")
+        s << "You advanced in sword fight";
+        else if (getSkillName(skill) == "axe fighting")
+        s << "You advanced in none fight";
+	    else if (getSkillName(skill) == "fist fighting")
+        s << "You advanced in attack speed";
+	    else if (getSkillName(skill) == "distance fighting")
+        s << "You advanced in distance fight";
+	    else if (getSkillName(skill) == "club fighting")
+        s << "You advanced in glove's fight";
+        else 
+        s << "You advanced in " << getSkillName(skill);
+
+		//s << "You advanced in " << getSkillName(skill);
 		if(g_config.getBool(ConfigManager::ADVANCING_SKILL_LEVEL))
 			s << " [" << skills[skill][SKILL_LEVEL] << "]";
 
@@ -4770,11 +4783,11 @@ void Player::manageAccount(const std::string &text)
 						{
 							if(firstPart)
 							{
-								msg << "What do you want to be... " << it->second->getDescription();
+								msg << "What do you want to be... {" << it->second->getDescription()<< "}";
 								firstPart = false;
 							}
 							else if(it->first - 1 != 0)
-								msg << ", " << it->second->getDescription();
+								msg << ", {" << it->second->getDescription()<< "}";
 							else
 								msg << " or " << it->second->getDescription() << ".";
 						}
@@ -4827,7 +4840,7 @@ void Player::manageAccount(const std::string &text)
 					std::string tmp = asLowerCaseString(it->second->getName());
 					if(checkText(text, tmp) && it != Vocations::getInstance()->getLastVocation() && it->first == it->second->getFromVocation() && it->first != 0)
 					{
-						msg << "So you would like to be " << it->second->getDescription() << "... are you sure?";
+						msg << "So you would like to be {" << it->second->getDescription() << "} ... are you sure?";
 						managerNumber2 = it->first;
 						talkState[11] = false;
 						talkState[12] = true;

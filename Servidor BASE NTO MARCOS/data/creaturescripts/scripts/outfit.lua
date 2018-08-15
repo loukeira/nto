@@ -1,8 +1,8 @@
 function onLogin(cid)
 
 local config = {
--- naruto --
-[1] = {839}, -- dentro do [ ] coloque o numero da vocaçao e { } coloque o numero da looktype
+-- kakashi --
+[1] = {9}, -- dentro do [ ] coloque o numero da vocaçao e { } coloque o numero da looktype
 -- sasuke --
 [17] = {688},
 -- lee --
@@ -36,11 +36,11 @@ local config = {
 local voc = config[getPlayerVocation(cid)]
 
 	if voc then
-		if getPlayerStorageValue(cid, 13000) < 0 then
+		if getPlayerStorageValue(cid, 12000) < 0 then
 		local newtype = {lookType = voc[1]}
 		doCreatureChangeOutfit(cid, newtype)
-		setPlayerStorageValue(cid, 13000, 1)
+		setPlayerStorageValue(cid, 12000, 1)
 	end
 	end
-	return TRUE
+	return true
 end
