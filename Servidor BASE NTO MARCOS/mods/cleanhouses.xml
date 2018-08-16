@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mod name="Cleanhouses" version="1.03" author="nsanee" contact="tibiaking.com" enabled="yes">
-    <description>
+    <description> 
         v.1.03 - Added 'onlyNonPremium' configurable.
                  Removed modlib, since the script is run once anyway we don't need it loaded at all times.
                  It shouldn't now stop execution when a house is nameless.

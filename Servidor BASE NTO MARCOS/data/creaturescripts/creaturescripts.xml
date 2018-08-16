@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+<event type="statschange" name="ChunninStats" event="script" value="chunnin.lua"/>
+<event type="login" name="ChunninLogin" event="script" value="chunnin.lua"/>
+<event type="kill" name="ChunninKill" event="script" value="chunnin.lua"/>
+<event type="logout" name="ChunninLogout" event="script" value="chunnin.lua"/>
+
+
 <event type="death" name="DeathHP" event="script" value="deathhp.lua"/>
 <event type="login" name="LoginHP﻿" event="script" value="loginhp.lua"/>
 <event type="login" name="PlayerLogin" event="script" value="login.lua"/>
