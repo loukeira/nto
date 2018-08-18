@@ -1,17 +1,46 @@
+id_item_pergaminho_ar = 9930
+id_item_pergaminho_terra = 9931
+
 chunnin = {
     pos = {
         temple_wait = {x=1074, y=367, z=7}, 
         tp_create = {x=1031, y=907, z=7},
+        tp_volta = {x=1072,y= 365,z= 7},
+        wait_arena = { --la da floresta
+                            from1 ={x=1114,y=373,z=7 },to1={x=1118,y=377,z=7}
+
+                            },
+        wait_arena2 = {  --arena das oitavas
+                            from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
+                            },
+
+        wait_arena3 = {
+                            from1 ={x=1064,y=378,z=7 },to1={x=1070,y=385,z=7}
+                            },
+
         zona_wait_cancel = {
                             from1 ={x=1061,y=363,z=7 },to1={x=1086,y=387,z=7}
                             },
         corredor = {
                             from1 ={x=1072,y=365,z=7 },to1={x=1076,y=386,z=7}
                     },
-        zona = {    from1 ={x=1064,y=365,z=7 },to1={x=1070,y=369,z=7}
+        zona = {    
+                from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
 
 
-                 }
+                 },
+        goflorest = {
+                       from1 ={x=1100,y=374,z=7 }
+
+                    },
+        luta_oitavas = {
+                         from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
+
+                        },
+        luta_quartas = {
+                         from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
+
+                        }
     },
 
     quant_times = 1,
@@ -21,15 +50,35 @@ chunnin = {
     wait_time = 2, 
     block_mc = false, 
 
-    delay_time = 10,
+    delay_time = 5,
+    pvp1 = {x=1072,y=377,z=7},
+    pvp2 = {x=1075,y=377,z=7},
+    pvp11 = {x=1032,y=905,z=7},
+    pvp22 = {x=1032,y=905,z=7},
+    pvp31 = {x=1032,y=905,z=7},
+    pvp32 = {x=1032,y=905,z=7},
+    pvp41 = {x=1032,y=905,z=7},
+    pvp42 = {x=1032,y=905,z=7},
+
+                        -- from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
+
     townid = {x=1032,y=905,z=7},
+    arenaid = {x=1064,y=371,z=7},
+    arenaid2 = {x=1064,y=378,z=7},
+    arenaid3 = {x=1032,y=905,z=7},
+    arenaid4 = {x=1032,y=905,z=7},
+    arenaid5 = {x=1032,y=905,z=7},
 
 
+
+    pvp = { oitavas = 88888, quartas= 444444,semi = 222222, final = 11111111, campeao = 9999222
+
+          },
     reward_items = {6527, 6527},
 
     floresta = {
         pos = {
-            a1 = {x=396, y=1138, z=6}, 
+            a1 = {x=1097, y=374, z=7}, 
             a2 = {x=429, y=1107, z=6},
             a3 = {x=430, y=1135, z=6}
         }
@@ -37,9 +86,34 @@ chunnin = {
     },
 
     storage = {
-        rola1 = 1690,
-        rola2 = 1691,
-        rola3 = 1692,
+        ativo = 99222,
+        rola1 = 190,
+        rola2 = 191,
+        rola3 = 192,
+        somatoriotime = 290,
+        somatoriotime2= 291,
+        somatoriotime3= 292,
+
+        bau1= 390,
+        bau2 = 391,
+        bau3 = 392,
+        pergaminho = 4421,
+        quant_player_tem_para_arena = 5421,
+        msg_unica = 6322,
+
+        arena_on = 18301,
+        arena_aux_1 = 19301,
+        arena_aux_2 = 19302,
+        arena_aux_3 = 19303,
+        arena_aux_4 = 19304,
+        arena_aux_5 = 19305,
+        arena_aux_6 = 19306,
+        arena_aux_7 = 19307,
+        arena_aux_8 = 19308,
+        arena_aux_9 = 19309,
+        arena_aux_10 = 19310,
+        arena_aux_11 = 19311,
+
         win = 87771, 
         kill_blue = 87775,
         kill_red = 87776, 
@@ -66,6 +140,61 @@ chunnin = {
     },
 }
 
+function chunnin.resetGlobalStorages()
+    setGlobalStorageValue(chunnin.storage.somatoriotime, -1)
+    setGlobalStorageValue(chunnin.storage.somatoriotime2, -1)
+    setGlobalStorageValue(chunnin.storage.somatoriotime3, -1)
+
+    setGlobalStorageValue(chunnin.storage.rola1, -1)
+    setGlobalStorageValue(chunnin.storage.rola2, -1)
+    setGlobalStorageValue(chunnin.storage.rola3, -1)
+
+    setGlobalStorageValue(chunnin.storage.bau1,-1)
+    setGlobalStorageValue(chunnin.storage.ativo,-1)
+    setGlobalStorageValue(chunnin.storage.quant_player_tem_para_arena,-1)
+    setGlobalStorageValue(chunnin.storage.msg_unica,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_1,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_2,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_3,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_4,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_5,-1)
+    setGlobalStorageValue(chunnin.storage.arena_on,-1)
+
+    setGlobalStorageValue(chunnin.storage.kill_red, 0)
+    setGlobalStorageValue(chunnin.storage.tower_blue, 0)
+    setGlobalStorageValue(chunnin.storage.tower_red, 0)
+    print("[CHUNNIN] Todos os globais storages foram resetados...")
+    return true
+end
+
+function chunnin.resetPlayerStorages()
+    if chunnin.getPlayersInEvent() then
+        for _, index in ipairs(chunnin.getPlayersInEvent()) do
+            doPlayerSetStorageValue(index.pid, chunnin.storage.rola1, -1)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.rola2, -1)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.rola3, -1)
+
+            doPlayerSetStorageValue(index.pid, chunnin.storage.pergaminho, -1)
+            setPlayerStorageValue(index.pid,chunnin.pvp.oitavas,-1)
+            setPlayerStorageValue(index.pid,chunnin.pvp.quartas,-1)
+            setPlayerStorageValue(index.pid,chunnin.pvp.semi,-1)
+            setPlayerStorageValue(index.pid,chunnin.pvp.final,-1)
+            setPlayerStorageValue(index.pid,quantplayer,-1)
+
+            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 0)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc1, 0)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc2, 0)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc3, 0)
+            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc4, 0)
+        end
+        print("[ChunniN] Todos os players storages foram resetados...")  
+        return true
+    else
+        print("[ChunniN] Tabela vazia...")  
+    end
+    return true
+end
+
 	function chunnin.open()
     local time = os.date("*t")
     local timeopen1 = math.ceil(chunnin.wait_time / 4)
@@ -73,6 +202,8 @@ chunnin = {
     if (isInArray(chunnin.days_open, time.wday)) then
         local tp = doCreateItem(1387, chunnin.pos.tp_create)
         doItemSetAttribute(tp, "aid", 981) 
+        local tpvolta = doCreateItem(1387, chunnin.pos.tp_volta)
+        doItemSetAttribute(tpvolta, "aid", 982) 
         chunnin.resetGlobalStorages()
         chunnin.resetPlayerStorages()
         chunnin.trucatePlayersInEvent()
@@ -100,11 +231,13 @@ end
 
 function chunnin.start()
     local tp = getTileItemById(chunnin.pos.tp_create, 1387).uid 
+    local tpvolta = getTileItemById(chunnin.pos.tp_volta, 1387).uid 
     doRemoveItem(tp) 
+    doRemoveItem(tpvolta) 
+    setGlobalStorageValue(chunnin.storage.ativo, 1)
+
     if (chunnin.min_players <= chunnin.countPlayers()) then
-        if getGlobalStorageValue(15900) >= chunnin.quant_times then
-        chunnin.sendPlayersToEvent()
-        doBroadcastMessage(chunnin.msg.start)
+        if getGlobalStorageValue(chunnin.storage.somatoriotime) >= chunnin.quant_times then
 
              for _, pid in pairs(getPlayersOnline()) do
                  if isInArea(getThingPos(pid), chunnin.pos.corredor.from1, chunnin.pos.corredor.to1) then
@@ -114,17 +247,23 @@ function chunnin.start()
                  end
             end
 
-            if (getGlobalStorageValue(rola1) <3) then
+            if (getGlobalStorageValue(chunnin.storage.rola1) <3) then
             for _, pid in pairs(getPlayersOnline()) do
                 if isInArea(getThingPos(pid), chunnin.pos.zona.from1, chunnin.pos.zona.to1) then
                         doTeleportThing(pid, chunnin.townid)
                         doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce foi retirado do exame por nao ter 3 componentes no time 1!")
                         setPlayerStorageValue(pid,rola1,-1)
-
+                        db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(pid).."' ;")
                 end
             end
             setGlobalStorageValue(rola1,0)
             end
+
+
+        doBroadcastMessage(chunnin.msg.start)
+
+                    chunnin.sendPlayersToEvent()
+
 
         else
             doBroadcastMessage(chunnin.msg.faltatime)
@@ -135,6 +274,7 @@ function chunnin.start()
             end
              chunnin.resetPlayerStorages()
              chunnin.resetGlobalStorages()
+             chunnin.trucatePlayersInEvent()
         return true
         end
 
@@ -148,6 +288,7 @@ function chunnin.start()
         end
             chunnin.resetPlayerStorages()
              chunnin.resetGlobalStorages()
+            chunnin.trucatePlayersInEvent()
     end
     return true
 end
@@ -160,15 +301,15 @@ function chunnin.sendPlayersToEvent()
     for _, index in ipairs(chunnin.getPlayersInEvent()) do
         if (index.team == 1) then
             doTeleportThing(index.pid, chunnin.floresta.pos.a1)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_blue, 1)
+            --doPlayerSetStorageValue(index.pid, chunnin.storage.team_blue, 1)
         end
         if (index.team == 2) then
             doTeleportThing(index.pid, chunnin.floresta.pos.a2)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
+            --doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
         end
          if (index.team == 3) then
             doTeleportThing(index.pid, chunnin.floresta.pos.a3)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
+           -- doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
         end
     end 
 
@@ -237,23 +378,7 @@ function chunnin.setTeam()
 	return true
 end
 
-function chunnin.resetPlayerStorages()
-    if chunnin.getPlayersInEvent() then
-        for _, index in ipairs(chunnin.getPlayersInEvent()) do
-            doPlayerSetStorageValue(index.pid, chunnin.storage.rola1, -1)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 0)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc1, 0)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc2, 0)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc3, 0)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.buffvoc4, 0)
-        end
-        print("[ChunniN] Todos os players storages foram resetados...")  
-        return true
-    else
-        print("[ChunniN] Tabela vazia...")  
-    end
-    return true
-end
+
 
 function chunnin.getPlayersInEvent()
     local result = db.getResult("SELECT * FROM `chunnin_players`;")
@@ -263,7 +388,8 @@ function chunnin.getPlayersInEvent()
             pid  = tonumber(result:getDataInt("pid"))
             team  = tonumber(result:getDataInt("team")) 
             ip  = tonumber(result:getDataInt("ip"))
-            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip }) 
+            name = tostring(result:getDataString("name"))
+            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip,["name"]=name }) 
         until(not result:next())
         result:free()
         return CACHE_PLAYERS
@@ -271,15 +397,23 @@ function chunnin.getPlayersInEvent()
     return false 
 end
 
-function chunnin.resetGlobalStorages()
-    setGlobalStorageValue(15900, -1)
-    setGlobalStorageValue(chunnin.storage.rola1, -1)
-    setGlobalStorageValue(chunnin.storage.kill_red, 0)
-    setGlobalStorageValue(chunnin.storage.tower_blue, 0)
-    setGlobalStorageValue(chunnin.storage.tower_red, 0)
-    print("[CHUNNIN] Todos os globais storages foram resetados...")
-    return true
+
+function chunnin.getTeam(cid)
+    local result = db.getResult("SELECT team FROM `chunnin_players` WHERE name = '"..getCreatureName(cid).."';")
+    CACHE_PLAYERS = 0
+    if result:getID() ~= -1 then
+        repeat
+            team  = tonumber(result:getDataInt("team")) 
+
+            CACHE_PLAYERS = tonumber(team)
+        until(not result:next())
+        result:free()
+        return CACHE_PLAYERS
+    end
+    return false 
 end
+
+
 function chunnin.trucatePlayersInEvent()
     local result = db.getResult("SELECT * FROM `chunnin_players`;")
     if result:getID() ~= -1 then
@@ -291,13 +425,13 @@ end
 
 function chunnin.enableMove(cid)
     doCreatureSetNoMove(cid, false)
-    doPlayerSendCancel(cid, "[ChunniN] GO GO GO! seu time o aguarda.")         
-    setPlayerStorageValue(cid, chunnin.storage.delay, 0)
+    doPlayerSendTextMessage(cid,18, "[ChunniN] GO GO GO! ")         
+    --setPlayerStorageValue(cid, chunnin.storage.delay, 0)
     return true
 end
 
 function chunnin.setDelay(cid)
-    doPlayerSetStorageValue(cid, chunnin.storage.delay, os.time()+(60*chunnin.delay_time))
+    doPlayerSetStorageValue(cid, chunnin.storage.delay, os.time()+(chunnin.delay_time))
     return true
 end
 

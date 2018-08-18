@@ -1,36 +1,46 @@
 
 function onSay(cid, words, param, channel)
 
+        --local ar = 9930
+        --local a = {x=1114,y=373,z=7}
+        --local b = {x=1118,y=377,z=7}
+        --local r1 = {x = 1117, y = 377, z = 7,stackpos = 1}
+       -- q1 = getThingfromPos(r1)
+               -- if isInArea(getThingPos(cid), a, b) then
+                        local coco = 1114
+                        local xixi = 373
+                        local stak = 1
 
---    	local atual = getCreaturePosition(cid)
--- 		local posaura = {
--- 			{x=(atual.x)+1, y=atual.y, z=atual.z},
+                        while coco<=1117 do
+                        while xixi <= 377 do
+                        while stak <=255 do
 
--- 	}
+                        if getTileThingByPos({x = coco, y = xixi, z = 7,stackpos = stak}).itemid == 9930 then
+                        doPlayerSendTextMessage(cid, 18, "WORK!")
+                        doSendMagicEffect({x = coco, y = xixi, z = 7,stackpos = stak}, 306)
+                        doSendMagicEffect({x = coco, y = xixi, z = 7,stackpos = stak}, 307)
 
+                        end
 
+                        stak = stak +1
+                        end
 
+                        xixi = xixi + 1
+                        stak = 0
 
--- doSendMagicEffect({x=posaura[1].x, y=posaura[1].y, z=posaura[1].z}, 207-1)
+                        end
+                        coco = coco + 1
+                        xixi = 373
 
--- doPlayerSendTextMessage(cid,18, "SUSANO!!")
-local coco = getCreaturePosition(cid)
-local k = 1
-                for a,i in pairs(coco) do
-                	if k == 1 then
-                	y = i
-                end
-                if k == 2 then
-                	x = i 
-                end
-                if k == 4 then
-                	z = i
-                end
+                        end
+                        
+                                  --doPlayerSendTextMessage(cid, 18, "entro no area")
 
-                	k = k+1
-                end
+               -- end
             
- doPlayerSendTextMessage(cid,18, "  "..x.." , "..y..", "..z.." ")
+            
+
+                        doPlayerSendTextMessage(cid, 18, "ok")
 
 
 return true

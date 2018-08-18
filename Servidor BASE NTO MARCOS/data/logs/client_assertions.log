@@ -587,3 +587,23 @@ MapWindow.cpp 1257: outfit has not all four directions (Creature->OutfitType = 6
 Sat Aug 11 22:50:07 2018
 Debug Assertion 8.60 MapWindow.cpp 1257
 
+----- 17/8/2018 5:44:56 - Baiak Scripts (189.5.174.79) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel CORE I3-3
+Video Card: X11 WINDO
+Last Packet Types: 131 180 180 162 141 130 161 160 120 121
+Last Packet: 010 121 007 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [1112,373,7]
+Player Name: Baiak Scripts (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 052 046 055 057 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = -1) (MainWindow = 10333544), reason:
+Network.cpp 445: exception occurred, reason:
+Network.cpp 432: exception occurred, reason:
+Network.cpp 398: packet size does not fit to symmetric encryption (PacketSize = 15341)
+Fri Aug 17 05:44:44 2018
+Debug Assertion 8.60 Network.cpp 398
+

@@ -38,6 +38,7 @@ function onLogin(cid)
   registerCreatureEvent(cid, "SkullCheck")
  end
  registerCreatureEvent(cid, "DeathHP")
+        registerCreatureEvent(cid, "ChunninThink")
 
         registerCreatureEvent(cid, "ProtDeath")
            registerCreatureEvent(cid, "Biohazard")

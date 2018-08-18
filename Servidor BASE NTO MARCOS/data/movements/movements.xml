@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
 
-        <movevent type="StepIn" actionid="981" event="script" value="chunnin.lua"/>
-        <movevent type="StepIn" actionid="9802" event="script" value="chunnin2.lua"/>
+        <movevent type="StepIn" actionid="981-982" event="script" value="chunnin1.lua"/>
+        <movevent type="StepIn" actionid="9802-9804" event="script" value="chunnin2.lua"/>
+        <movevent type="StepIn" actionid="10082-10084" event="script" value="chunnin3.lua"/>
+        <movevent type="StepIn" actionid="11180-11181" event="script" value="chunnin5.lua"/>
+        <!--<movevent type="StepIn" actionid="12111-12112" event="script" value="chunnin5.lua"/>-->
 
 	<!-- MapTile
 	<movevent type="StepIn" actionid="40050" event="script" value="mapmarks.lua"/> -->
