@@ -5,7 +5,7 @@
 <event type="think" name="ChunninThink3" event="script" value="chunninthink3.lua"/>   
 <event type="statschange" name="ChunninStats" event="script" value="chunnin.lua"/>
 <event type="login" name="ChunninLogin" event="script" value="chunnin.lua"/>
-<event type="kill" name="ChunninKill" event="script" value="chunnin.lua"/>
+<!--<event type="kill" name="ChunninKill" event="script" value="chunnin.lua"/>-->
 
 
 <event type="death" name="DeathHP" event="script" value="deathhp.lua"/>

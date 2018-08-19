@@ -7,15 +7,21 @@ chunnin = {
         tp_create = {x=1031, y=907, z=7},
         tp_volta = {x=1072,y= 365,z= 7},
         wait_arena = { --la da floresta
-                            from1 ={x=1114,y=373,z=7 },to1={x=1118,y=377,z=7}
+                            from1 ={x=1113,y=372,z=7 },to1={x=1119,y=378,z=7}
 
                             },
         wait_arena2 = {  --arena das oitavas
                             from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
                             },
 
-        wait_arena3 = {
+        wait_arena3 = {--arena das quartas
                             from1 ={x=1064,y=378,z=7 },to1={x=1070,y=385,z=7}
+                            },
+        wait_arena4 = {  --arena das semi 
+                            from1 ={x=1077,y=378,z=7 },to1={x=1084,y=385,z=7}
+                            },
+        wait_arena5 = {  --arena da final mesma q oitavas
+                            from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
                             },
 
         zona_wait_cancel = {
@@ -25,48 +31,64 @@ chunnin = {
                             from1 ={x=1072,y=365,z=7 },to1={x=1076,y=386,z=7}
                     },
         zona = {    
-                from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
+                from1 ={x=1064,y=365,z=7 },to1={x=1070,y=369,z=7},                
+                from2 ={x=1077,y=365,z=7 },to2={x=1084,y=369,z=7},
+                from3 ={x=1077,y=371,z=7 },to3={x=1084,y=376,z=7}
+
+
 
 
                  },
+
         goflorest = {
-                       from1 ={x=1100,y=374,z=7 }
+                       team1 ={x=1100,y=374,z=7 },
+                       team2 ={x=1116,y=359,z=7 },
+                       team3 ={x=1134,y=375,z=7 },
 
                     },
         luta_oitavas = {
-                         from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
+                         from1 ={x=1072,y=375,z=7 },to1={x=1075,y=379,z=7}
 
                         },
         luta_quartas = {
-                         from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7}
+                         from1 ={x=1072,y=375,z=7 },to1={x=1075,y=379,z=7}
 
-                        }
+                        },
+       luta_semi = {
+                         from1 ={x=1072,y=375,z=7 },to1={x=1075,y=379,z=7}
+
+                        },
+       luta_final = {
+                         from1 ={x=1072,y=375,z=7 },to1={x=1075,y=379,z=7}
+
+                        },
+
     },
 
     quant_times = 1,
     days_open = {1, 2, 3, 4, 5, 6, 7},
     min_players = 1, 
     min_level = 1, 
-    wait_time = 2, 
+    wait_time = 4, 
     block_mc = false, 
 
     delay_time = 5,
     pvp1 = {x=1072,y=377,z=7},
     pvp2 = {x=1075,y=377,z=7},
-    pvp11 = {x=1032,y=905,z=7},
-    pvp22 = {x=1032,y=905,z=7},
-    pvp31 = {x=1032,y=905,z=7},
-    pvp32 = {x=1032,y=905,z=7},
-    pvp41 = {x=1032,y=905,z=7},
-    pvp42 = {x=1032,y=905,z=7},
+    pvp11 = {x=1072,y=377,z=7},
+    pvp22 = {x=1075,y=377,z=7},
+    pvp31 = {x=1072,y=377,z=7},
+    pvp32 = {x=1075,y=377,z=7},
+    pvp41 = {x=1072,y=377,z=7},
+    pvp42 = {x=1075,y=377,z=7},
 
                         -- from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
 
     townid = {x=1032,y=905,z=7},
     arenaid = {x=1064,y=371,z=7},
     arenaid2 = {x=1064,y=378,z=7},
-    arenaid3 = {x=1032,y=905,z=7},
-    arenaid4 = {x=1032,y=905,z=7},
+    arenaid3 = {x=1077,y=378,z=7},
+    arenaid4 = {x=1064,y=371,z=7},
     arenaid5 = {x=1032,y=905,z=7},
 
 
@@ -79,11 +101,20 @@ chunnin = {
     floresta = {
         pos = {
             a1 = {x=1097, y=374, z=7}, 
-            a2 = {x=429, y=1107, z=6},
-            a3 = {x=430, y=1135, z=6}
-        }
+            a2 = {x=1115, y=355, z=7},
+            a3 = {x=1137, y=375, z=7}
+        },
+
+        bau={
+                from1 ={x=1097,y=373,z=7 },to1={x=1099,y=375,z=7},                
+                from2 ={x=1114,y=354,z=7 },to2={x=1117,y=358,z=7},
+                from3 ={x=1135,y=373,z=7 },to3={x=1139,y=376,z=7}
+
+            }
        
     },
+
+
 
     storage = {
         ativo = 99222,
@@ -158,6 +189,14 @@ function chunnin.resetGlobalStorages()
     setGlobalStorageValue(chunnin.storage.arena_aux_3,-1)
     setGlobalStorageValue(chunnin.storage.arena_aux_4,-1)
     setGlobalStorageValue(chunnin.storage.arena_aux_5,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_6,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_7,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_8,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_9,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_10,-1)
+    setGlobalStorageValue(chunnin.storage.arena_aux_11,-1)
+
+
     setGlobalStorageValue(chunnin.storage.arena_on,-1)
 
     setGlobalStorageValue(chunnin.storage.kill_red, 0)
@@ -175,10 +214,10 @@ function chunnin.resetPlayerStorages()
             doPlayerSetStorageValue(index.pid, chunnin.storage.rola3, -1)
 
             doPlayerSetStorageValue(index.pid, chunnin.storage.pergaminho, -1)
-            setPlayerStorageValue(index.pid,chunnin.pvp.oitavas,-1)
-            setPlayerStorageValue(index.pid,chunnin.pvp.quartas,-1)
-            setPlayerStorageValue(index.pid,chunnin.pvp.semi,-1)
-            setPlayerStorageValue(index.pid,chunnin.pvp.final,-1)
+            -- setPlayerStorageValue(index.pid,chunnin.pvp.oitavas,-1)
+            -- setPlayerStorageValue(index.pid,chunnin.pvp.quartas,-1)
+            -- setPlayerStorageValue(index.pid,chunnin.pvp.semi,-1)
+            -- setPlayerStorageValue(index.pid,chunnin.pvp.final,-1)
             setPlayerStorageValue(index.pid,quantplayer,-1)
 
             doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 0)
@@ -247,21 +286,47 @@ function chunnin.start()
                  end
             end
 
+            -- TIME 1
             if (getGlobalStorageValue(chunnin.storage.rola1) <3) then
             for _, pid in pairs(getPlayersOnline()) do
                 if isInArea(getThingPos(pid), chunnin.pos.zona.from1, chunnin.pos.zona.to1) then
                         doTeleportThing(pid, chunnin.townid)
                         doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce foi retirado do exame por nao ter 3 componentes no time 1!")
-                        setPlayerStorageValue(pid,rola1,-1)
+                        setPlayerStorageValue(pid,chunnin.storage.rola1,-1)
                         db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(pid).."' ;")
                 end
             end
-            setGlobalStorageValue(rola1,0)
+            setGlobalStorageValue(chunnin.storage.rola1,0)
             end
 
+            --TIME 2
 
-        doBroadcastMessage(chunnin.msg.start)
+            if (getGlobalStorageValue(chunnin.storage.rola2) <3) then
+            for _, pid in pairs(getPlayersOnline()) do
+                if isInArea(getThingPos(pid), chunnin.pos.zona.from2, chunnin.pos.zona.to2) then
+                        doTeleportThing(pid, chunnin.townid)
+                        doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce foi retirado do exame por nao ter 3 componentes no time 1!")
+                        setPlayerStorageValue(pid,chunnin.storage.rola2,-1)
+                        db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(pid).."' ;")
+                end
+            end
+            setGlobalStorageValue(chunnin.storage.rola2,0)
+            end
 
+            -- TIME3
+            if (getGlobalStorageValue(chunnin.storage.rola3) <3) then
+            for _, pid in pairs(getPlayersOnline()) do
+                if isInArea(getThingPos(pid), chunnin.pos.zona.from3, chunnin.pos.zona.to3) then
+                        doTeleportThing(pid, chunnin.townid)
+                        doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce foi retirado do exame por nao ter 3 componentes no time 1!")
+                        setPlayerStorageValue(pid,chunnin.storage.rola3,-1)
+                        db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(pid).."' ;")
+                end
+            end
+            setGlobalStorageValue(chunnin.storage.rola3,0)
+            end
+
+                    doBroadcastMessage(chunnin.msg.start)
                     chunnin.sendPlayersToEvent()
 
 
@@ -316,67 +381,67 @@ function chunnin.sendPlayersToEvent()
     return true
 end
 
-function chunnin.sendPlayersToFlorest()
-    chunnin.setTeam()
-    chunnin.resetPlayerStorages()
-    for _, index in ipairs(chunnin.getPlayersInEvent()) do
-        if (index.team == 1) then
-            doTeleportThing(index.pid, chunnin.floresta.pos.a1)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_blue, 1)
-        end
-        if (index.team == 2) then
-            doTeleportThing(index.pid, chunnin.floresta.pos.a2)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
-        end
-         if (index.team == 3) then
-            doTeleportThing(index.pid, chunnin.floresta.pos.a3)
-            doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
-        end
-    end 
-    return true
-end
+-- function chunnin.sendPlayersToFlorest()
+--     chunnin.setTeam()
+--     chunnin.resetPlayerStorages()
+--     for _, index in ipairs(chunnin.getPlayersInEvent()) do
+--         if (index.team == 1) then
+--             doTeleportThing(index.pid, chunnin.floresta.pos.a1)
+--             doPlayerSetStorageValue(index.pid, chunnin.storage.team_blue, 1)
+--         end
+--         if (index.team == 2) then
+--             doTeleportThing(index.pid, chunnin.floresta.pos.a2)
+--             doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
+--         end
+--          if (index.team == 3) then
+--             doTeleportThing(index.pid, chunnin.floresta.pos.a3)
+--             doPlayerSetStorageValue(index.pid, chunnin.storage.team_red, 1)
+--         end
+--     end 
+--     return true
+-- end
 
-function chunnin.setTeam()
-	zona_wait_team = {
-	from1 = {x = 300, y = 525, z = 1},
-	to1 = {x = 460, y = 650, z = 1},
-	from2 = {x = 300, y = 525, z = 2},
-	to2 = {x = 460, y = 650, z = 2},
-	from3 = {x = 300, y = 525, z = 3},
-	to3 = {x = 460, y = 650, z = 3}
-	}
+-- function chunnin.setTeam()
+-- 	zona_wait_team = {
+-- 	from1 = {x = 300, y = 525, z = 1},
+-- 	to1 = {x = 460, y = 650, z = 1},
+-- 	from2 = {x = 300, y = 525, z = 2},
+-- 	to2 = {x = 460, y = 650, z = 2},
+-- 	from3 = {x = 300, y = 525, z = 3},
+-- 	to3 = {x = 460, y = 650, z = 3}
+-- 	}
 
-	new_zona_bau = {
-	um = {x = 300, y = 525, z = 1},
-	dois = {x = 460, y = 650, z = 1},
-	tres = {x = 300, y = 525, z = 2}
-	}
+-- 	new_zona_bau = {
+-- 	um = {x = 300, y = 525, z = 1},
+-- 	dois = {x = 460, y = 650, z = 1},
+-- 	tres = {x = 300, y = 525, z = 2}
+-- 	}
 
-    for _, pid in pairs(getPlayersOnline()) do
-       if isInArea(getThingPos(pid), zona_wait_team.from1, zona_wait_team.to1) then
-             doTeleportThing(pid, new_zona_bau.um)
-             doPlayerSetStorageValue(pid, sto_team, 1)
-             doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 1!")
-             local cont = getPlayerStorageValue(sto_team)
-             db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
-       end
-       if isInArea(getThingPos(pid), zona_wait_team.from2, zona_wait_team.to2) then
-             doTeleportThing(pid, new_zona_bau.dois)
-             doPlayerSetStorageValue(pid, sto_team, 2)
-             doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 2!")
-             local cont = getPlayerStorageValue(sto_team)
-             db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
-       end
-       if isInArea(getThingPos(pid), zona_wait_team.from3, zona_wait_team.to3) then
-             doTeleportThing(pid, new_zona_bau.tres)
-             doPlayerSetStorageValue(pid, sto_team, 3)
-             doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 3!")
-             local cont = getPlayerStorageValue(sto_team)
-             db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
-       end
-    end
-	return true
-end
+--     for _, pid in pairs(getPlayersOnline()) do
+--        if isInArea(getThingPos(pid), zona_wait_team.from1, zona_wait_team.to1) then
+--              doTeleportThing(pid, new_zona_bau.um)
+--              doPlayerSetStorageValue(pid, sto_team, 1)
+--              doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 1!")
+--              local cont = getPlayerStorageValue(sto_team)
+--              db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
+--        end
+--        if isInArea(getThingPos(pid), zona_wait_team.from2, zona_wait_team.to2) then
+--              doTeleportThing(pid, new_zona_bau.dois)
+--              doPlayerSetStorageValue(pid, sto_team, 2)
+--              doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 2!")
+--              local cont = getPlayerStorageValue(sto_team)
+--              db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
+--        end
+--        if isInArea(getThingPos(pid), zona_wait_team.from3, zona_wait_team.to3) then
+--              doTeleportThing(pid, new_zona_bau.tres)
+--              doPlayerSetStorageValue(pid, sto_team, 3)
+--              doPlayerSendTextMessage(pid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce faz part do time 3!")
+--              local cont = getPlayerStorageValue(sto_team)
+--              db.query("UPDATE players SET team = "..cont.." WHERE id = "..getPlayerGUID(pid).." ;")
+--        end
+--     end
+-- 	return true
+-- end
 
 
 
@@ -389,7 +454,16 @@ function chunnin.getPlayersInEvent()
             team  = tonumber(result:getDataInt("team")) 
             ip  = tonumber(result:getDataInt("ip"))
             name = tostring(result:getDataString("name"))
-            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip,["name"]=name }) 
+            pos_oitavas = tonumber(result:getDataInt("pos_oitavas"))
+            oitavas = tonumber(result:getDataInt("oitavas"))
+            pos_quartas = tonumber(result:getDataInt("pos_quartas"))
+            quartas = tonumber(result:getDataInt("quartas"))
+            pos_semi = tonumber(result:getDataInt("pos_semi"))
+            semi = tonumber(result:getDataInt("semi"))
+            pos_final = tonumber(result:getDataInt("pos_final"))
+            final = tonumber(result:getDataInt("final"))
+
+            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip,["name"]=name ,["pos_oitavas"]=pos_oitavas,["pos_quartas"]=pos_quartas,["pos_semi"]=pos_semi,["pos_final"]=pos_final,["oitavas"]=oitavas,["quartas"]=quartas},["semi"]=semi,["final"]=final) 
         until(not result:next())
         result:free()
         return CACHE_PLAYERS

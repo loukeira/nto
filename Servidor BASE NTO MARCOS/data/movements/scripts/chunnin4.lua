@@ -13,27 +13,40 @@ if getGlobalStorageValue(quantplayer) == -1 then
 	setGlobalStorageValue(quantplayer,0)
 end
 
+if getPlayerStorageValue(cid,quantplayer) == -1 then 
+	setPlayerStorageValue(cid,quantplayer,0)
+end
 
-	if (item.actionid == 11180) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == -1) and (chunnin.getTeam(cid) > 0) and ((getPlayerItemCount(cid,id_item_pergaminho_ar)>=1) and (getPlayerItemCount(cid,id_item_pergaminho_terra)>=1)) then
+
+	if (item.actionid == 11180) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == -1) and (tonumber(chunnin.getTeam(cid)) > 0) and ((getPlayerItemCount(cid,id_item_pergaminho_ar)>=1) and (getPlayerItemCount(cid,id_item_pergaminho_terra)>=1)) then
 		
-		local meu_time = chunnin.getTeam(cid)
-		for _, index in ipairs(chunnin.getPlayersInEvent()) do
-			 doPlayerSendTextMessage(index.pid,18,"[CHUNNIN] Ja possui/possuem "..getGlobalStorageValue(quantplayer).." player(s) para a etapa final! ")
-	        if (tonumber(index.team) == tonumber(meu_time)) then
-	            --doTeleportThing(index.pid, chunnin.floresta.pos.a1)        
-		            if ((getPlayerItemCount(index.pid, id_item_pergaminho_ar) >=1))  then
-		                perg_ar = getPlayerItemCount(index.pid,id_item_pergaminho_ar)
-		                doPlayerRemoveItem(index.pid, id_item_pergaminho_ar, perg_ar)
+		setGlobalStorageValue(quantplayer,getGlobalStorageValue(quantplayer)+1)
+		doPlayerSetStorageValuecid, chunnin.storage.pergaminho, 1)
+
+		--setPlayerStorageValue(cid,quantplayer,getPlayerStorageValue(cid,quantplayer)+1)
+        db.query("UPDATE chunnin_players SET pos_oitavas = '"..getGlobalStorageValue(quantplayer).."' WHERE name = '"..getPlayerName(cid).."' ;")
+
+					if ((getPlayerItemCount(cid, id_item_pergaminho_ar) >=1))  then
+		                perg_ar = getPlayerItemCount(cid,id_item_pergaminho_ar)
+		                doPlayerRemoveItem(cid, id_item_pergaminho_ar, perg_ar)
 		            end
-		            if (getPlayerItemCount(index.pid,id_item_pergaminho_terra) >= 1)) then
-		                perg_terra = getPlayerItemCount(index.pid,id_item_pergaminho_terra)
-		                doPlayerRemoveItem(index.pid, id_item_pergaminho_terra, perg_terra)
+		            if (getPlayerItemCount(cid,id_item_pergaminho_terra) >= 1) then
+		                perg_terra = getPlayerItemCount(cid,id_item_pergaminho_terra)
+		                doPlayerRemoveItem(cid, id_item_pergaminho_terra, perg_terra)
 		            end
 
+		        
+		local meu_time = chunnin.getTeam(cid)
+    for _, index in ipairs(chunnin.getPlayersInEvent()) do
+        if (tonumber(index.team) == tonumber(meu_time)) then
 		        doPlayerSendTextMessage(index.pid,18,"[CHUNNIN] Seu time apresentou os 2 pergaminhos e conseguiu acesso para a proxima etapa!")
 	            doPlayerSetStorageValue(index.pid, chunnin.storage.pergaminho, 1)
-	        end
-   		end
+	            doPlayerSendTextMessage(index.pid,18,"[CHUNNIN] Ja possui/possuem "..getGlobalStorageValue(quantplayer).." player(s) para a etapa final! ")
+	    end
+	end
+   		
+   		doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,quantplayer)..	"")
+
 
 
 
@@ -43,7 +56,7 @@ end
 
 					return true
 
-	elseif (item.actionid == 11180) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == 1) and (chunnin.getTeam(cid) > 0) then
+	elseif (item.actionid == 11180) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == 1) and (tonumber(chunnin.getTeam(cid)) > 0) then
 					doPlayerSendTextMessage(cid,18, "[CHUNNIN] Voce esta na proxima etapa!") 
 
 
@@ -53,7 +66,7 @@ end
 		                perg_ar = getPlayerItemCount(cid,id_item_pergaminho_ar)
 		                doPlayerRemoveItem(cid, id_item_pergaminho_ar, perg_ar)
 		            end
-		            if (getPlayerItemCount(cid,id_item_pergaminho_terra) >= 1)) then
+		            if (getPlayerItemCount(cid,id_item_pergaminho_terra) >= 1) then
 		                perg_terra = getPlayerItemCount(cid,id_item_pergaminho_terra)
 		                doPlayerRemoveItem(cid, id_item_pergaminho_terra, perg_terra)
 		            end
@@ -62,6 +75,8 @@ end
 					doTeleportThing(cid, newPos) 
 
 					setGlobalStorageValue(quantplayer,getGlobalStorageValue(quantplayer)+1)
+        db.query("UPDATE chunnin_players SET pos_oitavas = '"..getGlobalStorageValue(quantplayer).."' WHERE name = '"..getPlayerName(cid).."' ;")
+					
 					for _, index in ipairs(chunnin.getPlayersInEvent()) do
 						doPlayerSendTextMessage(index.pid,18,"[CHUNNIN] Ja possui/possuem "..getGlobalStorageValue(quantplayer).." player(s) para a etapa final! ")
 					end
@@ -69,8 +84,8 @@ end
 
 		return 
 
-	elseif (item.actionid == 11181) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == 1) and (chunnin.getTeam(cid) > 0) then
-					doPlayerSendTextMessage(cid,18, "[CHUNNIN] Voce nao pode voltar para a floresta!!") 
+	elseif (item.actionid == 11181) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == 1) and (tonumber(chunnin.getTeam(cid)) > 0) then
+					doPlayerSendTextMessage(cid,18, "[CHUNNIN] Voce nao pode voltar para a floresta!! Aguarde!") 
 					doSendMagicEffect(getCreaturePosition(cid), 2)
 
 
@@ -86,13 +101,11 @@ end
 
 	else
 							doPlayerSendTextMessage(cid,18, "[CHUNNIN] Seu time nao possui o pergaminho do ar E terra para avancar! Conquiste, passe por aqui, e seu time tera permissao para proxima etapa!") 
-							doTeleportThing(cid, fromPosition)  
+							doTeleportThing(cid, fromPosition,true)  
 							doSendMagicEffect(getCreaturePosition(cid), 2)
-  	
+  						doPlayerSendTextMessage(cid,18, ""..getPlayerStorageValue(cid,chunnin.storage.pergaminho).."") 
 
-					--local pos = getCreaturePosition(cid)
-					--local newPos = {x=pos.x+1, y=pos.y, z=pos.z}
-					--doTeleportThing(cid, newPos)  
+
 		return true
 
 	end

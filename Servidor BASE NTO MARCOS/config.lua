@@ -95,8 +95,8 @@
 	maxPlayers = 1000
 	motd = "Welcome to the Forgotten Server!"
 	displayOnOrOffAtCharlist = false
-	onePlayerOnlinePerAccount = true
-	allowClones = false
+	onePlayerOnlinePerAccount = false
+	allowClones = true
 	serverName = "Forgotten"
 	loginMessage = "Welcome to the Forgotten Server!"
 	statusTimeout = 5 * 60 * 1000

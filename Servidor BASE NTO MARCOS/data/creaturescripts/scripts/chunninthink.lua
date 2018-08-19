@@ -16,12 +16,14 @@ local tempoo = 1230
 if (getGlobalStorageValue(tempoo) < os.time()) then
 		setGlobalStorageValue(tempoo, os.time() + 3)
 
-			--doPlayerSendTextMessage(cid,18, "online! ")
 
-			if (getPlayerItemCount(cid,id_item_pergaminho_ar)>=1) or (getPlayerItemCount(cid,id_item_pergaminho_terra)>=1) then
-				        doSendMagicEffect(getCreaturePosition(cid), 306)
+			            for _, pid in pairs(getPlayersOnline()) do
+
+			if (getPlayerItemCount(pid,id_item_pergaminho_ar)>=1) or (getPlayerItemCount(pid,id_item_pergaminho_terra)>=1) then
+				        doSendMagicEffect(getCreaturePosition(pid), 306)
                         --doSendMagicEffect(getCreaturePosition(cid), 307)
             end
+        end
 
 
             	local pos = {  from = {x =1096 , y =353 , stackpos = 1 },   to = { x =1146 , y =402 , stackpos =10 }  }

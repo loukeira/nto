@@ -4,7 +4,7 @@
         <movevent type="StepIn" actionid="981-982" event="script" value="chunnin1.lua"/>
         <movevent type="StepIn" actionid="9802-9804" event="script" value="chunnin2.lua"/>
         <movevent type="StepIn" actionid="10082-10084" event="script" value="chunnin3.lua"/>
-        <movevent type="StepIn" actionid="11180-11181" event="script" value="chunnin5.lua"/>
+        <movevent type="StepIn" actionid="11180-11181" event="script" value="chunnin4.lua"/>
         <!--<movevent type="StepIn" actionid="12111-12112" event="script" value="chunnin5.lua"/>-->
 
 	<!-- MapTile

@@ -2044,8 +2044,6 @@
 	<spawn centerx="1249" centery="2046" centerz="12" radius="5">
 		<monster name="Konan" x="-3" y="2" z="12" spawntime="60" />
 		<monster name="Konan" x="-2" y="2" z="12" spawntime="2048" />
-		<monster name="Konan" x="1" y="3" z="12" spawntime="60" />
-		<monster name="Konan" x="5" y="3" z="12" spawntime="60" />
 	</spawn>
 	<spawn centerx="1014" centery="783" centerz="13" radius="5" />
 	<spawn centerx="996" centery="784" centerz="13" radius="5" />
