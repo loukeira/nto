@@ -399,3 +399,5 @@
 [26/8/2018 13:56:53] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
 [26/8/2018 15:52:43] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
 [26/8/2018 15:52:43] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[26/8/2018 17:35:25] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[26/8/2018 17:35:25] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
