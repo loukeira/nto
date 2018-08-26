@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
-<globalevent name="iniciodochunnin" time="21:33" event="script" value="chunninglobal.lua"/>
+	<globalevent name="iniciodochunnin" time="17:06" event="script" value="chunninglobal.lua"/>
+	<globalevent name="xprank_reinicio" interval="1000" event="script" value="xprank_reinicio.lua"/>
 <globalevent name="save" interval="6000000" event="script" value="save.lua"/>
 <globalevent name="serverstart" type="start" event="script" value="start.lua"/>
 <globalevent name="playersrecord" type="record" event="script" value="record.lua"/>

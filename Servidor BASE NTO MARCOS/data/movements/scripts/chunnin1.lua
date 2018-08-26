@@ -16,7 +16,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 				end
 			end
 
-			db.query("INSERT INTO `chunnin_players`  VALUES (" .. cid ..  ",".. 0 ..", ".. getPlayerIp(cid) ..", '"..getCreatureName(cid).."' );")  
+			db.query("INSERT INTO `chunnin_players`  VALUES (" .. cid ..  ",".. 0 ..", ".. getPlayerIp(cid) ..", '"..getCreatureName(cid).."', '-1', '0','-1','0','-1','0','-1','0' );")  
 			doTeleportThing(cid, chunnin.pos.temple_wait)
 			doPlayerSendCancel(cid, "[CHUNNIN] Voce entrou no exame chunnin!") 
 			doSendMagicEffect(getCreaturePosition(cid), 2)

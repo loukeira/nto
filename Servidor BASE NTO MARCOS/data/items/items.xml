@@ -3295,6 +3295,7 @@
         <attribute key="weight" value="5200" />
         <attribute key="defense" value="30" />
         <attribute key="attack" value="800" />
+
         <attribute key="weaponType" value="sword" />
         <attribute key="slotType" value="two-handed" />
     </item>

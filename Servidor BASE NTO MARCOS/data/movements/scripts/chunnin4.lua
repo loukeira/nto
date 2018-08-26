@@ -21,7 +21,7 @@ end
 	if (item.actionid == 11180) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == -1) and (tonumber(chunnin.getTeam(cid)) > 0) and ((getPlayerItemCount(cid,id_item_pergaminho_ar)>=1) and (getPlayerItemCount(cid,id_item_pergaminho_terra)>=1)) then
 		
 		setGlobalStorageValue(quantplayer,getGlobalStorageValue(quantplayer)+1)
-		doPlayerSetStorageValuecid, chunnin.storage.pergaminho, 1)
+		doPlayerSetStorageValue(cid, chunnin.storage.pergaminho, 1)
 
 		--setPlayerStorageValue(cid,quantplayer,getPlayerStorageValue(cid,quantplayer)+1)
         db.query("UPDATE chunnin_players SET pos_oitavas = '"..getGlobalStorageValue(quantplayer).."' WHERE name = '"..getPlayerName(cid).."' ;")
@@ -45,7 +45,7 @@ end
 	    end
 	end
    		
-   		doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,quantplayer)..	"")
+   		--doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,quantplayer).."")
 
 
 
@@ -82,7 +82,7 @@ end
 					end
 			
 
-		return 
+		return true
 
 	elseif (item.actionid == 11181) and (getPlayerStorageValue(cid,chunnin.storage.pergaminho) == 1) and (tonumber(chunnin.getTeam(cid)) > 0) then
 					doPlayerSendTextMessage(cid,18, "[CHUNNIN] Voce nao pode voltar para a floresta!! Aguarde!") 

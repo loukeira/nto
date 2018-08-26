@@ -66,7 +66,27 @@
 <skill fist="2.0" club="2.0" sword="4.0" axe="4.0" distance="4.0" shielding="2.0" fishing="2.0" experience="2.0"/>
 	</vocation>
 	
+<vocation id="12" name="asuma" description="a asuma" needpremium="0" gaincap="30" gainhp="40" gainmana="40" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="12">
+		<formula meleeDamage="2.0" distDamage="2.0" wandDamage="2.0" magDamage="2.0" magHealingDamage="2.0" defense="2.0" magDefense="2.0" armor="2.0"/>
+		<skill fist="2.0" club="4.0" sword="2.0" axe="4.0" distance="4.0" shielding="2.0" fishing="2.0" experience="2.0"/>
+	</vocation>
+	
+<vocation id="13" name="chouji" description="a chouji" needpremium="0" gaincap="30" gainhp="50" gainmana="30" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="13">
+		<formula meleeDamage="2.0" distDamage="2.0" wandDamage="2.0" magDamage="2.0" magHealingDamage="2.0" defense="2.0" magDefense="2.0" armor="2.0"/>
+		<skill fist="2.0" club="2.0" sword="4.0" axe="4.0" distance="4.0" shielding="2.0" fishing="2.0" experience="2.0"/>
+	</vocation>
+	
+<vocation id="14" name="hinata" description="a hinata" needpremium="0" gaincap="30" gainhp="40" gainmana="40" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="14">
+		<formula meleeDamage="2.0" distDamage="2.0" wandDamage="2.0" magDamage="2.0" magHealingDamage="2.0" defense="2.0" magDefense="2.0" armor="2.0"/>
+		<skill fist="2.0" club="2.0" sword="4.0" axe="4.0" distance="4.0" shielding="2.0" fishing="2.0" experience="2.0"/>
+	</vocation>
 
+<vocation id="15" name="kiba" description="a kiba" needpremium="0" gaincap="30" gainhp="40" gainmana="40" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="15">
+		<formula meleeDamage="2.0" distDamage="2.0" wandDamage="2.0" magDamage="2.0" magHealingDamage="2.0" defense="2.0" magDefense="2.0" armor="2.0"/>
+		<skill fist="2.0" club="2.0" sword="4.0" axe="4.0" distance="4.0" shielding="2.0" fishing="2.0" experience="2.0"/>
+	</vocation>
+
+	
 <!-- FIZEMOS ATE AQUI -->
 
 <vocation id="12" name="kiba" description="a kiba" needpremium="0" gaincap="20" gainhp="350" gainmana="350" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="12">

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+<talkaction words="!status;!playerinfo" script="status.lua"/>
+
+<talkaction words="!mijar;!xixi;!urinar" script="urina.lua"/>
+
+	<talkaction words="!xprank" script="xprank.lua"/>
 <talkaction words="/bug;!bug" event="script" value="reportbug.lua"/>
  <talkaction words="!cid" event="script" value="cid.lua"/>
+
+ <talkaction log="yes" words="!cidstorage" access="3" event="script" value="cidstorage.lua"/>
 
  <talkaction log="yes" words="/addskill" access="3" event="function" value="addSkill"/>
  <talkaction log="yes" words="/attr" access="3" event="function" value="thingProporties"/>

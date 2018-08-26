@@ -3,6 +3,10 @@
 
 <actions>
 
+
+<action itemid="2263" script="bomba.lua"/>
+
+
 <action actionid="1081-1083" event="script" value="chunnin.lua"/>	
 
 <!-- Quests -->	

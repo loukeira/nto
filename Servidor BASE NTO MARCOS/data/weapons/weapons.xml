@@ -36,6 +36,7 @@
 	<wand id="8922" level="42" mana="13" min="55" max="75" type="death" event="function" value="default">
 	</wand>
 
+<melee id="2413" level="2" event="function" value="default"/>
 	<!-- Swords -->
 	<melee id="2396" event="function" value="default"/>
 	<melee id="2377" level="20" unproperly="1" event="function" value="default"/>

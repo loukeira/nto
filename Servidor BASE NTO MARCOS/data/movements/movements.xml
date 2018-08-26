@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
 
+	<movevent type="StepIn" actionid="13245" event="script" value="bomba.lua"/>
+
         <movevent type="StepIn" actionid="981-982" event="script" value="chunnin1.lua"/>
         <movevent type="StepIn" actionid="9802-9804" event="script" value="chunnin2.lua"/>
         <movevent type="StepIn" actionid="10082-10084" event="script" value="chunnin3.lua"/>
@@ -18,7 +20,7 @@
 <movevent type="StepIn" actionid="48001" event="script" value="exame jounin.lua"/>
         <moveevent type="StepIn" uniqueid="14000" event="script" value="stepin.lua"/>        
         <movevent type="StepIn" actionid="28530" event="script" value="mizuki.lua"/>
-        <movevent type="StepIn" actionid="28531" event="script" value="chunin.lua"/>
+       <!-- <movevent type="StepIn" actionid="28531" event="script" value="chunin.lua"/> -->
         <movevent type="StepIn" actionid="28532" event="script" value="jouninrenegade.lua"/>
         <movevent type="StepIn" actionid="28533" event="script" value="exameanbuend.lua"/>
         <movevent type="StepIn" actionid="53585" event="script" value="sennin.lua"/>
@@ -756,9 +758,16 @@
 	<movevent type="DeEquip" itemid="9777" slot="legs" event="function" value="onDeEquipItem"/>
 	<movevent type="Equip" itemid="11298" slot="legs" event="function" value="onEquipItem"/>
 	<movevent type="DeEquip" itemid="11298" slot="legs" event="function" value="onDeEquipItem"/>
+
 	<movevent type="Equip" itemid="6433" slot="shield" level="100" event="function" value="onEquipItem">
 	</movevent>
 	<movevent type="DeEquip" itemid="6433" slot="shield" event="function" value="onDeEquipItem"/>
+
+
+	<movevent type="Equip" itemid="2413" slot="hand" level="2" event="function" value="onEquipItem">
+	</movevent>
+	<movevent type="DeEquip" itemid="2413" slot="hand" event="function" value="onDeEquipItem"/>
+
 		<movevent type="Equip" itemid="2427" slot="legs" event="function" value="onEquipItem"/>
 	<movevent type="DeEquip" itemid="2427" slot="legs" event="function" value="onDeEquipItem"/>
 		<movevent type="Equip" itemid="8851" slot="legs" event="function" value="onEquipItem"/>

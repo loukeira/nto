@@ -12,12 +12,10 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 	if getPlayerStorageValue(cid,chunnin.storage.rola1) == -1 then setPlayerStorageValue(cid,chunnin.storage.rola1,0) end
 
 	if getGlobalStorageValue(chunnin.storage.rola2) == -1 then setGlobalStorageValue(chunnin.storage.rola2,0) end
-	if getGlobalStorageValue(chunnin.storage.somatoriotime2) == -1 then setGlobalStorageValue(chunnin.storage.somatoriotime2,0) end
 	if getPlayerStorageValue(cid,chunnin.storage.rola2) == -1 then setPlayerStorageValue(cid,chunnin.storage.rola2,0) end
 
 
 	if getGlobalStorageValue(chunnin.storage.rola3) == -1 then setGlobalStorageValue(chunnin.storage.rola3,0) end
-	if getGlobalStorageValue(chunnin.storage.somatoriotime3) == -1 then setGlobalStorageValue(chunnin.storage.somatoriotime3,0) end
 	if getPlayerStorageValue(cid,chunnin.storage.rola3) == -1 then setPlayerStorageValue(cid,chunnin.storage.rola3,0) end
 
 -- TIME 1  TILE ID ----------------------------------------
@@ -76,11 +74,11 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 		setPlayerStorageValue(cid,chunnin.storage.rola2,1)
 
 		setGlobalStorageValue(chunnin.storage.rola2,getGlobalStorageValue(chunnin.storage.rola2) +1)
-		if getGlobalStorageValue(chunnin.storage.rola2) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime2,getGlobalStorageValue(chunnin.storage.somatoriotime2)+1) end
+		if getGlobalStorageValue(chunnin.storage.rola2) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime,getGlobalStorageValue(chunnin.storage.somatoriotime)+1) end
 
-		--doPlayerSendTextMessage(cid,18,"global rola: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
-		--doPlayerSendTextMessage(cid,18,"storage rola: "..getPlayerStorageValue(cid,chunnin.storage.rola2).." ")
-		--doPlayerSendTextMessage(cid,18,"contador time: "..getGlobalStorageValue(chunnin.storage.somatoriotime2).." ")
+		doPlayerSendTextMessage(cid,18,"global rola: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
+		doPlayerSendTextMessage(cid,18,"storage rola: "..getPlayerStorageValue(cid,chunnin.storage.rola2).." ")
+		doPlayerSendTextMessage(cid,18,"contador time: "..getGlobalStorageValue(chunnin.storage.somatoriotime).." ")
 
 		db.query("UPDATE chunnin_players SET team = 2 WHERE name = '"..getPlayerName(cid).."' ;")
 
@@ -90,7 +88,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 		return true
 	elseif (item.actionid == 9803) and (getGlobalStorageValue(chunnin.storage.rola2) >=3) and (getPlayerStorageValue(cid,chunnin.storage.rola2)==0) then
 		doPlayerSendCancel(cid, "[CHUNNIN] JA ESTA CHEIO O TIME 2!") 
-		--doPlayerSendTextMessage(cid,18,"storage rola2: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
+		doPlayerSendTextMessage(cid,18,"storage rola2: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
 
 		doSendMagicEffect(getCreaturePosition(cid), 2)
 		local pos = getCreaturePosition(cid)
@@ -101,13 +99,13 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 	elseif (item.actionid == 9803) and (getPlayerStorageValue(cid,chunnin.storage.rola2)==1)  then
 				doPlayerSendCancel(cid, "[CHUNNIN] Voce saiu do time 2!") 
 			doSendMagicEffect(getCreaturePosition(cid), 2)		
-		if getGlobalStorageValue(chunnin.storage.rola2) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime2,getGlobalStorageValue(chunnin.storage.somatoriotime2)-1) end
+		if getGlobalStorageValue(chunnin.storage.rola2) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime,getGlobalStorageValue(chunnin.storage.somatoriotime)-1) end
 		setGlobalStorageValue(chunnin.storage.rola2,getGlobalStorageValue(chunnin.storage.rola2)-1)
 		setPlayerStorageValue(cid,chunnin.storage.rola2,0)
 		db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(cid).."' ;")
-		--doPlayerSendTextMessage(cid,18,"Global rola2: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
-		--doPlayerSendTextMessage(cid,18,"storage rola: "..getPlayerStorageValue(cid,chunnin.storage.rola2).." ")
-		--doPlayerSendTextMessage(cid,18,"contador time: "..getGlobalStorageValue(chunnin.storage.somatoriotime2).." ")
+		doPlayerSendTextMessage(cid,18,"Global rola2: "..getGlobalStorageValue(chunnin.storage.rola2).." ")
+		doPlayerSendTextMessage(cid,18,"storage rola: "..getPlayerStorageValue(cid,chunnin.storage.rola2).." ")
+		doPlayerSendTextMessage(cid,18,"contador time: "..getGlobalStorageValue(chunnin.storage.somatoriotime).." ")
 
 
 
@@ -124,7 +122,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 		setPlayerStorageValue(cid,chunnin.storage.rola3,1)
 
 		setGlobalStorageValue(chunnin.storage.rola3,getGlobalStorageValue(chunnin.storage.rola3) +1)
-		if getGlobalStorageValue(chunnin.storage.rola3) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime3,getGlobalStorageValue(chunnin.storage.somatoriotime3)+1) end
+		if getGlobalStorageValue(chunnin.storage.rola3) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime,getGlobalStorageValue(chunnin.storage.somatoriotime)+1) end
 
 		--doPlayerSendTextMessage(cid,18,"global rola: "..getGlobalStorageValue(chunnin.storage.rola3).." ")
 		--doPlayerSendTextMessage(cid,18,"storage rola: "..getPlayerStorageValue(cid,chunnin.storage.rola3).." ")
@@ -149,7 +147,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition)
 	elseif (item.actionid == 9804) and (getPlayerStorageValue(cid,chunnin.storage.rola3)==1)  then
 				doPlayerSendCancel(cid, "[CHUNNIN] Voce saiu do time 3!") 
 			doSendMagicEffect(getCreaturePosition(cid), 2)		
-		if getGlobalStorageValue(chunnin.storage.rola3) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime3,getGlobalStorageValue(chunnin.storage.somatoriotime3)-1) end
+		if getGlobalStorageValue(chunnin.storage.rola3) == 3 then setGlobalStorageValue(chunnin.storage.somatoriotime,getGlobalStorageValue(chunnin.storage.somatoriotime)-1) end
 		setGlobalStorageValue(chunnin.storage.rola3,getGlobalStorageValue(chunnin.storage.rola3)-1)
 		setPlayerStorageValue(cid,chunnin.storage.rola3,0)
 		db.query("UPDATE chunnin_players SET team = 0 WHERE name = '"..getPlayerName(cid).."' ;")

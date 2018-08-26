@@ -1,5 +1,5 @@
-id_item_pergaminho_ar = 9930
-id_item_pergaminho_terra = 9931
+id_item_pergaminho_ar = 3107
+id_item_pergaminho_terra = 3105
 
 chunnin = {
     pos = {
@@ -10,18 +10,20 @@ chunnin = {
                             from1 ={x=1113,y=372,z=7 },to1={x=1119,y=378,z=7}
 
                             },
+
         wait_arena2 = {  --arena das oitavas
-                            from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
+                            from1 ={x=1158,y=359,z=7 },to1={x=1160,y=361,z=7}
                             },
 
-        wait_arena3 = {--arena das quartas
-                            from1 ={x=1064,y=378,z=7 },to1={x=1070,y=385,z=7}
+        wait_arena3 = {   --arena das quartas
+                            from1 ={x=1162,y=359,z=7 },to1={x=1164,y=361,z=7}
                             },
+
         wait_arena4 = {  --arena das semi 
-                            from1 ={x=1077,y=378,z=7 },to1={x=1084,y=385,z=7}
+                            from1 ={x=1158,y=363,z=7 },to1={x=1160,y=365,z=7}
                             },
         wait_arena5 = {  --arena da final mesma q oitavas
-                            from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
+                            from1 ={x=1162,y=363,z=7 },to1={x=1164,y=365,z=7}
                             },
 
         zona_wait_cancel = {
@@ -69,18 +71,18 @@ chunnin = {
     days_open = {1, 2, 3, 4, 5, 6, 7},
     min_players = 1, 
     min_level = 1, 
-    wait_time = 4, 
+    wait_time = 1, 
     block_mc = false, 
 
-    delay_time = 5,
-    pvp1 = {x=1072,y=377,z=7},
-    pvp2 = {x=1075,y=377,z=7},
-    pvp11 = {x=1072,y=377,z=7},
-    pvp22 = {x=1075,y=377,z=7},
-    pvp31 = {x=1072,y=377,z=7},
-    pvp32 = {x=1075,y=377,z=7},
-    pvp41 = {x=1072,y=377,z=7},
-    pvp42 = {x=1075,y=377,z=7},
+    delay_time = 3,
+    pvp1 = {x=1178,y=360,z=7},
+    pvp2 = {x=1180,y=360,z=7},
+    pvp11 = {x=1178,y=360,z=7},
+    pvp22 = {x=1180,y=360,z=7},
+    pvp31 = {x=1178,y=360,z=7},
+    pvp32 = {x=1180,y=360,z=7},
+    pvp41 = {x=1178,y=360,z=7},
+    pvp42 = {x=1180,y=360,z=7},
 
                         -- from1 ={x=1064,y=371,z=7 },to1={x=1070,y=376,z=7}
 
@@ -93,9 +95,7 @@ chunnin = {
 
 
 
-    pvp = { oitavas = 88888, quartas= 444444,semi = 222222, final = 11111111, campeao = 9999222
-
-          },
+    pvp = { oitavas = 88888, quartas= 444444,semi = 222222, final = 11111111, campeao = 9999222 },
     reward_items = {6527, 6527},
 
     floresta = {
@@ -145,6 +145,8 @@ chunnin = {
         arena_aux_10 = 19310,
         arena_aux_11 = 19311,
 
+        inicio_arena = 303021,
+
         win = 87771, 
         kill_blue = 87775,
         kill_red = 87776, 
@@ -167,14 +169,13 @@ chunnin = {
         warning = "[ChunniN] Acabou de abrir, acesse o teleporte do templo principal para participar. Inicia em minutos...",
         start = "[ChunniN] Fechou o teleporte de entrada e iniciou o evento boa sorte aos times.",
         cancel = "[ChunniN] Fechou o teleporte de entrada e cancelou o evento por falta de jogadores.",
-        faltatime = "[CHUNNIN] Fechou o teleporte e cancelou o evento por nao ter pelo menos 2 times!"
+        faltatime = "[CHUNNIN] Fechou o teleporte e cancelou o evento por nao ter o num minimo de  times!"
     },
 }
 
 function chunnin.resetGlobalStorages()
     setGlobalStorageValue(chunnin.storage.somatoriotime, -1)
-    setGlobalStorageValue(chunnin.storage.somatoriotime2, -1)
-    setGlobalStorageValue(chunnin.storage.somatoriotime3, -1)
+
 
     setGlobalStorageValue(chunnin.storage.rola1, -1)
     setGlobalStorageValue(chunnin.storage.rola2, -1)
@@ -195,9 +196,8 @@ function chunnin.resetGlobalStorages()
     setGlobalStorageValue(chunnin.storage.arena_aux_9,-1)
     setGlobalStorageValue(chunnin.storage.arena_aux_10,-1)
     setGlobalStorageValue(chunnin.storage.arena_aux_11,-1)
-
-
     setGlobalStorageValue(chunnin.storage.arena_on,-1)
+    setGlobalStorageValue(chunnin.storage.inicio_arena,-1)
 
     setGlobalStorageValue(chunnin.storage.kill_red, 0)
     setGlobalStorageValue(chunnin.storage.tower_blue, 0)
@@ -269,6 +269,7 @@ function chunnin.countPlayers()
 end
 
 function chunnin.start()
+
     local tp = getTileItemById(chunnin.pos.tp_create, 1387).uid 
     local tpvolta = getTileItemById(chunnin.pos.tp_volta, 1387).uid 
     doRemoveItem(tp) 
@@ -463,7 +464,28 @@ function chunnin.getPlayersInEvent()
             pos_final = tonumber(result:getDataInt("pos_final"))
             final = tonumber(result:getDataInt("final"))
 
-            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip,["name"]=name ,["pos_oitavas"]=pos_oitavas,["pos_quartas"]=pos_quartas,["pos_semi"]=pos_semi,["pos_final"]=pos_final,["oitavas"]=oitavas,["quartas"]=quartas},["semi"]=semi,["final"]=final) 
+            table.insert(CACHE_PLAYERS, {["pid"]=pid,["team"]=team,["ip"]=ip,["name"]=name ,["pos_oitavas"]=pos_oitavas,["pos_quartas"]=pos_quartas,["pos_semi"]=pos_semi,["pos_final"]=pos_final,["oitavas"]=oitavas,["quartas"]=quartas,["semi"]=semi,["final"]=final}) 
+        until(not result:next())
+        result:free()
+        return CACHE_PLAYERS
+    end
+    return false 
+end
+
+function chunnin.getFight(cid)
+    local result = db.getResult("SELECT * FROM `chunnin_players` WHERE name = '"..getCreatureName(cid).."';")
+    CACHE_PLAYERS = {}
+    if result:getID() ~= -1 then
+        repeat
+            oit = tonumber(result:getDataInt("oitavas")) 
+            qua  = tonumber(result:getDataInt("quartas")) 
+            semi  = tonumber(result:getDataInt("semi")) 
+            final  = tonumber(result:getDataInt("final")) 
+
+            CACHE_PLAYERS[1] = tonumber(oit)
+            CACHE_PLAYERS[2] = tonumber(qua)            
+            CACHE_PLAYERS[3] = tonumber(semi)
+            CACHE_PLAYERS[4] = tonumber(final)
         until(not result:next())
         result:free()
         return CACHE_PLAYERS
@@ -582,14 +604,14 @@ function chunnin.close()
     return true
 end
 
-local pos = {x=123,y=456,z=789}
+-- local pos = {x=123,y=456,z=789}
 
-function doRemoveCorpse(pos)
-for i = 1, 255 do
-corp = {x=pos.x, y=pos.y, z=pos.z, stackpos=i}
-if isCorpse(getThingFromPos(corp).uid) then
-break
-end
-end
-doRemoveItem(getThingFromPos(corp).uid, 1)
-end
+-- function doRemoveCorpse(pos)
+-- for i = 1, 255 do
+-- corp = {x=pos.x, y=pos.y, z=pos.z, stackpos=i}
+-- if isCorpse(getThingFromPos(corp).uid) then
+-- break
+-- end
+-- end
+-- doRemoveItem(getThingFromPos(corp).uid, 1)
+-- end

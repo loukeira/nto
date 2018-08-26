@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+      
+<event type="kill" name="guildsemanal" event="script" value="guildsemanal.lua"/>
+<event type="kill" name="xprank" event="script" value="xprank.lua"/>
+
+
 <event type="think" name="ChunninThink" event="script" value="chunninthink.lua"/>
 <event type="think" name="ChunninThink2" event="script" value="chunninthink2.lua"/> 
 <event type="think" name="ChunninThink3" event="script" value="chunninthink3.lua"/>   

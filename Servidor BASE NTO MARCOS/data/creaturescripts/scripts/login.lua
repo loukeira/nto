@@ -29,9 +29,11 @@ function onLogin(cid)
  if(not isPlayerGhost(cid)) then
   doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
  end
-
+ registerCreatureEvent(cid, "xprank")
  registerCreatureEvent(cid, "Mail")
  registerCreatureEvent(cid, "GuildMotd")
+  registerCreatureEvent(cid, "guildsemanal")
+
 
  registerCreatureEvent(cid, "Idle")
  if(config.useFragHandler) then

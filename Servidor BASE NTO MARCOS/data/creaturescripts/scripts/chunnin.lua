@@ -57,36 +57,37 @@ local pvp2 = {x=1146, y=401, z=7}
             doTeleportThing(cid, chunnin.townid)
             doSendMagicEffect(getCreaturePosition(cid), 2)
 
-                if (isInArea(getThingPos(cid), chunnin.pos.luta_oitavas.from1, chunnin.pos.luta_oitavas.to1) ) and ((getPlayerStorageValue(cid,chunnin.pvp.oitavas)==1) and (getPlayerStorageValue(killer,chunnin.pvp.oitavas)==1)) then
+local oit,qua,semi,final = chunnin.getFight(cid)
+local oit2,qua2,semi2,final2 = chunnin.getFight(killer)
+                if (isInArea(getThingPos(cid), chunnin.pos.luta_oitavas.from1, chunnin.pos.luta_oitavas.to1) ) and ((oit==1) and (oit2==1)) then
                    setGlobalStorageValue(chunnin.storage.arena_aux_4,0)
-                   doTeleportThing(killer, chunnin.arenaid2)
-                   setPlayerStorageValue(cid,chunnin.pvp.oitavas,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.oitavas,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.quartas,0)
+                    doTeleportThing(killer, chunnin.pos.wait_arena3.from1)
+                          db.query("UPDATE chunnin_players SET oitavas = -1 WHERE name = '"..getPlayerName(cid).."' ;")
+                          db.query("UPDATE chunnin_players SET oitavas = -1 WHERE name = '"..getPlayerName(killer).."' ;")
+                          db.query("UPDATE chunnin_players SET quartas = 0 WHERE name = '"..getPlayerName(killer).."' ;")
                    doPlayerSendTextMessage(killer, 18, "[CHUNNIN]: Voce matou o player "..getCreatureName(cid).." e avancou de fase! ")
 
-                elseif isInArea(getThingPos(cid), chunnin.pos.luta_quartas.from1, chunnin.pos.luta_quartas.to1) and ((getPlayerStorageValue(cid,chunnin.pvp.quartas)==1) and (getPlayerStorageValue(killer,chunnin.pvp.quartas)==1)) then
+                elseif isInArea(getThingPos(cid), chunnin.pos.luta_quartas.from1, chunnin.pos.luta_quartas.to1) and ((qua==1) and (qua2==1)) then
                    setGlobalStorageValue(chunnin.storage.arena_aux_6,0)
-                   doTeleportThing(killer, chunnin.arenaid3)
-                   setPlayerStorageValue(cid,chunnin.pvp.quartas,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.quartas,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.semi,0)
+                    doTeleportThing(pid, chunnin.pos.wait_arena4.from1)
+                          db.query("UPDATE chunnin_players SET quartas = -1 WHERE name = '"..getPlayerName(cid).."' ;")
+                          db.query("UPDATE chunnin_players SET quartas = -1 WHERE name = '"..getPlayerName(killer).."' ;")
+                          db.query("UPDATE chunnin_players SET semi = 0 WHERE name = '"..getPlayerName(killer).."' ;")
                    doPlayerSendTextMessage(killer, 18, "[CHUNNIN]: Voce matou o player "..getCreatureName(cid).." e avancou de fase! ")
 
-                elseif isInArea(getThingPos(cid), chunnin.pos.luta_semi.from1, chunnin.pos.luta_semi.to1) and ((getPlayerStorageValue(cid,chunnin.pvp.semi)==1) and (getPlayerStorageValue(killer,chunnin.pvp.semi)==1)) then
+                elseif isInArea(getThingPos(cid), chunnin.pos.luta_semi.from1, chunnin.pos.luta_semi.to1) and ((semi==1) and (semi2==1)) then
                    setGlobalStorageValue(chunnin.storage.arena_aux_8,0)
-                   doTeleportThing(killer, chunnin.arenaid4)
-                   setPlayerStorageValue(cid,chunnin.pvp.semi,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.semi,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.final,0)
+                    doTeleportThing(pid, chunnin.pos.wait_arena5.from1)
+                          db.query("UPDATE chunnin_players SET semi = -1 WHERE name = '"..getPlayerName(cid).."' ;")
+                          db.query("UPDATE chunnin_players SET semi = -1 WHERE name = '"..getPlayerName(killer).."' ;")
+                          db.query("UPDATE chunnin_players SET final = 0 WHERE name = '"..getPlayerName(killer).."' ;")
                    doPlayerSendTextMessage(killer, 18, "[CHUNNIN]: Voce matou o player "..getCreatureName(cid).." e avancou de fase! ")
 
-                 elseif isInArea(getThingPos(cid), chunnin.pos.luta_final.from1, chunnin.pos.luta_final.to1) and ((getPlayerStorageValue(cid,chunnin.pvp.final)==1) and (getPlayerStorageValue(killer,chunnin.pvp.final)==1)) then
+                 elseif isInArea(getThingPos(cid), chunnin.pos.luta_final.from1, chunnin.pos.luta_final.to1) and ((final==1) and (final2==1)) then
                    setGlobalStorageValue(chunnin.storage.arena_aux_10,0)
-                   doTeleportThing(killer, chunnin.arenaid5)
-                   setPlayerStorageValue(cid,chunnin.pvp.final,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.final,-1)
-                   setPlayerStorageValue(killer,chunnin.pvp.campeao,1)
+                   doTeleportThing(killer, chunnin.townid)
+                          db.query("UPDATE chunnin_players SET final = -1 WHERE name = '"..getPlayerName(cid).."' ;")
+                          db.query("UPDATE chunnin_players SET pos_final = 1 WHERE name = '"..getPlayerName(killer).."' ;")
                    doPlayerSendTextMessage(killer, 18, "[CHUNNIN]: Voce matou o player "..getCreatureName(cid).." e ganhou! ")
                 end
                 

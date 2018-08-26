@@ -21,7 +21,7 @@ if (getGlobalStorageValue(chunnin.storage.arena_aux_1) == 1) and (getGlobalStora
 					setGlobalStorageValue(chunnin.storage.arena_aux_4,getGlobalStorageValue(chunnin.storage.arena_aux_4)+1)
 					if getGlobalStorageValue(chunnin.storage.arena_aux_4)==1 then
 					doTeleportThing(pid, chunnin.pvp1)
-				    setPlayerStorageValue(pid,chunnin.pvp.oitavas,1)
+        			db.query("UPDATE chunnin_players SET oitavas = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 					doCreatureSetNoMove(pid, true)
 			        addEvent(chunnin.enableMove, 4000, pid)
@@ -32,7 +32,7 @@ if (getGlobalStorageValue(chunnin.storage.arena_aux_1) == 1) and (getGlobalStora
 					doTeleportThing(pid, chunnin.pvp2)
 					doCreatureSetNoMove(pid, true)
 					addEvent(chunnin.enableMove, 4000, pid)
-					setPlayerStorageValue(pid,chunnin.pvp.oitavas,1)
+        			db.query("UPDATE chunnin_players SET oitavas = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 
@@ -56,13 +56,13 @@ elseif (getGlobalStorageValue(chunnin.storage.arena_aux_3) ==1 ) and (getGlobalS
 					doTeleportThing(pid, chunnin.pvp21)
 					doCreatureSetNoMove(pid, true)
 			        addEvent(chunnin.enableMove, 4000, pid)
-					setPlayerStorageValue(pid,chunnin.pvp.quartas,1)
+        			db.query("UPDATE chunnin_players SET quartas = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 					elseif getGlobalStorageValue(chunnin.storage.arena_aux_6) ==2 then
 					doTeleportThing(pid, chunnin.pvp22)
 					doCreatureSetNoMove(pid, true)
 					addEvent(chunnin.enableMove, 4000, pid)
-					setPlayerStorageValue(pid,chunnin.pvp.quartas,1)
+        			db.query("UPDATE chunnin_players SET quartas = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 
@@ -84,14 +84,14 @@ elseif (getGlobalStorageValue(chunnin.storage.arena_aux_5) ==1 ) and (getGlobalS
 					doTeleportThing(pid, chunnin.pvp31)
 					doCreatureSetNoMove(pid, true)
 			        addEvent(chunnin.enableMove, 4000, pid)
-			    	setPlayerStorageValue(pid,chunnin.pvp.semi,1)
+        			db.query("UPDATE chunnin_players SET semi = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 					elseif getGlobalStorageValue(chunnin.storage.arena_aux_8) ==2 then
 					doTeleportThing(pid, chunnin.pvp32)
 					doCreatureSetNoMove(pid, true)
 					addEvent(chunnin.enableMove, 4000, pid)
-					setPlayerStorageValue(pid,chunnin.pvp.semi,1)
+        			db.query("UPDATE chunnin_players SET semi = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 
@@ -113,14 +113,14 @@ elseif (getGlobalStorageValue(chunnin.storage.arena_aux_7) ==1 ) and (getGlobalS
 					doTeleportThing(pid, chunnin.pvp41)
 					doCreatureSetNoMove(pid, true)
 			        addEvent(chunnin.enableMove, 4000, pid)
-			     	setPlayerStorageValue(pid,chunnin.pvp.final,1)
+        			db.query("UPDATE chunnin_players SET final = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 					elseif getGlobalStorageValue(chunnin.storage.arena_aux_10) ==2 then
 					doTeleportThing(pid, chunnin.pvp42)
 					doCreatureSetNoMove(pid, true)
 					addEvent(chunnin.enableMove, 4000, pid)
-					setPlayerStorageValue(pid,chunnin.pvp.final,1)
+        			db.query("UPDATE chunnin_players SET final = 1 WHERE name = '"..getPlayerName(pid).."' ;")
 
 
 
