@@ -1,9 +1,9 @@
 local config = {
-itemid = 2180, -- id da bomba 
-duration = 5, -- duration antes de ser removida
+itemid = 11717, -- id da bomba 
+duration = 10, -- duration antes de ser removida
 actionid = 13245, -- actionid que sera setado na bomba (pro movements)
 effect = 3, -- efeito que sai ao colocar a bomba
-msg = "Bomba !" -- mensagem que sai ao ser colocado a bomba
+msg = "Papel Bomba!" -- mensagem que sai ao ser colocado a bomba
 }
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)

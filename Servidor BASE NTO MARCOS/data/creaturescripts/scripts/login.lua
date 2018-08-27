@@ -4,10 +4,7 @@ local config = {
 }
 
 function onLogin(cid)
- local loss = getConfigValue('deathLostPercent')
- if(loss ~= nil) then
-  doPlayerSetLossPercent(cid, PLAYERLOSS_EXPERIENCE, loss * 10)
- end
+ 
 
  local accountManager = getPlayerAccountManager(cid)
  if(accountManager == MANAGER_NONE) then
@@ -29,6 +26,7 @@ function onLogin(cid)
  if(not isPlayerGhost(cid)) then
   doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
  end
+  registerCreatureEvent(cid, "iniciante")
  registerCreatureEvent(cid, "xprank")
  registerCreatureEvent(cid, "Mail")
  registerCreatureEvent(cid, "GuildMotd")

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Teste" nameDescription="a teste" race="blood" experience="10000" speed="1" manacost="0">
+	<health now="500" max="500"/>
+	<look type="87" corpse="0"/>
+	<targetchange interval="5000" chance="10"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+
+	<voices interval="5000" chance="5">
+		<voice sentence="Haha.. teras que provar muito seu valor para passar por mim garotinho mimado!" yell="1"/>
+	</voices>
+</monster>

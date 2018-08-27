@@ -1,7 +1,7 @@
 local config = {
 effect1 = 4, -- efeito ao pisar
 effect2 = 5, -- ef﻿eito ao explodir
-msg = "Você foi acertado pela bomba.", -- msg que manda pra quem for acertado
+msg = "Voce foi acertado pela bomba.", -- msg que manda pra quem for acertado
 mindmg = 100, -- dmg minimo que tira (nao é necessariamente o dano que vai sair do cara pois precisa desconsiderar as defesas dele antes)
 maxdmg = 300, -- dmg maximo que tira (nao é o dano que vai sair do cara)
 selfe = true -- true/false pra ativar/desativar dano no cara que colocou a bomba caso ele mesmo passe na bomba.
@@ -22,6 +22,7 @@ function onStepIn(cid, item, position)
     end
      if ((cid == player and config.selfe) or (not isPlayer(cid)) or (not isCreature(player))) then
         doSendMagicEffect(position, config.effect2)
+        doCreatureSay(cid,"BOOM!",20)
         doCreatureAddHealth(cid,-1*(math.random(config.mindmg,config.maxdmg)))
     end
 if isPlayer(cid) then

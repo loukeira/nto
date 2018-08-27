@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-      
+
+<!--<event type="death" name="iniciante" event="script" value="iniciante.lua"/> -->    
 <event type="kill" name="guildsemanal" event="script" value="guildsemanal.lua"/>
 <event type="kill" name="xprank" event="script" value="xprank.lua"/>
 

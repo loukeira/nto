@@ -16,6 +16,7 @@ end
 
 function onStatsChange(cid, attacker, _type, combat, value)
  
+   if getGlobalStorageValue(chunnin.storage.ativo) == -1 then return true end
 
 local nome = getCreatureName(cid)
 
