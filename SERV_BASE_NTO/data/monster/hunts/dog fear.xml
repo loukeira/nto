@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dog Fear" nameDescription="dog fear" race="blood" experience="3100" speed="400" manacost="0">
+	<health now="70950" max="70950"/>
+	<look type="63" head="0" body="94" legs="79" feet="79" corpse="2819"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="10" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="5"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="10" attack="10"/>
+    <attack name="Mordida" interval="1000" chance="100" range="7" min="-4865" max="-5145">
+		</attack>
+    <attack name="Venenodark" interval="3500" chance="100" range="7" min="-4865" max="-5145">	
+		</attack>
+  </attacks>
+  <defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="10"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrhhh!!!" yell="1"/>
+	</voices>
+			<loot>
+		<item id="2152" countmax="26" chance="10000"/><!-- dolar verde -->
+	</loot>
+	<loot>
+		<item id="2451" countmax="1" chance="3700"/><!-- health mask -->
+		<item id="2393" countmax="1" chance="2500"/><!-- ambu armor -->
+				<item id="7868" countmax="1" chance="2000"/><!-- eletrik double sword -->
+	</loot>
+</monster>

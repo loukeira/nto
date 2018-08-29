@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<npc name="Lorelei" script="league3.lua" walkinterval="350000" floorchange="0" speed="0" lookdir="2">
+
+<health now="15" max="15"/>
+<look type="495" head="114" body="119" legs="114" feet="114" corpse="3058"/>
+
+	<parameters>
+
+
+	</parameters>
+
+</npc>

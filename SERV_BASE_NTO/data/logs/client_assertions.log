@@ -1,0 +1,609 @@
+----- 30/6/2018 17:15:16 - Anbu Sample (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 150 180 030 109 109 109 109 109 109 109
+Last Packet: 150 001 000 000 000 136 002 251 041 000 000 000 000 000 000 000
+Player Position: [1027,908,7]
+Player Name: Jiraya Sample (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 150) (MainWindow = 43036672), reason:
+Communication.cpp 2619: exception occurred, reason:
+Network.cpp 504: exception occurred, reason:
+Utils.cpp 501: assertion failed (Position = 21) (Size = 21), reason:
+Position<=Size-2
+Sat Jun 30 17:14:37 2018
+Debug Assertion 8.60 Utils.cpp 501
+
+----- 30/6/2018 18:4:10 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 110 109 109 109 131 162 162 162 100 108
+Last Packet: 110 000 129 037 014 000 100 101 109 111 110 032 098 097 099 107
+Player Position: [1030,913,6]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 110) (MainWindow = 41597408), reason:
+Communication.cpp 2177: exception occurred (Container = 0), reason:
+Objects.cpp 280: exception occurred (Type = 25603) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 25603) (ObjectProperties->high() = 10710), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Jun 30 18:03:45 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 1/7/2018 19:27:44 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 011 010 031 100 020 000 000 000 000
+Last Packet: 010 191 011 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [0,0,0]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 40414968), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1001) (PlayerY = 928), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 5774), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268438463), reason:
+Objects.cpp 604: exception occurred (Number = 756), reason:
+Container.h 226: index out of range (original i: 756, i: 755, min: 1, d: 742)
+Sun Jul 01 19:24:43 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 1/7/2018 20:18:22 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 011 010 031 100 020 000 000 000 000
+Last Packet: 010 192 011 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [0,0,0]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 42381048), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1027) (PlayerY = 912), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 408), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268438464), reason:
+Objects.cpp 604: exception occurred (Number = 756), reason:
+Container.h 226: index out of range (original i: 756, i: 755, min: 1, d: 742)
+Sun Jul 01 19:33:04 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 20:55:14 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 108 180 030 170 180 180 030 101 109
+Last Packet: 180 018 019 000 047 103 111 116 111 032 098 097 105 097 107 032
+Player Position: [1003,913,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 42119120), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1005) (PlayerY = 926), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 97) (OldType = 310), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 268437396), reason:
+Objects.cpp 604: exception occurred (Number = 939), reason:
+Container.h 226: index out of range (original i: 939, i: 938, min: 1, d: 903)
+Sat Jul 07 20:54:56 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 21:17:7 - Matheus (186.208.251.102) -----
+
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 106 180 106 108 131 106 180 030 131 106
+Last Packet: 180 018 007 000 047 105 032 052 052 051 051 106 250 003 169 003
+Player Position: [1018,937,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 41662952), reason:
+Communication.cpp 1784: exception occurred (rx = 8) (ry = 6), reason:
+Objects.cpp 280: exception occurred (Type = 10551) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 10551) (ObjectProperties->high() = 10527), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sat Jul 07 21:09:05 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 7/7/2018 21:20:52 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 132 131 106 108 140 180 140 170 160 131
+Last Packet: 140 151 007 000 064 089 180 024 030 000 089 111 117 032 100 101
+Player Position: [1021,921,8]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 21:20:21 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 21:21:37 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 170 160 131 131 132 131 106 108 140 180
+Last Packet: 131 000 004 149 003 008 003 000 108 000 004 149 003 008 001 100
+Player Position: [1019,919,8]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 21:21:20 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 22:1:51 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 104 109 132 131 106 108 140 140 104 109
+Last Packet: 140 152 007 000 064 088 140 152 007 000 064 088 108 245 003 150
+Player Position: [1019,918,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 279AFD0 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 523), reason:
+MapWindow.cpp 1146: exception occurred (posx = 1) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 22:01:36 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 22:5:45 - Aviao (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 132 131 106 108 140 140 162 141 130 161
+Last Packet: 140 152 007 000 064 086 140 152 007 000 064 086 108 245 003 150
+Player Position: [1018,918,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 22:01:51 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 22:6:9 - Balor (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 132 131 106 108 140 180 160 160 140
+Last Packet: 109 251 003 151 003 007 001 252 003 151 003 007 131 002 004 150
+Player Position: [1025,917,7]
+Player Name: Aviao (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: E4B9E8 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 523), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 6) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 22:05:50 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 22:36:27 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 103 109 132 131 106 140 140 109 106 103
+Last Packet: 109 247 003 149 003 007 002 247 003 148 003 007 140 158 007 000
+Player Position: [1023,914,7]
+Player Name: Narutoo (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 28AB9E8 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 523), reason:
+MapWindow.cpp 1146: exception occurred (posx = 0) (posy = 218), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 22:09:14 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 22:37:27 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 170 160 131 131 132 131 106 140 180 140
+Last Packet: 131 246 003 150 003 007 003 000 108 246 003 150 003 007 001 100
+Player Position: [1011,919,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 271B9E8 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 4515), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 128), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 22:37:13 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 22:43:56 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 170 160 131 131 132 131 106 140 180 140
+Last Packet: 131 247 003 150 003 007 003 000 108 247 003 150 003 007 002 100
+Player Position: [1012,918,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 22:37:42 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 23:3:9 - Aviao (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 132 131 106 108 140 140 131 180 180 162
+Last Packet: 140 149 007 000 064 100 140 149 007 000 064 100 108 245 003 151
+Player Position: [1015,918,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 1), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 22:43:56 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 23:4:10 - Aviao (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 104 109 131 132 131 106 140 180 160 160
+Last Packet: 131 001 004 152 003 007 140 000 140 152 007 000 016 063 160 062
+Player Position: [1023,919,7]
+Player Name: Aviao (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 28DB9E8 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 523), reason:
+MapWindow.cpp 1146: exception occurred (posx = 244) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 1) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 23:03:48 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 23:8:39 - Aviao (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 132 131 106 140 180 160 160 140 131
+Last Packet: 131 249 003 142 003 007 140 000 140 153 007 000 016 057 160 056
+Player Position: [1016,909,7]
+Player Name: Aviao (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 27CB9E8 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 416), reason:
+MapWindow.cpp 1146: exception occurred (posx = 232) (posy = 160), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 1) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 23:04:17 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 7/7/2018 23:12:11 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 030 101 109 101 109 131 131 131 030
+Last Packet: 131 245 003 151 003 007 000 000 000 000 000 000 000 000 000 000
+Player Position: [1015,918,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+MainFrm.cpp 508: exception occurred (nIDEvent = 1), reason:
+Control.cpp 1437: exception occurred, reason:
+Map.cpp 1008: exception occurred (i = 0), reason:
+Map.cpp 998: assertion failed (Effect.Type = 0), reason:
+Effect.Type > 0
+Sat Jul 07 23:11:45 2018
+Debug Assertion 8.60 Map.cpp 998
+
+----- 7/7/2018 23:27:38 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 131 101 109 132 131 106 108 140 180 140
+Last Packet: 131 245 003 151 003 007 000 000 000 000 000 000 000 000 000 000
+Player Position: [1014,917,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 28ABAF0 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 4643), reason:
+MapWindow.cpp 1146: exception occurred (posx = 192) (posy = 224), reason:
+MapWindow.cpp 1138: exception occurred (EffectNumber = 0) (Type = 0), reason:
+Objects.cpp 691: exception occurred (Number = 0), reason:
+Container.h 226: index out of range (original i: 0, i: -1, min: 1, d: 344)
+Sat Jul 07 23:12:13 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 8/7/2018 10:23:38 - Gibi (189.106.28.113) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel CORE I3 M
+Video Card: Intel (R) HD GR
+Last Packet Types: 150 030 170 170 170 107 109 030 109 109
+Last Packet: 150 001 000 000 000 136 002 038 042 000 000 000 000 000 000 000
+Player Position: [1027,909,9]
+Player Name: Gibi (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 150) (MainWindow = 44597104), reason:
+Communication.cpp 2619: exception occurred, reason:
+Network.cpp 504: exception occurred, reason:
+Utils.cpp 501: assertion failed (Position = 21) (Size = 21), reason:
+Position<=Size-2
+Sun Jul 08 10:23:11 2018
+Debug Assertion 8.60 Utils.cpp 501
+
+----- 8/7/2018 10:37:43 - Giubd (189.106.28.113) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel CORE I3 M
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 011 010 031 100 020 180 181 030 180
+Last Packet: 010 166 007 000 016 050 000 000 011 042 042 042 042 213 213 213
+Player Position: [1027,909,9]
+Player Name: Gibi (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 74690120), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1027) (PlayerY = 909), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 10679) (OldType = 97), reason:
+Objects.cpp 280: exception occurred (Type = 10679) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 10679) (ObjectProperties->high() = 10527), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sun Jul 08 10:37:21 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 8/7/2018 10:41:52 - Gibi (189.106.28.113) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel CORE I3 M
+Video Card: Intel (R) HD GR
+Last Packet Types: 100 108 102 109 103 109 103 109 103 109
+Last Packet: 109 000 004 142 003 007 001 001 004 142 003 007 102 163 017 041
+Player Position: [1025,910,8]
+Player Name: Giubd (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 100) (MainWindow = 49197648), reason:
+Communication.cpp 1681: exception occurred (PlayerX = 1025) (PlayerY = 910), reason:
+Communication.cpp 1659: exception occurred (xmin = 0) (ymin = 0), reason:
+Communication.cpp 1638: exception occurred (Type = 10679) (OldType = 97), reason:
+Objects.cpp 280: exception occurred (Type = 10679) (Flag = 10), reason:
+Objects.cpp 277: assertion failed (Type = 10679) (ObjectProperties->high() = 10527), reason:
+In(Type,ObjectProperties->low(),ObjectProperties->high())
+Sun Jul 08 10:38:06 2018
+Debug Assertion 8.60 Objects.cpp 277
+
+----- 8/7/2018 10:51:6 - Gibi (189.106.28.113) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel CORE I3 M
+Video Card: Intel (R) HD GR
+OutputControlErrorInformations: (exception)
+Last Packet: 030 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+Player Position: [1227,1962,10]
+Player Name: Gibi (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 050 046 054 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 485B250 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+ConsoleWindow.cpp 1682: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+ConsoleWindow.cpp 1052: exception occurred (Surface = 1), reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at 00000001)
+Sun Jul 08 10:50:51 2018
+Debug Assertion 8.60 NWin32Exception.cpp 50
+
+----- 5/8/2018 0:8:35 - Matheus (186.208.251.102) -----
+Comment: 
+Graphic Engine: OpenGL (1)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4210U @ 
+Video Card: Intel (R) HD GR
+Last Packet Types: 109 131 104 109 107 131 100 108 030 101
+Last Packet: 109 006 004 116 003 006 001 006 004 117 003 006 103 240 041 180
+Player Position: [1030,884,6]
+Player Name: Matheus (Forgotten)
+Player Action: 049 056 057 046 053 046 049 053 049 046 050 049 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 109) (MainWindow = 42236584), reason:
+Communication.cpp 2151: exception occurred, reason:
+Communication.cpp 2142: MoveCreature has been received for a coordinate where there is no creature anymore [bug0000017] (105, 0), reason:
+ sx: 8 sy: 6 sz: 1
+ Position: 1
+ zx: 8 zy: 7 zz: 1
+ dx: 0 dy: 1 dz: 0
+ abs_sx: 1030 abs_sy: 884 abs_sz: 6
+ abs_zx: 1030 abs_zy: 885 abs_zz: 6
+ Start Cylinder (1):  (459,0) (105,0) (99,268437370)
+ Start Cylinder (2):  (459,0) (105,0) (99,268437370)(-)(-)(-)(-)(-)(-)(-)
+ Destination Cylinder (1):  (459,0) (105,0)
+ Destination Cylinder (2):  (459,0) (105,0)(-)(-)(-)(-)(-)(-)(-)(-)
+Sun Aug 05 00:08:09 2018
+Debug Assertion 8.60 Communication.cpp 2142
+
+----- 11/8/2018 22:53:34 - Matheus (189.5.168.96) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Pentium G4560 @ 3
+Video Card: NVIDIA GeForce GTX 1050 TI
+Last Packet Types: 142 180 102 109 030 142 180 030 030 030
+Last Packet: 180 018 012 000 047 110 101 119 116 121 112 101 032 054 056 048
+Player Position: [789,1222,7]
+Player Name: Matheus (Forgotten)
+Player Action: 049 055 057 046 050 050 049 046 049 049 052 046 050 048 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 2718F78 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 549), reason:
+MapWindow.cpp 1146: exception occurred (posx = 224) (posy = 160), reason:
+MapWindow.cpp 1049: exception occurred (i = 0) (Creatures[i]->OutfitType = 680), reason:
+MapWindow.cpp 1028: exception occurred, reason:
+MapWindow.cpp 1257: outfit has not all four directions (Creature->OutfitType = 680) (GetOutfitPatternWidth(Creature->OutfitType) = 1)
+Sat Aug 11 22:50:07 2018
+Debug Assertion 8.60 MapWindow.cpp 1257
+
+----- 17/8/2018 5:44:56 - Baiak Scripts (189.5.174.79) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel CORE I3-3
+Video Card: X11 WINDO
+Last Packet Types: 131 180 180 162 141 130 161 160 120 121
+Last Packet: 010 121 007 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [1112,373,7]
+Player Name: Baiak Scripts (Forgotten)
+Player Action: 049 056 057 046 053 046 049 055 052 046 055 057 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = -1) (MainWindow = 10333544), reason:
+Network.cpp 445: exception occurred, reason:
+Network.cpp 432: exception occurred, reason:
+Network.cpp 398: packet size does not fit to symmetric encryption (PacketSize = 15341)
+Fri Aug 17 05:44:44 2018
+Debug Assertion 8.60 Network.cpp 398
+

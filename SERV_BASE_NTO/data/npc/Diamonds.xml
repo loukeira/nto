@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Donater Shop" script="data/npc/scripts/Diamonds.lua" speed="0" walkinterval="5000" floorchange="0">
+<health now="100" max="100"/>
+<look type="495" head="1" body="1" legs="1" feet="1" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Ola |PLAYERNAME|, voce pode comprar items Vips com Nto Points para saber os items que voce pode comprar diga {items}, caso queira saber como adquirir nto points diga {como pagar}." />
+</parameters>
+</npc>

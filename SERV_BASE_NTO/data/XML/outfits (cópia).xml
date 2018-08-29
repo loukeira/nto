@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<outfits>
+
+	<outfit id="1"><list gender="0" lookType="9" name="Naruto"/><list gender="1" lookType="9" name="Naruto"/></outfit>
+	<outfit id="2"><list gender="0" lookType="10" name="Naruto"/><list gender="1" lookType="10" name="Naruto"/></outfit>
+	<outfit id="3"><list gender="0" lookType="11" name="Naruto"/><list gender="1" lookType="11" name="Naruto"/></outfit>
+	<outfit id="4"><list gender="0" lookType="12" name="Naruto"/><list gender="1" lookType="12" name="Naruto"/></outfit>
+	<outfit id="5"><list gender="0" lookType="13" name="Naruto"/><list gender="1" lookType="13" name="Naruto"/></outfit>
+	<outfit id="6"><list gender="0" lookType="14" name="Naruto"/><list gender="1" lookType="14" name="Naruto"/></outfit>
+	<outfit id="7"><list gender="0" lookType="15" name="Naruto"/><list gender="1" lookType="15" name="Naruto"/></outfit>
+	<outfit id="8"><list gender="0" lookType="16" name="Naruto"/><list gender="1" lookType="16" name="Naruto"/></outfit>
+	<outfit id="9"><list gender="0" lookType="17" name="Naruto"/><list gender="1" lookType="17" name="Naruto"/></outfit>
+
+
+	<outfit id="10"><list gender="0" lookType="655" name="Sasuke"/><list gender="1" lookType="655" name="Sasuke"/></outfit>
+	<outfit id="11"><list gender="0" lookType="656" name="Sasuke"/><list gender="1" lookType="656" name="Sasuke"/></outfit>
+	<outfit id="12"><list gender="0" lookType="657" name="Sasuke"/><list gender="1" lookType="657" name="Sasuke"/></outfit>
+	<outfit id="13"><list gender="0" lookType="658" name="Sasuke"/><list gender="1" lookType="658" name="Sasuke"/></outfit>
+	<outfit id="14"><list gender="0" lookType="659" name="Sasuke"/><list gender="1" lookType="659" name="Sasuke"/></outfit>
+	<outfit id="15"><list gender="0" lookType="660" name="Sasuke"/><list gender="1" lookType="660" name="Sasuke"/></outfit>
+	<outfit id="16"><list gender="0" lookType="661" name="Sasuke"/><list gender="1" lookType="661" name="Sasuke"/></outfit>
+	<outfit id="17"><list gender="0" lookType="662" name="Sasuke"/><list gender="1" lookType="662" name="Sasuke"/></outfit>
+	<outfit id="18"><list gender="0" lookType="663" name="Sasuke"/><list gender="1" lookType="663" name="Sasuke"/></outfit>
+
+	<outfit id="10"><list gender="0-1" lookType="664" name="Sakura"/><list gender="1" lookType="664" name="Sakura"/></outfit>
+	<outfit id="11"><list gender="0" lookType="665" name="Sakura"/><list gender="1" lookType="665" name="Sakura"/></outfit>
+	<outfit id="12"><list gender="0" lookType="666" name="Sakura"/><list gender="1" lookType="666" name="Sakura"/></outfit>
+	<outfit id="13"><list gender="0" lookType="667" name="Sakura"/><list gender="1" lookType="667" name="Sakura"/></outfit>
+	<outfit id="14"><list gender="0" lookType="668" name="Sakura"/><list gender="1" lookType="668" name="Sakura"/></outfit>
+	<outfit id="15"><list gender="0" lookType="669" name="Sakura"/><list gender="1" lookType="669" name="Sakura"/></outfit>
+	<outfit id="16"><list gender="0" lookType="670" name="Sakura"/><list gender="1" lookType="670" name="Sakura"/></outfit>
+	<outfit id="17"><list gender="0" lookType="671" name="Sakura"/><list gender="1" lookType="671" name="Sakura"/></outfit>
+	<outfit id="18"><list gender="0" lookType="672" name="Sakura"/><list gender="1" lookType="672" name="Sakura"/></outfit>
+
+	
+
+
+
+	<outfit id="200" access="3" premium="yes">
+		<list gender="0-3" lookType="391" name="Gamemaster"/>
+	</outfit>
+
+	<outfit id="201" access="4" premium="yes">
+		<list gender="0-3" lookType="391" name="Community Manager"/>
+	</outfit>
+
+	<outfit id="202" access="5" premium="yes">
+		<list gender="0-3" lookType="391" name="God"/>
+	</outfit>
+</outfits>

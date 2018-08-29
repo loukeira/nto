@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Danteste" nameDescription="Danteste" race="blood" experience="1" speed="750" manacost="0">
+	<health now="1065000" max="1065000"/>
+	<look type="5" head="140" body="140" legs="140" feet="140" corpse="3204"/>
+
+
+	
+</monster>

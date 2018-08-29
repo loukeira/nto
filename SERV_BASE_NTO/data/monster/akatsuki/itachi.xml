@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Itachi" nameDescription="itachi" race="blood" experience="45800" speed="750" manacost="0">
+ <health now="4065000" max="4065000"/>
+ <look type="634" head="0" body="94" legs="79" feet="79" corpse="2898"/>
+ <targetchange interval="9000" chance="100"/>
+ <strategy attack="90" defense="20"/>
+ <flags>
+  <flag summonable="1"/>
+  <flag attackable="1"/>
+  <flag hostile="1"/>
+  <flag illusionable="0"/>
+  <flag convinceable="1"/>
+  <flag pushable="0"/>
+  <flag canpushitems="1"/>
+  <flag canpushcreatures="1"/>
+  <flag targetdistance="1"/>
+  <flag staticattack="65"/>
+  <flag runonhealth="0"/>
+ </flags>
+  <script>
+    <event name="questakatsukicinco"/>
+  </script>
+<script>
+<event name="skull"/>
+</script>
+ <attacks>
+  <attack name="melee" interval="9000" min="-1010" max="-2140"/>
+  <attack name="manadrain" interval="1000" chance="10" range="7" min="-110" max="-125">
+   <attribute key="areaEffect" value="redshimmer"/>
+
+  </attack>
+  <attack name="Amaterasu Follow" interval="5000" chance="100" radius="4" target="0" min="-3340" max="-3600">
+  </attack>
+  <attack name="Suiton Dragon no Jutsu" interval="3500" chance="100" radius="4" target="0" min="-14040" max="-15260">
+  </attack>
+  <attack name="Wrath of Naturetres" interval="3500" chance="100" radius="4" target="0" min="-14040" max="-15260">
+  </attack>
+  <attack name="Katon Dragon no Jutsu" interval="1500" chance="100" radius="4" target="0" min="-8040" max="-11260">
+  </attack>
+  <attack name="Wrath of Nature" interval="1500" chance="100" radius="4" target="0" min="-8040" max="-11260">
+  </attack>
+  <attack name="Fogofogo" interval="500" chance="100" radius="4" target="0" min="-4040" max="-5260">
+  </attack>          
+ </attacks>
+ <defenses armor="80" defense="80">
+  <defense name="healing" interval="4000" chance="40" min="300" max="300">
+   <attribute key="areaEffect" value="blueshimmer"/>
+ </defense>
+  <defense name="speed" interval="4000" chance="10" speedchange="450" duration="3000">
+   <attribute key="areaEffect" value="redshimmer"/>
+  </defense>
+ </defenses>
+ <elements>
+  <element physicalPercent="20"/>
+  <element icePercent="10"/>
+  <element holyPercent="-15"/>
+  <element deathPercent="35"/>
+ </elements>
+ <immunities>
+  <immunity poison="1"/>
+  <immunity lifedrain="1"/>
+  <immunity outfit="1"/>
+  <immunity drunk="1"/>
+  <immunity invisible="1"/>
+  <immunity paralyze="1"/>
+ </immunities>
+ <voices interval="5000" chance="10">
+  <voice sentence="IhauHAUhau.." yell="1"/>
+  <voice sentence="Reencarnacao..."/>
+ </voices>
+ <loot>
+  <item id="2160" countmax="7" chance="10000"/><!-- gold bar -->
+  <item id="2395" countmax="1" chance="4000"/><!-- akatsuki armor -->
+  <item id="2529" countmax="1" chance="4000"/><!-- akatsuki boots -->
+  <item id="2133" countmax="1" chance="4000"/><!-- fake kage mask -->
+  <item id="2135" countmax="1" chance="4000"/><!-- sasuke blacklegs -->
+ </loot>
+</monster>

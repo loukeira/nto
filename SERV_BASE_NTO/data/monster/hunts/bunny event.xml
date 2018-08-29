@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bunny Event" nameDescription="Bunny Event" race="blood" experience="45000" speed="100" manacost="0">
+	<health now="50" max="50"/>
+	<look type="74" head="0" body="94" legs="79" feet="79" corpse="3010"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="70"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="10" attack="20"/>
+  </attacks>
+  <defenses armor="7" defense="12"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="heuheuheu me pega!" yell="1"/>
+		<voice sentence="Ssshhhhhhh"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="100" chance="1000000"/><!-- gold bar -->
+
+	</loot>
+</monster>

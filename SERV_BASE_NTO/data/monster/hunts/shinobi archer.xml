@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shinobi Archer" nameDescription="shinobi archer" race="blood" experience="3780" speed="350" manacost="0">
+	<health now="52850" max="52850"/>
+	<look type="252" head="0" body="94" legs="79" feet="79" corpse="2903"/>
+	<targetchange interval="7000" chance="100"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="90" attack="90"/>
+    <attack name="physical" interval="500" chance="100" range="7" min="-4265" max="-5445">
+      <attribute key="shootEffect" value="SNIPERARROW"/>
+		</attack>
+  </attacks>
+  <defenses armor="40" defense="40"/>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Silice!" yell="1"/>
+	</voices>
+			<loot>
+		<item id="2152" countmax="22" chance="10000"/><!-- dolar verde -->
+	</loot>
+	<loot>
+		<item id="2393" countmax="20" chance="4000"/><!-- bigshuriken -->
+				<item id="2525" countmax="1" chance="5000"/><!-- speed boots -->
+	</loot>
+</monster>

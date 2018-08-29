@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Insecnoide" nameDescription="insecnoide" race="blood" experience="1300" speed="250" manacost="0">
+	<health now="35000" max="35000"/>
+	<look type="316" head="0" body="94" legs="79" feet="79" corpse="5527"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-1180" max="-1400"/>
+		<attack name="manadrain" interval="2500" chance="10" range="7" min="-860" max="-1215">
+			<attribute key="areaEffect" value="redshimmer"/>
+
+		</attack>
+		<attack name="Venenodark" interval="5000" chance="30" radius="4" target="0" min="-2340" max="-3400">
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="40" speedchange="450" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zzzsssspphhhh!" yell="1"/>
+		<voice sentence="Ssshhhhhhh"/>
+	</voices>
+	<loot>
+		<item id="2372" countmax="1" chance="4000"/><!-- taijutsu  medium glove -->
+		<item id="7867" countmax="1" chance="4000"/><!-- dual katana -->
+		<item id="8858" countmax="7" chance="1000"/><!-- vestido magico -->
+	</loot>
+</monster>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<npc name="Hokage" script="data/npc/scripts/Hokage.lua" walkinterval="50000" floorchange="0">
+<health now="100" max="100"/>
+<look type="129" head="95" body="116" legs="121" feet="115" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Hello |PLAYERNAME|. Quer comprar algumas {spells} ?" />
+</parameters>
+</npc>

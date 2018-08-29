@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Haku" nameDescription="haku" race="blood" experience="600" speed="400" manacost="0">
+	<health now="25000" max="25000"/>
+	<look type="17" head="0" body="94" legs="79" feet="79" corpse="5527"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="20"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="65"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-780" max="-900"/>
+		<attack name="manadrain" interval="500" chance="10" range="7" min="-40" max="-85">
+			<attribute key="areaEffect" value="redshimmer"/>
+
+		</attack>
+		<attack name="Hyuton" interval="6000" chance="100" radius="4" target="0" min="-1480" max="-1500">
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="4000" chance="40" min="300" max="300">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+		<defense name="speed" interval="4000" chance="40" speedchange="450" duration="8000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="10"/>
+		<element holyPercent="-15"/>
+		<element deathPercent="35"/>
+	</elements>
+	<immunities>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Shhhhhh!" yell="1"/>
+		<voice sentence="Hm.hmmm..humm...shhhh.."/>
+	</voices>
+	<loot>
+		<item id="2666" countmax="5" chance="20000"/><!-- meat -->
+		<item id="2152" countmax="30" chance="10000"/><!-- dolar=verde -->
+		<item id="2422" countmax="1" chance="7000"/><!-- hakku armor -->
+	</loot>
+	<loot>
+		<item id="2160" countmax="2" chance="2000"/><!-- gold bar -->
+		<item id="2525" countmax="1" chance="4000"/><!-- speed boots -->
+	</loot>
+</monster>
