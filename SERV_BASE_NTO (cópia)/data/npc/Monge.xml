@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Monge" script="data/npc/scripts/npcnormal/monge.lua" walkinterval="0" floorchange="0">
-	<health now="150" max="150"/>
-	<look type="258" head="79" body="118" legs="115" acess="6" feet="114" corpse="2212"/>
-</npc>

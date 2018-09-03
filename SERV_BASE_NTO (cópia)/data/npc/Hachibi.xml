@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Hachibi" script="data/npc/scripts/Hachibi.lua" walkinterval="2000" speed="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="318" head="19" body="113" legs="95" feet="115" addons="0"/>
-  <parameters>
-    <parameter key="message_greet" value="Entao Voce Que Vira o Meu Jinchuriki Mostre Que Tem Coragem e Traga o {Chakra} Do Nibi Aki?" />
-  </parameters>
-</npc>

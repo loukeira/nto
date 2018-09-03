@@ -1,7 +1,0 @@
-<?xml version="1.0"?><npc name="Resetador" script="data/npc/scripts/reseter.lua" walkinterval="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="133" head="10" body="122" legs="19" feet="10"/>
-<parameters>
-<parameter key="message_greet" value="Ola, |PLAYERNAME|. Eu posso {resetar} seu level. "/>
-</parameters>
-</npc>

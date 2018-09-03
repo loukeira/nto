@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Monge Guardiao" script="data/npc/scripts/npcnormal/mongeguardiao.lua" walkinterval="2000" speed="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="258" head="19" body="113" legs="95" feet="115" addons="0"/>
-  <parameters>
-    <parameter key="message_greet" value="ola eu sou o guardiao desse templo,voce pode me ajudar a {derrota} uma fera?" />
-  </parameters>
-</npc>

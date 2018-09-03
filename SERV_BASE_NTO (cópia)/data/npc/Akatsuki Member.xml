@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Akatsuki Member" script="data/npc/scripts/travel/akatsukimember.lua" walkinterval="2000" speed="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="336" head="19" body="113" legs="95" feet="115" addons="0"/>
-  <parameters>
-    <parameter key="message_greet" value="Quem eh voce? O que? hAHahAHa, que saber como eh o jutsu para entrar no covil? {lute} comigo e lhe direi!" />
-  </parameters>
-</npc>

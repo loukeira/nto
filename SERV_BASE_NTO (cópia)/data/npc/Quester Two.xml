@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Quester Two" script="data/npc/scripts/travel/questerdois.lua" walkinterval="2000" speed="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="118" head="19" body="113" legs="95" feet="115" addons="0"/>
-  <parameters>
-    <parameter key="message_greet" value="Eu sou um aprendiz de merlin, se quiser eu {teleporto} voce para o local de uma quest!" />
-  </parameters>
-</npc>

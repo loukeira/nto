@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<npc name="Kyuubi" script="data/npc/scripts/Kyuubi.lua" walkinterval="50000" floorchange="0">
-<health now="100" max="100"/>
-<look type="317" head="95" body="116" legs="121" feet="115" addons="3"/>
-<parameters>
-<parameter key="message_greet" value="Ola |PLAYERNAME|. Quer Aprende Meu Jutsu?"/>
-</parameters>
-</npc>

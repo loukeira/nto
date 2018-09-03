@@ -1,8 +1,0 @@
-<npc name="Shop Event" script="data/npc/scripts/sell/shop2.lua" access="5" walkinterval="0" floorchange="0">
-	
-    <health now="1000" max="1000"/>
-<look type="723" head="0" body="86" legs="0" addons="1"/>
-  <parameters>
-    <parameter key="message_greet" value="Ola Eu Vendo {Items} e Pergaminhos De {Vocations} Por Apenas Augums Pontos Vip,Tambem Posso Informa Como Voce Pode Compra {Pontos}" />
-  </parameters>
-</npc>  

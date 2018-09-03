@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<npc name="Nagato" script="data/npc/scripts/travel/nagato.lua" walkinterval="2000" speed="0" floorchange="0">
-<health now="100" max="100"/>
-<look type="528" head="19" body="113" legs="95" feet="115" addons="0"/>
-  <parameters>
-    <parameter key="message_greet" value="Eu Sou Uzumaki Nagato,o 7 Pain,Vim Destruir Konoha Para Destruir o Novo Mundo" />
-  </parameters>
-</npc>
