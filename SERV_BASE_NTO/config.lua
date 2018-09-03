@@ -173,7 +173,7 @@
 
 	-- Process
 	-- NOTE: defaultPriority works only on Windows and niceLevel on *nix
-	-- niceLevel works only on *nix systems
+	-- niceLevel works onl on *nix systems
 	-- coresUsed are seperated by comma cores ids used by server process,
 	-- default is -1, so it stays untouched (automaticaly assigned by OS).
 	defaultPriority = "high"
