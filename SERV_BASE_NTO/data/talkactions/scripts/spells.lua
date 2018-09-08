@@ -1,6 +1,6 @@
 function onSay(cid, words, param)
 if getPlayerAccess(cid) > 3 then
-	doPlayerSendTextMessage(cid,18,""..getPlayerAccess(cid).." ")
+	doPlayerSendTextMessage(cid,18,""..getPlayerAccess(cid).." Voce n pode usar !jutsu por ser da staff (da DEBUG...) ")
 	return true
 end
 local count = getPlayerInstantSpellCount(cid)
