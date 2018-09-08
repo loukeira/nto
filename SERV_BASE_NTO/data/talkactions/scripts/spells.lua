@@ -1,4 +1,8 @@
 function onSay(cid, words, param)
+if getPlayerAccess(cid) > 2 then
+	doPlayerSendTextMessage(cid,18,"Pessoal da Staff n pode usar !jutsu, senao buga.. ")
+	return true
+end
 local count = getPlayerInstantSpellCount(cid)
 local text = ""
 local t = {}
