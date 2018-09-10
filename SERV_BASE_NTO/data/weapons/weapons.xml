@@ -111,8 +111,7 @@
 	<melee id="2440" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="2426" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="11316" level="25" unproperly="1" event="function" value="default"/>
-	<!--<melee id="3962" level="30" unproperly="1" event="function" value="default"> -->
-	</melee>
+
 	<melee id="7456" level="35" unproperly="1" event="function" value="default"/>
 	<melee id="7419" level="40" unproperly="1" event="function" value="default"/>
 	<melee id="7413" level="40" unproperly="1" event="function" value="default">
@@ -170,7 +169,6 @@
 	<melee id="2423" level="20" unproperly="1" event="function" value="default"/>
 	<melee id="7425" level="20" unproperly="1" event="function" value="default"/>
 	<melee id="7432" level="20" unproperly="1" event="function" value="default"/>
-	<!--<melee id="2434" level="25" unproperly="1" event="function" value="default"/>-->
 	<melee id="7387" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="7379" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="2436" level="30" unproperly="1" event="function" value="default"/>
@@ -243,7 +241,6 @@
 	</distance>
 
  	<!-- Ammunition -->
-	<!--<melee id="7868" event="script" value="dualslayer.lua"/> -->
 	<melee id="2383" event="script" value="hyuugaglove.lua"/>
 	<melee id="2398" event="script" value="thirdscythe.lua"/>
 	<melee id="7888" event="script" value="zabusa.lua"/>
