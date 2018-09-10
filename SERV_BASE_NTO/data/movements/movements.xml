@@ -860,4 +860,120 @@
 	<movevent type="StepOut" itemid="2228" event="script" value="basuras.lua"/>
 	<movevent type="StepIn" itemid="2237-2245" event="script" value="basuras.lua"/>
 	<movevent type="StepOut" itemid="2237-2245" event="script" value="basuras.lua"/>
+
+<!-- ITEMS FEITO POR M@THEUS -->
+
+
+
+
+	<!--konohamaru [normal] -->
+			<movevent type="DeEquip" itemid="2379" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2379" slot="hand" level="1" event="function" value="onEquipItem"> <!-- KONOHAMARU KUNAI -->
+			</movevent>
+			<movevent type="DeEquip" itemid="2545" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2545" slot="hand" level="1" event="function" value="onEquipItem"> <!-- KONOHAMARU shuriken -->
+			</movevent>
+			<movevent type="DeEquip" itemid="6091" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="6091" slot="hand" level="1" event="function" value="onEquipItem"> <!-- KONOHAMARU GLOVE-->
+			</movevent>
+			<movevent type="Equip" itemid="11434" slot="head" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="11434" slot="head" event="function" value="onDeEquipItem"/> <!-- konohamaru mask -->
+			<movevent type="Equip" itemid="11724" slot="armor" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="11724" slot="armor" event="function" value="onDeEquipItem"/> <!-- konohamaru armor -->
+			<movevent type="Equip" itemid="4446" slot="legs" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="4446" slot="legs" event="function" value="onDeEquipItem"/> <!-- konohamaru legs -->
+			<movevent type="Equip" itemid="4445" slot="feet" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="4445" slot="feet" event="function" value="onDeEquipItem"/> <!-- konohamaru boots -->
+			<movevent type="Equip" itemid="11781" slot="necklace" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="11781" slot="necklace" event="function" value="onDeEquipItem"/> <!-- amulet of loss -->
+			<movevent type="Equip" itemid="2175" slot="shield" level="1" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="2175" slot="shield" event="function" value="onDeEquipItem"/> <!--JUTsus Book -->
+
+
+
+	<!--chunnin [normal] -->
+			<movevent type="DeEquip" itemid="3962" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="3962" slot="hand" level="50" event="function" value="onEquipItem"> <!-- CHUNNIN  SWORD-->
+			</movevent>
+			<movevent type="DeEquip" itemid="2546" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2546" slot="hand" level="50" event="function" value="onEquipItem"> <!-- chunnin shuriken -->
+			</movevent>
+			<movevent type="DeEquip" itemid="2434" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2434" slot="hand" level="50" event="function" value="onEquipItem"> <!-- chunnin GLOVE-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11389" slot="head" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11389" slot="head" level="50" event="function" value="onEquipItem"> <!-- chunnin mask-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11397" slot="armor" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11397" slot="armor" level="50" event="function" value="onEquipItem"> <!-- chunnin armor-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11394" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11394" slot="legs" level="50" event="function" value="onEquipItem"> <!-- chunnin legs-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11396" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11396" slot="legs" level="50" event="function" value="onEquipItem"> <!-- chunnin boots-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11779" slot="necklace" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11779" slot="necklace" level="50" event="function" value="onEquipItem"> <!-- jashin amulet-->
+			</movevent>
+
+
+	<!-- HANZOU [normal] -->
+			<movevent type="DeEquip" itemid="2433" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2433" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou  SWORD-->
+			</movevent>
+			<movevent type="DeEquip" itemid="2183" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2183" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou shuriken -->
+			</movevent>
+			<movevent type="DeEquip" itemid="2524" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2524" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou GLOVE-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11436" slot="head" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11436" slot="head" level="75" event="function" value="onEquipItem"> <!-- hanzou mask-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11437" slot="armor" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11437" slot="armor" level="75" event="function" value="onEquipItem"> <!-- hanzou armor-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11438" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11438" slot="legs" level="75" event="function" value="onEquipItem"> <!-- hanzou legs-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11439" slot="feet" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11439" slot="feet" level="75" event="function" value="onEquipItem"> <!-- hanzou boots-->
+			</movevent>
+
+  
+	<!-- OROCHIMARU [normal] -->
+			<movevent type="DeEquip" itemid="7868" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7868" slot="hand" level="100" event="function" value="onEquipItem"> <!-- orochimaru SWORD-->
+			</movevent>
+			<movevent type="DeEquip" itemid="2399" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2399" slot="hand" level="100" event="function" value="onEquipItem"> <!-- orochimaru shuriken -->
+			</movevent>
+			<movevent type="DeEquip" itemid="2373" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="2373" slot="hand" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU GLOVE-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11440" slot="head" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11440" slot="head" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU hat-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11441" slot="armor" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11441" slot="armor" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU ARMOR -->
+			</movevent>
+			<movevent type="DeEquip" itemid="11442" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11442" slot="legs" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU legs-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11443" slot="feet" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11443" slot="feet" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU boots-->
+			</movevent>
+
+
+
+
+
+<!-- COLOCAR ANTES DAQUI-->
 </movements>
