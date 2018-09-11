@@ -271,7 +271,7 @@
 <!--WEAPONS FEITA POR M@THEUS-->
 
 		<!--konohamaru [normal] -->
-			<distance id="2379" level="1" event="function" value="default"/> <!-- KONOHAMARU KUNAI -->
+			<melee id="2379" level="1" event="function" value="default"/> <!-- KONOHAMARU KUNAI -->
 			<distance id="2545" level="1" event="function" value="default"/> <!-- KONOHAMARU shuriken -->
 			<melee id="6091" level="1" event="function" value="default"/> <!-- KONOHAMARU GLOVE-->
 		<!--chunnin [normal] -->

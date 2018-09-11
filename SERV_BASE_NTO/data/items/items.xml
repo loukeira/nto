@@ -19929,10 +19929,10 @@
         <attribute key="weaponType" value="sword" />
     </item>
 	  <item id="2546" article="a [Normal]" name="Chunin Shuriken">
-        <attribute key="weight" value="3500" />
+        <attribute key="weight" value="3800" />
         <attribute key="attack" value="200" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="fire" />
+        <attribute key="shootType" value="shuriken" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2434" article="a [Normal]" name="Chunin Glove's">
