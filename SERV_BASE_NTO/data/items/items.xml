@@ -1973,13 +1973,6 @@
     <item id="2137" name="some golden fruits">
         <attribute key="weight" value="300" />
     </item>
-    <item id="2138" article="a" name="jashin amulet">
-        <attribute key="description" value="Nao deixa perder items a menos que esteja redskull." />
-        <attribute key="weight" value="520" />
-        <attribute key="armor" value="3" />
-        <attribute key="slotType" value="necklace" />
-        <attribute key="preventDrop" value="1" />
-    </item>
     <item id="2139" article="an" name="ancient tiara">
         <attribute key="weight" value="450" />
         <attribute key="slotType" value="necklace" />
@@ -2169,12 +2162,6 @@
     <item id="2174" article="a" name="strange symbol">
         <attribute key="weight" value="200" />
     </item>
-    <item id="2175" article="a" name="jutsusbook">
-        <attribute key="description" value="It shows your spells and can also shield against attack when worn." />
-        <attribute key="weight" value="5800" />
-        <attribute key="defense" value="14" />
-        <attribute key="weaponType" value="shield" />
-    </item>
     <item id="2176" article="an" name="orb">
         <attribute key="weight" value="800" />
     </item>
@@ -2201,13 +2188,6 @@
         <attribute key="weight" value="4300" />
         <attribute key="weaponType" value="wand" />
         <attribute key="shootType" value="smallearth" />
-        <attribute key="range" value="3" />
-    </item>
-    <item id="2183" article="a" name="hailstorm rod">
-        <attribute key="description" value="It grants you the power of striking your foes with furious hailstorms." />
-        <attribute key="weight" value="2700" />
-        <attribute key="weaponType" value="wand" />
-        <attribute key="shootType" value="smallice" />
         <attribute key="range" value="3" />
     </item>
     <item id="2184" article="a" name="crystal wand">
@@ -2553,10 +2533,6 @@
     </item>
     <item id="2259" name="stone rubbish">
         <attribute key="weight" value="200" />
-    </item>
-    <item id="2260" article="a" name="blank rune">
-        <attribute key="charges" value="1" />
-        <attribute key="weight" value="120" />
     </item>
     <item id="2261" article="a" name="destroy field rune">
         <attribute key="runeSpellName" value="adito grav" />
@@ -2995,9 +2971,6 @@
         <attribute key="attack" value="350" />
         <attribute key="weaponType" value="club" />
     </item>
-    <item id="2373" name="panpipes">
-        <attribute key="weight" value="820" />
-    </item>
     <item id="2374" article="a" name="wooden flute">
         <attribute key="weight" value="200" />
     </item>
@@ -3024,12 +2997,6 @@
         <attribute key="attack" value="25" />
         <attribute key="weaponType" value="axe" />
         <attribute key="slotType" value="two-handed" />
-    </item>
-    <item id="2379" article="a" name="kunai">
-        <attribute key="weight" value="950" />
-        <attribute key="defense" value="2" />
-        <attribute key="attack" value="100" />
-        <attribute key="weaponType" value="sword" />
     </item>
     <item id="2380" article="a" name="taijutsu glove">
         <attribute key="weight" value="2500" />
@@ -3186,15 +3153,6 @@
         <attribute key="attack" value="600" />
         <attribute key="weaponType" value="sword" />
         <attribute key="slotType" value="two-handed" />
-    </item>
-    <item id="2399" article="a" name="big shuriken" plural="big shurikens">
-        <attribute key="weight" value="200" />
-        <attribute key="attack" value="655" />
-        <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="shiverarrow" />
-        <attribute key="range" value="5" />
-        <attribute key="breakChance" value="10" />
-        <attribute key="ammoAction" value="moveback" />
     </item>
     <item id="2400" article="a" name="jounin shirt">
         <attribute key="description" value="Ninjutsu skill increases in four and increases Taijutsu in two." />
@@ -3453,22 +3411,6 @@
         <attribute key="weaponType" value="axe" />
         <attribute key="extradef" value="1" />
     </item>
-    <item id="2433" article="an" name="enchanted staff">
-        <attribute key="description" value="Temporary magic powers enchant this staff." />
-        <attribute key="weight" value="3800" />
-        <attribute key="defense" value="45" />
-        <attribute key="attack" value="39" />
-        <attribute key="weaponType" value="club" />
-        <attribute key="slotType" value="two-handed" />
-        <attribute key="decayTo" value="2401" />
-        <attribute key="duration" value="60" />
-    </item>
-    <item id="2434" article="a" name="elite taijutsu glove">
-        <attribute key="weight" value="350" />
-        <attribute key="defense" value="7" />
-        <attribute key="attack" value="250" />
-        <attribute key="weaponType" value="club" />
-    </item>
     <item id="2435" article="a" name="sound glove">
         <attribute key="weight" value="4100" />
         <attribute key="defense" value="13" />
@@ -3652,11 +3594,6 @@
         <attribute key="weight" value="5000" />
         <attribute key="armor" value="7" />
         <attribute key="slotType" value="head" />
-    </item>
-    <item id="2463" article="a" name="orochimaru armor">
-        <attribute key="weight" value="12000" />
-        <attribute key="armor" value="27" />
-        <attribute key="slotType" value="body" />
     </item>
     <item id="2464" article="a" name="chain armor">
         <attribute key="weight" value="10000" />
@@ -4010,12 +3947,6 @@
         <attribute key="defense" value="40" />
         <attribute key="weaponType" value="shield" />
     </item>
-    <item id="2524" article="an" name="ornamented shield">
-        <attribute key="description" value="Many gems sparkle on the shield." />
-        <attribute key="weight" value="6700" />
-        <attribute key="defense" value="22" />
-        <attribute key="weaponType" value="shield" />
-    </item>
     <item id="2525" article="a" name="speed boots">
         <attribute key="description" value="Speed 200." />
         <attribute key="weight" value="2200" />
@@ -4136,23 +4067,6 @@
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="redstar" />
         <attribute key="range" value="4" />
-        <attribute key="breakChance" value="33" />
-        <attribute key="ammoAction" value="moveback" />
-    </item>
-    <item id="2545" article="a" name="shuriken" plural="shurikens">
-        <attribute key="weight" value="200" />
-        <attribute key="attack" value="325" />
-        <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="poisonarrow" />
-        <attribute key="range" value="4" />
-        <attribute key="ammoAction" value="moveback" />
-    </item>
-    <item id="2546" article="a" name="elite shuriken" plural="elite shurikens">
-        <attribute key="weight" value="200" />
-        <attribute key="attack" value="550" />
-        <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="burstarrow" />
-        <attribute key="range" value="5" />
         <attribute key="breakChance" value="33" />
         <attribute key="ammoAction" value="moveback" />
     </item>
@@ -7243,13 +7157,6 @@
         <attribute key="attack" value="40" />
         <attribute key="weaponType" value="club" />
     </item>
-    <item id="3962" article="a" name="beastslayer axe">
-        <attribute key="weight" value="6150" />
-        <attribute key="defense" value="12" />
-        <attribute key="attack" value="35" />
-        <attribute key="weaponType" value="axe" />
-        <attribute key="extradef" value="1" />
-    </item>
     <item id="3963" article="a" name="templar scytheblade">
         <attribute key="weight" value="4500" />
         <attribute key="defense" value="15" />
@@ -10328,10 +10235,6 @@
     </item>
     <item id="6090" article="a" name="music sheet">
         <attribute key="description" value="It contains the fourth verse of a hymn." />
-        <attribute key="weight" value="50" />
-    </item>
-    <item id="6091" article="a" name="very noble-looking watch">
-        <attribute key="description" value="Unfortunately it seems to be broken" />
         <attribute key="weight" value="50" />
     </item>
     <item id="6092" article="a" name="very noble-looking watch">
@@ -14141,13 +14044,6 @@
         <attribute key="weaponType" value="sword" />
         <attribute key="slotType" value="two-handed" />
     </item>
-    <item id="7868" article="a" name="dual slayer eletrik">
-        <attribute key="weight" value="5400" />
-        <attribute key="defense" value="10" />
-        <attribute key="attack" value="475" />
-        <attribute key="weaponType" value="sword" />
-        <attribute key="slotType" value="two-handed" />
-    </item>
     <item id="7869" article="a" name="raijin nidaime sword">
         <attribute key="weight" value="500" />
         <attribute key="defense" value="45" />
@@ -15436,16 +15332,6 @@
         <attribute key="speed" value="70" />
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="legs" />
-    </item>
-    <item id="8869" article="a" name="orochimaru boots">
-        <attribute key="description" value="Health recovery 400/s and speed 200." />
-        <attribute key="weight" value="350" />
-        <attribute key="armor" value="6" />
-        <attribute key="healthGain" value="400" />
-        <attribute key="healthTicks" value="1000" />
-        <attribute key="speed" value="120" />
-        <attribute key="showattributes" value="1" />
-        <attribute key="slotType" value="feet" />
     </item>
     <item id="8870" article="a" name="spirit cloak">
         <attribute key="armor" value="8" />
@@ -19808,26 +19694,6 @@
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
 		</item>
-	
-        <item id="11389" article="a" name="akatsuki shield">
-        <attribute key="description" value="All skils +10 and absorption 10% and chakra/health recovery 5000/s and max health +20000 and speed 150." />
-        <attribute key="weight" value="570" />
-        <attribute key="defense" value="1000" />
-		<attribute key="skillAxe" value="10" />
-        <attribute key="skillClub" value="10" />
-        <attribute key="skillSword" value="10" />
-        <attribute key="skillDist" value="10" />
-		<attribute key="skillShield" value="10" />
-        <attribute key="magiclevelpoints" value="10" />
-		<attribute key="absorbPercentAll" value="10" />
-        <attribute key="manaGain" value="5000" />
-        <attribute key="manaTicks" value="1000" />
-        <attribute key="speed" value="150" />
-        <attribute key="healthGain" value="5000" />
-        <attribute key="healthTicks" value="1000" />
-		<attribute key="maxhealthpoints" value="+20000" />
-        <attribute key="weaponType" value="shield" />	
-		</item>
 		 <item id="11390" article="a" name="Super Cetro Vip">
   <attribute key="weight" value="7500" />
   <attribute key="weaponType" value="wand" />
@@ -19851,12 +19717,6 @@
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="body" />
     </item>
-	 <item id="11394" article="a" name="Cetro madara rikudou">
-  <attribute key="weight" value="7500" />
-  <attribute key="weaponType" value="wand" />
-  <attribute key="range" value="7" />
-  <attribute key="hitChance" value="95"/>
-  </item>
    <item id="11395" article="a" name="kakashi mask">
         <attribute key="description" value="chakra/health recovery 15000/s" />
         <attribute key="weight" value="3500" />
@@ -19892,13 +19752,6 @@
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="body" />
     </item>
-	    <item id="11396" article="a" name="War Ring">
-        <attribute key="weight" value="100" />
-        <attribute key="slotType" value="ring" />
-        <attribute key="absorbPercentAll" value="50" />
-        <attribute key="showattributes" value="1" />
-    </item>
-	
 	    <item id="11398" article="a" name="pergaminho Rikudou sennin">
         <attribute key="description" value="Use isso para se torna um Rikudou sennin." />
         <attribute key="weight" value="100" />
@@ -19956,3 +19809,263 @@
     </item>
     <item id="741" article="a" name="white jutsu tile" />
      </items>
+	      <item id="11434" article="a [Normal]" name="Konohamaru Mask">
+        <attribute key="description" value="Chakra and life recovery 100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="4" />
+        <attribute key="manaGain" value="100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11724" article="a [Normal]" name="Konohamaru Armor">
+        <attribute key="description" value="Chakra and life recovery 100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="8" />
+        <attribute key="manaGain" value="100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="body" />
+    </item>
+	   <item id="4446" article="a [Normal]" name="Konohamaru Legs">
+        <attribute key="description" value="Chakra and life recovery 100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="6" />
+        <attribute key="manaGain" value="100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	   <item id="4445" article="a [Normal]" name="Konohamaru Boots">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="2" />
+        <attribute key="speed" value="10" />
+        <attribute key="showattributes" value="1" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	  <item id="2379" article="a [Normal]" name="Konohamaru Kunai">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="100" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="2545" article="a [Normal]" name="Konohamaru Shuriken">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="100" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="poisonarrow" />
+        <attribute key="range" value="4" />
+		<attribute key="maxHitChance" value="100" />
+    </item>
+	 <item id="6091" article="a [Normal]" name="Konohamaru Glove">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="100" />
+        <attribute key="weaponType" value="club" />
+    </item>
+	 <item id="11760" article="a [Normal]" name="Konohamaru Bag">
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="8" />
+        <attribute key="slotType" value="backpack" />
+    </item>
+	  <item id="2260" article="a [Normal]" name="Jutsu's Book">
+        <attribute key="description" value="It shows your spells and can also shield against attack when worn." />
+        <attribute key="weight" value="3500" />
+        <attribute key="defense" value="20" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	  <item id="11781" article="a [Normal]" name="Amulet of loss">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="1" />
+        <attribute key="slotType" value="necklace" />
+        <attribute key="preventDrop" value="1" />
+    </item>
+	      <item id="11389" article="a [Normal]" name="Chunin Mask">
+        <attribute key="description" value="Chakra and life recovery 200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="6" />
+        <attribute key="manaGain" value="200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11397" article="a [Normal]" name="Chunin Armor">
+        <attribute key="description" value="Chakra and life recovery 200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="10" />
+        <attribute key="manaGain" value="200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="body" />
+    </item>
+	   <item id="11394" article="a [Normal]" name="Chunin Legs">
+        <attribute key="description" value="Chakra and life recovery 200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="8" />
+        <attribute key="manaGain" value="200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	   <item id="11396" article="a [Normal]" name="Chunin Boots">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="4" />
+        <attribute key="speed" value="20" />
+        <attribute key="showattributes" value="1" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	  <item id="3962" article="a [Normal]" name="Chunin Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="200" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="2546" article="a [Normal]" name="Chunin Shuriken">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="200" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="poisonarrow" />
+        <attribute key="range" value="4" />
+		<attribute key="maxHitChance" value="100" />
+    </item>
+	 <item id="2434" article="a [Normal]" name="Chunin Glove">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="200" />
+        <attribute key="weaponType" value="club" />
+    </item>
+	 <item id="11759" article="a [Normal]" name="Chunin Backpack">
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="15" />
+        <attribute key="slotType" value="backpack" />
+    </item>
+	  <item id="11779" article="a [Normal]" name="Jashin Amulet">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="2" />
+        <attribute key="slotType" value="necklace" />
+        <attribute key="preventDrop" value="1" />
+    </item>
+	<item id="11436" article="a [Normal]" name="Hanzou Mask">
+        <attribute key="description" value="Chakra and life recovery 300/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="8" />
+        <attribute key="manaGain" value="300" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="300" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11437" article="a [Normal]" name="Hanzou Armor">
+        <attribute key="description" value="Chakra and life recovery 300/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="12" />
+        <attribute key="manaGain" value="300" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="300" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="body" />
+    </item>
+	   <item id="11438" article="a [Normal]" name="Hanzou Legs">
+        <attribute key="description" value="Chakra and life recovery 300/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="10" />
+        <attribute key="manaGain" value="300" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="300" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	   <item id="11439" article="a [Normal]" name="Hanzou Boots">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="6" />
+        <attribute key="speed" value="30" />
+        <attribute key="showattributes" value="1" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	  <item id="2433" article="a [Normal]" name="Hanzou Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="300" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="2183" article="a [Normal]" name="Hanzou Shuriken">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="300" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="poisonarrow" />
+        <attribute key="range" value="4" />
+		<attribute key="maxHitChance" value="100" />
+    </item>
+	 <item id="2524" article="a [Normal]" name="Hanzou Glove">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="300" />
+        <attribute key="weaponType" value="club" />
+    </item>
+		<item id="11440" article="a [Normal]" name="Orochimaru Hat">
+        <attribute key="description" value="Chakra and life recovery 400/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="10" />
+        <attribute key="manaGain" value="400" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="400" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11441" article="a [Normal]" name="Orochimaru Armor">
+        <attribute key="description" value="Chakra and life recovery 400/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="14" />
+        <attribute key="manaGain" value="400" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="400" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="body" />
+    </item>
+	   <item id="11442" article="a [Normal]" name="Orochimaru Legs">
+        <attribute key="description" value="Chakra and life recovery 400/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="12" />
+        <attribute key="manaGain" value="400" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="400" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	   <item id="11443" article="a [Normal]" name="Orochimaru Boots">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="8" />
+        <attribute key="speed" value="40" />
+        <attribute key="showattributes" value="1" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	  <item id="7868" article="a [Normal]" name="Orochimaru Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="400" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="2399" article="a [Normal]" name="Orochimaru Shuriken">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="400" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="poisonarrow" />
+        <attribute key="range" value="4" />
+		<attribute key="maxHitChance" value="100" />
+    </item>
+	 <item id="2373" article="a [Normal]" name="Orochimaru Glove">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="400" />
+        <attribute key="weaponType" value="club" />
+    </item>
