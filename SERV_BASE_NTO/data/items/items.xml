@@ -19808,7 +19808,6 @@
         <attribute key="showattributes" value="1" />
     </item>
     <item id="741" article="a" name="white jutsu tile" />
-     </items>
 	    
     
 
@@ -20047,7 +20046,6 @@
 		<attribute key="healthGain" value="400" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
-<<<<<<< HEAD
         <attribute key="slotType" value="legs" />
         <attribute key="slotType" value="body" />
     </item>
