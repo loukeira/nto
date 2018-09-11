@@ -279,13 +279,13 @@
 			<distance id="2546" level="50" event="function" value="default"/> <!-- chunnin shuriken -->
 			<melee id="2434" level="50" event="function" value="default"/> <!-- chunnin GLOVE-->
 		<!-- HANZOU [normal] -->
-			<melee id="2433" level="75" event="function" value="default"/> <!-- hanzou  SWORD-->
-			<distance id="2183" level="75" event="function" value="default"/> <!-- hanzou shuriken -->
-			<melee id="2524" level="75" event="function" value="default"/> <!-- hanzou GLOVE-->
+			<melee id="2433" level="100" event="function" value="default"/> <!-- hanzou  SWORD-->
+			<distance id="2183" level="100" event="function" value="default"/> <!-- hanzou shuriken -->
+			<melee id="2524" level="100" event="function" value="default"/> <!-- hanzou GLOVE-->
 		<!-- OROCHIMARU [normal] -->
-			<melee id="7868" level="100" event="function" value="default"/> <!-- orochimaru SWORD-->
-			<distance id="2399" level="100" event="function" value="default"/> <!-- orochimaru shuriken -->
-			<melee id="2373" level="100" event="function" value="default"/> <!-- OROCHIMARU GLOVE-->
+			<melee id="7868" level="150" event="function" value="default"/> <!-- orochimaru SWORD-->
+			<distance id="2399" level="150" event="function" value="default"/> <!-- orochimaru shuriken -->
+			<melee id="2373" level="150" event="function" value="default"/> <!-- OROCHIMARU GLOVE-->
 
 
 

@@ -926,49 +926,49 @@
 
 	<!-- HANZOU [normal] -->
 			<movevent type="DeEquip" itemid="2433" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="2433" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou  SWORD-->
+			<movevent type="Equip" itemid="2433" slot="hand" level="100" event="function" value="onEquipItem"> <!-- hanzou  SWORD-->
 			</movevent>
 			<movevent type="DeEquip" itemid="2183" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="2183" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou shuriken -->
+			<movevent type="Equip" itemid="2183" slot="hand" level="100" event="function" value="onEquipItem"> <!-- hanzou shuriken -->
 			</movevent>
 			<movevent type="DeEquip" itemid="2524" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="2524" slot="hand" level="75" event="function" value="onEquipItem"> <!-- hanzou GLOVE-->
+			<movevent type="Equip" itemid="2524" slot="hand" level="100" event="function" value="onEquipItem"> <!-- hanzou GLOVE-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11436" slot="head" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11436" slot="head" level="75" event="function" value="onEquipItem"> <!-- hanzou mask-->
+			<movevent type="Equip" itemid="11436" slot="head" level="100" event="function" value="onEquipItem"> <!-- hanzou mask-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11437" slot="armor" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11437" slot="armor" level="75" event="function" value="onEquipItem"> <!-- hanzou armor-->
+			<movevent type="Equip" itemid="11437" slot="armor" level="100" event="function" value="onEquipItem"> <!-- hanzou armor-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11438" slot="legs" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11438" slot="legs" level="75" event="function" value="onEquipItem"> <!-- hanzou legs-->
+			<movevent type="Equip" itemid="11438" slot="legs" level="100" event="function" value="onEquipItem"> <!-- hanzou legs-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11439" slot="feet" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11439" slot="feet" level="75" event="function" value="onEquipItem"> <!-- hanzou boots-->
+			<movevent type="Equip" itemid="11439" slot="feet" level="100" event="function" value="onEquipItem"> <!-- hanzou boots-->
 			</movevent>
 
   
 	<!-- OROCHIMARU [normal] -->
 			<movevent type="DeEquip" itemid="7868" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="7868" slot="hand" level="100" event="function" value="onEquipItem"> <!-- orochimaru SWORD-->
+			<movevent type="Equip" itemid="7868" slot="hand" level="150" event="function" value="onEquipItem"> <!-- orochimaru SWORD-->
 			</movevent>
 			<movevent type="DeEquip" itemid="2399" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="2399" slot="hand" level="100" event="function" value="onEquipItem"> <!-- orochimaru shuriken -->
+			<movevent type="Equip" itemid="2399" slot="hand" level="150" event="function" value="onEquipItem"> <!-- orochimaru shuriken -->
 			</movevent>
 			<movevent type="DeEquip" itemid="2373" slot="hand" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="2373" slot="hand" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU GLOVE-->
+			<movevent type="Equip" itemid="2373" slot="hand" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU GLOVE-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11440" slot="head" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11440" slot="head" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU hat-->
+			<movevent type="Equip" itemid="11440" slot="head" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU hat-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11441" slot="armor" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11441" slot="armor" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU ARMOR -->
+			<movevent type="Equip" itemid="11441" slot="armor" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU ARMOR -->
 			</movevent>
 			<movevent type="DeEquip" itemid="11442" slot="legs" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11442" slot="legs" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU legs-->
+			<movevent type="Equip" itemid="11442" slot="legs" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU legs-->
 			</movevent>
 			<movevent type="DeEquip" itemid="11443" slot="feet" event="function" value="onDeEquipItem"/>
-			<movevent type="Equip" itemid="11443" slot="feet" level="100" event="function" value="onEquipItem"> <!-- OROCHIMARU boots-->
+			<movevent type="Equip" itemid="11443" slot="feet" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU boots-->
 			</movevent>
 
 
