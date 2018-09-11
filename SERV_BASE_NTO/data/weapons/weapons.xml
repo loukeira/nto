@@ -11,8 +11,8 @@
 	</wand>
 	<wand id="2181" level="26" mana="8" min="42" max="48" type="earth" event="function" value="default">
 	</wand>
-	<wand id="2183" level="33" mana="13" min="55" max="75" type="ice" event="function" value="default">
-	</wand>
+	<!--<wand id="2183" level="33" mana="13" min="55" max="75" type="ice" event="function" value="default">
+	</wand>-->
 	<wand id="8912" level="37" mana="13" min="55" max="75" type="earth" event="function" value="default">
 	</wand>
 	<wand id="8910" level="42" mana="13" min="55" max="75" type="death" event="function" value="default">
@@ -111,8 +111,7 @@
 	<melee id="2440" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="2426" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="11316" level="25" unproperly="1" event="function" value="default"/>
-	<melee id="3962" level="30" unproperly="1" event="function" value="default">
-	</melee>
+
 	<melee id="7456" level="35" unproperly="1" event="function" value="default"/>
 	<melee id="7419" level="40" unproperly="1" event="function" value="default"/>
 	<melee id="7413" level="40" unproperly="1" event="function" value="default">
@@ -170,7 +169,6 @@
 	<melee id="2423" level="20" unproperly="1" event="function" value="default"/>
 	<melee id="7425" level="20" unproperly="1" event="function" value="default"/>
 	<melee id="7432" level="20" unproperly="1" event="function" value="default"/>
-	<melee id="2434" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="7387" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="7379" level="25" unproperly="1" event="function" value="default"/>
 	<melee id="2436" level="30" unproperly="1" event="function" value="default"/>
@@ -243,7 +241,6 @@
 	</distance>
 
  	<!-- Ammunition -->
-	<melee id="7868" event="script" value="dualslayer.lua"/>
 	<melee id="2383" event="script" value="hyuugaglove.lua"/>
 	<melee id="2398" event="script" value="thirdscythe.lua"/>
 	<melee id="7888" event="script" value="zabusa.lua"/>
@@ -253,7 +250,7 @@
 	<distance id="346" event="script" value="gunbai.lua"/>
 	<distance id="855" event="script" value="gunbai.lua"/>
 	<distance id="838" event="script" value="gunbai.lua"/>
-	<distance id="2545" event="script" value="poison_arrow.lua"/>
+	<!--<distance id="2545" event="script" value="poison_arrow.lua"/>-->
 	<distance id="7366" event="script" value="viper_star.lua"/>
 	<distance id="7838" type="energy" event="function" value="default"/>
 	<distance id="7839" type="ice" event="function" value="default"/>
@@ -268,4 +265,36 @@
 	<distance id="7363" level="30" event="function" value="default"/> <!-- Piercing Bolt -->
 	<distance id="2547" level="55" event="function" value="default"/> <!-- Power Bolt -->
 	<distance id="6529" level="70" event="function" value="default"/> <!-- Infernal Bolt -->
+
+
+
+<!--WEAPONS FEITA POR M@THEUS-->
+
+		<!--konohamaru [normal] -->
+			<distance id="2379" level="1" event="function" value="default"/> <!-- KONOHAMARU KUNAI -->
+			<distance id="2545" level="1" event="function" value="default"/> <!-- KONOHAMARU shuriken -->
+			<melee id="6091" level="1" event="function" value="default"/> <!-- KONOHAMARU GLOVE-->
+		<!--chunnin [normal] -->
+			<melee id="3962" level="50" event="function" value="default"/> <!-- CHUNNIN  SWORD-->
+			<distance id="2546" level="50" event="function" value="default"/> <!-- chunnin shuriken -->
+			<melee id="2434" level="50" event="function" value="default"/> <!-- chunnin GLOVE-->
+		<!-- HANZOU [normal] -->
+			<melee id="2433" level="75" event="function" value="default"/> <!-- hanzou  SWORD-->
+			<distance id="2183" level="75" event="function" value="default"/> <!-- hanzou shuriken -->
+			<melee id="2524" level="75" event="function" value="default"/> <!-- hanzou GLOVE-->
+		<!-- OROCHIMARU [normal] -->
+			<melee id="7868" level="100" event="function" value="default"/> <!-- orochimaru SWORD-->
+			<distance id="2399" level="100" event="function" value="default"/> <!-- orochimaru shuriken -->
+			<melee id="2373" level="100" event="function" value="default"/> <!-- OROCHIMARU GLOVE-->
+
+
+
+
+
+	
+
+
+
+
+<!-- SEMPRE COLOQUE ANTES DAQUI! -->
 </weapons>

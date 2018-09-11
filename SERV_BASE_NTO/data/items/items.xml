@@ -19808,8 +19808,17 @@
         <attribute key="showattributes" value="1" />
     </item>
     <item id="741" article="a" name="white jutsu tile" />
+<<<<<<< HEAD
      </items>
 	      <item id="11434" article="a [Normal]" name="Konohamaru Mask">
+=======
+    
+
+
+<!-- ITENS FEITOS POR M@THEUS -->
+
+	    <item id="11434" article="a [Normal]" name="Konohamaru Mask">
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
         <attribute key="description" value="Chakra and life recovery 100/s." />
         <attribute key="weight" value="3500" />
         <attribute key="armor" value="4" />
@@ -19840,7 +19849,11 @@
 		<attribute key="healthGain" value="100" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
+<<<<<<< HEAD
         <attribute key="slotType" value="legs" />
+=======
+        <attribute key="slotType" value="body" />
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
     </item>
 	   <item id="4445" article="a [Normal]" name="Konohamaru Boots">
         <attribute key="weight" value="3500" />
@@ -19872,7 +19885,11 @@
         <attribute key="containerSize" value="8" />
         <attribute key="slotType" value="backpack" />
     </item>
+<<<<<<< HEAD
 	  <item id="2260" article="a [Normal]" name="Jutsu's Book">
+=======
+	  <item id="2175" article="a [Normal]" name="Jutsu's Book">
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
         <attribute key="description" value="It shows your spells and can also shield against attack when worn." />
         <attribute key="weight" value="3500" />
         <attribute key="defense" value="20" />
@@ -19915,7 +19932,11 @@
 		<attribute key="healthGain" value="200" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
+<<<<<<< HEAD
         <attribute key="slotType" value="legs" />
+=======
+        <attribute key="slotType" value="body" />
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
     </item>
 	   <item id="11396" article="a [Normal]" name="Chunin Boots">
         <attribute key="weight" value="3500" />
@@ -19984,7 +20005,11 @@
 		<attribute key="healthGain" value="300" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
+<<<<<<< HEAD
         <attribute key="slotType" value="legs" />
+=======
+        <attribute key="slotType" value="body" />
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
     </item>
 	   <item id="11439" article="a [Normal]" name="Hanzou Boots">
         <attribute key="weight" value="3500" />
@@ -20042,7 +20067,11 @@
 		<attribute key="healthGain" value="400" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
+<<<<<<< HEAD
         <attribute key="slotType" value="legs" />
+=======
+        <attribute key="slotType" value="body" />
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
     </item>
 	   <item id="11443" article="a [Normal]" name="Orochimaru Boots">
         <attribute key="weight" value="3500" />
@@ -20069,3 +20098,13 @@
         <attribute key="attack" value="400" />
         <attribute key="weaponType" value="club" />
     </item>
+<<<<<<< HEAD
+=======
+
+
+
+
+<!-- SEMPRE COLOQUE ANTES DISSO AQUI! -->
+
+ </items>
+>>>>>>> ef0497b296d9fc6e3791ed4954fc72307b833a0b
