@@ -2153,12 +2153,6 @@
         <attribute key="absorbPercentManaDrain" value="20" />
         <attribute key="showattributes" value="1" />
     </item>
-    <item id="2173" article="an" name="amulet of loss">
-        <attribute key="weight" value="420" />
-        <attribute key="slotType" value="necklace" />
-        <attribute key="charges" value="1" />
-        <attribute key="preventDrop" value="1" />
-    </item>
     <item id="2174" article="a" name="strange symbol">
         <attribute key="weight" value="200" />
     </item>
@@ -19938,7 +19932,7 @@
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="200" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="4" />
+        <attribute key="shootType" value="fire" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2434" article="a [Normal]" name="Chunin Glove's">
