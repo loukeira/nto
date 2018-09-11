@@ -19903,12 +19903,6 @@
         <attribute key="containerSize" value="15" />
         <attribute key="slotType" value="backpack" />
     </item>
-	  <item id="11779" article="a [Normal]" name="Jashin Amulet">
-        <attribute key="weight" value="3500" />
-        <attribute key="armor" value="2" />
-        <attribute key="slotType" value="necklace" />
-        <attribute key="preventDrop" value="1" />
-    </item>
 	<item id="11436" article="a [Normal]" name="Hanzou Mask">
         <attribute key="description" value="Chakra and life recovery 300/s." />
         <attribute key="weight" value="3500" />
@@ -20037,7 +20031,6 @@
         <attribute key="attack" value="400" />
         <attribute key="weaponType" value="club" />
     </item>
-	  </item>
     <item id="11773" article="an [Normal]" name="Energy Ring">
         <attribute key="weight" value="80" />
         <attribute key="slotType" value="ring" />
@@ -20063,7 +20056,6 @@
         <attribute key="speed" value="60" />
         <attribute key="showattributes" value="1" />
     </item>
-	</item>
 		<item id="11454" article="a [Magic]" name="Blue Kurama Helmet">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
@@ -20106,7 +20098,7 @@
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="2" />
+        <attribute key="showattributes" value="3" />
         <attribute key="speed" value="60" />
         <attribute key="showattributes" value="3" />
         <attribute key="slotType" value="feet" />
@@ -20128,6 +20120,144 @@
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
     </item>
+	<item id="7469" article="a [Magic]" name="Blue Kurama Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="100" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+			<item id="11462" article="a [Magic]" name="Kurama Helmet">
+        <attribute key="description" value="Chakra and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="12" />
+        <attribute key="manaGain" value="500" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="500" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11461" article="a [Magic]" name="Kurama Armor">
+        <attribute key="description" value="Chakra and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="16" />
+        <attribute key="manaGain" value="500" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="500" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11460" article="a [Magic]" name="Kurama Legs">
+        <attribute key="description" value="Chakra and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="14" />
+        <attribute key="manaGain" value="500" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="500" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="2" />
+        <attribute key="slotType" value="legs" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11459" article="a [Magic]" name="Kurama Boots">
+	    <attribute key="description" value="Chakra and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="10" />
+	    <attribute key="manaGain" value="500" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="500" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="speed" value="60" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="slotType" value="feet" />
+    </item>
+		  <item id="7470" article="a [Magic]" name="Kurama Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="500" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="7472" article="a [Magic]" name="Kurama Shuriken's">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="500" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="burstarrow" />
+        <attribute key="range" value="4" />
+    </item>
+	 <item id="7471" article="a [Magic]" name="Kurama Glove's">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="500" />
+        <attribute key="weaponType" value="club" />
+    </item>
+	<item id="7473" article="a [Magic]" name="Kurama Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="100" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	 <item id="11759" article="a [Magic]" name="Kurama Backpack">
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="20" />
+        <attribute key="slotType" value="backpack" />
+        <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+    </item>
+		 <item id="11779" article="a [Magic]" name="Jashin Amulet">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="2" />
+        <attribute key="slotType" value="necklace" />
+	    <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+        <attribute key="preventDrop" value="1" />
+		<attribute key="showattributes" value="5" />
+    </item>
+    <item id="11771" article="a [Magic]" name="Suiton Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentIce" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+	<item id="11768" article="a [Magic]" name="Katon Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentFire" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		<item id="11769" article="a [Magic]" name="Mokuton Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentEarth" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		<item id="11770" article="a [Magic]" name="Dokuton Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentPoison" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+	
+	
 
 
 
