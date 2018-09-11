@@ -19932,7 +19932,7 @@
         <attribute key="weight" value="3800" />
         <attribute key="attack" value="200" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="energy" />
+        <attribute key="shootType" value="burstarrow" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2434" article="a [Normal]" name="Chunin Glove's">
@@ -20001,7 +20001,7 @@
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="300" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="shuriken" />
+        <attribute key="shootType" value="energy" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2524" article="a [Normal]" name="Hanzou Glove's">
