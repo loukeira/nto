@@ -19938,7 +19938,7 @@
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="200" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="poisonarrow" />
+        <attribute key="shootType" value="4" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2434" article="a [Normal]" name="Chunin Glove's">
