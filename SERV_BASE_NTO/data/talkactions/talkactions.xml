@@ -74,9 +74,9 @@
 
  <talkaction words="!frags" event="script" value="frags.lua"/>
  <talkaction words="charge" event="script" value="charge.lua"/>
- <talkaction words="!jam" event="script" value="aol.lua"/>
+ <talkaction words="!jam;!aol" event="script" value="aol.lua"/>
  <talkaction words="fuinjutsu" event="script" value="abraa.lua" />
- <talkaction words="!jutsu" event="script" value="spells.lua"/>
+ <talkaction words="!jutsu;!spells" event="script" value="spells.lua"/>
  <talkaction words="!online" event="script" value="online.lua"/>
  <talkaction words="!uptime" event="script" value="uptime.lua"/>>
  <talkaction log="yes" access="3" words="/popup" event="script" value="popup.lua"/> 
