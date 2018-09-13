@@ -4,6 +4,9 @@
 <actions>
 
 
+<action itemid="2175" script="spells.lua"/>
+
+
 <action itemid="11718" script="bomba.lua"/>
 
 

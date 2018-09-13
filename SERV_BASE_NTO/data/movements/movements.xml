@@ -971,6 +971,55 @@
 			<movevent type="Equip" itemid="11443" slot="feet" level="150" event="function" value="onEquipItem"> <!-- OROCHIMARU boots-->
 			</movevent>
 
+	<!-- NARUTO KURAMA MAGIC LVL 200 -->
+			<movevent type="DeEquip" itemid="7470" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7470" slot="hand" level="200" event="function" value="onEquipItem"> <!-- SWORD-->
+			</movevent>
+			<movevent type="DeEquip" itemid="7472" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7472" slot="hand" level="200" event="function" value="onEquipItem"> <!-- distance -->
+			</movevent>
+			<movevent type="DeEquip" itemid="7471" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7471" slot="hand" level="200" event="function" value="onEquipItem"> <!-- GLOVE-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11462" slot="head" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11462" slot="head" level="200" event="function" value="onEquipItem"> <!--  helm-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11461" slot="armor" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11461" slot="armor" level="200" event="function" value="onEquipItem"> <!-- ARMOR -->
+			</movevent>
+			<movevent type="DeEquip" itemid="11460" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11460" slot="legs" level="200" event="function" value="onEquipItem"> <!--  legs-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11459" slot="feet" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11459" slot="feet" level="200" event="function" value="onEquipItem"> <!--  boots-->
+			</movevent>
+
+
+	<!-- BLUE KURAMA NARUTO [LIMITADO] LVL 200 -->
+			<movevent type="DeEquip" itemid="11719" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11719" slot="hand" level="200" event="function" value="onEquipItem"> <!-- SWORD-->
+			</movevent>
+			<movevent type="DeEquip" itemid="7468" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7468" slot="hand" level="200" event="function" value="onEquipItem"> <!-- distance -->
+			</movevent>
+			<movevent type="DeEquip" itemid="7466" slot="hand" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="7466" slot="hand" level="200" event="function" value="onEquipItem"> <!-- GLOVE-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11454" slot="head" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11454" slot="head" level="200" event="function" value="onEquipItem"> <!--  helm-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11452" slot="armor" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11452" slot="armor" level="200" event="function" value="onEquipItem"> <!-- ARMOR -->
+			</movevent>
+			<movevent type="DeEquip" itemid="11455" slot="legs" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11455" slot="legs" level="200" event="function" value="onEquipItem"> <!--  legs-->
+			</movevent>
+			<movevent type="DeEquip" itemid="11453" slot="feet" event="function" value="onDeEquipItem"/>
+			<movevent type="Equip" itemid="11453" slot="feet" level="200" event="function" value="onEquipItem"> <!--  boots-->
+			</movevent>
+			<movevent type="Equip" itemid="7469" slot="shield" level="200" event="function" value="onEquipItem">
+			</movevent>
+			<movevent type="DeEquip" itemid="7469" slot="shield" event="function" value="onDeEquipItem"/> <!-- SHIELD -->
 
 
 

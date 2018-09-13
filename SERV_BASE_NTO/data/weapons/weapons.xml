@@ -286,8 +286,14 @@
 			<melee id="7868" level="150" event="function" value="default"/> <!-- orochimaru SWORD-->
 			<distance id="2399" level="150" event="function" value="default"/> <!-- orochimaru shuriken -->
 			<melee id="2373" level="150" event="function" value="default"/> <!-- OROCHIMARU GLOVE-->
-
-
+		<!-- NARUTO KURAMA 200 [MAGIC] -->
+			<melee id="7470" level="200" event="function" value="default"/> <!--  SWORD-->
+			<distance id="7472" level="200" event="function" value="default"/> <!-- distance -->
+			<melee id="7471" level="200" event="function" value="default"/> <!--  GLOVE-->
+		<!-- BLUE NARUTO [LIMITADO] KURAMA 200 [MAGIC] -->
+			<melee id="11719" level="200" event="function" value="default"/> <!--  SWORD-->
+			<distance id="7468" level="200" event="function" value="default"/> <!-- distance -->
+			<melee id="7466" level="200" event="function" value="default"/> <!--  GLOVE-->
 
 
 
