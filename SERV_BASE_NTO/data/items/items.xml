@@ -13984,13 +13984,6 @@
         <attribute key="weaponType" value="sword" />
         <attribute key="slotType" value="two-handed" />
     </item>
-    <item id="7869" article="a" name="raijin nidaime sword">
-        <attribute key="weight" value="500" />
-        <attribute key="defense" value="45" />
-        <attribute key="attack" value="2000" />
-        <attribute key="weaponType" value="sword" />
-		<attribute key="slotType" value="weapon" />
-    </item>
     <item id="7870" article="a" name="relic sword">
         <attribute key="weight" value="4800" />
         <attribute key="defense" value="24" />
@@ -19767,10 +19760,10 @@
         <attribute key="containerSize" value="8" />
         <attribute key="slotType" value="backpack" />
     </item>
-	  <item id="2175" article="a [Normal]" name="Jutsu's Book">
+	  <item id="2260" article="a [Normal]" name="Jutsu's Book">
         <attribute key="description" value="It shows your spells and can also shield against attack when worn." />
         <attribute key="weight" value="3500" />
-        <attribute key="defense" value="20" />
+        <attribute key="defense" value="50" />
         <attribute key="weaponType" value="shield" />
     </item>
 	  <item id="11781" article="a [Normal]" name="Amulet of loss">
@@ -19993,7 +19986,7 @@
         <attribute key="showduration" value="1" />
         <attribute key="showattributes" value="1" />
     </item>
-	    <item id="11773" article="a [Normal]" name="Time Ring">
+	    <item id="11774" article="a [Normal]" name="Time Ring">
         <attribute key="weight" value="80" />
         <attribute key="slotType" value="ring" />
         <attribute key="duration" value="60000" />
@@ -20068,7 +20061,7 @@
 	<item id="7469" article="a [Magic]" name="Blue Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
-	    <attribute key="absorbPercentAll" value="5" />
+	    <attribute key="absorbPercentAll" value="10" />
         <attribute key="weaponType" value="shield" />
     </item>
 			<item id="11462" article="a [Magic]" name="Kurama Helmet">
@@ -20138,7 +20131,7 @@
 	<item id="7473" article="a [Magic]" name="Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
-	    <attribute key="absorbPercentAll" value="5" />
+	    <attribute key="absorbPercentAll" value="10" />
         <attribute key="weaponType" value="shield" />
     </item>
 	 <item id="11758" article="a [Magic]" name="Kurama Backpack">
@@ -20201,8 +20194,159 @@
 	    <attribute key="absorbPercentPoison" value="5" />
 		<attribute key="showattributes" value="5" />
     </item>
-	
-	
+	<item id="7400" article="a [Magic]" name="Katon Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentFire" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="7401" article="a [Magic]" name="Suiton Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentIce" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="7402" article="a [Magic]" name="Doton Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentEarth" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="7403" article="a [Magic]" name="Dokuton Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentPoison" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="7404" article="a [Magic]" name="Raiton Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentEnergy" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="7405" article="a [Magic]" name="Fuuton Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="75" />
+	    <attribute key="absorbPercentHoly" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	<item id="11395" article="a [Rare]" name="Obito Mask">
+        <attribute key="description" value="Chakra and life recovery 600/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="14" />
+	 <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="600" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="600" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11399" article="a [Rare]" name="Yondaime Armor">
+        <attribute key="description" value="Chakra and life recovery 600/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="18" />
+		<attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="600" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="600" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11483" article="a [Rare]" name="Sannin Legs">
+        <attribute key="description" value="Chakra and life recovery 600/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="16" />
+		<attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="600" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="600" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="slotType" value="legs" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="12726 " article="a [Rare]" name="Sannin Boots">
+	    <attribute key="description" value="Chakra and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="12" />
+		<attribute key="magiclevelpoints" value="2" />
+	    <attribute key="manaGain" value="600" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="600" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="speed" value="60" />
+        <attribute key="showattributes" value="3" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	  <item id="7869" article="a [Rare]" name="Raijin Nidaime Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="1" />
+		<attribute key="elementEnergy" value="600" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	  <item id="7472" article="a [Rare]" name="Sannin Shuriken's">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="600" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+        <attribute key="range" value="5" />
+    </item>
+	 <item id="7471" article="a [Rare]" name="Slayer Glove's">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="1" />
+	    <attribute key="elementHoly" value="600" />
+        <attribute key="weaponType" value="club" />
+    </item>
+	<item id="7469" article="a [Rare]" name="Madara Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="150" />
+	    <attribute key="skillShield" value="10" />
+	    <attribute key="absorbPercentAll" value="10" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+		 <item id="11757" article="a [Rare]" name="Yoton Backpack">
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="20" />
+        <attribute key="slotType" value="backpack" />
+        <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+    </item>
+		<item id="11767" article="a [Rare]" name="Yin Yang Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="magiclevelpoints" value="4" />
+	    <attribute key="absorbPercentAll" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		<item id="11766" article="a [Rare]" name="Asuma Belt">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentAll" value="7" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		 <item id="11779" article="a [Rare]" name="Yin Yang Amulet">
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="4" />
+        <attribute key="slotType" value="necklace" />
+	    <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+        <attribute key="preventDrop" value="1" />
+		<attribute key="showattributes" value="5" />
+    </item>
 
 
 
