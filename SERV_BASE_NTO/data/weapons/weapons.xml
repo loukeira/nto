@@ -96,8 +96,6 @@
 	<melee id="7858" level="45" unproperly="1" event="function" value="default">
 	</melee>
 		<!-- Energy -->
-	<melee id="7870" level="50" unproperly="1" event="function" value="default"/>
-	<melee id="7871" level="60" unproperly="1" event="function" value="default"/>
 	<melee id="7872" level="35" unproperly="1" event="function" value="default">
 	</melee>
 	<melee id="7873" level="45" unproperly="1" event="function" value="default">
@@ -245,7 +243,7 @@
 	<melee id="2398" event="script" value="thirdscythe.lua"/>
 	<melee id="7888" event="script" value="zabusa.lua"/>
 	<melee id="2388" event="script" value="slayerglove.lua"/>
-	<melee id="7869" event="script" value="raijin.lua"/>
+	<!--<melee id="7869" event="script" value="raijin.lua"/>-->
 	<melee id="2413" event="script" value="sameheda.lua"/>
 	<distance id="346" event="script" value="gunbai.lua"/>
 	<distance id="855" event="script" value="gunbai.lua"/>
@@ -294,10 +292,32 @@
 			<melee id="11719" level="200" event="function" value="default"/> <!--  SWORD-->
 			<distance id="7468" level="200" event="function" value="default"/> <!-- distance -->
 			<melee id="7466" level="200" event="function" value="default"/> <!--  GLOVE-->
+		<!-- MISTURADO [RARE] 250 -->
+			<melee id="7869" level="250" event="function" value="default"/> <!--  SWORD-->
+			<distance id="7871" level="250" event="function" value="default"/> <!-- distance -->
+			<melee id="7870" level="250" event="function" value="default"/> <!--  GLOVE-->
+		<!-- WEAPONS [EPIC] FREE 300 -->
+			<melee id="11451" level="300" event="function" value="default"/> <!--  SWORD 1-->
+			<melee id="11513" level="300" event="function" value="default"/> <!--  SWORD 2-->
+			<melee id="11723" level="300" event="function" value="default"/> <!--  SWORD 3-->
+			<melee id="4448" level="300" event="function" value="default"/> <!--  SWORD 4-->
+			<distance id="11457" level="300" event="function" value="default"/> <!-- distance 1-->
+			<distance id="10508" level="300" event="function" value="default"/> <!-- distance 2-->
+			<distance id="11722" level="300" event="function" value="default"/> <!-- distance 3-->
+			<distance id="11114" level="300" event="function" value="default"/> <!-- distance 4-->
+			<melee id="11456" level="300" event="function" value="default"/> <!--  GLOVE 1-->
+			<melee id="11784" level="300" event="function" value="default"/> <!--  GLOVE 2-->
+			<melee id="11721" level="300" event="function" value="default"/> <!--  GLOVE 3-->
+			<melee id="11113" level="300" event="function" value="default"/> <!--  GLOVE 4-->
+		<!-- MADARA RIKKUDOU  [EPIC] DONATE 300 -->
+			<melee id="11736" level="300" event="function" value="default"/> <!--  SWORD-->
+			<distance id="11737" level="300" event="function" value="default"/> <!-- distance -->
+			<melee id="11735" level="300" event="function" value="default"/> <!--  GLOVE-->
+		<!--  RIKKUDOU  [LEGENDARY] 500 -->
+			<melee id="11752" level="500" event="function" value="default"/> <!--  SWORD-->
+			<distance id="11750" level="500" event="function" value="default"/> <!-- distance -->
+			<melee id="11753" level="500" event="function" value="default"/> <!--  GLOVE-->
 
-
-
-	
 
 
 
