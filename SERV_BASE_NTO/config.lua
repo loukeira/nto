@@ -86,7 +86,7 @@
 
 	-- Connection config
 	worldId = 0
-	ip = "127.0.0.1"
+	ip = "192.99.208.99"
 	loginPort = 7171
 	gamePort = 7172
 	loginTries = 10
@@ -114,7 +114,7 @@
 	sqlHost = "localhost"
 	sqlPort = 3306
 	sqlUser = "root"
-	sqlPass = "asdf0810"
+	sqlPass = "AsDf-0810"
 	sqlDatabase = "gbk"
 	sqlFile = "forgottenserver.s3db"
 	sqlKeepAlive = 0
