@@ -3817,26 +3817,6 @@
         <attribute key="defense" value="23" />
         <attribute key="weaponType" value="shield" />
     </item>
-    <item id="2514" article="a" name="susano shield">
-        <attribute key="description" value="chakra/health recovery 7000/s and absorption 15%/max health +30000" />
-        <attribute key="weight" value="570" />
-        <attribute key="defense" value="2000" />
-		<attribute key="skillAxe" value="15" />
-        <attribute key="skillClub" value="15" />
-        <attribute key="skillSword" value="15" />
-        <attribute key="skillDist" value="15" />
-		<attribute key="skillfist" value="15" />
-		<attribute key="skillShield" value="15" />
-        <attribute key="magiclevelpoints" value="15" />
-		<attribute key="absorbPercentAll" value="15" />
-        <attribute key="manaGain" value="7000" />
-        <attribute key="manaTicks" value="1000" />
-        <attribute key="speed" value="250" />
-		<attribute key="maxhealthpoints" value="+30000" />
-        <attribute key="healthGain" value="7000" />
-        <attribute key="healthTicks" value="1000" />
-        <attribute key="weaponType" value="shield" />
-    </item>
     <item id="2515" article="a" name="guardian shield">
         <attribute key="weight" value="5500" />
         <attribute key="defense" value="30" />
@@ -12236,98 +12216,6 @@
     <item id="7399" article="a" name="dragon lord trophy">
         <attribute key="weight" value="500" />
     </item>
-    <item id="7400" article="a" name="lion trophy">
-        <attribute key="weight" value="500" />
-    </item>
-    <item id="7401" article="a" name="minotaur trophy">
-        <attribute key="weight" value="500" />
-    </item>
-    <item id="7402" article="a" name="vital boots">
-        <attribute key="description" value="Ninjutsu skill increases in five and increases Taijutsu in five and chakra recovery 1000/s and speed 600." />
-        <attribute key="weight" value="3100" />
-        <attribute key="armor" value="10" />
-        <attribute key="skillAxe" value="5" />
-        <attribute key="skillClub" value="5" />
-        <attribute key="skillSword" value="5" />
-        <attribute key="skillDist" value="5" />
-        <attribute key="magiclevelpoints" value="5" />
-        <attribute key="manaGain" value="1000" />
-        <attribute key="manaTicks" value="1000" />
-        <attribute key="speed" value="250" />
-        <attribute key="healthGain" value="1000" />
-        <attribute key="healthTicks" value="1000" />
-        <attribute key="speed" value="330" />
-        <attribute key="showattributes" value="1" />
-        <attribute key="slotType" value="feet" />
-    </item>
-    <item id="7403" name="berserker">
-        <attribute key="weight" value="13000" />
-        <attribute key="defense" value="21" />
-        <attribute key="attack" value="48" />
-        <attribute key="weaponType" value="sword" />
-        <attribute key="slotType" value="two-handed" />
-    </item>
-    <item id="7404" article="an" name="sasuke fake coat">
-        <attribute key="description" value="Ninjutsu skill increases in three and chakra recovery." />
-        <attribute key="weight" value="350" />
-        <attribute key="armor" value="9" />
-        <attribute key="magiclevelpoints" value="3" />
-        <attribute key="manaGain" value="100" />
-        <attribute key="manaTicks" value="1000" />
-        <attribute key="slotType" value="body" />
-    </item>
-    <item id="7405" article="a" name="havoc blade">
-        <attribute key="weight" value="7200" />
-        <attribute key="defense" value="34" />
-        <attribute key="attack" value="49" />
-        <attribute key="weaponType" value="sword" />
-        <attribute key="slotType" value="two-handed" />
-    </item>
-    <item id="7406" article="a" name="blacksteel sword">
-        <attribute key="weight" value="5900" />
-        <attribute key="defense" value="22" />
-        <attribute key="attack" value="42" />
-        <attribute key="weaponType" value="sword" />
-        <attribute key="slotType" value="two-handed" />
-    </item>
-    <item id="7407" article="a" name="naruto coat">
-        <attribute key="description" value="Ninjutsu skill increases in one and increases Taijutsu in one and chakra recovery very slow." />
-        <attribute key="weight" value="350" />
-        <attribute key="armor" value="5" />
-        <attribute key="skillAxe" value="1" />
-        <attribute key="skillClub" value="1" />
-        <attribute key="skillSword" value="1" />
-        <attribute key="skillDist" value="1" />
-        <attribute key="magiclevelpoints" value="1" />
-        <attribute key="manaGain" value="20" />
-        <attribute key="manaTicks" value="2000" />
-        <attribute key="slotType" value="body" />
-    </item>
-    <item id="7408" article="a" name="yondaime tunic">
-        <attribute key="description" value="All skills +15 and health recovery 4500/s and chakra recovery 4500/s and Max health +20000." />
-        <attribute key="weight" value="350" />
-        <attribute key="armor" value="15" />
-        <attribute key="skillAxe" value="15" />
-        <attribute key="skillClub" value="15" />
-        <attribute key="skillSword" value="15" />
-        <attribute key="skillDist" value="15" />
-		<attribute key="skillfist" value="15" />
-        <attribute key="magiclevelpoints" value="15" />
-        <attribute key="manaGain" value="4500" />
-        <attribute key="manaTicks" value="1000" />
-        <attribute key="healthGain" value="4500" />
-        <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="1" />
-		<attribute key="maxhealthpoints" value ="+20000" />
-        <attribute key="slotType" value="body" />
-    </item>
-    <item id="7409" article="an" name="imaginary staff">
-        <attribute key="weight" value="7500" />
-        <attribute key="defense" value="30" />
-        <attribute key="attack" value="46" />
-        <attribute key="weaponType" value="club" />
-        <attribute key="slotType" value="two-handed" />
-    </item>
     <item id="7410" article="a" name="queen's sceptre">
         <attribute key="weight" value="2300" />
         <attribute key="defense" value="19" />
@@ -16784,21 +16672,6 @@
         <attribute key="duration" value="3600" />
         <attribute key="showduration" value="1" />
     </item>
-	    <item id="11407" article="a" name="Kurama eye">
-        <attribute key="description" value="faster regeneration." />
-        <attribute key="weight" value="10" />
-        <attribute key="skillAxe" value="5" />
-        <attribute key="skillClub" value="5" />
-        <attribute key="skillSword" value="5" />
-        <attribute key="skillDist" value="5" />
-        <attribute key="magiclevelpoints" value="5" />
-        <attribute key="manaGain" value="1000" />
-        <attribute key="manaTicks" value="1000" />
-		<attribute key="healthGain" value="1000" />
-        <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="1" />
-        <attribute key="speed" value="50" />
-    </item>
     <item id="9957" article="a" name="yalahar coal basin"/>
     <item id="9958" article="a" name="royal tapestry">
         <attribute key="weight" value="1000" />
@@ -19694,7 +19567,7 @@
 	    <item id="11434" article="a [Normal]" name="Konohamaru Mask">
         <attribute key="description" value="Chakra and life recovery 100/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="4" />
+        <attribute key="armor" value="20" />
         <attribute key="manaGain" value="100" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="100" />
@@ -19705,7 +19578,7 @@
 	      <item id="11724" article="a [Normal]" name="Konohamaru Armor">
         <attribute key="description" value="Chakra and life recovery 100/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="8" />
+        <attribute key="armor" value="40" />
         <attribute key="manaGain" value="100" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="100" />
@@ -19716,26 +19589,24 @@
 	   <item id="4446" article="a [Normal]" name="Konohamaru Legs">
         <attribute key="description" value="Chakra and life recovery 100/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="6" />
+        <attribute key="armor" value="30" />
         <attribute key="manaGain" value="100" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="100" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	   <item id="4445" article="a [Normal]" name="Konohamaru Boots">
 	    <attribute key="description" value="Chakra and life recovery 100/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="2" />
+        <attribute key="armor" value="10" />
 		<attribute key="manaGain" value="100" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="100" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="3" />
         <attribute key="speed" value="10" />
-        <attribute key="showattributes" value="1" />
+        <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="feet" />
     </item>
 	  <item id="2379" article="a [Normal]" name="Konohamaru Kunai">
@@ -19750,7 +19621,7 @@
         <attribute key="shootType" value="bolt" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="6091" article="a [Normal]" name="Konohamaru Glove's">
+	 <item id="6091" article="a [Normal]" name="Konohamaru Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="100" />
         <attribute key="weaponType" value="club" />
@@ -19775,7 +19646,7 @@
 	      <item id="11389" article="a [Normal]" name="Chunin Mask">
         <attribute key="description" value="Chakra and life recovery 200/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="6" />
+        <attribute key="armor" value="30" />
         <attribute key="manaGain" value="200" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="200" />
@@ -19786,7 +19657,7 @@
 	      <item id="11397" article="a [Normal]" name="Chunin Armor">
         <attribute key="description" value="Chakra and life recovery 200/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="10" />
+        <attribute key="armor" value="50" />
         <attribute key="manaGain" value="200" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="200" />
@@ -19797,26 +19668,24 @@
 	   <item id="11394" article="a [Normal]" name="Chunin Legs">
         <attribute key="description" value="Chakra and life recovery 200/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="8" />
+        <attribute key="armor" value="40" />
         <attribute key="manaGain" value="200" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="200" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	   <item id="11396" article="a [Normal]" name="Chunin Boots">
 	    <attribute key="description" value="Chakra and life recovery 200/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="4" />
+        <attribute key="armor" value="20" />
 	    <attribute key="manaGain" value="200" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="200" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="3" />
         <attribute key="speed" value="20" />
-        <attribute key="showattributes" value="1" />
+        <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="feet" />
     </item>
 	  <item id="3962" article="a [Normal]" name="Chunin Sword">
@@ -19831,7 +19700,7 @@
         <attribute key="shootType" value="arrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="2434" article="a [Normal]" name="Chunin Glove's">
+	 <item id="2434" article="a [Normal]" name="Chunin Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="200" />
         <attribute key="weaponType" value="club" />
@@ -19844,7 +19713,7 @@
 	<item id="11436" article="a [Normal]" name="Hanzou Mask">
         <attribute key="description" value="Chakra and life recovery 300/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="8" />
+        <attribute key="armor" value="40" />
         <attribute key="manaGain" value="300" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="300" />
@@ -19855,7 +19724,7 @@
 	      <item id="11437" article="a [Normal]" name="Hanzou Armor">
         <attribute key="description" value="Chakra and life recovery 300/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="12" />
+        <attribute key="armor" value="60" />
         <attribute key="manaGain" value="300" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="300" />
@@ -19866,26 +19735,24 @@
 	   <item id="11438" article="a [Normal]" name="Hanzou Legs">
         <attribute key="description" value="Chakra and life recovery 300/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="10" />
+        <attribute key="armor" value="50" />
         <attribute key="manaGain" value="300" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="300" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	   <item id="11439" article="a [Normal]" name="Hanzou Boots">
 	    <attribute key="description" value="Chakra and life recovery 300/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="6" />
+        <attribute key="armor" value="30" />
 	    <attribute key="manaGain" value="300" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="300" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="2" />
         <attribute key="speed" value="30" />
-        <attribute key="showattributes" value="3" />
+        <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="feet" />
     </item>
 	  <item id="2433" article="a [Normal]" name="Hanzou Sword">
@@ -19900,7 +19767,7 @@
         <attribute key="shootType" value="fire" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="2524" article="a [Normal]" name="Hanzou Glove's">
+	 <item id="2524" article="a [Normal]" name="Hanzou Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="300" />
         <attribute key="weaponType" value="club" />
@@ -19908,7 +19775,7 @@
 		<item id="11440" article="a [Normal]" name="Orochimaru Hat">
         <attribute key="description" value="Chakra and life recovery 400/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="10" />
+        <attribute key="armor" value="50" />
         <attribute key="manaGain" value="400" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="400" />
@@ -19919,7 +19786,7 @@
 	      <item id="11441" article="a [Normal]" name="Orochimaru Armor">
         <attribute key="description" value="Chakra and life recovery 400/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="14" />
+        <attribute key="armor" value="70" />
         <attribute key="manaGain" value="400" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="400" />
@@ -19930,26 +19797,24 @@
 	   <item id="11442" article="a [Normal]" name="Orochimaru Legs">
         <attribute key="description" value="Chakra and life recovery 400/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="12" />
+        <attribute key="armor" value="60" />
         <attribute key="manaGain" value="400" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="400" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	   <item id="11443" article="a [Normal]" name="Orochimaru Boots">
 	    <attribute key="description" value="Chakra and life recovery 400/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="8" />
+        <attribute key="armor" value="40" />
 	    <attribute key="manaGain" value="400" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="400" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="speed" value="40" />
-        <attribute key="showattributes" value="3" />
         <attribute key="slotType" value="feet" />
     </item>
 	  <item id="7868" article="a [Normal]" name="Orochimaru Sword">
@@ -19964,7 +19829,7 @@
         <attribute key="shootType" value="energy" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="2373" article="a [Normal]" name="Orochimaru Glove's">
+	 <item id="2373" article="a [Normal]" name="Orochimaru Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="400" />
         <attribute key="weaponType" value="club" />
@@ -19975,6 +19840,8 @@
         <attribute key="duration" value="60000" />
         <attribute key="showduration" value="1" />
         <attribute key="manashield" value="1" />
+		<attribute key="ManaGain" value="200" />
+        <attribute key="ManaTicks" value="1000" />
         <attribute key="showattributes" value="1" />
     </item>
 	   <item id="11772" article="a [Normal]" name="Life Ring">
@@ -19997,7 +19864,7 @@
 		<item id="11454" article="a [Magic]" name="Blue Kurama Helmet">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="12" />
+        <attribute key="armor" value="60" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
@@ -20008,7 +19875,7 @@
 	      <item id="11452" article="a [Magic]" name="Blue Kurama Armor">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="16" />
+        <attribute key="armor" value="80" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
@@ -20019,26 +19886,24 @@
 	   <item id="11455" article="a [Magic]" name="Blue Kurama Legs">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="14" />
+        <attribute key="armor" value="70" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	   <item id="11453" article="a [Magic]" name="Blue Kurama Boots">
 	    <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="10" />
+        <attribute key="armor" value="50" />
 	    <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="3" />
         <attribute key="speed" value="60" />
-        <attribute key="showattributes" value="3" />
+        <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="feet" />
     </item>
 		  <item id="11719" article="a [Magic]" name="Blue Kurama Sword">
@@ -20053,7 +19918,7 @@
         <attribute key="shootType" value="poisonarrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="7467" article="a [Magic]" name="Blue Kurama Glove's">
+	 <item id="7467" article="a [Magic]" name="Blue Kurama Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
@@ -20061,13 +19926,13 @@
 	<item id="7469" article="a [Magic]" name="Blue Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
-	    <attribute key="absorbPercentAll" value="10" />
+	    <attribute key="absorbPercentAll" value="5" />
         <attribute key="weaponType" value="shield" />
     </item>
 			<item id="11462" article="a [Magic]" name="Kurama Helmet">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="12" />
+        <attribute key="armor" value="60" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
@@ -20078,7 +19943,7 @@
 	      <item id="11461" article="a [Magic]" name="Kurama Armor">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="16" />
+        <attribute key="armor" value="80" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
@@ -20089,26 +19954,24 @@
 	    <item id="11460" article="a [Magic]" name="Kurama Legs">
         <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="14" />
+        <attribute key="armor" value="70" />
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	    <item id="11459" article="a [Magic]" name="Kurama Boots">
 	    <attribute key="description" value="Chakra and life recovery 500/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="10" />
+        <attribute key="armor" value="50" />
 	    <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="3" />
         <attribute key="speed" value="60" />
-        <attribute key="showattributes" value="3" />
         <attribute key="slotType" value="feet" />
     </item>
 		  <item id="7470" article="a [Magic]" name="Kurama Sword">
@@ -20123,7 +19986,7 @@
         <attribute key="shootType" value="burstarrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="7471" article="a [Magic]" name="Kurama Glove's">
+	 <item id="7471" article="a [Magic]" name="Kurama Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
@@ -20138,20 +20001,18 @@
         <attribute key="weight" value="3500" />
         <attribute key="containerSize" value="20" />
         <attribute key="slotType" value="backpack" />
-        <attribute key="skillClub" value="5" />
-        <attribute key="skillSword" value="5" />
-        <attribute key="skillDist" value="5" />
-        <attribute key="magiclevelpoints" value="5" />
+        <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
     </item>
 		 <item id="11779" article="a [Magic]" name="Jashin Amulet">
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="2" />
         <attribute key="slotType" value="necklace" />
-	    <attribute key="skillClub" value="5" />
-        <attribute key="skillSword" value="5" />
-        <attribute key="skillDist" value="5" />
-        <attribute key="magiclevelpoints" value="5" />
-        <attribute key="preventDrop" value="1" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="skillSword" value="2" />
+        <attribute key="skillDist" value="2" />
+        <attribute key="magiclevelpoints" value="2" />
 		<attribute key="showattributes" value="5" />
     </item>
     <item id="11771" article="a [Magic]" name="Suiton Ring">
@@ -20233,8 +20094,8 @@
 	<item id="11395" article="a [Rare]" name="Obito Mask">
         <attribute key="description" value="Chakra and life recovery 600/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="14" />
-	 <attribute key="magiclevelpoints" value="2" />
+        <attribute key="armor" value="70" />
+	 <attribute key="magiclevelpoints" value="1" />
         <attribute key="manaGain" value="600" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="600" />
@@ -20245,8 +20106,8 @@
 	      <item id="11399" article="a [Rare]" name="Yondaime Armor">
         <attribute key="description" value="Chakra and life recovery 600/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="18" />
-		<attribute key="magiclevelpoints" value="2" />
+        <attribute key="armor" value="90" />
+		<attribute key="magiclevelpoints" value="1" />
         <attribute key="manaGain" value="600" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="600" />
@@ -20257,26 +20118,24 @@
 	    <item id="11483" article="a [Rare]" name="Sannin Legs">
         <attribute key="description" value="Chakra and life recovery 600/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="16" />
-		<attribute key="magiclevelpoints" value="2" />
+        <attribute key="armor" value="80" />
+		<attribute key="magiclevelpoints" value="1" />
         <attribute key="manaGain" value="600" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="600" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="3" />
         <attribute key="slotType" value="legs" />
-        <attribute key="slotType" value="body" />
     </item>
 	    <item id="12726 " article="a [Rare]" name="Sannin Boots">
-	    <attribute key="description" value="Chakra and life recovery 500/s." />
+	    <attribute key="description" value="Chakra and life recovery 600/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="12" />
-		<attribute key="magiclevelpoints" value="2" />
+        <attribute key="armor" value="60" />
+		<attribute key="magiclevelpoints" value="1" />
 	    <attribute key="manaGain" value="600" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="600" />
         <attribute key="healthTicks" value="1000" />
-        <attribute key="showattributes" value="3" />
         <attribute key="speed" value="60" />
         <attribute key="showattributes" value="3" />
         <attribute key="slotType" value="feet" />
@@ -20294,57 +20153,765 @@
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-	 <item id="7471" article="a [Rare]" name="Slayer Glove's">
+	 <item id="7471" article="a [Rare]" name="Slayer Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="1" />
 	    <attribute key="elementHoly" value="600" />
         <attribute key="weaponType" value="club" />
     </item>
-	<item id="7469" article="a [Rare]" name="Madara Shield">
+	<item id="7408" article="a [Rare]" name="Madara Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="150" />
 	    <attribute key="skillShield" value="10" />
 	    <attribute key="absorbPercentAll" value="10" />
         <attribute key="weaponType" value="shield" />
     </item>
-		 <item id="11757" article="a [Rare]" name="Yoton Backpack">
+		<item id="11757" article="a [Rare]" name="Yoton Backpack">
         <attribute key="weight" value="3500" />
         <attribute key="containerSize" value="20" />
         <attribute key="slotType" value="backpack" />
-        <attribute key="skillClub" value="8" />
-        <attribute key="skillSword" value="8" />
-        <attribute key="skillDist" value="8" />
-        <attribute key="magiclevelpoints" value="8" />
+        <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="magiclevelpoints" value="4" />
     </item>
 		<item id="11767" article="a [Rare]" name="Yin Yang Ring">
+        <attribute key="weight" value="40" />
+	    <attribute key="armor" value="5" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="magiclevelpoints" value="4" />
+	    <attribute key="absorbPercentAll" value="4" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		<item id="11766" article="a [Rare]" name="Asuma Belt">
+        <attribute key="weight" value="40" />
+		<attribute key="armor" value="10" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="3" />
+        <attribute key="skillSword" value="3" />
+        <attribute key="skillDist" value="3" />
+        <attribute key="magiclevelpoints" value="3" />
+	    <attribute key="absorbPercentAll" value="5" />
+		<attribute key="showattributes" value="5" />
+    </item>
+		 <item id="11779" article="a [Rare]" name="Yin Yang Amulet">
+        <attribute key="weight" value="3500" />
+        <attribute key="slotType" value="necklace" />
+	    <attribute key="armor" value="10" />
+	   <attribute key="speed" value="10" />
+	    <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="magiclevelpoints" value="4" />
+		<attribute key="showattributes" value="4" />
+    </item>
+	    <item id="11725" article="a [Epic]" name="Uchiha War Helmet">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillSword" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11509" article="a [Epic]" name="Uchiha War Armor">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillSword" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11466" article="a [Epic]" name="Uchiha War Legs">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillSword" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11510 " article="a [Epic]" name="Uchiha War Boots">
+	    <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="70" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="80" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	    <item id="11458" article="a [Epic]" name="Tobirama War Helmet">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11408" article="a [Epic]" name="Tobirama War Armor">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11511" article="a [Epic]" name="Tobirama War Legs">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+        <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="skillClub" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11512" article="a [Epic]" name="Tobirama War Boots">
+	    <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="70" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="80" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	    <item id="11742" article="a [Epic]" name="Naruto War Helmet">
+        <attribute key="description" value="Chakra recovery 900/s and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="900" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11739" article="a [Epic]" name="Naruto War Armor">
+        <attribute key="description" value="Chakra recovery 900/s and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="400" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11740" article="a [Epic]" name="Naruto War Legs">
+        <attribute key="description" value="Chakra recovery 900/s and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11512" article="a [Epic]" name="Naruto War Boots">
+	    <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="70" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="80" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	    <item id="11742" article="a [Epic]" name="Hashirama War Helmet">
+        <attribute key="description" value="Chakra recovery 700/s and life recovery 900/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="900" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="head" />
+    </item>
+	    <item id="11743" article="a [Epic]" name="Hashirama War Armor">
+        <attribute key="description" value="Chakra recovery 700/s and life recovery 900/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="900" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11744" article="a [Epic]" name="Hashirama War Legs">
+        <attribute key="description" value="Chakra recovery 700/s and life recovery 900/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="magiclevelpoints" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="900" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11512" article="a [Epic]" name="Hashirama War Boots">
+        <attribute key="description" value="Chakra recovery 700/s and life recovery 900/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="70" />
+	    <attribute key="magiclevelpoints" value="2" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="80" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+     </item>
+	    <item id="11359" article="a [Epic]" name="Otsutsuki War Helmet">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="skillDist" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4>
+        <attribute key="slotType" value="head" />
+    </item>
+	      <item id="11360" article="a [Epic]" name="Otsutsuki War Armor">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="skillDist" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11361" article="a [Epic]" name="Otsutsuki War Legs">
+        <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="skillDist" value="2" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11362" article="a [Epic]" name="Otsutsuki War Boots">
+	    <attribute key="description" value="Chakra and life recovery 700/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="70" />
+	    <attribute key="skillDist" value="2" />
+	    <attribute key="absorbPercentAll" value="5" />
+        <attribute key="manaGain" value="700" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="700" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="80" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+    </item>
+	    <item id="11451" article="a [Epic]" name="Shibuki Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+		<item id="11513 " article="a [Epic]" name="Gunbai Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	<item id="11723 " article="a [Epic]" name="Samehada Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	<item id="4448 " article="a [Epic]" name="Eletro Guard Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="sword" />
+    </item>
+	    <item id="11456 " article="a [Epic]" name="Raiger Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="club" />
+    </item>
+		<item id="11113" article="a [Epic]" name="Embroidery Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="club" />
+    </item>
+	<item id="11721 " article="a [Epic]" name="Tiger Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="club" />
+    </item>
+		<item id="11784" article="a [Epic]" name="Tempest Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="club" />
+    </item>
+		<item id="11457" article="a [Epic]" name="Futon Rasenshuriken's">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+        <attribute key="range" value="5" />
+    </item>
+	<item id="11508" article="a [Epic]" name="Dokuton Cetro">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+        <attribute key="range" value="5" />
+    </item>
+	<item id="11508" article="a [Epic]" name="Suiton Cetro">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+        <attribute key="range" value="5" />
+    </item>
+		<item id="11508" article="a [Epic]" name="Blue Susano'o Arc">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="700" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+        <attribute key="range" value="5" />
+    </item>
+		<item id="7407" article="a [Epic]" name="Amaterasu Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="200" />
+	    <attribute key="skillShield" value="5" />
+	    <attribute key="absorbPercentAll" value="15" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	   <item id="11756" article="a [Epic]" name="Shiden Backpack">
+	    <attribute key="description" value="Chakra and life increased 1000." />
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="25" />
+        <attribute key="slotType" value="backpack" />
+        <attribute key="skillClub" value="6" />
+        <attribute key="skillSword" value="6" />
+        <attribute key="skillDist" value="6" />
+        <attribute key="magiclevelpoints" value="6" />
+		<attribute key="maxhealthpoints" value= "1000" />
+		<attribute key="maxmanapoints" value= "1000" />
+    </item>
+	    <item id="11763" article="a [Epic]" name="Shukaku Eye">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="6" />
+        <attribute key="skillSword" value="6" />
+        <attribute key="skillDist" value="6" />
+	    <attribute key="skillFist" value="4" />
+        <attribute key="magiclevelpoints" value="6" />
+	    <attribute key="absorbPercentAll" value="5" />
+		<attribute key="showattributes" value="6" />
+    </item>
+	    <item id="11764" article="a [Epic]" name="Itachi Akatsuki Ring">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+	    <attribute key="skillFist" value="6" />
+	    <attribute key="absorbPercentAll" value="4" />
+		<attribute key="showattributes" value="6" />
+    </item>
+	   <item id="11765" article="a [Epic]" name="Zetsu Akatsuki Ring">
         <attribute key="weight" value="40" />
         <attribute key="slotType" value="ring" />
 	    <attribute key="skillClub" value="4" />
         <attribute key="skillSword" value="4" />
         <attribute key="skillDist" value="4" />
         <attribute key="magiclevelpoints" value="4" />
-	    <attribute key="absorbPercentAll" value="5" />
+	    <attribute key="skillFist" value="5" />
+	    <attribute key="absorbPercentAll" value="6" />
+		<attribute key="showattributes" value="6" />
+    </item>
+		<item id="11777" article="a [Epic]" name="Kurama Amulet">
+	   <attribute key="description" value="Chakra recovery 500/s and life recovery 500/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="slotType" value="necklace" />
+	    <attribute key="skillClub" value="6" />
+        <attribute key="skillSword" value="6" />
+        <attribute key="skillDist" value="6" />
+        <attribute key="magiclevelpoints" value="6" />
+	    <attribute key="speed" value="15" />
+	    <attribute key="manaGain" value="500" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="500" />
+        <attribute key="healthTicks" value="1000" />
 		<attribute key="showattributes" value="5" />
     </item>
-		<item id="11766" article="a [Rare]" name="Asuma Belt">
+	 <item id="11731" article="a [Epic]" name="Madara Rikkudou Helmet">
+        <attribute key="description" value="Chakra recovery 1000/s and life recovery 1000/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="skillClub" value="3" />
+        <attribute key="skillSword" value="3" />
+        <attribute key="skillDist" value="3" />
+        <attribute key="magiclevelpoints" value="3" />
+        <attribute key="manaGain" value="1000" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1000" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="head" />
+    </item>
+	    <item id="11732" article="a [Epic]" name="Madara Rikkudou Armor">
+         <attribute key="description" value="Chakra recovery 1000/s and life recovery 1000/s." />
+        <attribute key="weight" value="3500" />
+         <attribute key="armor" value="110" />
+	    <attribute key="skillClub" value="3" />
+        <attribute key="skillSword" value="3" />
+        <attribute key="skillDist" value="3" />
+        <attribute key="magiclevelpoints" value="3" />
+        <attribute key="manaGain" value="1000" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1000" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11733" article="a [Epic]" name="Madara Rikkudou Legs">
+        <attribute key="description" value="Chakra recovery 1000/s and life recovery 1000/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+        <attribute key="skillClub" value="3" />
+        <attribute key="skillSword" value="3" />
+        <attribute key="skillDist" value="3" />
+        <attribute key="magiclevelpoints" value="3" />
+        <attribute key="manaGain" value="1000" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1000" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11734" article="a [Epic]" name="Madara Rikkudou Boots">
+        <attribute key="description" value="Chakra recovery 1000/s and life recovery 1-00/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="80" />
+	    <attribute key="magiclevelpoints" value="3" />
+	    <attribute key="absorbPercentAll" value="8" />
+        <attribute key="manaGain" value="1000" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1000" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="100" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+     </item>
+	 	<item id="11736" article="a [Epic]" name="Imperial Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="850" />
+        <attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="5" />
+    </item>
+		<item id="11737 " article="a [Epic]" name="Furious Raiger Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="850" />
+        <attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="5" />
+    </item>
+		<item id="11738" article="a [Epic]" name="Susanoo Barisuta">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="850" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+		<attribute key="skillDist" value="5" />
+        <attribute key="range" value="6" />
+    </item>
+		<item id="7406" article="a [Epic]" name="Yata no Kagami">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="250" />
+	    <attribute key="skillShield" value="8" />
+	    <attribute key="absorbPercentAll" value="20" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+		<item id="7409" article="a [Epic]" name="Susanoo Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="250" />
+	    <attribute key="skillShield" value="8" />
+	    <attribute key="absorbPercentAll" value="20" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	  <item id="11754" article="a [Epic]" name="Susanoo Backpack">
+        <attribute key="description" value="Chakra and life increased 1500." />
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="35" />
+        <attribute key="slotType" value="backpack" />
+        <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+		<attribute key="maxhealthpoints" value= "1500" />
+		<attribute key="maxmanapoints" value= "1500" />
+    </item>
+	    <item id="11775" article="a [Epic]" name="Kesshoseki Amulet">
+	    <attribute key="description" value="Não perde itens ao morrer Red/Black Skull." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="1" />
+        <attribute key="slotType" value="necklace" />
+        <attribute key="preventDrop" value="1" />
+    </item>
+	    <item id="11762" article="a [Epic]" name="Sennin Eye">
         <attribute key="weight" value="40" />
         <attribute key="slotType" value="ring" />
-	    <attribute key="skillClub" value="2" />
-        <attribute key="skillSword" value="2" />
-        <attribute key="skillDist" value="2" />
-        <attribute key="magiclevelpoints" value="2" />
-	    <attribute key="absorbPercentAll" value="7" />
+	    <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+		 <attribute key="skillFist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+	    <attribute key="absorbPercentAll" value="8" />
+		<attribute key="showattributes" value="6" />
+    </item>
+		<item id="11727" article="a [Legendary]" name="Naruto Rikkudou Helmet">
+        <attribute key="description" value="Chakra recovery 1100/s and life recovery 1100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="95" />
+	    <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="4" />
+        <attribute key="manaGain" value="1100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="head" />
+    </item>
+	    <item id="11728" article="a [Legendary]" name="Naruto Rikkudou Armor">
+        <attribute key="description" value="Chakra recovery 1100/s and life recovery 1100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="115" />
+	   <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="4" />
+        <attribute key="manaGain" value="1100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11729" article="a [Legendary]" name="Naruto Rikkudou Legs">
+        <attribute key="description" value="Chakra recovery 1100/s and life recovery 1100/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="105" />
+        <attribute key="skillClub" value="4" />
+        <attribute key="skillSword" value="4" />
+        <attribute key="skillDist" value="4" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="4" />
+        <attribute key="manaGain" value="1100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11730" article="a [Legendary]" name="Naruto Rikkudou Boots">
+        <attribute key="description" value="Chakra recovery 1000/s and life recovery 1000/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="85" />
+	    <attribute key="magiclevelpoints" value="4" />
+	    <attribute key="absorbPercentAll" value="10" />
+        <attribute key="manaGain" value="1100" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1100" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="100" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+     </item>
+	 <item id="11746" article="a [Legendary]" name="Hagoromo Helmet">
+        <attribute key="description" value="Chakra recovery 1200/s and life recovery 1200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="100" />
+	    <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+		<attribute key="skillFist" value="5" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+        <attribute key="manaGain" value="1200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="head" />
+    </item>
+	    <item id="11747" article="a [Legendary]" name="Hagoromo Armor">
+        <attribute key="description" value="Chakra recovery 1200/s and life recovery 1200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="120" />
+         <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+		<attribute key="skillFist" value="5" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+        <attribute key="manaGain" value="1200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="body" />
+    </item>
+	    <item id="11748" article="a [Legendary]" name="Hagoromo Legs">
+        <attribute key="description" value="Chakra recovery 1200/s and life recovery 1200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="110" />
+        <attribute key="skillClub" value="5" />
+        <attribute key="skillSword" value="5" />
+        <attribute key="skillDist" value="5" />
+		<attribute key="skillFist" value="5" />
+        <attribute key="speed" value="5" />
+        <attribute key="magiclevelpoints" value="5" />
+        <attribute key="manaGain" value="1200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="showattributes" value="7" />
+        <attribute key="slotType" value="legs" />
+    </item>
+	    <item id="11749" article="a [Legendary]" name="Hagoromo Boots">
+        <attribute key="description" value="Chakra recovery 1200/s and life recovery 1200/s." />
+        <attribute key="weight" value="3500" />
+        <attribute key="armor" value="90" />
+	    <attribute key="magiclevelpoints" value="5" />
+	    <attribute key="absorbPercentAll" value="15" />
+        <attribute key="manaGain" value="1200" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="1200" />
+        <attribute key="healthTicks" value="1000" />
+        <attribute key="speed" value="120" />
+        <attribute key="showattributes" value="4" />
+        <attribute key="slotType" value="feet" />
+     </item>
+	    <item id="11752" article="a [Legendary]" name="Hagoromo Sword">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="1000" />
+        <attribute key="weaponType" value="sword" />
+		<attribute key="skillSword" value="8" />
+    </item>
+		<item id="11753" article="a [Legendary]" name="Hagoromo Gloves">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="1000" />
+        <attribute key="weaponType" value="club" />
+		<attribute key="skillClub" value="8" />
+    </item>
+		<item id="11750" article="a [Legendary]" name="Hagoromo Cetro">
+        <attribute key="weight" value="3500" />
+        <attribute key="attack" value="1000" />
+        <attribute key="weaponType" value="distance" />
+        <attribute key="shootType" value="throwingstar" />
+		<attribute key="skillDist" value="8" />
+        <attribute key="range" value="7" />
+    </item>
+		<item id="11751" article="a [Legendary]" name="Hagoromo Shield">
+        <attribute key="weight" value="6900" />
+        <attribute key="defense" value="350" />
+	    <attribute key="skillShield" value="10" />
+	    <attribute key="absorbPercentAll" value="25" />
+        <attribute key="weaponType" value="shield" />
+    </item>
+	  <item id="11754" article="a [Legendary]" name="Hagoromo Backpack">
+        <attribute key="description" value="Chakra and life increased 1500." />
+        <attribute key="weight" value="3500" />
+        <attribute key="containerSize" value="35" />
+        <attribute key="slotType" value="backpack" />
+        <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+		<attribute key="maxhealthpoints" value= "1500" />
+		<attribute key="maxmanapoints" value= "1500" />
+    </item>
+	   <item id="11762" article="a [Legendary]" name="Rinnengan Eye">
+        <attribute key="weight" value="40" />
+        <attribute key="slotType" value="ring" />
+	    <attribute key="skillClub" value="10" />
+        <attribute key="skillSword" value="10" />
+        <attribute key="skillDist" value="10" />
+		<attribute key="skillFist" value="10" />
+        <attribute key="magiclevelpoints" value="10" />
+	    <attribute key="absorbPercentAll" value="10" />
 		<attribute key="showattributes" value="5" />
     </item>
-		 <item id="11779" article="a [Rare]" name="Yin Yang Amulet">
+		<item id="11776" article="a [Legendary]" name="Hagoromo Amulet">
+         <attribute key="description" value="Chakra recovery 800/s and life recovery 800/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="4" />
         <attribute key="slotType" value="necklace" />
 	    <attribute key="skillClub" value="8" />
         <attribute key="skillSword" value="8" />
         <attribute key="skillDist" value="8" />
         <attribute key="magiclevelpoints" value="8" />
-        <attribute key="preventDrop" value="1" />
+	    <attribute key="speed" value="20" />
+	    <attribute key="manaGain" value="800" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="800" />
+        <attribute key="healthTicks" value="1000" />
 		<attribute key="showattributes" value="5" />
     </item>
 
