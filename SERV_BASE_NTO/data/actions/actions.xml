@@ -3,6 +3,8 @@
 
 <actions>
 
+<action actionid="35600" event="script" value="itens_iniciais.lua"/>	
+
 
 <action itemid="2175" script="spells.lua"/>
 

@@ -26,6 +26,8 @@ function onLogin(cid)
  if(not isPlayerGhost(cid)) then
   doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
  end
+    registerCreatureEvent(cid, "aol_protect_iniciante")
+
    registerCreatureEvent(cid, "aol")
   registerCreatureEvent(cid, "aol_donate")
 

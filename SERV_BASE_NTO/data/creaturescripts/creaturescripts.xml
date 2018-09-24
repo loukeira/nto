@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+<event type="death" name="aol_protect_iniciante" event="script" value="aol_protect_iniciante.lua"/> 
+
 <!--<event type="death" name="aol" event="script" value="aol.lua"/> -->
 <!--<event type="death" name="aol_donate" event="script" value="aoldonate.lua"/> -->
 

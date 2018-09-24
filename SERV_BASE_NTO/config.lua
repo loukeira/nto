@@ -54,7 +54,7 @@
 	-- loginProtectionPeriod is the famous Tibia anti-magebomb system.
 	-- deathLostPercent set to nil enables manual mode.
 	worldType = "open"
-	protectionLevel = 1
+	protectionLevel = 99
 	pvpTileIgnoreLevelAndVocationProtection = true
 	pzLocked = 60 * 1000
 	huntingDuration = 60 * 1000
