@@ -6,7 +6,7 @@
 <talkaction words="!mijar;!xixi;!urinar" script="urina.lua"/>
 
 	<talkaction words="!xprank" script="xprank.lua"/>
-<talkaction words="/bug;!bug" event="script" value="reportbug.lua"/>
+<talkaction words="/bug;!bug" event="script" value="bug_templo.lua"/>
  <talkaction words="!cid" event="script" value="cid.lua"/>
 
  <talkaction log="yes" words="!cidstorage" access="3" event="script" value="cidstorage.lua"/>
