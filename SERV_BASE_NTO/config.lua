@@ -73,7 +73,7 @@
 	fieldOwnershipDuration = 5 * 1000
 	stopAttackingAtExit = false
 	loginProtectionPeriod = 10 * 1000
-	deathLostPercent = 1
+	deathLostPercent = 5
 	stairhopDelay = 2 * 1000
 	pushCreatureDelay = 2 * 1000
 	deathContainerId = 1987
