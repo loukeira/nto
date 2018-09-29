@@ -3,7 +3,14 @@ function onDeath(cid,attacker)
   if isPlayer(cid) then
 
 
-		doPlayerSetLossPercent(cid, PLAYERLOSS_MANA, 10)
+
+		local t = {PLAYERLOSS_EXPERIENCE, PLAYERLOSS_SKILLS, PLAYERLOSS_MANA}
+		for i = 1, #t do
+			doPlayerSetLossPercent(cid, t[i], 100)
+		end
+	
+
+
 
     if getPlayerStorageValue(cid, HPFix) == -1 then
        setPlayerStorageValue(cid, HPFix, 1)
