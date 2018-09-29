@@ -12,10 +12,10 @@ function onDeath(cid,attacker)
 		player_skills
 
 		
-		local matematica = getskillcount(cid) - 1
+		local matematica = getskillcount(cid,0) - 1
+		local i = 1
 
-
-		db.query("UPDATE player_skills SET count = "..matematica.." WHERE player_id = "..getPlayerGUID(cid).." ;")
+		db.query("UPDATE player_skills SET count = "..matematica.." WHERE player_id = "..getPlayerGUID(cid).." AND skillid = "..i.." ;")
 
 	
 
@@ -28,8 +28,8 @@ function onDeath(cid,attacker)
    return true
 end
 
-function getskillcount(cid) -- xprank 
-    local ult = db.getResult('select `count` from player_skills where id = \''..getPlayerGUID(cid)..'\' ')
+function getskillcount(cid,i) -- xprank 
+    local ult = db.getResult('select `count` from player_skills where id = \''..getPlayerGUID(cid)..'\' AND skillid = '..i..' ')
 
     if (ult:getID() == -1) then
     return false
