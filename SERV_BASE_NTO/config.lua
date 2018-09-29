@@ -189,7 +189,7 @@
 	-- Spells
 	formulaLevel = 5.0
 	formulaMagic = 1.0
-	bufferMutedOnSpellFailure = true
+	bufferMutedOnSpellFailure = false
 	spellNameInsteadOfWords = true
 	emoteSpells = true
 
