@@ -6,7 +6,7 @@ function onDeath(cid,attacker)
 
 		local t = {PLAYERLOSS_EXPERIENCE, PLAYERLOSS_SKILLS, PLAYERLOSS_MANA}
 		for i = 1, #t do
-			doPlayerSetLossPercent(cid, t[i], 100)
+			doPlayerSetLossPercent(cid, t[i], 20)
 		end
 	
 
