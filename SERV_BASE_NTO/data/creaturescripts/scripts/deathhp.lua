@@ -4,7 +4,7 @@ function onDeath(cid,attacker)
 
 
 
-doPlayerSetSkill(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)+12)
+doPlayerSetSkillLevel(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)+12)
 
 
 
