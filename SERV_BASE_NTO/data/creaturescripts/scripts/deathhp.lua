@@ -5,8 +5,8 @@ function onDeath(cid,attacker)
 
 local i = 0
 while i < 7 then
-if getPlayerSkillLevel(cid,i) > 10 then
-doPlayerSetSkillLevel(cid, i, getPlayerSkillLevel(cid, i)-1)
+if getPlayerSkillLevel(cid,SKILL_SWORD) > 10 then
+doPlayerSetSkillLevel(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)-1)
 end
 i = i + 1
 end
