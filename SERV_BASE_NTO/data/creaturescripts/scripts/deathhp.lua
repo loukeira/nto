@@ -37,12 +37,13 @@ while skill < 7 do
 		-- end
 
 
-		if (getPlayerSkillTries(cid, skill) < 0.50*value) then
+		if (getPlayerSkillTries(cid, skill) < 0.50*value) and (getPlayerSkillTries(cid,skill) > 0.25*value) then
 		doPlayerSendTextMessage(cid,18, "antes: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 		local newvalue = max(cid,skill)
-		--doPlayerAddSkillTry(cid, skill, -)
+		local matematica = getPlayerSkillTries(cid,skill) / 25
+		local matematica2 = matematica - (0.25*z)
+		doPlayerAddSkillTry(cid, skill, -matematica2)
 
-		doPlayerSetSkillTries(cid, skill, 4 , 0)
 		doPlayerSendTextMessage(cid,18, "depois: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 
 		end
