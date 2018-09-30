@@ -48,13 +48,13 @@ while skill < 7 do
 		elseif (getPlayerSkillTries(cid, skill) <= 0.25*value) and (getPlayerSkillTries(cid,skill) >= 0*value) then
 
 		doPlayerSetSkillLevel(cid,skill,getPlayerSkillLevel(cid,skill)-1)
-		local newvalue,hits2 = max(cid,skill)
+		local newvalue,hits4 = max(cid,skill)
 
 
 		--local matematica = getPlayerSkillTries(cid,skill) / 25
 		--local matematica2 = matematica - (0*hits2)
-		local matematica3 = 0.75*hits2
-		doPlayerAddSkillTry(cid, skill, matematica3)
+		local matematica3 = 0.75*hits4
+		--doPlayerAddSkillTry(cid, skill, matematica3)
 		end
 
 
