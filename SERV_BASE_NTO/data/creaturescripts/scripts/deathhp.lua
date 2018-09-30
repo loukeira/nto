@@ -12,7 +12,7 @@ while skill < 7 do
 
 
 
-		local value = max(cid,skill)
+		local value,z = max(cid,skill)
 
 
 		-- if (getPlayerSkillTries(cid, skill) >= 0.75*value) then
@@ -40,9 +40,9 @@ while skill < 7 do
 		if (getPlayerSkillTries(cid, skill) < 0.50*value) then
 		doPlayerSendTextMessage(cid,18, "antes: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 		local newvalue = max(cid,skill)
-		doPlayerAddSkillTry(cid, skill, -4)
+		--doPlayerAddSkillTry(cid, skill, -)
 
-		--doPlayerSetSkillTries(cid, skill, 50 ,20)
+		doPlayerSetSkillTries(cid, skill, 4 , 0)
 		doPlayerSendTextMessage(cid,18, "depois: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 
 		end
@@ -65,5 +65,5 @@ function max(cid ,skill)
  k = (2*x) + 1
  z = math.pow(2, k)
  valor = z * 25
-return valor
+return valor,z
 end
