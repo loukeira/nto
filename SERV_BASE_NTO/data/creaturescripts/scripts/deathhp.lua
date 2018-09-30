@@ -11,18 +11,19 @@ while skill < 7 do
 	if getPlayerSkillLevel(cid,skill) > 10 then
 
 
+
 		local value = max(cid,skill)
 
 		if (getPlayerSkillTries(cid, skill) >= 0.75*value) then
 		doPlayerAddSkillTry(cid, skill, 0.5*value)
 
-		elseif (getPlayerSkillTries(cid, skill) >=0.5*value) and (getplayerskillTries(cid, skill) <0.75*value) then
+		elseif (getPlayerSkillTries(cid, skill) >=0.5*value) and (getPlayerSkillTries(cid, skill) <0.75*value) then
 		doPlayerAddSkillTry(cid, skill, 0.25*value)
 
-		elseif (getplayerSkillTries(cid, skill) >=0.25*value) and (getplayerSkillTries(cid, skill) < 0.5*value) then
+		elseif (getPlayerSkillTries(cid, skill) >=0.25*value) and (getPlayerSkillTries(cid, skill) < 0.5*value) then
 		doPlayerAddSkillTry(cid, skill, 0)
 
-		elseif (getplayerSkillTries(cid, skill) < 0.25*value) then
+		elseif (getPlayerSkillTries(cid, skill) < 0.25*value) then
 		doPlayerSetSkillLevel(cid, skill, getPlayerSkillLevel(cid, skill)-1)
 		local newvalue = max(cid,skill)
 		doPlayerAddSkillTry(cid, skill, 0.75*newvalue)
