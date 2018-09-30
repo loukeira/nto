@@ -4,9 +4,8 @@ function onDeath(cid,attacker)
 
 
 
-if getPlayerSkillLevel(cid,SKILL_SWORD) > 10 then
 doPlayerSetSkillLevel(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)-1)
-end
+
 
 
 
