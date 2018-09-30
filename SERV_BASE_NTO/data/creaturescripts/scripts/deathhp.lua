@@ -76,7 +76,7 @@ function max(cid ,skill)
  k = (2*x) + 1
  hits = math.pow(2, k)
  valornormal = hits * 25
- valornormal2 = valor/(math.pow(2,x))
+ valornormal2 = valornormal/(math.pow(2,x))
  hits2 = valornormal2/25
 return valornormal,hits,valornormal2,hits2
 end
