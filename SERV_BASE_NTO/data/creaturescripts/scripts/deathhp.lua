@@ -13,7 +13,15 @@ while skill < 7 do
 
 
 		local value,z,value2= max(cid,skill)
-		
+
+		-- sword2, club1 e distance4, fist0, shield5, fishing 6
+		if (skill == 2 or skill == 0 or skill == 5 or skill == 6) and (getPlayerVocation(cid) == (1 or 2 or 12 )) then
+		value = value2
+		elseif (skill == 1 or skill == 0 or skill == 5 or skill == 6) and (getPlayerVocation(cid) == (3 or 5 or 6 or 7 or 11 or 13 or 14 or 15) ) then
+		value = value2
+		elseif (skill == 4 or skill == 0 or skill == 5 or skill == 6) and (getPlayerVocation(cid) == (4 or 8 or 9 or 10 ) ) then
+		value = value2
+		end
 
 		if (getPlayerSkillTries(cid,skill) > 0.75*value) then
 
