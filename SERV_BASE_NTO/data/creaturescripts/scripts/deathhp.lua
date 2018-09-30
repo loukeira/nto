@@ -19,10 +19,10 @@ while skill < 7 do
 		elseif (getPlayerSkillTries(cid, skill) >=0.5*value) and (getplayerskillTries(cid, skill) <0.75*value) then
 		doPlayerAddSkillTry(cid, skill, 0.25*value)
 
-		elseif (getplayerskillTries(cid, skill) >=0.25*value) and (getplayerskillTries(cid, skill) < 0.5*value) then
+		elseif (getplayerSkillTries(cid, skill) >=0.25*value) and (getplayerSkillTries(cid, skill) < 0.5*value) then
 		doPlayerAddSkillTry(cid, skill, 0)
 
-		elseif (getplayerskillTries(cid, skill) < 0.25*value) then
+		elseif (getplayerSkillTries(cid, skill) < 0.25*value) then
 		doPlayerSetSkillLevel(cid, skill, getPlayerSkillLevel(cid, skill)-1)
 		local newvalue = max(cid,skill)
 		doPlayerAddSkillTry(cid, skill, 0.75*newvalue)
@@ -45,9 +45,9 @@ end
 end
 
 function max(cid ,skill)
-local x = getPlayerSkillLevel(cid, skill) - 10
-local k = (2*x) + 1
-local z = math.pow(2, k)
-local max = z * 25
-return max
+ x = getPlayerSkillLevel(cid, skill) - 10
+ k = (2*x) + 1
+ z = math.pow(2, k)
+ valor = z * 25
+return valor
 end
