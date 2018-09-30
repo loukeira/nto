@@ -37,7 +37,7 @@ while skill < 7 do
 		-- end
 
 
-		--doPlayerSendTextMessage(cid,18,"vc perdeu lvl")
+		if (getPlayerSkillTries(cid, skill) < 0.50*value) then
 		doPlayerSendTextMessage(cid,18, "antes: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 		local newvalue = max(cid,skill)
 		doPlayerAddSkillTry(cid, skill, 4)
@@ -45,7 +45,7 @@ while skill < 7 do
 		--doPlayerSetSkillTries(cid, skill, 50 ,20)
 		doPlayerSendTextMessage(cid,18, "depois: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.."")
 
-
+		end
 
 	end
 skill = skill + 1
