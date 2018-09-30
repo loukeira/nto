@@ -7,7 +7,7 @@ local skill = 0
 while skill < 7 do
 if getPlayerSkillLevel(cid,skill) > 10 then
 
-getPlayerSkillTries(cid, skill
+getPlayerSkillTries(cid, skill)
 
 doPlayerSetSkillLevel(cid, skill, getPlayerSkillLevel(cid, skill)-1)
 end
