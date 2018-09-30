@@ -16,7 +16,7 @@ while skill < 7 do
 
 
 		if (getPlayerSkillTries(cid, skill) >= 0.75*value) then
-		doPlayerSetSkillTries(cid, skill, 0.5value,50)
+		doPlayerSetSkillTries(cid, skill, 0.5*value,50)
 		doPlayerSendTextMessage(cid,18,"vc ficou com 50")
 
 		elseif (getPlayerSkillTries(cid, skill) >=0.5*value) and (getPlayerSkillTries(cid, skill) <0.75*value) then
