@@ -35,7 +35,7 @@ function onSay(cid, words, param, channel)
 
     skill = skill +1
     end
-    doPlayerSendTextMessage(cid,18, ""..getPlayerVocation(cid).."")
+    doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
 
 return true
 end

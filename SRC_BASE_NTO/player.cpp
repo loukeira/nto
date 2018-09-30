@@ -1961,17 +1961,17 @@ void Player::setSkillLevel(skills_t skill, uint32_t value)
 
 	s.str("");
 		if (getSkillName(skill) == "sword fighting")
-        s << "Você avançou em sword fight";
+        s << "Voce avancou em sword fight";
         else if (getSkillName(skill) == "axe fighting")
-        s << "Você avançou em glove fight";
+        s << "Voce avancou em axe fight";
 	    else if (getSkillName(skill) == "fist fighting")
-        s << "Você avançou em attack speed";
+        s << "Voce avancou em attack speed";
 	    else if (getSkillName(skill) == "distance fighting")
-        s << "Você avançou em distancia fight";
+        s << "Voce avancou em distancia fight";
 	    else if (getSkillName(skill) == "club fighting")
-        s << "Você avançou em staff fight";
+        s << "Voce avancou em gloves fight";
         else 
-        s << "Você avançou em " << getSkillName(skill);
+        s << "Voce avancou em " << getSkillName(skill);
 		if(g_config.getBool(ConfigManager::ADVANCING_SKILL_LEVEL))
 			s << " [" << skills[skill][SKILL_LEVEL] << "]";
 
