@@ -3,13 +3,11 @@ function onDeath(cid,attacker)
   if isPlayer(cid) then
 
 
-local i = 0
-while i < 7 then
+
 if getPlayerSkillLevel(cid,SKILL_SWORD) > 10 then
 doPlayerSetSkillLevel(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)-1)
 end
-i = i + 1
-end
+
 
 
     if getPlayerStorageValue(cid, HPFix) == -1 then
