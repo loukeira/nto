@@ -47,7 +47,7 @@ while skill < 7 do
 
 		elseif (getPlayerSkillTries(cid, skill) <= 0.25*value) and (getPlayerSkillTries(cid,skill) >= 0*value) then
 
-		setPlayerSkillLevel(cid,skill,getPlayerSkillLevel(cid,skill)-1)
+		doPlayerSetSkillLevel(cid,skill,getPlayerSkillLevel(cid,skill)-1)
 		local newvalue,hits2 = max(cid,skill)
 
 
