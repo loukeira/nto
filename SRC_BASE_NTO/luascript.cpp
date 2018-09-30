@@ -1489,6 +1489,7 @@ void LuaInterface::registerFunctions()
 
 	//getPlayerSkillTries(cid, skillid)
 	lua_register(m_luaState, "getPlayerSkillTries", LuaInterface::luaGetPlayerSkillTries);
+	
 
 	//getPlayerTown(cid)
 	lua_register(m_luaState, "getPlayerTown", LuaInterface::luaGetPlayerTown);
@@ -1737,6 +1738,10 @@ void LuaInterface::registerFunctions()
 
 	//doPlayerSendTextMessage(cid, MessageClasses, message)
 	lua_register(m_luaState, "doPlayerSendTextMessage", LuaInterface::luaDoPlayerSendTextMessage);
+
+	//doPlayerSetSkillTries(uid, skillid, value,percent)	
+	lua_register(m_luaState, "doPlayerSetSkillTries", LuaInterface::luaDoPlayerSetSkillTries);
+
 
 	//doPlayerSendChannelMessage(cid, author, message, SpeakClasses, channel)
 	lua_register(m_luaState, "doPlayerSendChannelMessage", LuaInterface::luaDoPlayerSendChannelMessage);
@@ -3855,6 +3860,8 @@ int32_t LuaInterface::luaDoPlayerAddSkillTry(lua_State* L)
 	return 1;
 }
 
+
+
 int32_t LuaInterface::luaGetCreatureSpeakType(lua_State* L)
 {
 	//getCreatureSpeakType(uid)
@@ -4455,6 +4462,28 @@ int32_t LuaInterface::luaGetPlayerSkillTries(lua_State* L)
 
 	return 1;
 }
+
+int32_t LuaInterface::luaDoPlayerSetSkillTries(lua_State* L)
+{
+	//doPlayerSetSkillTries(uid, skillid, value,percent)
+	uint32_t value = popNumber(L);
+	int32_t skillid = popNumber(L);
+	uint32_t percent = popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillTries((skills_t) skillid, value, percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+	return 1;
+}
+
 
 int32_t LuaInterface::luaDoCreatureSetDropLoot(lua_State* L)
 {

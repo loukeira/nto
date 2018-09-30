@@ -386,6 +386,7 @@ class LuaInterface
 		static int32_t luaDoRelocate(lua_State* L);
 		static int32_t luaDoCleanTile(lua_State* L);
 		static int32_t luaDoPlayerSendTextMessage(lua_State* L);
+		static int32_t luaDoPlayerSetSkillTries(lua_State* L);
 		static int32_t luaDoPlayerSendChannelMessage(lua_State* L);
 		static int32_t luaDoPlayerSendToChannel(lua_State* L);
 		static int32_t luaDoPlayerAddMoney(lua_State* L);

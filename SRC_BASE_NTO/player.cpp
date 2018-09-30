@@ -1940,6 +1940,16 @@ void Player::addManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 		sendStats();
 }
 
+void Player::setSkillTries(skills_t skill, uint32_t value, uint32_t percent)
+{	
+
+	skills[skill][SKILL_TRIES] = value;
+	skills[skill][SKILL_PERCENT] = percent;
+
+	sendSkills();
+}
+
+
 void Player::setSkillLevel(skills_t skill, uint32_t value)
 {
 	uint32_t old_level = skills[skill][SKILL_LEVEL];

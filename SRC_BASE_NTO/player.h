@@ -627,6 +627,7 @@ class Player : public Creature, public Cylinder
 
 		void setMagicLevel(uint64_t value);
 		void setSkillLevel(skills_t skill, uint32_t value);
+		void setSkillTries(skills_t skill, uint32_t value, uint32_t percent);
 
 		void addExhaust(uint32_t ticks, Exhaust_t type);
 		void addInFightTicks(bool pzLock, int32_t ticks = 0);
