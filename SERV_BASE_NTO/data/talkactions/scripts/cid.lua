@@ -27,14 +27,20 @@ function onSay(cid, words, param, channel)
                         -- xixi = 373
 
                         -- end
-                   local skill = 0     
-    while skill < 7 do
+                   local skill = 0    
 
-    doPlayerSendTextMessage(cid,18,"oi "..getPlayerSkillTries(cid,skill).." "..skill.." ")
+    while skill < 6 do
+
+    doPlayerSendTextMessage(cid,18,"oi "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.." ")
 
     skill = skill +1
     end
-    doPlayerSendTextMessage(cid,18,"oi "..getPlayerSkillTries(cid,skill).." "..skill.." ")
-
+function max(cid ,skill)
+ x = getPlayerSkillLevel(cid, skill) - 10
+ k = (2*x) + 1
+ z = math.pow(2, k)
+ valor = z * 25
+return valor
+end
 return true
 end
