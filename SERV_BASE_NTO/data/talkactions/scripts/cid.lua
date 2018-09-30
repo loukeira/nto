@@ -27,7 +27,7 @@ function onSay(cid, words, param, channel)
                         -- xixi = 373
 
                         -- end
-                        
+                   local skill = 0     
     while skill < 9 do
 
     doPlayerSendTextMessage(cid,18,"oi "..getPlayerSkillTries(cid,skill).." "..skill.." ")
