@@ -35,12 +35,14 @@ function onSay(cid, words, param, channel)
 
     skill = skill +1
     end
+
+return true
+end
+
 function max(cid ,skill)
  x = getPlayerSkillLevel(cid, skill) - 10
  k = (2*x) + 1
  z = math.pow(2, k)
  valor = z * 25
 return valor
-end
-return true
 end
