@@ -32,7 +32,7 @@ while skill < 7 do
 		doPlayerSendTextMessage(cid,18,"vc perdeu lvl")
 		doPlayerSendTextMessage(cid,18, "valor maximo: "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." ")
 		local newvalue = max(cid,skill)
-		doPlayerSetSkillTries(cid, skill, 0.75*newvalue,75)
+		doPlayerSetSkillTries(cid, skill, 0.75*newvalue)
 
 		end
 
