@@ -2,9 +2,18 @@ function onDeath(cid,attacker)
 	local HPFix = 158920
   if isPlayer(cid) then
 
-if getPlayerSkillLevel(cid,SKILL_SWORD) > 10 then
-doPlayerSetSkillLevel(cid, SKILL_SWORD, getPlayerSkillLevel(cid, SKILL_SWORD)-1)
+local skill = 0
+
+while skill < 7 do
+if getPlayerSkillLevel(cid,skill) > 10 then
+
+getPlayerSkillTries(cid, skill
+
+doPlayerSetSkillLevel(cid, skill, getPlayerSkillLevel(cid, skill)-1)
 end
+skill = skill + 1
+end
+
 
 
 
