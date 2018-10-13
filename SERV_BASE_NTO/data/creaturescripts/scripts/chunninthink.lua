@@ -9,8 +9,6 @@ function onThink(cid, interval)
 --if (getGlobalStorageValue(chunnin.storage.ativo) == -1 ) then return true end
 
 
-local id_item_pergaminho_ar = 9930
-local id_item_pergaminho_terra = 9931
 local tempoo = 1230
 
 if (getGlobalStorageValue(tempoo) < os.time()) then
