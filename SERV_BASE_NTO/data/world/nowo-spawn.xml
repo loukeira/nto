@@ -69,6 +69,24 @@
 		<monster name="Madara" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="1053" centery="840" centerz="6" radius="3" />
+	<spawn centerx="1049" centery="884" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1053" centery="884" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1057" centery="884" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1049" centery="893" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1053" centery="893" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="1057" centery="893" centerz="6" radius="1">
+		<monster name="Trainer" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="1045" centery="910" centerz="6" radius="1" />
 	<spawn centerx="984" centery="926" centerz="6" radius="5" />
 	<spawn centerx="992" centery="926" centerz="6" radius="5" />
@@ -331,7 +349,7 @@
 		<monster name="Black Shinobi" x="7" y="7" z="7" spawntime="60" />
 		<monster name="Black Shinobi" x="22" y="15" z="7" spawntime="60" />
 		<monster name="Black Shinobi" x="-15" y="18" z="7" spawntime="60" />
-		<monster name="Black Shinobi" x="-1" y="20" z="7" spawntime="60" />
+		<monster name="Black Shinobi" x="-1" y="20" z="7" spawntime="60" direction="2" />
 		<monster name="Black Shinobi" x="11" y="20" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="695" centery="716" centerz="7" radius="5">
@@ -578,6 +596,15 @@
 	</spawn>
 	<spawn centerx="1190" centery="880" centerz="7" radius="10" />
 	<spawn centerx="926" centery="884" centerz="7" radius="21" />
+	<spawn centerx="1049" centery="884" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1053" centery="884" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1057" centery="884" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="610" centery="888" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="-3" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="1" z="7" spawntime="60" />
@@ -592,6 +619,15 @@
 	<spawn centerx="885" centery="889" centerz="7" radius="21" />
 	<spawn centerx="1235" centery="890" centerz="7" radius="10" />
 	<spawn centerx="1276" centery="892" centerz="7" radius="10" />
+	<spawn centerx="1049" centery="893" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1053" centery="893" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1057" centery="893" centerz="7" radius="1">
+		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1213" centery="895" centerz="7" radius="10" />
 	<spawn centerx="597" centery="896" centerz="7" radius="5">
 		<npc name="Tobirama" x="-3" y="0" z="7" spawntime="60" />
@@ -665,7 +701,11 @@
 		<npc name="Tobirama" x="0" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="620" centery="931" centerz="7" radius="5" />
-	<spawn centerx="971" centery="933" centerz="7" radius="5" />
+	<spawn centerx="971" centery="933" centerz="7" radius="5">
+		<monster name="Snake" x="-4" y="-3" z="7" spawntime="60" />
+		<monster name="Snake" x="-3" y="0" z="7" spawntime="60" />
+		<monster name="Snake" x="-3" y="4" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1184" centery="933" centerz="7" radius="10" />
 	<spawn centerx="672" centery="935" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="0" z="7" spawntime="60" />
@@ -687,19 +727,58 @@
 	<spawn centerx="554" centery="945" centerz="7" radius="5">
 		<npc name="Tobirama" x="-3" y="3" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="997" centery="947" centerz="7" radius="5" />
+	<spawn centerx="1020" centery="945" centerz="7" radius="1">
+		<monster name="Snake" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Snake" x="-1" y="1" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="997" centery="947" centerz="7" radius="5">
+		<monster name="Snake" x="-3" y="-4" z="7" spawntime="60" />
+		<monster name="Snake" x="2" y="-3" z="7" spawntime="60" />
+		<monster name="Snake" x="-3" y="1" z="7" spawntime="60" />
+		<monster name="Snake" x="5" y="1" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1007" centery="947" centerz="7" radius="1">
+		<monster name="Snake" x="1" y="-1" z="7" spawntime="60" />
+		<monster name="Snake" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="623" centery="949" centerz="7" radius="5">
 		<npc name="Tobirama" x="2" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1056" centery="950" centerz="7" radius="6" />
-	<spawn centerx="997" centery="951" centerz="7" radius="5" />
-	<spawn centerx="1078" centery="951" centerz="7" radius="6" />
+	<spawn centerx="1056" centery="950" centerz="7" radius="6">
+		<monster name="Snake" x="-2" y="-4" z="7" spawntime="60" />
+		<monster name="Snake" x="4" y="-4" z="7" spawntime="60" />
+		<monster name="Snake" x="-3" y="-1" z="7" spawntime="60" />
+		<monster name="Snake" x="-5" y="4" z="7" spawntime="60" />
+		<monster name="Snake" x="4" y="4" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="997" centery="951" centerz="7" radius="5">
+		<monster name="Snake" x="2" y="3" z="7" spawntime="60" />
+		<monster name="Snake" x="-3" y="4" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1078" centery="951" centerz="7" radius="6">
+		<monster name="Snake" x="3" y="-3" z="7" spawntime="60" />
+		<monster name="Snake" x="1" y="-2" z="7" spawntime="60" />
+		<monster name="Snake" x="-4" y="-1" z="7" spawntime="60" />
+		<monster name="Snake" x="-2" y="3" z="7" spawntime="60" />
+		<monster name="Snake" x="2" y="3" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1153" centery="951" centerz="7" radius="10" />
 	<spawn centerx="1033" centery="952" centerz="7" radius="6">
+		<monster name="Snake" x="3" y="-5" z="7" spawntime="60" />
+		<monster name="Snake" x="-2" y="-4" z="7" spawntime="60" />
+		<monster name="Snake" x="-2" y="2" z="7" spawntime="60" />
+		<monster name="Snake" x="-1" y="4" z="7" spawntime="60" />
+		<monster name="Snake" x="5" y="4" z="7" spawntime="60" />
 		<monster name="Bandit" x="-5" y="6" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="633" centery="953" centerz="7" radius="5" />
-	<spawn centerx="1009" centery="955" centerz="7" radius="6" />
+	<spawn centerx="1009" centery="955" centerz="7" radius="6">
+		<monster name="Snake" x="-3" y="-5" z="7" spawntime="60" />
+		<monster name="Snake" x="3" y="-3" z="7" spawntime="60" />
+		<monster name="Snake" x="-4" y="0" z="7" spawntime="60" />
+		<monster name="Snake" x="-5" y="4" z="7" spawntime="60" />
+		<monster name="Snake" x="0" y="4" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="554" centery="956" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="2" z="7" spawntime="60" />
 	</spawn>
@@ -732,13 +811,30 @@
 		<npc name="Tobirama" x="1" y="-3" z="7" spawntime="60" />
 		<npc name="Tobirama" x="-3" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1077" centery="968" centerz="7" radius="6" />
+	<spawn centerx="1077" centery="968" centerz="7" radius="6">
+		<monster name="Snake" x="0" y="2" z="7" spawntime="60" />
+		<monster name="Snake" x="-2" y="4" z="7" spawntime="60" />
+		<monster name="Snake" x="-4" y="5" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="603" centery="970" centerz="7" radius="5">
 		<npc name="Tobirama" x="-3" y="-1" z="7" spawntime="60" />
 		<npc name="Tobirama" x="-2" y="3" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="968" centery="970" centerz="7" radius="18">
+		<monster name="Snake" x="-2" y="-17" z="7" spawntime="60" />
+		<monster name="Snake" x="1" y="-15" z="7" spawntime="60" />
+		<monster name="Snake" x="4" y="-15" z="7" spawntime="60" />
+		<monster name="Snake" x="9" y="-15" z="7" spawntime="60" />
 		<monster name="Bandit" x="14" y="-12" z="7" spawntime="60" />
+		<monster name="Snake" x="-1" y="-11" z="7" spawntime="60" />
+		<monster name="Snake" x="10" y="-11" z="7" spawntime="60" />
+		<monster name="Snake" x="6" y="-8" z="7" spawntime="60" />
+		<monster name="Snake" x="16" y="-8" z="7" spawntime="60" />
+		<monster name="Snake" x="2" y="-3" z="7" spawntime="60" />
+		<monster name="Snake" x="-2" y="-2" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1059" centery="973" centerz="7" radius="1">
+		<monster name="Snake" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1167" centery="973" centerz="7" radius="10" />
 	<spawn centerx="1225" centery="974" centerz="7" radius="10" />
@@ -755,24 +851,44 @@
 	<spawn centerx="1064" centery="984" centerz="7" radius="6">
 		<monster name="Bandit" x="4" y="-5" z="7" spawntime="60" />
 		<monster name="Bandit" x="-2" y="1" z="7" spawntime="60" />
+		<monster name="Snake" x="0" y="2" z="7" spawntime="60" />
+		<monster name="Snake" x="-4" y="3" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="985" centery="988" centerz="7" radius="8" />
 	<spawn centerx="583" centery="989" centerz="7" radius="5">
 		<npc name="Tobirama" x="-1" y="2" z="7" spawntime="60" />
 		<npc name="Tobirama" x="2" y="4" z="7" spawntime="512" />
 	</spawn>
-	<spawn centerx="1026" centery="989" centerz="7" radius="5" />
-	<spawn centerx="1039" centery="989" centerz="7" radius="5" />
+	<spawn centerx="1026" centery="989" centerz="7" radius="5">
+		<monster name="Jay Snake" x="-2" y="-3" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="4" y="0" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="-2" y="3" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1039" centery="989" centerz="7" radius="5">
+		<monster name="Jay Snake" x="-3" y="-2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="3" y="-2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="0" y="3" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="906" centery="992" centerz="7" radius="18" />
 	<spawn centerx="1546" centery="993" centerz="7" radius="2">
 		<monster name="Sasori" x="0" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1053" centery="998" centerz="7" radius="6">
+		<monster name="Snake" x="3" y="-5" z="7" spawntime="60" />
 		<monster name="Bandit" x="2" y="-4" z="7" spawntime="60" />
+		<monster name="Snake" x="1" y="-1" z="7" spawntime="60" />
 		<monster name="Bandit" x="-2" y="6" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1018" centery="999" centerz="7" radius="5" />
-	<spawn centerx="1030" centery="999" centerz="7" radius="5" />
+	<spawn centerx="1018" centery="999" centerz="7" radius="5">
+		<monster name="Jay Snake" x="2" y="-2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="-2" y="1" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="-4" y="4" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1030" centery="999" centerz="7" radius="5">
+		<monster name="Jay Snake" x="-2" y="0" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="3" y="0" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="0" y="4" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="614" centery="1000" centerz="7" radius="5" />
 	<spawn centerx="607" centery="1003" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="3" z="7" spawntime="60" />
@@ -783,8 +899,16 @@
 	</spawn>
 	<spawn centerx="1311" centery="1004" centerz="7" radius="10" />
 	<spawn centerx="1284" centery="1005" centerz="7" radius="10" />
-	<spawn centerx="1010" centery="1006" centerz="7" radius="5" />
-	<spawn centerx="1021" centery="1008" centerz="7" radius="5" />
+	<spawn centerx="1010" centery="1006" centerz="7" radius="5">
+		<monster name="Jay Snake" x="3" y="-1" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="-2" y="2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="1" y="2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="5" y="4" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1021" centery="1008" centerz="7" radius="5">
+		<monster name="Jya" x="-4" y="2" z="7" spawntime="60" />
+		<monster name="Jay Snake" x="3" y="3" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="813" centery="1009" centerz="7" radius="10" />
 	<spawn centerx="1546" centery="1010" centerz="7" radius="3">
 		<monster name="Kurama quest" x="0" y="1" z="7" spawntime="60" />
@@ -827,7 +951,9 @@
 	<spawn centerx="1022" centery="1026" centerz="7" radius="6">
 		<monster name="Bandit" x="5" y="-2" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1060" centery="1027" centerz="7" radius="20" />
+	<spawn centerx="1060" centery="1027" centerz="7" radius="20">
+		<monster name="Jya" x="-6" y="3" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="842" centery="1028" centerz="7" radius="18" />
 	<spawn centerx="1268" centery="1028" centerz="7" radius="10" />
 	<spawn centerx="1301" centery="1031" centerz="7" radius="10" />

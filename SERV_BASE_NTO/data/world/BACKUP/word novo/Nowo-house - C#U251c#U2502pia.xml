@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<houses>
+  <house name="Konoha Gakure #1" houseid="1" entryx="1008" entryy="912" entryz="7" rent="25400" townid="1" size="12"/>
+  <house name="Konoha Gakure #2" houseid="2" entryx="1011" entryy="912" entryz="7" rent="25400" townid="1" size="8"/>
+  <house name="Konoha Gakure #3" houseid="3" entryx="1029" entryy="892" entryz="7" rent="25400" townid="1" size="6"/>
+  <house name="Konoha Gakure #4" houseid="4" entryx="1032" entryy="892" entryz="7" rent="25400" townid="1" size="6"/>
+  <house name="Konoha Gakure #5" houseid="5" entryx="1029" entryy="897" entryz="7" rent="25400" townid="1" size="9"/>
+  <house name="Konoha Gakure #6" houseid="6" entryx="1032" entryy="897" entryz="7" rent="25400" townid="1" size="6"/>
+  <house name="Konoha Gakure #7" houseid="7" entryx="1039" entryy="905" entryz="7" rent="25400" townid="1" size="12"/>
+  <house name="Konoha Gakure #8" houseid="8" entryx="1039" entryy="911" entryz="7" rent="25400" townid="1" size="12"/>
+  <house name="Konoha Gakure #9" houseid="9" entryx="1039" entryy="917" entryz="7" rent="25400" townid="1" size="12"/>
+  <house name="Konoha Gakure Uchiha #1" houseid="10" entryx="1024" entryy="924" entryz="7" rent="270000" townid="1" size="45"/>
+  <house name="Konoha Gakure Uchiha #2" houseid="11" entryx="1030" entryy="924" entryz="7" rent="270000" townid="1" size="15"/>
+  <house name="Konoha Gakure Uchiha #3" houseid="12" entryx="1024" entryy="928" entryz="7" rent="270000" townid="1" size="6"/>
+  <house name="Konoha Gakure Uchiha #4" houseid="13" entryx="1030" entryy="928" entryz="7" rent="270000" townid="1" size="6"/>
+  <house name="Konoha Gakure Uchiha #5" houseid="14" entryx="1036" entryy="928" entryz="7" rent="270000" townid="1" size="6"/>
+  <house name="Konoha Gakure Uchiha #6" houseid="15" entryx="1042" entryy="928" entryz="7" rent="270000" townid="1" size="4"/>
+  <house name="Konoha Gakure Uchiha #7" houseid="16" entryx="1041" entryy="924" entryz="7" rent="270000" townid="1" size="12"/>
+  <house name="Konoha Private #1" houseid="17" entryx="1051" entryy="920" entryz="7" rent="30000" townid="1" size="46"/>
+  <house name="Konoha Private #2" houseid="18" entryx="1052" entryy="915" entryz="7" rent="30000" townid="1" size="10"/>
+  <house name="Konoha Private #3" houseid="19" entryx="1052" entryy="910" entryz="7" rent="30000" townid="1" size="10"/>
+  <house name="Konoha Private #4" houseid="20" entryx="1052" entryy="905" entryz="7" rent="30000" townid="1" size="10"/>
+  <house name="Konoha Private #5" houseid="21" entryx="1054" entryy="900" entryz="7" rent="30000" townid="1" size="18"/>
+  <house name="Konoha Private #6" houseid="22" entryx="1059" entryy="900" entryz="7" rent="30000" townid="1" size="5"/>
+  <house name="Konoha Private #7" houseid="23" entryx="1059" entryy="905" entryz="7" rent="30000" townid="1" size="4"/>
+  <house name="Konoha Private #8" houseid="24" entryx="1059" entryy="910" entryz="7" rent="30000" townid="1" size="6"/>
+  <house name="Konoha Private #9" houseid="25" entryx="1059" entryy="916" entryz="7" rent="30000" townid="1" size="6"/>
+  <house name="Konoha Flat I" houseid="26" entryx="1059" entryy="922" entryz="7" rent="300000" townid="1" size="6"/>
+  <house name="Konoha Flat II" houseid="27" entryx="1066" entryy="921" entryz="7" rent="300000" townid="1" size="10"/>
+  <house name="Konoha Flat III" houseid="28" entryx="1066" entryy="914" entryz="7" rent="30000" townid="1" size="10"/>
+  <house name="Konoha New" houseid="47" entryx="0" entryy="0" entryz="0" rent="30000" townid="1" size="28"/>
+  <house name="Suna 1" houseid="1418" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 2" houseid="1419" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 3" houseid="1420" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 4" houseid="1421" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 5" houseid="1422" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 6" houseid="1423" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 7" houseid="1424" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 8" houseid="1425" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 9" houseid="1426" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 10" houseid="1427" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 11" houseid="1428" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 12" houseid="1429" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="6"/>
+  <house name="Suna 13" houseid="1430" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 14" houseid="1431" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 15" houseid="1432" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 16" houseid="1433" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 17" houseid="1434" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 18" houseid="1435" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="42"/>
+  <house name="Suna 19" houseid="1436" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="38"/>
+  <house name="Suna 20" houseid="1437" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="38"/>
+  <house name="Suna 21" houseid="1438" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="38"/>
+  <house name="Suna 22" houseid="1439" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="38"/>
+  <house name="Suna 23" houseid="1440" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="77"/>
+  <house name="Suna 24" houseid="1441" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="48"/>
+  <house name="Suna 25" houseid="1442" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="48"/>
+  <house name="Suna 26" houseid="1443" entryx="0" entryy="0" entryz="0" rent="70000" townid="2" size="82"/>
+</houses>
