@@ -1,5 +1,5 @@
-id_item_pergaminho_ar = 3107
-id_item_pergaminho_terra = 3105
+id_item_pergaminho_ar = 2222
+id_item_pergaminho_terra = 2220
 
 chunnin = {
     pos = {
