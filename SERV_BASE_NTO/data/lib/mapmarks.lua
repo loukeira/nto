@@ -1,4 +1,10 @@
-local mapmarks_konoha = {
+
+
+
+
+
+function mapmarks_konoha(cid, type, msg)
+ local mapmarks_konoha = {
     [{x = 1112, y = 1066, z = 7}] = {MAPMARK_LOCK, 'DP'},
     [{x = 1001, y = 868, z = 7}] = {MAPMARK_DOLLAR, 'Templo'},   
     [{x = 1053, y = 888, z = 7}] = {MAPMARK_DOLLAR, 'Trainers'},   
@@ -8,11 +14,6 @@ local mapmarks_konoha = {
     [{x = 976, y = 905, z = 7}] = {MAPMARK_REDWEST, 'Saida Oeste'}
 }
 
-
-
-
-function mapmarks_konoha(cid, type, msg)
- 
         for pos, v in pairs(mapmarks_konoha) do
             doPlayerAddMapMark(cid, pos, v[1], v[2] or '')
         end
