@@ -27,14 +27,11 @@ function onSay(cid, words, param, channel)
                         -- xixi = 373
 
                         -- end
-                   local skill = 0    
 
-    while skill < 6 do
 
-    doPlayerSendTextMessage(cid,18,"oi "..getPlayerSkillTries(cid,skill).." / "..max(cid,skill).." "..skill.." ")
+    doPlayerSendTextMessage(cid,18,"oi "..getPlayerRequiredMana(cid, 48).." " )
+.." "..skill.." ")
 
-    skill = skill +1
-    end
     doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
 
 return true
