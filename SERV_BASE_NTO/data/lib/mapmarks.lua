@@ -10,6 +10,7 @@ local mapmarks_konoha = {
 
 
 
+
 function mapmarks_konoha(cid, type, msg)
  
         for pos, v in pairs(mapmarks_konoha) do
@@ -17,4 +18,46 @@ function mapmarks_konoha(cid, type, msg)
         end
         doPlayerSendTextMessage(cid,18,"Sua conta agr esta com as marcacoes de Konoha registradas!")
 
+end
+
+function getacc_stor(cid) -- xprank 
+    local ult = db.getResult('select `key` , `value` from account_storage where account_id = \''..getPlayerAccountId(cid)..'\' ')
+
+    if (ult:getID() == -1) then
+    return false
+    end
+
+    local mamae = ult:getDataString("key")
+    local papai = ult:getDataString("value")
+
+    ult:free()
+    caguei = tonumber(mamae)
+    peidei = tonumber(papai)
+
+    return caguei,peidei
+
+end
+
+function acc_stor(cid)
+ local player = db.getResult("SELECT * FROM `account_storage`;") 
+ local simm = 0   
+            if(player:getID() ~= -1) then
+                while (true) do
+
+                  local id = ult:getDataString("account_id")
+                    if getPlayerAccountId(cid) == tonumber(id) then
+                        simm = 1
+                        break
+                    end
+    
+                    if not(player:next()) then
+                        break
+                    end
+                end
+                
+
+            end
+         player:free()
+         sim = tonumber(simm)
+             return sim
 end
