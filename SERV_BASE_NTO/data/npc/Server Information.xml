@@ -1,0 +1,7 @@
+<npc name="Server Information" script="server_information.lua" speed="0">
+        <health now="100" max="100"/>
+        <look type="278" body="129" feet="114" head="114"  legs="96"  addons="3"/>  
+ <parameters>
+        <parameter key="message_greet" value=" Ola |PLAYERNAME|! Voce quer saber sobre o {servidor} ?!"/>
+    </parameters>		
+</npc>

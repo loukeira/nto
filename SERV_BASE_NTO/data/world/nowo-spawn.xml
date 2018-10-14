@@ -105,11 +105,11 @@
 		<monster name="Anbu" x="12" y="6" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="1024" centery="959" centerz="6" radius="5">
-		<monster name="Bandit" x="0" y="-3" z="6" spawntime="60" />
-		<monster name="Bandit" x="-4" y="-1" z="6" spawntime="60" />
-		<monster name="Bandit" x="-1" y="2" z="6" spawntime="60" />
-		<monster name="Bandit" x="4" y="3" z="6" spawntime="60" />
-		<monster name="Bandit" x="-3" y="4" z="6" spawntime="60" />
+		<monster name="Bandit" x="0" y="-3" z="6" spawntime="30" />
+		<monster name="Bandit" x="-4" y="-1" z="6" spawntime="30" />
+		<monster name="Bandit" x="-1" y="2" z="6" spawntime="30" />
+		<monster name="Bandit" x="4" y="3" z="6" spawntime="30" />
+		<monster name="Bandit" x="-3" y="4" z="6" spawntime="30" />
 	</spawn>
 	<spawn centerx="862" centery="961" centerz="6" radius="13">
 		<monster name="Anbu" x="3" y="-12" z="6" spawntime="60" />
@@ -559,7 +559,6 @@
 	<spawn centerx="630" centery="854" centerz="7" radius="5">
 		<npc name="Tobirama" x="-1" y="1" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="989" centery="857" centerz="7" radius="11" />
 	<spawn centerx="746" centery="860" centerz="7" radius="13">
 		<npc name="Oinin" x="-8" y="-13" z="7" spawntime="60" />
 		<npc name="Oinin" x="-6" y="-8" z="7" spawntime="60" />
@@ -570,11 +569,22 @@
 		<npc name="Oinin" x="-8" y="3" z="7" spawntime="60" />
 		<npc name="Oinin" x="-5" y="11" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="920" centery="864" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1220" centery="864" centerz="7" radius="10" />
-	<spawn centerx="961" centery="865" centerz="7" radius="21" />
+	<spawn centerx="912" centery="868" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="899" centery="870" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1252" centery="870" centerz="7" radius="10" />
 	<spawn centerx="1546" centery="871" centerz="7" radius="2">
 		<monster name="Hidan" x="-1" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1021" centery="872" centerz="7" radius="1">
+		<npc name="Server-Information" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="634" centery="874" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="-1" z="7" spawntime="60" />
@@ -590,12 +600,25 @@
 		<npc name="Oinin" x="-8" y="6" z="7" spawntime="60" />
 		<npc name="Oinin" x="0" y="6" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="891" centery="876" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="922" centery="877" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="650" centery="880" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="-3" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="2" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1190" centery="880" centerz="7" radius="10" />
-	<spawn centerx="926" centery="884" centerz="7" radius="21" />
+	<spawn centerx="936" centery="881" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="909" centery="882" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="882" centery="884" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1049" centery="884" centerz="7" radius="1">
 		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
@@ -609,6 +632,9 @@
 		<npc name="Tobirama" x="0" y="-3" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="1" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="894" centery="888" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="743" centery="889" centerz="7" radius="13">
 		<npc name="Oinin" x="-4" y="-9" z="7" spawntime="60" />
 		<npc name="Oinin" x="-1" y="-2" z="7" spawntime="60" />
@@ -616,9 +642,14 @@
 		<npc name="Oinin" x="0" y="9" z="7" spawntime="60" />
 		<npc name="Oinin" x="5" y="13" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="885" centery="889" centerz="7" radius="21" />
+	<spawn centerx="912" centery="889" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1235" centery="890" centerz="7" radius="10" />
 	<spawn centerx="1276" centery="892" centerz="7" radius="10" />
+	<spawn centerx="872" centery="893" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1049" centery="893" centerz="7" radius="1">
 		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
@@ -628,21 +659,40 @@
 	<spawn centerx="1057" centery="893" centerz="7" radius="1">
 		<monster name="Trainer" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1213" centery="895" centerz="7" radius="10" />
 	<spawn centerx="597" centery="896" centerz="7" radius="5">
 		<npc name="Tobirama" x="-3" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="858" centery="896" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="890" centery="897" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="571" centery="899" centerz="7" radius="5">
 		<npc name="Tobirama" x="1" y="5" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="635" centery="899" centerz="7" radius="5" />
-	<spawn centerx="1163" centery="899" centerz="7" radius="10" />
-	<spawn centerx="877" centery="900" centerz="7" radius="21" />
 	<spawn centerx="1044" centery="900" centerz="7" radius="1" />
 	<spawn centerx="1052" centery="900" centerz="7" radius="1" />
 	<spawn centerx="677" centery="901" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="-1" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="2" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="859" centery="901" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="909" centery="901" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="934" centery="901" centerz="7" radius="10">
+		<monster name="Nukenin" x="1" y="-8" z="7" spawntime="60" />
+		<monster name="Nukenin" x="-7" y="-6" z="7" spawntime="60" />
+		<monster name="Nukenin" x="7" y="1" z="7" spawntime="60" />
+		<monster name="Nukenin" x="-3" y="6" z="7" spawntime="60" />
+		<monster name="Nukenin" x="10" y="10" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="953" centery="901" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1521" centery="902" centerz="7" radius="2">
 		<monster name="Itachi" x="1" y="0" z="7" spawntime="60" />
@@ -655,18 +705,48 @@
 		<npc name="Oinin" x="7" y="8" z="7" spawntime="60" />
 		<npc name="Oinin" x="-4" y="9" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="921" centery="903" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="845" centery="904" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="791" centery="905" centerz="7" radius="1" />
+	<spawn centerx="897" centery="907" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="912" centery="908" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Nukenin" x="1" y="1" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1051" centery="908" centerz="7" radius="1" />
-	<spawn centerx="1198" centery="911" centerz="7" radius="10" />
+	<spawn centerx="836" centery="910" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="860" centery="911" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Nukenin" x="1" y="0" z="7" spawntime="65459712" />
+	</spawn>
+	<spawn centerx="870" centery="912" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="680" centery="913" centerz="7" radius="5">
 		<npc name="Tobirama" x="3" y="-2" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="923" centery="913" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="957" centery="913" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1305" centery="913" centerz="7" radius="1" />
 	<spawn centerx="596" centery="914" centerz="7" radius="5">
 		<npc name="Tobirama" x="2" y="-3" z="7" spawntime="60" />
 		<npc name="Tobirama" x="-1" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="850" centery="914" centerz="7" radius="21" />
+	<spawn centerx="844" centery="915" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1313" centery="915" centerz="7" radius="8" />
 	<spawn centerx="560" centery="916" centerz="7" radius="5">
 		<npc name="Tobirama" x="4" y="-2" z="7" spawntime="60" />
@@ -674,6 +754,21 @@
 	</spawn>
 	<spawn centerx="743" centery="916" centerz="7" radius="13">
 		<npc name="Oinin" x="12" y="-7" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="941" centery="916" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="831" centery="917" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="838" centery="917" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="891" centery="917" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="850" centery="918" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1243" centery="918" centerz="7" radius="10" />
 	<spawn centerx="635" centery="919" centerz="7" radius="5">
@@ -683,12 +778,30 @@
 	<spawn centerx="673" centery="921" centerz="7" radius="5">
 		<npc name="Tobirama" x="4" y="-2" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="836" centery="922" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="883" centery="922" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="844" centery="923" centerz="7" radius="5">
+		<monster name="Nukenin" x="-3" y="-4" z="7" spawntime="60" />
+		<monster name="Nukenin" x="3" y="-3" z="7" spawntime="60" />
+		<monster name="Nukenin" x="-1" y="-1" z="7" spawntime="60" />
+		<monster name="Nukenin" x="-3" y="1" z="7" spawntime="60" />
+		<monster name="Nukenin" x="2" y="1" z="7" spawntime="60" />
+		<monster name="Nukenin" x="0" y="3" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="958" centery="923" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1267" centery="923" centerz="7" radius="10" />
 	<spawn centerx="1546" centery="923" centerz="7" radius="2">
 		<monster name="Kisame" x="0" y="1" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1217" centery="925" centerz="7" radius="10" />
-	<spawn centerx="1147" centery="927" centerz="7" radius="10" />
+	<spawn centerx="857" centery="924" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="619" centery="928" centerz="7" radius="5">
 		<npc name="Tobirama" x="-2" y="1" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="2" z="7" spawntime="60" />
@@ -696,27 +809,42 @@
 	<spawn centerx="649" centery="928" centerz="7" radius="5">
 		<npc name="Tobirama" x="2" y="5" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="852" centery="929" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="870" centery="929" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="583" centery="930" centerz="7" radius="5">
 		<npc name="Tobirama" x="2" y="-1" z="7" spawntime="60" />
 		<npc name="Tobirama" x="0" y="2" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="838" centery="930" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="620" centery="931" centerz="7" radius="5" />
+	<spawn centerx="845" centery="932" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="971" centery="933" centerz="7" radius="5">
 		<monster name="Snake" x="-4" y="-3" z="7" spawntime="60" />
 		<monster name="Snake" x="-3" y="0" z="7" spawntime="60" />
 		<monster name="Snake" x="-3" y="4" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1184" centery="933" centerz="7" radius="10" />
 	<spawn centerx="672" centery="935" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="553" centery="936" centerz="7" radius="5" />
+	<spawn centerx="862" centery="937" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="533" centery="938" centerz="7" radius="5">
 		<npc name="Tobirama" x="4" y="-2" z="7" spawntime="60" />
 		<npc name="Tobirama" x="2" y="2" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1168" centery="940" centerz="7" radius="10" />
-	<spawn centerx="1235" centery="941" centerz="7" radius="10" />
+	<spawn centerx="855" centery="940" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="574" centery="943" centerz="7" radius="5">
 		<npc name="Tobirama" x="1" y="0" z="7" spawntime="60" />
 		<npc name="Tobirama" x="1" y="4" z="7" spawntime="60" />
@@ -762,16 +890,18 @@
 		<monster name="Snake" x="-2" y="3" z="7" spawntime="60" />
 		<monster name="Snake" x="2" y="3" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1153" centery="951" centerz="7" radius="10" />
 	<spawn centerx="1033" centery="952" centerz="7" radius="6">
 		<monster name="Snake" x="3" y="-5" z="7" spawntime="60" />
 		<monster name="Snake" x="-2" y="-4" z="7" spawntime="60" />
 		<monster name="Snake" x="-2" y="2" z="7" spawntime="60" />
 		<monster name="Snake" x="-1" y="4" z="7" spawntime="60" />
 		<monster name="Snake" x="5" y="4" z="7" spawntime="60" />
-		<monster name="Bandit" x="-5" y="6" z="7" spawntime="60" />
+		<monster name="Bandit" x="-5" y="6" z="7" spawntime="40" />
 	</spawn>
 	<spawn centerx="633" centery="953" centerz="7" radius="5" />
+	<spawn centerx="842" centery="955" centerz="7" radius="1">
+		<monster name="Nukenin" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1009" centery="955" centerz="7" radius="6">
 		<monster name="Snake" x="-3" y="-5" z="7" spawntime="60" />
 		<monster name="Snake" x="3" y="-3" z="7" spawntime="60" />
@@ -793,10 +923,10 @@
 		<npc name="Tobirama" x="-2" y="2" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="1023" centery="960" centerz="7" radius="5">
-		<monster name="Bandit" x="-1" y="-3" z="7" spawntime="60" />
-		<monster name="Bandit" x="-3" y="1" z="7" spawntime="60" />
-		<monster name="Bandit" x="1" y="1" z="7" spawntime="60" />
-		<monster name="Bandit" x="3" y="3" z="7" spawntime="60" />
+		<monster name="Bandit" x="-1" y="-3" z="7" spawntime="40" />
+		<monster name="Bandit" x="-3" y="1" z="7" spawntime="40" />
+		<monster name="Bandit" x="1" y="1" z="7" spawntime="40" />
+		<monster name="Bandit" x="3" y="3" z="7" spawntime="40" />
 	</spawn>
 	<spawn centerx="1546" centery="960" centerz="7" radius="2">
 		<monster name="Deidara" x="0" y="1" z="7" spawntime="60" />
@@ -836,18 +966,14 @@
 	<spawn centerx="1059" centery="973" centerz="7" radius="1">
 		<monster name="Snake" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1167" centery="973" centerz="7" radius="10" />
-	<spawn centerx="1225" centery="974" centerz="7" radius="10" />
 	<spawn centerx="934" centery="977" centerz="7" radius="18" />
 	<spawn centerx="593" centery="979" centerz="7" radius="5">
 		<npc name="Tobirama" x="0" y="0" z="7" spawntime="60" />
 		<npc name="Tobirama" x="2" y="3" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1194" centery="981" centerz="7" radius="10" />
 	<spawn centerx="570" centery="982" centerz="7" radius="5">
 		<npc name="Tobirama" x="1" y="-3" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="997" centery="983" centerz="7" radius="8" />
 	<spawn centerx="1064" centery="984" centerz="7" radius="6">
 		<monster name="Bandit" x="4" y="-5" z="7" spawntime="60" />
 		<monster name="Bandit" x="-2" y="1" z="7" spawntime="60" />
@@ -1116,11 +1242,19 @@
 		<monster name="Anbu" x="-10" y="17" z="7" spawntime="60" />
 		<npc name="Oinin" x="-5" y="17" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1142" centery="1115" centerz="7" radius="18" />
+	<spawn centerx="1142" centery="1115" centerz="7" radius="18">
+		<monster name="Renegade" x="-4" y="-5" z="7" spawntime="60" />
+		<monster name="Zetsu" x="9" y="-4" z="7" spawntime="60" />
+		<monster name="Renegade" x="-17" y="1" z="7" spawntime="60" />
+		<monster name="Renegade" x="3" y="14" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1305" centery="1115" centerz="7" radius="10" />
 	<spawn centerx="810" centery="1120" centerz="7" radius="10" />
 	<spawn centerx="1034" centery="1120" centerz="7" radius="18" />
-	<spawn centerx="1130" centery="1124" centerz="7" radius="18" />
+	<spawn centerx="1130" centery="1124" centerz="7" radius="18">
+		<monster name="Renegade" x="-14" y="0" z="7" spawntime="60" />
+		<monster name="Renegade" x="5" y="11" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1340" centery="1125" centerz="7" radius="10" />
 	<spawn centerx="787" centery="1126" centerz="7" radius="10" />
 	<spawn centerx="960" centery="1127" centerz="7" radius="18">
@@ -1142,8 +1276,17 @@
 		<npc name="Oinin" x="3" y="11" z="7" spawntime="60" />
 		<monster name="Anbu" x="-15" y="12" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1053" centery="1133" centerz="7" radius="18" />
-	<spawn centerx="1118" centery="1135" centerz="7" radius="18" />
+	<spawn centerx="1053" centery="1133" centerz="7" radius="18">
+		<monster name="Renegade" x="18" y="10" z="7" spawntime="60" />
+		<monster name="Renegade" x="-1" y="18" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="1118" centery="1135" centerz="7" radius="18">
+		<monster name="Renegade" x="-16" y="-6" z="7" spawntime="60" />
+		<monster name="Renegade" x="-14" y="3" z="7" spawntime="60" />
+		<monster name="Renegade" x="-1" y="9" z="7" spawntime="60" />
+		<monster name="Renegade" x="4" y="10" z="7" spawntime="60" />
+		<monster name="Renegade" x="-6" y="14" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="889" centery="1138" centerz="7" radius="13">
 		<npc name="Oinin" x="-5" y="-12" z="7" spawntime="60" />
 		<npc name="Oinin" x="0" y="-12" z="7" spawntime="60" />
@@ -1164,7 +1307,10 @@
 	<spawn centerx="1293" centery="1141" centerz="7" radius="10" />
 	<spawn centerx="794" centery="1142" centerz="7" radius="11" />
 	<spawn centerx="738" centery="1145" centerz="7" radius="10" />
-	<spawn centerx="1102" centery="1146" centerz="7" radius="18" />
+	<spawn centerx="1102" centery="1146" centerz="7" radius="18">
+		<monster name="Renegade" x="-18" y="3" z="7" spawntime="60" />
+		<monster name="Renegade" x="-16" y="17" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="763" centery="1147" centerz="7" radius="10" />
 	<spawn centerx="812" centery="1149" centerz="7" radius="10" />
 	<spawn centerx="1258" centery="1150" centerz="7" radius="10" />
@@ -1180,7 +1326,9 @@
 		<npc name="Oinin" x="1" y="10" z="7" spawntime="60" />
 		<monster name="Anbu" x="-4" y="14" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1087" centery="1154" centerz="7" radius="18" />
+	<spawn centerx="1087" centery="1154" centerz="7" radius="18">
+		<monster name="Renegade" x="-18" y="17" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="873" centery="1155" centerz="7" radius="10" />
 	<spawn centerx="1309" centery="1155" centerz="7" radius="10" />
 	<spawn centerx="792" centery="1156" centerz="7" radius="11" />
@@ -1188,13 +1336,34 @@
 		<npc name="Oinin" x="-6" y="12" z="7" spawntime="60" />
 		<monster name="Anbu" x="-10" y="14" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="1051" centery="1161" centerz="7" radius="18" />
+	<spawn centerx="1051" centery="1161" centerz="7" radius="18">
+		<monster name="Renegade" x="4" y="-1" z="7" spawntime="60" />
+		<monster name="Renegade" x="-10" y="2" z="7" spawntime="60" />
+		<monster name="Renegade" x="8" y="2" z="7" spawntime="60" />
+		<monster name="Renegade" x="0" y="11" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="1238" centery="1163" centerz="7" radius="10" />
 	<spawn centerx="813" centery="1165" centerz="7" radius="10" />
-	<spawn centerx="979" centery="1165" centerz="7" radius="18" />
+	<spawn centerx="979" centery="1165" centerz="7" radius="18">
+		<monster name="Renegade" x="-1" y="-6" z="7" spawntime="60" />
+		<monster name="Renegade" x="11" y="-6" z="7" spawntime="60" />
+		<monster name="Renegade" x="-9" y="-1" z="7" spawntime="60" />
+		<monster name="Zetsu" x="-11" y="3" z="7" spawntime="60" />
+		<monster name="Renegade" x="12" y="7" z="7" spawntime="60" />
+		<monster name="Renegade" x="1" y="9" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="746" centery="1166" centerz="7" radius="11" />
 	<spawn centerx="768" centery="1167" centerz="7" radius="10" />
-	<spawn centerx="1016" centery="1168" centerz="7" radius="18" />
+	<spawn centerx="1016" centery="1168" centerz="7" radius="18">
+		<monster name="Renegade" x="15" y="-15" z="7" spawntime="60" />
+		<monster name="Renegade" x="-14" y="-12" z="7" spawntime="60" />
+		<monster name="Renegade" x="-3" y="-7" z="7" spawntime="60" />
+		<monster name="Renegade" x="6" y="-6" z="7" spawntime="60" />
+		<monster name="Renegade" x="-11" y="-1" z="7" spawntime="60" />
+		<monster name="Renegade" x="12" y="6" z="7" spawntime="60" />
+		<monster name="Renegade" x="-17" y="8" z="7" spawntime="60" />
+		<monster name="Renegade" x="-4" y="9" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="875" centery="1173" centerz="7" radius="11" />
 	<spawn centerx="1305" centery="1175" centerz="7" radius="10" />
 	<spawn centerx="1258" centery="1176" centerz="7" radius="10" />
@@ -1356,6 +1525,29 @@
 	<spawn centerx="830" centery="763" centerz="8" radius="5" />
 	<spawn centerx="830" centery="770" centerz="8" radius="5">
 		<monster name="Kyuuby Mode" x="0" y="-1" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1058" centery="886" centerz="8" radius="5">
+		<monster name="Snake" x="-3" y="-3" z="8" spawntime="60" />
+		<monster name="Snake" x="5" y="-2" z="8" spawntime="60" />
+		<monster name="Jay Snake" x="-3" y="0" z="8" spawntime="60" />
+		<monster name="Snake" x="-3" y="3" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1069" centery="886" centerz="8" radius="5">
+		<monster name="Snake" x="-2" y="-3" z="8" spawntime="60" />
+		<monster name="Snake" x="3" y="-3" z="8" spawntime="60" />
+		<monster name="Snake" x="-5" y="2" z="8" spawntime="60" />
+		<monster name="Jay Snake" x="2" y="3" z="8" spawntime="60" />
+		<monster name="Snake" x="-2" y="4" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1058" centery="897" centerz="8" radius="5">
+		<monster name="Snake" x="-3" y="-2" z="8" spawntime="60" />
+		<monster name="Snake" x="2" y="0" z="8" spawntime="60" />
+	</spawn>
+	<spawn centerx="1069" centery="897" centerz="8" radius="5">
+		<monster name="Snake" x="3" y="-5" z="8" spawntime="60" />
+		<monster name="Snake" x="-5" y="-3" z="8" spawntime="60" />
+		<monster name="Snake" x="3" y="-1" z="8" spawntime="60" />
+		<monster name="Jay Snake" x="-5" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="1018" centery="903" centerz="8" radius="5" />
 	<spawn centerx="1095" centery="904" centerz="8" radius="10" />
