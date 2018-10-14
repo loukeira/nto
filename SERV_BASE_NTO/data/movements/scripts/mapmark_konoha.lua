@@ -6,15 +6,14 @@ function onStepIn(cid, item, position, lastPosition, fromPosition, toPosition, a
   local storage_mapmarks_konoha = 749732
 
   local id_acc = getPlayerAccountId(cid)
-  --local sim = acc_stor(cid)
 
   if (item.actionid == 14101) then
-    --if (sim == 0) then
-            db.query("INSERT INTO `account_storage` (`account_id`, `key`, `value` ) VALUES ("..id_acc..", "..storage_mapmarks_konoha..",1);")
+    if getPlayerStorageValue(cid,storage_mapmarks_konoha) == -1 then
+            --db.query("INSERT INTO `account_storage` (`account_id`, `key`, `value` ) VALUES ("..id_acc..", "..storage_mapmarks_konoha..",1);")
             mapmarks_konoha(cid, type, msg)
-            doSendMagicEffect(getCreaturePosition(cid), 3)
-
-    --end
+            doSendMagicEffect(getCreaturePosition(cid), 10)
+            setPlayerStorageValue(cid,storage_mapmarks_konoha,1)
+    end
   end
  
 
