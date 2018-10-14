@@ -28,11 +28,19 @@ function onSay(cid, words, param, channel)
 
                         -- end
 
+                local file = io.open('player_report_bug.txt','a')
 
-    doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
+    --doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
-    doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
+    --doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
+    local i = 2 
 
+            while i <103 do
+            file:write("MANA REQUER. Para O NIVEL "..i.." de ML: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).."\n")
+                i = i +1
+            end
+            file:close()
+             doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING,'terminou o loop!')
 return true
 end
 
