@@ -33,10 +33,10 @@ function onSay(cid, words, param, channel)
     --doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
     --doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
-    local i = 2 
+    local i = 2
 
             while i <103 do
-            file:write("MANA REQUER. Para O NIVEL "..i.." de ML: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).."\n")
+            file:write("MANA REQUER. Para O NIVEL "..i.." de ML: "..getPlayerRequiredMana(cid,i).."\n")
                 i = i +1
             end
             file:close()
