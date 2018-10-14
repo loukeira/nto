@@ -44,7 +44,7 @@ function acc_stor(cid)
             if(player:getID() ~= -1) then
                 while (true) do
 
-                  local id = ult:getDataString("account_id")
+                   id = player:getDataString("account_id")
                     if getPlayerAccountId(cid) == tonumber(id) then
                         simm = 1
                         break
