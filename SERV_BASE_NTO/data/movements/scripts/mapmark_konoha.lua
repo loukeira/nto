@@ -9,6 +9,7 @@ function onStepIn(cid, item, position, lastPosition, fromPosition, toPosition, a
   local key, value = acc_stor(cid)
 
   if (item.actionid == 14101) then
+        doPlayerSendTextMessage(cid,18,"key, value: "..key.." "..value.." !")
 
     if (key == nil)  then
             db.query("INSERT INTO `account_storage` (`account_id`, `key`, `value` ) VALUES ("..id_acc..", "..storage_mapmarks_konoha..",1);")
