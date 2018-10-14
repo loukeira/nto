@@ -29,8 +29,8 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-    doPlayerSendTextMessage(cid,18,"oi "..getPlayerRequiredMana(cid, 48).." " )
-.." "..skill.." ")
+    doPlayerSendTextMessage(cid,18,"oi "..getPlayerRequiredMana(cid, getPlayerMagLevel(cid)).." " )
+.."  ")
 
     doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
 
