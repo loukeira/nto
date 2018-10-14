@@ -29,7 +29,7 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-    doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)).." ! " )
+    doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
     doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
 
