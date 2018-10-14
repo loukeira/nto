@@ -1,9 +1,9 @@
-local remove_time = 5 -- tempo em segundos para remover as magic wall
+local remove_time = 2 -- tempo em segundos para remover as magic wall
 local item_id = 5750 -- id da magic wall
 
 function onCastSpell(cid, var)
 
-local waittime = 5 -- Tempo de exhaustion
+local waittime = 20 -- Tempo de exhaustion
 local storage = 15288
 
 if exhaustion.check(cid, storage) then
