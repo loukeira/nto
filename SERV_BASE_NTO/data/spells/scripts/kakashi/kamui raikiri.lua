@@ -100,7 +100,7 @@ end
 
 function hitTarget1(cid, target)
 if isCreature(target) and isPlayer(cid) then
- local effect876 = 1 -- efeito do hit na creatura.
+ local effect876 = 196 -- efeito do hit na creatura.
  doAddCondition(target, condition)
  doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -getHit1(cid), -getHit1(cid), effect876)
 end
@@ -142,6 +142,6 @@ local position1 = {x=getCreaturePosition(cid).x, y=getCreaturePosition(cid).y, z
 local position2 = {x=getThingPosition(getCreatureTarget(cid)).x+1, y=getThingPosition(getCreatureTarget(cid)).y+1, z=getThingPosition(getCreatureTarget(cid)).z}
 if isCreature(target) and isPlayer(cid) then
  doSendMagicEffect(position1, playerEffect876) 
- doSendMagicEffect(position2, 139)
+ doSendMagicEffect(position2, 138)
 end
 end
