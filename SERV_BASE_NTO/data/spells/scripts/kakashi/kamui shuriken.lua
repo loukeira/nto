@@ -1,24 +1,84 @@
-local config = {
-	effectx = 3, --- efeito de distancia
-	effectz = 196, --- efeito ao acertar o player
-	percent = 100, --- porcentagem de ir pra outro target apos hitar
-	delay = 300 --- velocidade com que se move (milisegundos)
+local combat1 = createCombatObject()
+setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat1, COMBAT_PARAM_DISTANCEEFFECT, 3)
+setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
+
+local combat2 = createCombatObject()
+setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat2, COMBAT_PARAM_DISTANCEEFFECT, 3)
+setCombatParam(combat2, COMBAT_PARAM_EFFECT, 196)
+setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -20.1, 1, -20.6, 1)
+
+local combat3 = createCombatObject()
+setCombatParam(combat3, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat3, COMBAT_PARAM_DISTANCEEFFECT, 3)
+setCombatParam(combat3, COMBAT_PARAM_EFFECT, 196)
+setCombatFormula(combat3, COMBAT_FORMULA_LEVELMAGIC, -20.4, 1, -20.5, 1)
+
+local combat4 = createCombatObject()
+setCombatParam(combat4, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat4, COMBAT_PARAM_DISTANCEEFFECT, 3)
+setCombatParam(combat4, COMBAT_PARAM_EFFECT, 196)
+setCombatFormula(combat4, COMBAT_FORMULA_LEVELMAGIC, -20.3, 1, -20.5, 1)
+
+
+arr1 = {
+ {3}
 }
 
-function onCastSpell(cid, var)
-local maglevel, level, mana = getPlayerMagLevel(cid), getPlayerLevel(cid), getCreatureMana(cid)
-local axe, sword, club, distance = getPlayerSkillLevel(cid, 3), getPlayerSkillLevel(cid, 2), getPlayerSkillLevel(cid, 1), getPlayerSkillLevel(cid, 4)
-local shield, health = getPlayerSkillLevel(cid, 5), getCreatureHealth(cid)
+arr2 = {
+ {3}
+}
 
-	local formula = {
-	min = ((level + maglevel)/5 + axe + sword + club + shield + (mana/1000))/3, --- formula de dano minimo
-	max = ((level + maglevel)/5 + axe + sword + club + shield + ((mana + health)/1000))/3 --- formula de dano maximo
-	}
-	
-local pos = getCreaturePosition(cid)
-doCreatureSay(cid, "Chain Lightning", 20, false, 0, pos)
-hits = math.ceil(getPlayerMagLevel(cid)/10) - (math.random(0, (math.floor(getPlayerMagLevel(cid)/10))) - 1) 
-target = getCreatureTarget(cid)
-doBlast(cid, target, config.delay, config.effectx, config.effectz, config.percent, formula.min, formula.max, 2, hits, getCreaturePosition(cid), nil)
-return true
+arr3 = {
+ {3}
+}
+
+arr4 = {
+ {3}
+}
+
+local area1 = createCombatArea(arr1)
+local area2 = createCombatArea(arr2)
+local area3 = createCombatArea(arr3)
+local area4 = createCombatArea(arr4)
+setCombatArea(combat1, area1)
+setCombatArea(combat2, area2)
+setCombatArea(combat3, area3)
+setCombatArea(combat4, area4)
+ 
+local function onCastSpell1(parameters)
+    return isPlayer(parameters.cid) and doCombat(parameters.cid, combat1, parameters.var)
 end
+ 
+local function onCastSpell2(parameters)
+    return isPlayer(parameters.cid) and doCombat(parameters.cid, combat2, parameters.var)
+end
+
+local function onCastSpell3(parameters)
+    return isPlayer(parameters.cid) and doCombat(parameters.cid, combat3, parameters.var)
+end
+
+local function onCastSpell4(parameters)
+    return isPlayer(parameters.cid) and doCombat(parameters.cid, combat4, parameters.var)
+end
+ 
+function onCastSpell(cid, var)
+
+local waittime = 5 -- Tempo de exhaustion
+local storage = 15288
+
+if exhaustion.check(cid, storage) then
+return false
+end
+
+exhaustion.set(cid, storage, waittime)
+local position348 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+local parameters = { cid = cid, var = var}
+addEvent(onCastSpell1, 200, parameters)
+addEvent(onCastSpell2, 400, parameters)
+addEvent(onCastSpell2, 800, parameters)
+addEvent(onCastSpell2, 1000, parameters)
+    doSendMagicEffect(position348, 30)
+return TRUE
+end 
