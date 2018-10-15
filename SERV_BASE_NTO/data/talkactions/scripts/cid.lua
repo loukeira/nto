@@ -30,12 +30,12 @@ function onSay(cid, words, param, channel)
 
 
 
-          local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
-          local deltaa = delta/10
+          --local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+          --local deltaa = delta/10
           --doPlayerAddSpentMana(cid, -1)
 
                -- local file = io.open('mana.txt','a')
-                db.query("UPDATE players SET maglevel = `maglevel`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+                db.query("UPDATE players SET maglevel = 80 WHERE id = "..getPlayerGUID(cid).." ;")
                 db.query("UPDATE players SET manaspent = 250 WHERE id = "..getPlayerGUID(cid).." ;")
 
 
