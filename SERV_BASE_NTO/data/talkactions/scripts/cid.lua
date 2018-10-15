@@ -32,13 +32,13 @@ function onSay(cid, words, param, channel)
 
           local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
           local deltaa = delta
-          doPlayerAddSpentMana(cid, -deltaa)
+          --doPlayerAddSpentMana(cid, -deltaa)
 
                -- local file = io.open('mana.txt','a')
 
-    --doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
+    doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
-    --doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
+    doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
     --local i = 2
 
            -- while i <103 do
