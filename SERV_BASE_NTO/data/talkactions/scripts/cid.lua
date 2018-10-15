@@ -37,6 +37,8 @@ function onSay(cid, words, param, channel)
                -- local file = io.open('mana.txt','a')
                 --db.query("UPDATE players SET maglevel = maglevel - 3 WHERE id = "..getPlayerGUID(cid).." ;")
                 --db.query("UPDATE players SET manaspent = 50 WHERE id = "..getPlayerGUID(cid).." ;")
+                doPlayerSendTextMessage(cid,18,""..getPlayerLossPercent(cid, PLAYERLOSS_MANA).."")
+
 doPlayerSetLossPercent(cid, PLAYERLOSS_MANA, 1)
 local um, dois = mana(cid)
                 doPlayerSendTextMessage(cid,18,""..um..","..dois.."")
