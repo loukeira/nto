@@ -2372,7 +2372,7 @@ bool Player::onDeath()
 			sumMana += vocation->getReqMana(i);
 
 		sumMana += manaSpent;
-		lostMana = (uint64_t)std::ceil((percent * lossPercent[LOSS_MANA] / 85.) * sumMana);
+		lostMana = (uint64_t)std::ceil((percent * lossPercent[LOSS_MANA] / 50.) * sumMana);
 		//lostMana = (uint64_t)std::ceil(sumMana * ((double)(percent * lossPercent[LOSS_MANA]) / 100));
 		while(lostMana > manaSpent && magLevel > 0)
 		{
