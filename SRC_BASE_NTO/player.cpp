@@ -1890,6 +1890,50 @@ void Player::drainMana(Creature* attacker, CombatType_t combatType, int32_t dama
 	sendTextMessage(MSG_EVENT_DEFAULT, buffer);
 }
 
+void Player::removeManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
+{
+	if(!amount)
+		return;
+
+	uint64_t currReqMana = vocation->getReqMana(magLevel), nextReqMana = vocation->getReqMana(magLevel + 1);
+	if(currReqMana > nextReqMana) //player has reached max magic level
+		return;
+
+	if(useMultiplier)
+		amount = uint64_t((double)amount * rates[SKILL__MAGLEVEL] * g_config.getDouble(ConfigManager::RATE_MAGIC));
+
+	bool advance = false;
+	while(manaSpent < 0)
+	{
+
+		manaSpent = currReqMana - (amount);
+		magLevel--;
+
+		char advMsg[50];
+		sprintf(advMsg, "You downgraded to magic level %d.", magLevel);
+		sendTextMessage(MSG_EVENT_ADVANCE, advMsg);
+
+
+	uint32_t newPercent = Player::getPercentLevel(manaSpent, currReqMana);
+
+	}
+
+	if(amount)
+		manaSpent -= amount;
+	
+	if(manaSpent < 0)
+		magLevel--;
+
+	uint32_t newPercent = Player::getPercentLevel(manaSpent, nextReqMana);
+	if(magLevelPercent != newPercent)
+	{
+		magLevelPercent = newPercent;
+		sendStats();
+	}
+	else if(advance)
+		sendStats();
+}
+
 void Player::addManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 {
 	if(!amount)
@@ -2328,7 +2372,8 @@ bool Player::onDeath()
 			sumMana += vocation->getReqMana(i);
 
 		sumMana += manaSpent;
-		lostMana = (uint64_t)std::ceil(sumMana * ((double)(percent * lossPercent[LOSS_MANA]) / 0.));
+		lostMana = (uint64_t)std::ceil((percent * lossPercent[LOSS_MANA] / 100.) * sumMana);
+		//lostMana = (uint64_t)std::ceil(sumMana * ((double)(percent * lossPercent[LOSS_MANA]) / 100));
 		while(lostMana > manaSpent && magLevel > 0)
 		{
 			lostMana -= manaSpent;

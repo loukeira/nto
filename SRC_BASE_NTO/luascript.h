@@ -379,6 +379,7 @@ class LuaInterface
 		static int32_t luaSetCreatureMaxMana(lua_State* L);
 		static int32_t luaDoPlayerSetMaxCapacity(lua_State* L);
 		static int32_t luaDoPlayerAddSpentMana(lua_State* L);
+		static int32_t luaDoPlayerRemoveSpentMana(lua_State* L);
 		static int32_t luaDoPlayerAddItem(lua_State* L);
 		static int32_t luaDoPlayerAddItemEx(lua_State* L);
 		static int32_t luaDoTileAddItemEx(lua_State* L);

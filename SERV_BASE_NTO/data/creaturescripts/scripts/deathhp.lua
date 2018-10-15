@@ -72,6 +72,47 @@ while skill < 7 do
 skill = skill + 1
 end
 
+		doPlayerSetSkillLevel(cid,7,getPlayerSkillLevel(cid,7)-1)
+
+	-- if getPlayerMagLevel(cid) > 10 then
+	-- 	if (getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) => 0.85 then
+	-- 		local delta = getPlayerSpentMana(cid) - (0.70*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = math.ceil(delta)
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) => 0.70 )and ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.85 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0.55*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = math.ceil(delta)
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) => 0.55 )and ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.70 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0.4*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = math.ceil(delta)
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) => 0.4 )and ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.55 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0.25*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = math.ceil(delta)
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) => 0.25 )and ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.4 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0.1*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = math.ceil(delta)
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) >= 0.10 )and ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.25 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = delta
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	elseif ((getPlayerSpentMana(cid)/getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1)) < 0.1 ) then
+	-- 		local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
+	-- 		local deltaa = delta
+	-- 		doPlayerAddSpentMana(cid, -deltaa)
+
+	-- 	end
+	-- end
+
 
 
     if getPlayerStorageValue(cid, HPFix) == -1 then
