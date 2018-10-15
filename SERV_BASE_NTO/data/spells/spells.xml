@@ -67,22 +67,22 @@
 <instant name="Naruto Rikudo Mode" words="naruto rikudo mode" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/rikudo mode.lua">   
         <vocation id="1"/>   
        </instant> 
-<instant name="Kiiroi Senko" words="kiiroi senko" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/issen bijudama.lua">
+<instant name="Kiiroi Senko" words="kiiroi senko" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/kiiroi senko.lua">
         <vocation id="1"/>    
         </instant>
-<instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="5" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/Rasengan.lua">
+<instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="5" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/rasengan.lua">
         <vocation id="1"/>
     </instant>    
-<instant name="Oodama Rasengan" words="oodama rasengan" lvl="250" mana="4700" prem="0" needtarget="1" range="3" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodamarasengan.lua">
+<instant name="Oodama Rasengan" words="oodama rasengan" lvl="250" mana="4700" prem="0" needtarget="1" range="3" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodama rasengan.lua">
         <vocation id="1"/>   
     </instant>          
-<instant name="Fuuton Rasengan Shuriken" words="fuuton rasenshuriken" lvl="300" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/rasen shuriken.lua">
+<instant name="Fuuton Rasengan Shuriken" words="fuuton rasenshuriken" lvl="300" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/fuuton rasenshuriken.lua">
         <vocation id="1"/>
     </instant>  
-<instant name="Oodama Rasengan Shuriken" words="oodama rasenshuriken" lvl="350" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/rasen shuriken.lua">
+<instant name="Oodama Rasengan Shuriken" words="oodama rasenshuriken" lvl="350" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/oodama rasenshuriken.lua">
         <vocation id="1"/>
     </instant> 	
-	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="400" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/rasen shuriken.lua">
+	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="400" mana="7500" prem="0" needtarget="1" range="4" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/yoton rasenshuriken.lua">
         <vocation id="1"/>
     </instant> 
 <instant name="Renzoko Bijuudama" words="renzoko Bijuudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/renzoko Bijuudama.lua">
