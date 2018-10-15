@@ -1913,10 +1913,6 @@ void Player::removeManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 		sprintf(advMsg, "You downgraded to magic level %d.", magLevel);
 		sendTextMessage(MSG_EVENT_ADVANCE, advMsg);
 
-		advance = true;
-		CreatureEventList advanceEvents = getCreatureEvents(CREATURE_EVENT_ADVANCE);
-		for(CreatureEventList::iterator it = advanceEvents.begin(); it != advanceEvents.end(); ++it)
-			(*it)->executeAdvance(this, SKILL__MAGLEVEL, (magLevel - 1), magLevel);
 
 	uint32_t newPercent = Player::getPercentLevel(manaSpent, currReqMana);
 
