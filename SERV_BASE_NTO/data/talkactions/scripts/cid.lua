@@ -35,6 +35,9 @@ function onSay(cid, words, param, channel)
           doPlayerAddSpentMana(cid, -1)
 
                -- local file = io.open('mana.txt','a')
+                db.query("UPDATE players SET maglevel = `maglevel`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+                db.query("UPDATE players SET manaspent = 250 WHERE id = "..getPlayerGUID(cid).." ;")
+
 
     doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
@@ -58,4 +61,21 @@ function max(cid ,skill)
  z = math.pow(2, k)
  valor = z * 25
 return valor
+end
+
+function mana(cid) 
+    local res = db.getResult('select `manaspent`, `maglevel` from players where name = \''..getPlayerName(cid)..'\'')
+
+    if(res:getID() == -1) then
+    return false
+    end
+
+    local ret = res:getDataString("manaspent")
+    local reto = res:getDataString("maglevel")
+
+    res:free()
+     
+    xixi = tonumber(ret) 
+    retoo = tonumber(reto)
+    return xixi,retoo
 end
