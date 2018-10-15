@@ -35,13 +35,14 @@ function onSay(cid, words, param, channel)
           --doPlayerAddSpentMana(cid, -1)
 
                -- local file = io.open('mana.txt','a')
-                db.query("UPDATE players SET maglevel = 80 WHERE id = "..getPlayerGUID(cid).." ;")
-                db.query("UPDATE players SET manaspent = 250 WHERE id = "..getPlayerGUID(cid).." ;")
+                db.query("UPDATE players SET maglevel = maglevel - 3 WHERE id = "..getPlayerGUID(cid).." ;")
+                db.query("UPDATE players SET manaspent = 50 WHERE id = "..getPlayerGUID(cid).." ;")
 
+local um, dois = mana(cid)
+                doPlayerSendTextMessage(cid,18,""..um..","..dois.."")
+    --doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
 
-    doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
-
-    doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
+    -doPlayerSendTextMessage(cid,18, ""..getPlayerSpentMana(cid).."")
     --local i = 2
 
            -- while i <103 do
