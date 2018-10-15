@@ -1903,7 +1903,7 @@ void Player::removeManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 		amount = uint64_t((double)amount * rates[SKILL__MAGLEVEL] * g_config.getDouble(ConfigManager::RATE_MAGIC));
 
 	bool advance = false;
-	if(manaSpent < 0)
+	while(manaSpent < 0)
 	{
 
 		manaSpent = currReqMana - (amount);
