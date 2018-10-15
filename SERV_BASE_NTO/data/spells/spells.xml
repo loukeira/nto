@@ -806,28 +806,28 @@
 <instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
         <vocation id="1"/>   
         </instant>  
-<instant name="Mangekyo Sharingan" words="mangekyo sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="kakashi/mangekyou sharingan.lua">   
+<instant name="Kakashi Mangekyo Sharingan" words="kakashi mangekyo sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="kakashi/mangekyou sharingan.lua">   
         <vocation id="1"/>   
        </instant> 
-<instant name="Susanoo Kakashi" words="susanoo kakashi" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="kakashi/susanoo kakashi.lua">   
+<instant name="Kakashi Susano" words="kakashi susano" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="kakashi/susanoo kakashi.lua">   
         <vocation id="1"/>   
        </instant> 	   
 <instant name="Doton Prision" words="doton prision" lvl="200" mana="5000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/prision.lua">
        <vocation id="1"/>   
        </instant>
-	   <instant name="Raikiri" words="raikiri" lvl="200" mana="1500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="1000" needlearn="0" event="script" value="kakashi/raikiri.lua">
+	   <instant name="Raikiri" words="raikiri" lvl="200" mana="1500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/raikiri.lua">
         <vocation id="1"/>    
 		</instant> 
 <instant name="Raiton Raiju Tsuiga" words="raiton raiju tsuiga" lvl="250" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="kakashi/raiton raiju tsuiga.lua">
         <vocation id="1"/>    
         </instant>
-<instant name="Kamui attack" words="kamui attack" lvl="300" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="1500" needlearn="0" event="script" value="kakashi/kamui attack.lua">
+<instant name="Kamui attack" words="kamui attack" lvl="300" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui attack.lua">
         <vocation id="1"/>
     </instant>
-<instant name="Kamui Shuriken" words="kamui shuriken" lvl="350" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="1500" needlearn="0" event="script" value="kakashi/kamui shuriken.lua">
+<instant name="Kamui Shuriken" words="kamui shuriken" lvl="350" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui shuriken.lua">
         <vocation id="1"/>
     </instant>
-<instant name="Kamui Raikiri" words="kamui raikiri" lvl="400" mana="9000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="1500" needlearn="0" event="script" value="kakashi/kamui raikiri.lua">
+<instant name="Kamui Raikiri" words="kamui raikiri" lvl="400" mana="9000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui raikiri.lua">
         <vocation id="1"/>
     </instant>
 	

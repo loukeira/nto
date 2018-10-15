@@ -4,7 +4,7 @@ setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, false)
 
 local condition = createConditionObject(CONDITION_HASTE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 33000)
-setConditionFormula(condition, 0.5, -44, 0.6, -44)
+setConditionFormula(condition, 0.3, -24, 0.3, -24)
 setCombatCondition(combat, condition)
 
 function onCastSpell(cid, var)

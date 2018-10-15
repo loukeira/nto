@@ -1,147 +1,64 @@
-local quant_hit = 2 -- quantidade de hit's que ira dar no target 
-local timeHit = 0.5 -- segundos de diferença para cada hit
-
-local quant_sqm = 1 -- sqms que ira empurrar o target
-local sqmTime = 0.01 -- segundos para empurrar após hitar, exemplo de meio segundo.
-
-local playerEffect876 = 196 -- efeito no player.
-
-local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_BLOCKARMOR, 1)
-setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat, COMBAT_FORMULA_SKILL, 1, 0, 1, 0)
-
-local condition = createConditionObject(CONDITION_PARALYZE)
-setConditionParam(condition, CONDITION_PARAM_TICKS, -1) 
-setConditionParam(condition, CONDITION_PARAM_SPEED, 10)
-setConditionFormula(condition, 0, 0, 0, 0)
-setCombatCondition(combat, condition)
-
-function onCastSpell(cid, var)
-local target = getCreatureTarget(cid)
-if target > 0 then
- local position_target = nil
- local cont = 0
- for i=-1, 1 do
-  for j=-1,1 do
-   position_target = {x=getCreaturePosition(target).x+i, y=getCreaturePosition(target).y+j, z=getCreaturePosition(target).z}
-   if isWalkable(position_target) then
-    cont = cont+1
-    break
-   end
-  end
-  if cont > 0 then
-   break
-  end
-  position_target = nil
- end
- 
- local px = math.random(-1,1)
- local py = 0
- if px == -1 or px == 1 then
-  py = 0
- elseif px == 0 then 
-  local n = {1,-1}
-  py = n[math.random(1,#n)]
- end 
- local poscentral = {x=getCreaturePosition(target).x+px, y=getCreaturePosition(target).y+py, z=getCreaturePosition(target).z}
- if isWalkable(poscentral) then
-  position_target = poscentral
- end
- 
- if getDistanceBetween(getCreaturePosition(cid), getCreaturePosition(target)) <= 1 then
-  position_target = getCreaturePosition(cid)
- end
- if position_target ~= nil then
-  doTeleportThing(cid, position_target)   
-  local tempo = 0
-  while (tempo ~= quant_hit*(timeHit*1000)) do
-   addEvent(sendEffect876, tempo, cid, target)
-   tempo = tempo + 500
-  end
-  tempo = 0
-  while (tempo ~= quant_hit*(timeHit*1000)) do
-   addEvent(hitTarget1, tempo, cid, target)
-   tempo = tempo + (timeHit*1000)
-  end
-  local temp = tempo
-  while (tempo ~= temp+quant_sqm*(sqmTime*1000)) do
-   addEvent(empurrarTarget5, tempo, cid, target, tempo)
-   tempo = tempo + (sqmTime*1000)
-  end
-  doAddCondition(cid, condition)
-  doAddCondition(target, condition)
-  return true
- else
-  doPlayerSendDefaultCancel(cid, RETURNVALUE_NOTPOSSIBLE)
- end
-else
- doPlayerSendCancel(cid, "Você precisa de um target!")
-end
-end
-
-function isWalkable(pos, creature, pz, proj)
+local config = {
+efeitoTele = 196, -- efeito q ira aparacer a cada teleport.
+efeitoDamage = 138, -- efeito q ira aparecer ao hitar no alvo
+hits = 2, -- quantos hits vai dar
+delay = 500, -- intervalo de tempo a cada hit
+min = 500, -- dano minimo
+max = 800, -- dano maximo
+damage = COMBAT_PHYSICALDAMAGE -- tipo do dano
+}
+function isWalkable(pos, creature, pz, proj) -- nord
     if getTileThingByPos({x = pos.x, y = pos.y, z = pos.z, stackpos = 0}).itemid == 0 then return false end
- local creature = getTopCreature(pos)
-    if creature.type > 0 then return false end
- if getTilePzInfo(pos) and not pz then return false end
- local n = not proj and 3 or 2
- for i = 0, 255 do
-        pos.stackpos = i
-        local tile = getTileThingByPos(pos)
-        if tile.itemid ~= 0 and not isCreature(tile.uid) then
-            if hasProperty(tile.uid, n) or hasProperty(tile.uid, 7) then
-                return false
-            end
-        end
- end
-return true
-end
-
-function hitTarget1(cid, target)
-if isCreature(target) and isPlayer(cid) then
- local effect876 = 196 -- efeito do hit na creatura.
- doAddCondition(target, condition)
- doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -getHit1(cid), -getHit1(cid), effect876)
-end
-end
-
-function getHit1(cid)
-local hit1 = getPlayerLevel(cid)*5 + getPlayerMagLevel(cid)*5 + math.random(45650,48750)
-return hit1
-end
-
-function empurrarTarget5(cid, target, tempo)
-if isPlayer(cid) then
- doRemoveCondition(cid, CONDITION_PARALYZE)
-end
-if isCreature(target) and isPlayer(cid) then
- local positions = nil
- doAddCondition(target, condition)
- if getPlayerLookDir(cid) == 0 then
-        positions = {x=getCreaturePosition(target).x, y=getCreaturePosition(target).y-1, z=getCreaturePosition(target).z}
-    elseif getPlayerLookDir(cid) == 1 then
-        positions = {x=getCreaturePosition(target).x+1, y=getCreaturePosition(target).y, z=getCreaturePosition(target).z}
-    elseif getPlayerLookDir(cid) == 2 then
-        positions = {x=getCreaturePosition(target).x, y=getCreaturePosition(target).y+1, z=getCreaturePosition(target).z}
-    elseif getPlayerLookDir(cid) == 3 then
-       positions = {x=getCreaturePosition(target).x-1, y=getCreaturePosition(target).y, z=getCreaturePosition(target).z}
+    if getTopCreature(pos).uid > 0 and creature then return false end
+    if getTileInfo(pos).protection and not pz then return false end
+    local n = not proj and 3 or 2
+    for i = 0, 255 do
+                    pos.stackpos = i
+                    local tile = getTileThingByPos(pos)
+                    if tile.itemid ~= 0 and not isCreature(tile.uid) then
+                                    if hasProperty(tile.uid, n) or hasProperty(tile.uid, 7) then
+                                                    return false
+                                    end
+                    end
     end
- if positions ~= nil and isWalkable(positions) then
-  doTeleportThing(target, positions)
- end
- local tp = sqmTime*1000*(quant_sqm-1)+quant_hit*timeHit*1000
- if tempo == tp then
-  doRemoveCondition(target, CONDITION_PARALYZE)
- end 
+    return true
 end
+function getPosDirs(p, dir) -- mkalo
+    return dir == 1 and {x=p.x-1, y=p.y, z=p.z} or dir == 2 and {x=p.x-1, y=p.y+1, z=p.z} or dir == 3 and {x=p.x, y=p.y+1, z=p.z} or dir == 4 and {x=p.x+1, y=p.y+1, z=p.z} or dir == 5 and {x=p.x+1, y=p.y, z=p.z} or dir == 6 and {x=p.x+1, y=p.y-1, z=p.z} or dir == 7 and {x=p.x, y=p.y-1, z=p.z} or dir == 8 and {x=p.x-1, y=p.y-1, z=p.z}
 end
-
-function sendEffect876(cid, target)
+function validPos(pos)
+tb = {}
+for i = 1, 8 do
+  newpos = getPosDirs(pos, i)
+  if isWalkable(newpos) then
+   table.insert(tb, newpos)
+  end
+end
+table.insert(tb, pos)
+return tb
+end
+spell54 = {
+start54 = function (cid, target, markpos, hits)
+    if not isCreature(cid) then return true end
+    if not isCreature(target) or hits < 1 then
+                 doTeleportThing(cid, markpos)
+                 doSendMagicEffect(getThingPos(cid), config.efeitoTele)
+                 return true
+    end
+    posAv = validPos(getThingPos(target))
+    rand = #posAv == 1 and 1 or #posAv - 1
+    doSendMagicEffect(getThingPos(cid), config.efeitoTele)
+    doTeleportThing(cid, posAv[math.random(1, rand)])
+    doAreaCombatHealth(cid, config.damage, getThingPos(target), 0, -config.min, -config.max, config.efeitoDamage)
+    addEvent(spell54.start54, config.delay, cid, target, markpos, hits - 1)
+   end
+}
+function onCastSpell(cid)
 local position1 = {x=getCreaturePosition(cid).x, y=getCreaturePosition(cid).y, z=getCreaturePosition(cid).z}
-local position2 = {x=getThingPosition(getCreatureTarget(cid)).x+1, y=getThingPosition(getCreatureTarget(cid)).y+1, z=getThingPosition(getCreatureTarget(cid)).z}
-if isCreature(target) and isPlayer(cid) then
- doSendMagicEffect(position1, playerEffect876) 
- doSendMagicEffect(position2, 138)
+target = getCreatureTarget(cid)
+if target then
+  spell54.start54(cid, target, getThingPos(cid), config.hits)
+  doSendMagicEffect(position1, 95)
 end
+return true
 end

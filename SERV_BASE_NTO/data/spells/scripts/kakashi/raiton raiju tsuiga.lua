@@ -45,7 +45,7 @@ local y = {
 pos = x[getCreatureLookDirection(cid)]
 eff = y[getCreatureLookDirection(cid)]
 doSendMagicEffect(pos, eff)
-doCreatureSay(cid, "Suiton Dragon Furie no Jutsu", TALKTYPE_MONSTER)
+doCreatureSay(cid, "Raiton Raiju Tsuiga", TALKTYPE_MONSTER)
 exhaustion.set(cid, storage, waittime)
 doCombat(cid, combat1, var)
 end

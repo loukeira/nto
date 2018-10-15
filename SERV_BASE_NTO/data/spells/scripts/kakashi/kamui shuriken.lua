@@ -65,7 +65,7 @@ end
  
 function onCastSpell(cid, var)
 
-local waittime = 5 -- Tempo de exhaustion
+local waittime = 4 -- Tempo de exhaustion
 local storage = 15288
 
 if exhaustion.check(cid, storage) then
@@ -79,6 +79,6 @@ addEvent(onCastSpell1, 200, parameters)
 addEvent(onCastSpell2, 400, parameters)
 addEvent(onCastSpell2, 800, parameters)
 addEvent(onCastSpell2, 1000, parameters)
-    doSendMagicEffect(position348, 30)
+    doSendMagicEffect(position348, 196)
 return TRUE
 end 

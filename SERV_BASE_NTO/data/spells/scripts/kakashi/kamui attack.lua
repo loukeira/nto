@@ -4,7 +4,7 @@ setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -50.2, 1, -80.2, 1)
 
 function onCastSpell(cid, var)
 
-local waittime = 1 -- Tempo de exhaustion
+local waittime = 3 -- Tempo de exhaustion
 local storage = 15858
 
 if isPlayer(cid) and exhaustion.check(cid, storage) == TRUE then
