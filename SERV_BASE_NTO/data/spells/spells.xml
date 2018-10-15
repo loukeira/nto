@@ -70,7 +70,7 @@
 <instant name="Kiiroi Senko" words="kiiroi senko" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/issen bijudama.lua">
         <vocation id="1"/>    
         </instant>
-<instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="5" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/kiiroi senko.lua">
+<instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="5" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/Rasengan.lua">
         <vocation id="1"/>
     </instant>    
 <instant name="Oodama Rasengan" words="oodama rasengan" lvl="250" mana="4700" prem="0" needtarget="1" range="3" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodamarasengan.lua">
