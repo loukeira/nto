@@ -1918,9 +1918,11 @@ void Player::removeManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 
 	}
 
-	if(amount and ((manaSpent - amount) >= 0))
+	if(amount)
 		manaSpent -= amount;
 	
+	if(manaSpent < 0)
+		magLevel--;
 
 	uint32_t newPercent = Player::getPercentLevel(manaSpent, nextReqMana);
 	if(magLevelPercent != newPercent)
