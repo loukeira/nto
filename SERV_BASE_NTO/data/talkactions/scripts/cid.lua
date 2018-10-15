@@ -32,7 +32,7 @@ function onSay(cid, words, param, channel)
 
           local delta = getPlayerSpentMana(cid) - (0*getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1))
           local deltaa = delta
-          --doPlayerAddSpentMana(cid, -deltaa)
+          doPlayerAddSpentMana(cid, 20)
 
                -- local file = io.open('mana.txt','a')
 
