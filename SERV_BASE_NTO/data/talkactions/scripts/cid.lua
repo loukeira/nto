@@ -35,9 +35,9 @@ function onSay(cid, words, param, channel)
           --doPlayerAddSpentMana(cid, -1)
 
                -- local file = io.open('mana.txt','a')
-                db.query("UPDATE players SET maglevel = maglevel - 3 WHERE id = "..getPlayerGUID(cid).." ;")
-                db.query("UPDATE players SET manaspent = 50 WHERE id = "..getPlayerGUID(cid).." ;")
-
+                --db.query("UPDATE players SET maglevel = maglevel - 3 WHERE id = "..getPlayerGUID(cid).." ;")
+                --db.query("UPDATE players SET manaspent = 50 WHERE id = "..getPlayerGUID(cid).." ;")
+doPlayerSetLossPercent(cid, PLAYERLOSS_MANA, 5)
 local um, dois = mana(cid)
                 doPlayerSendTextMessage(cid,18,""..um..","..dois.."")
     --doPlayerSendTextMessage(cid,18,"required mana: "..getPlayerRequiredMana(cid,getPlayerMagLevel(cid)+1).." ! " )
