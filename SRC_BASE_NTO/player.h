@@ -617,6 +617,7 @@ class Player : public Creature, public Cylinder
 		void addExperience(uint64_t exp);
 		void removeExperience(uint64_t exp, bool updateStats = true);
 		void addManaSpent(uint64_t amount, bool useMultiplier = true);
+		void removeManaSpent(uint64_t amount, bool useMultiplier = true);
 		void addSkillAdvance(skills_t skill, uint32_t count, bool useMultiplier = true);
 		bool addUnjustifiedKill(const Player* attacked, bool countNow);
 

@@ -1890,6 +1890,51 @@ void Player::drainMana(Creature* attacker, CombatType_t combatType, int32_t dama
 	sendTextMessage(MSG_EVENT_DEFAULT, buffer);
 }
 
+void Player::removeManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
+{
+	if(!amount)
+		return;
+
+	uint64_t currReqMana = vocation->getReqMana(magLevel), nextReqMana = vocation->getReqMana(magLevel + 1);
+	if(currReqMana > nextReqMana) //player has reached max magic level
+		return;
+
+	if(useMultiplier)
+		amount = uint64_t((double)amount * rates[SKILL__MAGLEVEL] * g_config.getDouble(ConfigManager::RATE_MAGIC));
+
+	bool advance = false;
+	if(manaSpent < 0)
+	{
+
+		manaSpent = currReqMana - (amount);
+		magLevel--;
+
+		char advMsg[50];
+		sprintf(advMsg, "You downgraded to magic level %d.", magLevel);
+		sendTextMessage(MSG_EVENT_ADVANCE, advMsg);
+
+		advance = true;
+		CreatureEventList advanceEvents = getCreatureEvents(CREATURE_EVENT_ADVANCE);
+		for(CreatureEventList::iterator it = advanceEvents.begin(); it != advanceEvents.end(); ++it)
+			(*it)->executeAdvance(this, SKILL__MAGLEVEL, (magLevel - 1), magLevel);
+
+	uint32_t newPercent = Player::getPercentLevel(manaSpent, currReqMana);
+
+	}
+
+	if(amount)
+		manaSpent -= amount;
+
+	uint32_t newPercent = Player::getPercentLevel(manaSpent, nextReqMana);
+	if(magLevelPercent != newPercent)
+	{
+		magLevelPercent = newPercent;
+		sendStats();
+	}
+	else if(advance)
+		sendStats();
+}
+
 void Player::addManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 {
 	if(!amount)

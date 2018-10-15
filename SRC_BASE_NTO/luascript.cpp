@@ -1725,6 +1725,10 @@ void LuaInterface::registerFunctions()
 	//doPlayerAddSpentMana(cid, amount[, useMultiplier = true])
 	lua_register(m_luaState, "doPlayerAddSpentMana", LuaInterface::luaDoPlayerAddSpentMana);
 
+	//doPlayerRemoveSpentMana(cid, amount[, useMultiplier = true])
+	lua_register(m_luaState, "doPlayerRemoveSpentMana", LuaInterface::luaDoPlayerRemoveSpentMana);
+
+
 	//doPlayerAddSoul(cid, soul)
 	lua_register(m_luaState, "doPlayerAddSoul", LuaInterface::luaDoPlayerAddSoul);
 
@@ -4015,6 +4019,29 @@ int32_t LuaInterface::luaDoPlayerAddSpentMana(lua_State* L)
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{
 		player->addManaSpent(amount, multiplier);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerRemoveSpentMana(lua_State* L)
+{
+	//doPlayerRemoveSpentMana(cid, amount[, useMultiplier = true])
+	bool multiplier = true;
+	if(lua_gettop(L) > 2)
+		multiplier = popNumber(L);
+
+	uint32_t amount = popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->removeManaSpent(amount, multiplier);
 		lua_pushboolean(L, true);
 	}
 	else
