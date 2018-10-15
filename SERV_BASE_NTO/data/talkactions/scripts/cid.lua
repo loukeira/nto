@@ -35,7 +35,7 @@ function onSay(cid, words, param, channel)
           doPlayerRemoveSpentMana(cid, 10)
           if getPlayerSpentMana(cid) < 0 then
 
-            doPlayerAddSpentMana(cid,getPlayerSpentMana(cid)*(-1))
+            doPlayerAddSpentMana(cid,getPlayerSpentMana(cid)*(-0.1))
             end
 
 
