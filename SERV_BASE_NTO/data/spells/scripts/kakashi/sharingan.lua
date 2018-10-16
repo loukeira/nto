@@ -41,11 +41,13 @@ setCombatCondition(combat, condition)
 function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
 
-            addEvent(magicEffect8853, 10 , 0, 0,  cid)
+            addEvent(magicEffect8853, 1000 , 0, 0,  cid)
 
     local stor = getPlayerStorageValue(cid,112054)
     if stor == -1 then
-        setPlayerStorageValue(cid,112054,1)
+        setPlayerStorageValue(cid,112054,0)
+        setPlayerStorageValue(cid,112054,os.time() + tempo2)
+
     end
 
     if getPlayerStorageValue(cid, 112053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
@@ -53,10 +55,12 @@ if (isCreature(cid)) then
         local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
         doSendMagicEffect(position, 108)  
         
-         if stor <= 20 then
-             setPlayerStorageValue(cid,112054,stor + 1)
-         else
+         if stor <= 0 then
+           --  setPlayerStorageValue(cid,112054,stor + 1)
+         --else
              stopEvent(magicEffect8853)
+             setPlayerStorageValue(cid,112054,-1)
+
         end
 
 
@@ -68,9 +72,9 @@ function onCastSpell(cid, var)
 local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 if getPlayerStorageValue(cid, 112053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
-    tempo2 = 0
+    tempo2 = tempo-1
     --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8853, 10, tempo2, tempo2,  cid)
+        addEvent(magicEffect8853, 1000, tempo2, tempo2,  cid)
         --tempo2 = tempo2 + 300
    -- end
     setPlayerStorageValue(cid, 112053,1) -- storage verifica transformado, quando = 1 player esta transformado.
