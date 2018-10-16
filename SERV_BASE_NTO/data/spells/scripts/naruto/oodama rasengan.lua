@@ -1,6 +1,6 @@
 local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 24)
+setCombatParam(combat, COMBAT_PARAM_EFFECT, 24)
 setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -105.2, 1, -97.2, 1)
 
 function onCastSpell(cid, var)
@@ -12,7 +12,7 @@ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Aguarde " .. exhaus
 return false
 end
 local position1 = {x=getThingPosition(getCreatureTarget(cid)).x+7, y=getThingPosition(getCreatureTarget(cid)).y+1, z=getThingPosition(getCreatureTarget(cid)).z}
-doSendMagicEffect(position1, 135)
+doSendMagicEffect(position1, 2)
 exhaustion.set(cid, storage, waittime)
 return doCombat(cid, combat, var)
 end
