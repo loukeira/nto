@@ -40,7 +40,7 @@ setCombatCondition(combat, condition)
             
 function magicEffect1553(tempo2,tempo3,cid)
 if (isCreature(cid)) then
-    if getPlayerStorageValue(cid, 102053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
+    if getPlayerStorageValue(cid, 212053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         for i=1, #effect do
         local position = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 doSendMagicEffect(position, effect[i])  
@@ -51,7 +51,7 @@ end
                   
 function onCastSpell(cid, var)
 local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-if getPlayerStorageValue(cid, 102053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+if getPlayerStorageValue(cid, 212053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
     tempo2 = 0
     while (tempo2 ~= (tempo*1000)) do
