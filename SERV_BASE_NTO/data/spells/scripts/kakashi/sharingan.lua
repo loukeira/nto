@@ -42,7 +42,7 @@ function magicEffect1553(tempo2,tempo3,cid)
 if (isCreature(cid)) then
     if getPlayerStorageValue(cid, 212053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         for i=1, #effect do
-        local position = {x=getPlayerPosition(cid).x+1, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+        local position = {x=getPlayerPosition(cid).x + 1, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 doSendMagicEffect(position, effect[i])  
         end
     end
