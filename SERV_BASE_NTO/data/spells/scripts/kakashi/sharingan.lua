@@ -40,11 +40,25 @@ setCombatCondition(combat, condition)
             
 function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
+
+    local stor = getPlayerStorageValue(cid,112054)
+    if stor == -1 then
+        setPlayerStorageValue(cid,112054,1)
+    end
+
     if getPlayerStorageValue(cid, 112053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         
         local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
         doSendMagicEffect(position, 108)  
         
+        if stor <= 20 then
+            setPlayerStorageValue(cid,112054,stor + 1)
+        else
+            stopEvent(magicEffect8853)
+        end
+
+        addEvent(magicEffect8853, (tempo*1000) , tempo2, tempo2,  cid)
+
     end
 end
 end
