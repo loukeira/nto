@@ -42,7 +42,7 @@ function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
     if getPlayerStorageValue(cid, 112053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         
-        local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+        local position = {x=getPlayerPosition(cid).x+1 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
         doSendMagicEffect(position, 108)  
         
     end
@@ -58,7 +58,7 @@ if getPlayerStorageValue(cid, 112053) ~= 1 or getCreatureCondition(cid, CONDITIO
         addEvent(magicEffect8853, tempo2, tempo2, tempo*1000, cid)
         tempo2 = tempo2 + 300
     end
-    setPlayerStorageValue(cid, 112883,1) -- storage verifica transformado, quando = 1 player esta transformado.
+    setPlayerStorageValue(cid, 112053,1) -- storage verifica transformado, quando = 1 player esta transformado.
     doCreatureSay(cid, "Sharingan", TALKTYPE_MONSTER)
     doSendMagicEffect(position127, 108)
 else
