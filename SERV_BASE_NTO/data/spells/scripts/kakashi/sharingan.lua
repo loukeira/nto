@@ -59,7 +59,7 @@ if getPlayerStorageValue(cid, 112053) ~= 1 or getCreatureCondition(cid, CONDITIO
     doCombat(cid, combat, var)
     tempo2 = 0
     --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8853, tempo*1000,tempo2 cid)
+        addEvent(magicEffect8853, tempo*1000,tempo2, cid)
         --tempo2 = tempo2 + 300
     --end
     setPlayerStorageValue(cid, 112053,1) -- storage verifica transformado, quando = 1 player esta transformado.
