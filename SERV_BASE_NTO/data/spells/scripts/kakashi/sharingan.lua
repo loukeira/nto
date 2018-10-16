@@ -58,7 +58,7 @@ if getPlayerStorageValue(cid, 212053) ~= 1 or getCreatureCondition(cid, CONDITIO
         addEvent(magicEffect1553, tempo2, tempo2, tempo*1000, cid)
         tempo2 = tempo2 + 300
     end
-    setPlayerStorageValue(cid, 102053,1) -- storage verifica transformado, quando = 1 player esta transformado.
+    setPlayerStorageValue(cid, 212053,1) -- storage verifica transformado, quando = 1 player esta transformado.
     doCreatureSay(cid, "Sharingan", TALKTYPE_MONSTER)
     doSendMagicEffect(position127, 108)
 else
