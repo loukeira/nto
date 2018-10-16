@@ -756,6 +756,8 @@
 <instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
         <vocation id="1"/>   
         </instant>  
+
+
 <instant name="Kakashi Mangekyo Sharingan" words="kakashi mangekyo sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="kakashi/mangekyou sharingan.lua">   
         <vocation id="1"/>   
        </instant> 
