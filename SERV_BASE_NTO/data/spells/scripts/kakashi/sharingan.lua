@@ -38,12 +38,12 @@ setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
 setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
 setCombatCondition(combat, condition)
             
-function magicEffect1553(tempo2,tempo3,cid)
+function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
-    if getPlayerStorageValue(cid, 212053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
+    if getPlayerStorageValue(cid, 112053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         
-        local position = {x=getPlayerPosition(cid).x + 1, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-doSendMagicEffect(position, 108)  
+        local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+        doSendMagicEffect(position, 108)  
         
     end
 end
@@ -51,14 +51,14 @@ end
                   
 function onCastSpell(cid, var)
 local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-if getPlayerStorageValue(cid, 212053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+if getPlayerStorageValue(cid, 112053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
     tempo2 = 0
     while (tempo2 ~= (tempo*1000)) do
-        addEvent(magicEffect1553, tempo2, tempo2, tempo*1000, cid)
+        addEvent(magicEffect8853, tempo2, tempo2, tempo*1000, cid)
         tempo2 = tempo2 + 300
     end
-    setPlayerStorageValue(cid, 212053,1) -- storage verifica transformado, quando = 1 player esta transformado.
+    setPlayerStorageValue(cid, 112883,1) -- storage verifica transformado, quando = 1 player esta transformado.
     doCreatureSay(cid, "Sharingan", TALKTYPE_MONSTER)
     doSendMagicEffect(position127, 108)
 else
