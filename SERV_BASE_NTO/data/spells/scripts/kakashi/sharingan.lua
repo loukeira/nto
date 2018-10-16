@@ -50,7 +50,7 @@ end
 end
                   
 function onCastSpell(cid, var)
-local position127 = {x=getPlayerPosition(cid).x+1, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 if getPlayerStorageValue(cid, 212053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
     tempo2 = 0
