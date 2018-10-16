@@ -54,10 +54,10 @@ local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=g
 if getPlayerStorageValue(cid, 112053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
     tempo2 = 0
-    while (tempo2 <= (tempo*1000)) do
+    --while (tempo2 <= (tempo*1000)) do
         addEvent(magicEffect8853, tempo2, tempo2, tempo*1000, cid)
-        tempo2 = tempo2 + 300
-    end
+        --tempo2 = tempo2 + 300
+   -- end
     setPlayerStorageValue(cid, 112053,1) -- storage verifica transformado, quando = 1 player esta transformado.
     doCreatureSay(cid, "Sharingan", TALKTYPE_MONSTER)
     doSendMagicEffect(position127, 108)
