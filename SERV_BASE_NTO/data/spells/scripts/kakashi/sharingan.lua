@@ -1,14 +1,14 @@
-local tempo = 60 -- tempo em segundos.
-local effect = {176} -- effect no player, caso queira apenas 1, basta remover os outros numeros.
+local tempo = 20 -- tempo em segundos.
+local effect = {108} -- effect no player, caso queira apenas 1, basta remover os outros numeros.
      
-local ml = 40 -- quantos ira aumentar o skill de ML
-local skillfist = 40 -- quantos ira aumentar o skill de Fist
-local skillsword = 40 -- quantos ira aumentar o skill de Sword
-local skillaxe = 40 -- quantos ira aumentar o skill de Axe
-local skillclub = 40 -- quantos ira aumentar o skill de Club
-local skilldistance = 40 -- quantos ira aumentar o skill de Distance
-local skillshield = 40 -- quantos ira aumentar o skill de Shield
-local health = 100 -- A cada 1 segundo quantos aumentar de vida
+local ml = 3 -- quantos ira aumentar o skill de ML
+local skillfist = 0 -- quantos ira aumentar o skill de Fist
+local skillsword = 0 -- quantos ira aumentar o skill de Sword
+local skillaxe = 0 -- quantos ira aumentar o skill de Axe
+local skillclub = 0 -- quantos ira aumentar o skill de Club
+local skilldistance = 0 -- quantos ira aumentar o skill de Distance
+local skillshield = 0 -- quantos ira aumentar o skill de Shield
+local health = 0 -- A cada 1 segundo quantos aumentar de vida
 local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
      
