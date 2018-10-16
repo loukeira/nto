@@ -41,7 +41,7 @@ setCombatCondition(combat, condition)
 function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
 
-            addEvent(magicEffect8853, (20*1000) , 0, 0,  cid)
+            addEvent(magicEffect8853, 10 , 0, 0,  cid)
 
     local stor = getPlayerStorageValue(cid,112054)
     if stor == -1 then
