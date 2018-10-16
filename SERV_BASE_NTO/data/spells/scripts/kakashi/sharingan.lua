@@ -40,6 +40,7 @@ setCombatCondition(combat, condition)
             
 function magicEffect8853(tempo2,cid)
 if (isCreature(cid)) then
+    local tempo2 = 0
     if tempo2 >= 2000 then
         stopEvent(magicEffect8853)
     end
@@ -48,7 +49,7 @@ if (isCreature(cid)) then
         local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
         doSendMagicEffect(position, 108)  
         
-tempo2 = tempo2 + 200
+    tempo2 = tempo2 + 200
     end
 end
 end
