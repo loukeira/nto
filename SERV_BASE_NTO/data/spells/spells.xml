@@ -85,7 +85,7 @@
 	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="400" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/yoton rasenshuriken.lua">
         <vocation id="1"/>
     </instant> 
-<instant name="Renzoko Bijuudama" words="renzoko bijuudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/renzoko bijuudama.lua">
+<instant name="Renzoko Bijudama" words="renzoko bijudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/renzoko bijudama.lua">
         <vocation id="1"/>
     </instant>
 <instant name="Kyuubi Attack" words="kyuubi attack" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/kyuubi attack.lua">

@@ -4,7 +4,7 @@ setCombatParam(combat1, COMBAT_PARAM_EFFECT, 1)
 setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -75.2, 1, -75.2, 1)
 
 arr1 = {
-{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
 {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
 {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
@@ -32,8 +32,8 @@ end
 local p = getCreaturePosition(cid)
 local x = {
 [0] = {x=p.x+1, y=p.y-1, z=p.z},
-[1] = {x=p.x+7, y=p.y+1, z=p.z},
-[2] = {x=p.x+1, y=p.y+7, z=p.z},
+[1] = {x=p.x+6, y=p.y+1, z=p.z},
+[2] = {x=p.x+1, y=p.y+6, z=p.z},
 [3] = {x=p.x-1, y=p.y+1, z=p.z}
 }
 local y = {

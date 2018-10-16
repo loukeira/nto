@@ -1,6 +1,7 @@
 local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 29)
+
 
 function onGetFormulaValues(cid, level, maglevel)
 	local min = level / 5 + maglevel * 5.5 + 32         
