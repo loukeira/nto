@@ -86,7 +86,7 @@
 
 	-- Connection config
 	worldId = 0
-	ip = "192.99.208.99"
+	ip = "142.4.206.124"
 	loginPort = 7171
 	gamePort = 7172
 	loginTries = 10
@@ -115,7 +115,7 @@
 	sqlPort = 3306
 	sqlUser = "root"
 	sqlPass = "AsDf-0810"
-	sqlDatabase = "gbk"
+	sqlDatabase = "ntogran"
 	sqlFile = "forgottenserver.s3db"
 	sqlKeepAlive = 0
 	mysqlReadTimeout = 10
