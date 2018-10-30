@@ -1,5 +1,10 @@
-local tempo = 20 -- tempo em segundos.
+local storage_unica_dessa_spell = sharingan1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+local storage_unica_dessa_spell_2 = sharingan2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
+local tempo_de_intervalo_da_effect = 1000  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
+local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = {291} -- effect no player, caso queira apenas 1, basta remover os outros numeros.
+local nome_da_magia_que_ira_aparecer_ao_soltar = "SUSANOO!"
+
      
 local ml = 10 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
@@ -38,29 +43,48 @@ setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
 setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
 setCombatCondition(combat, condition)
             
-function magicEffect1553(tempo2,tempo3,cid)
+function magicEffect8853(tempo2,tempo3,cid)
 if (isCreature(cid)) then
-    if getPlayerStorageValue(cid, 102053) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
-        for i=1, #effect do
-        local position = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-doSendMagicEffect(position, effect[i])  
+
+            addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, 0,  cid)
+
+    local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
+
+    if stor == -1 then
+        setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
+        setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
+    end
+
+    if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
+        
+        local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+        doSendMagicEffect(position, effect)  
+        
+         if stor <= 0 then
+           --  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,stor + 1)
+         --else
+             stopEvent(magicEffect8853)
+             setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
+
         end
+
+
     end
 end
 end
                   
 function onCastSpell(cid, var)
 local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-if getPlayerStorageValue(cid, 102053) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
     doCombat(cid, combat, var)
-    tempo2 = 0
-    while (tempo2 ~= (tempo*1000)) do
-        addEvent(magicEffect1553, tempo2, tempo2, tempo*1000, cid)
-        tempo2 = tempo2 + 300
-    end
-    setPlayerStorageValue(cid, 102053,1) -- storage verifica transformado, quando = 1 player esta transformado.
-    doCreatureSay(cid, "Susano'o", TALKTYPE_MONSTER)
-    doSendMagicEffect(position127, 291)
+    tempo2 = tempo-1
+    --while (tempo2 <= (tempo*1000)) do
+        addEvent(magicEffect8853, 1000, tempo2, tempo2,  cid)
+        --tempo2 = tempo2 + 300
+   -- end
+    setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
+    doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
+    doSendMagicEffect(position127, effect)
 else
     doPlayerSendCancel(cid, "Sorry, you are transformed.")
 end

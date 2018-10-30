@@ -3,7 +3,7 @@ local storage_unica_dessa_spell_2 = sharingan2 --MUDAR ESSA STORAGE... CUIDADO C
 local tempo_de_intervalo_da_effect = 2500  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = {108} -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "Sharingan"
+local nome_da_magia_que_ira_aparecer_ao_soltar = "SHARINGAN!"
 
      
 local ml = 3 -- quantos ira aumentar o skill de ML
