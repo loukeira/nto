@@ -46,7 +46,8 @@ setCombatCondition(combat, condition)
 function magicEffect8853(tempo2,tempo3,effect,cid)
 if (isCreature(cid)) then
 
-            addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, 0,effect, cid)
+    local effect = 108
+            addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, 0, effect, cid)
 
     local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
