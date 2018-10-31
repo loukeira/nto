@@ -49,7 +49,7 @@ if (isCreature(cid)) then
         doPlayerSendTextMessage(cid,18,"ok!")
 
     local effect = 108
-            addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, effect, cid)
+            addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, 108, cid)
 
     local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
@@ -81,7 +81,7 @@ if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCond
     doCombat(cid, combat, var)
     tempo2 = tempo-1
     --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8853, 1000, tempo2, effect,  cid)
+        addEvent(magicEffect8853, 1000, tempo2, 108,  cid)
         --tempo2 = tempo2 + 300
    -- end
     setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
