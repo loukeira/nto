@@ -43,13 +43,11 @@ setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
 setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
 setCombatCondition(combat, condition)
             
-function magicEffect8853(tempo2,cid)
+function magicEffect8853(tempo2,tempo_de_intervalo_da_effect,effect,cid)
             doPlayerSendTextMessage(cid,18,"ok!")
 
 if (isCreature(cid)) then
 
-
-    local effect = 108
             addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, effect, cid)
 
     local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
@@ -82,7 +80,7 @@ if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCond
     doCombat(cid, combat, var)
     tempo2 = tempo-1
     --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8853, 1000, tempo2,  cid)
+        addEvent(magicEffect8853, 1000, tempo2, tempo_de_intervalo_da_effect,effect,effect, cid)
         doPlayerSendTextMessage(cid,18,"1 : "..getPlayerStorageValue(cid,storage_unica_dessa_spell).." / 2: "..getPlayerStorageValue(cid,storage_unica_dessa_spell_2).." ")
         --tempo2 = tempo2 + 300
    -- end
