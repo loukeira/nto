@@ -14,81 +14,77 @@ local skillclub = 0 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance
 local skillshield = 0 -- quantos ira aumentar o skill de Shield
 local health = 0 -- A cada 1 segundo quantos aumentar de vida
-local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
-     
-local condition = createConditionObject(CONDITION_ATTRIBUTES)
-setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, ml)
-setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, skillfist)
-setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, skillsword)
-setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, skillaxe)
-setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, skillclub)
-setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, skilldistance)
-setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, skillshield)
-setConditionParam(condition, CONDITION_PARAM_OUTFIT, outfit)
-setCombatCondition(combat, condition)
-     
-local condition = createConditionObject(CONDITION_HASTE)
-setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
-setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-setCombatCondition(combat, condition)
-     
-local condition = createConditionObject(CONDITION_REGENERATION)
-setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
-setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
-setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
-setCombatCondition(combat, condition)
+
+
+                        local combat = createCombatObject()
+                        setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
+                        local condition = createConditionObject(CONDITION_ATTRIBUTES)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, ml)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, skillfist)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, skillsword)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, skillaxe)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, skillclub)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, skilldistance)
+                        setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, skillshield)
+                        setConditionParam(condition, CONDITION_PARAM_OUTFIT, outfit)
+                        setCombatCondition(combat, condition)
+                             
+                        local condition = createConditionObject(CONDITION_HASTE)
+                        setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
+                        setCombatCondition(combat, condition)
+                             
+                        local condition = createConditionObject(CONDITION_REGENERATION)
+                        setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
+                        setCombatCondition(combat, condition)
             
-function magicEffect8753(tempo2,cid)
+function magicEffect001(tempo2, tempo_de_intervalo_da_effect ,effect,cid)
 
-if (isCreature(cid)) then
+                        if (isCreature(cid)) then
 
-local effect =108
-            addEvent(magicEffect8753, 2500 ,0, cid)
+addEvent(magicEffect001, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
 
-    local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
+                        local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
-    if stor == -1 then
-        setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
-        setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
-    end
+                        if stor == -1 then
+                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
+                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
+                        end
 
-    if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
-        
-        local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-        doSendMagicEffect(position, effect)  
-         if stor <= 0 then
-           --  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,stor + 1)
-         --else
-             stopEvent(magicEffect8753)
-             setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
+                        if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
+                            
+                            local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                            doSendMagicEffect(position, effect)  
+                             if stor <= 0 then
+                        
+stopEvent(magicEffect001)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
 
-        end
+                                end
 
 
-    end
-end
-end
-                  
-function onCastSpell(cid, var)
-local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
-    doCombat(cid, combat, var)
-    tempo2 = tempo-1
-    --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8753, 1000, tempo2, cid)
+                            end
+                        end
+                        end
+                          
+                    function onCastSpell(cid, var)
+                    local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                    if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+                        doCombat(cid, combat, var)
+                        tempo2 = tempo-1
 
-        doPlayerSendTextMessage(cid,18,"1 : "..getPlayerStorageValue(cid,storage_unica_dessa_spell).." / 2: "..getPlayerStorageValue(cid,storage_unica_dessa_spell_2).." ")
-        --tempo2 = tempo2 + 300
-   -- end
-    setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
-    doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
-    doSendMagicEffect(position127, effect)
-else
-    doPlayerSendCancel(cid, "Sorry, you are transformed.")
-end
-end
+addEvent(magicEffect001, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid)
+
+                        setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
+                        doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
+                        doSendMagicEffect(position127, effect)
+                    else
+                        doPlayerSendCancel(cid, "Sorry, you are transformed.")
+                    end
+                    end
