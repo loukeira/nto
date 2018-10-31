@@ -32,6 +32,8 @@ function onSay(cid, words, param, channel)
                    local position = {x=getPlayerPosition(cid).x + 2 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, 291) 
 
+                            doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,kakashisusano1).."/"..getPlayerStorageValue(cid,kakashisusano2).."/"..getPlayerStorageValue(cid,mangenkyousharingan1).."/"..getPlayerStorageValue(cid,mangenkyousharingan2).."")
+
 return true
 end
 
