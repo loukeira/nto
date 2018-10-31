@@ -1,5 +1,5 @@
-local storage_unica_dessa_spell = mangenkyousharingan1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
-local storage_unica_dessa_spell_2 = mangenkyousharingan2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
+local storage_unica_dessa_spell = kakashisusano1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+local storage_unica_dessa_spell_2 = kakashisusano2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
 local tempo_de_intervalo_da_effect = 500  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 291 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
@@ -44,11 +44,11 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
                         setCombatCondition(combat, condition)
             
-function magicEffect002(tempo2, tempo_de_intervalo_da_effect ,effect,cid)
+function magicEffect003(tempo2, tempo_de_intervalo_da_effect ,effect,cid)
 
                         if (isCreature(cid)) then
 
-addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
+addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
 
                         local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
@@ -63,7 +63,7 @@ addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                             doSendMagicEffect(position, effect)  
                              if stor <= 0 then
                         
-stopEvent(magicEffect002)
+stopEvent(magicEffect003)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
 
                                 end
@@ -79,7 +79,7 @@ stopEvent(magicEffect002)
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
 
-addEvent(magicEffect002, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid)
+addEvent(magicEffect003, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid)
 
                         setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
                         doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
