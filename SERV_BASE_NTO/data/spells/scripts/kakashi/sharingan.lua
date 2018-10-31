@@ -47,7 +47,7 @@ function magicEffect8853(tempo2,tempo_de_intervalo_da_effect,effect,cid)
 
 if (isCreature(cid)) then
 
-            addEvent(magicEffect8853, 0,tempo_de_intervalo_da_effect , effect, cid)
+            addEvent(magicEffect8853,tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
 
     local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
