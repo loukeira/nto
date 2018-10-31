@@ -63,8 +63,8 @@ addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                             doSendMagicEffect(position, effect)  
                              if stor <= 0 then
                         
-stopEvent(magicEffect003)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
+stopEvent(magicEffect003)
 
                                 end
 
