@@ -50,7 +50,7 @@ function magicEffect002(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storag
                         local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
                         if stor == -1  then
 addEvent(pararmagicEffect002, tempo2*1000 ,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
-
+                        setPlayerStorageValue(cid, storage_unica_dessa_spell_2,1)
                          end
 
                              -- if stor <= 0 then
