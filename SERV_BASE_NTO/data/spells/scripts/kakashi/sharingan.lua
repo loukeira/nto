@@ -47,7 +47,7 @@ function magicEffect8853(tempo2,tempo_de_intervalo_da_effect,effect,cid)
 
 if (isCreature(cid)) then
 
-            addEvent(magicEffect8853,tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
+            addEvent(magicEffect8853, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid)
 
     local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
@@ -79,7 +79,7 @@ if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCond
     doCombat(cid, combat, var)
     tempo2 = tempo-1
     --while (tempo2 <= (tempo*1000)) do
-        addEvent(magicEffect8853, 1000, tempo2, tempo_de_intervalo_da_effect,effect,effect, cid)
+        addEvent(magicEffect8853, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid)
         doPlayerSendTextMessage(cid,18,"1 : "..getPlayerStorageValue(cid,storage_unica_dessa_spell).." / 2: "..getPlayerStorageValue(cid,storage_unica_dessa_spell_2).." ")
         --tempo2 = tempo2 + 300
    -- end
