@@ -52,7 +52,7 @@ addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
 
                         local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
 
-                        if stor == -1 then
+                        if stor == -1 or stor == 0 then
                             setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
                             setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
                         end
@@ -62,8 +62,9 @@ addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                             local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, effect)  
                              if stor <= 0 then
-                        
-                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
+                                
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
 stopEvent(magicEffect002)
 
                                 end
