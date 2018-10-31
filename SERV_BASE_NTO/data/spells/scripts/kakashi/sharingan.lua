@@ -60,7 +60,7 @@ if (isCreature(cid)) then
         
         local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
         doSendMagicEffect(position, 108)  
-        
+        doPlayerSendTextMessage(cid,18,"ok!")
          if stor <= 0 then
            --  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,stor + 1)
          --else
