@@ -64,6 +64,7 @@ addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                              if stor <= 0 then
                         
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
+                                 setPlayerStorageValue(cid, storage_unica_dessa_spell,-1)
 stopEvent(magicEffect003)
 
                                 end
