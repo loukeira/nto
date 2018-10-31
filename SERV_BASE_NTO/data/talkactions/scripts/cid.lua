@@ -29,7 +29,7 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-                   local position = {x=getPlayerPosition(cid).x + 1 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                   local position = {x=getPlayerPosition(cid).x + 2 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, 291) 
 
 return true
