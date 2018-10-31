@@ -59,7 +59,7 @@ addEvent(pararmagicEffect003, tempo2*1000 ,cid, storage_unica_dessa_spell, stora
 --mudar aqui \/        
 addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
         
-                            local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                            local position = {x=getPlayerPosition(cid).x+2 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, effect)  
 
                             end
@@ -67,7 +67,7 @@ addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                         end
                           
                     function onCastSpell(cid, var)
-                    local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                    local position127 = {x=getPlayerPosition(cid).x +2, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                     if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
