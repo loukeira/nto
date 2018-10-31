@@ -44,9 +44,10 @@ setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
 setCombatCondition(combat, condition)
             
 function magicEffect8853(tempo2,effect,cid)
+            doPlayerSendTextMessage(cid,18,"ok!")
+
 if (isCreature(cid)) then
 
-        doPlayerSendTextMessage(cid,18,"ok!")
 
     local effect = 108
             addEvent(magicEffect8853, tempo_de_intervalo_da_effect , 0, 108, cid)
