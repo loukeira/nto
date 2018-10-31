@@ -59,7 +59,7 @@ if (isCreature(cid)) then
     if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
         
         local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-        doSendMagicEffect(position, effect)  
+        doSendMagicEffect(position, 108)  
         
          if stor <= 0 then
            --  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,stor + 1)
