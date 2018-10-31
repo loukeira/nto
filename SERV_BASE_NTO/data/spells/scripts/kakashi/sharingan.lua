@@ -44,30 +44,23 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
                         setCombatCondition(combat, condition)
             
+--mudar aqui \/        
 function magicEffect001(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
                         if (isCreature(cid)) then
-
-addEvent(magicEffect001, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
-
                         local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
-
-                        if stor == -1 then
-                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
-                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
-                        end
+                        if stor == -1  then
+--mudar aqui \/        
+addEvent(pararmagicEffect001, tempo2*1000 ,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+                        setPlayerStorageValue(cid, storage_unica_dessa_spell_2,1)
+                         end
 
                         if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
-                            
+--mudar aqui \/        
+addEvent(magicEffect001, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+        
                             local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, effect)  
-                             if stor <= 0 then
-                        
-                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
-stopEvent(magicEffect001)
-
-                                end
-
 
                             end
                         end
@@ -78,7 +71,7 @@ stopEvent(magicEffect001)
                     if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
-
+--mudar aqui \/        
 addEvent(magicEffect001, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
                         setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
@@ -87,4 +80,13 @@ addEvent(magicEffect001, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid
                     else
                         doPlayerSendCancel(cid, "Sorry, you are transformed.")
                     end
+                    end
+
+--mudar aqui \/        
+function pararmagicEffect001( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
+
+--mudar aqui \/        
+stopEvent(magicEffect001)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
                     end
