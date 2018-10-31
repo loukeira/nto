@@ -47,22 +47,20 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
 function magicEffect002(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
                         if (isCreature(cid)) then
-                        local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
-                        if stor == -1  then
-                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
-                            setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
-                        end
+                        -- local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
+                        -- if stor == -1  then
+                        --     setPlayerStorageValue(cid,storage_unica_dessa_spell_2,0)
+                        --     setPlayerStorageValue(cid,storage_unica_dessa_spell_2,os.time() + tempo2)
+                        -- end
 
-                             if stor <= 0 then
+                             -- if stor <= 0 then
                                 
-                                 setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
-                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
-stopEvent(magicEffect002)
 
-                                end
+
+                             --    end
 
                         if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
-
+addEvent(pararmagicEffect002, tempo2 ,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
 addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
@@ -89,4 +87,10 @@ addEvent(magicEffect002, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid
                     else
                         doPlayerSendCancel(cid, "Sorry, you are transformed.")
                     end
+                    end
+
+                    function pararmagicEffect002( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
+stopEvent(magicEffect002)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
+                                 setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
                     end
