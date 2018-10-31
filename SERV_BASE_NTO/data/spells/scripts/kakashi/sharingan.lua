@@ -82,6 +82,7 @@ if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCond
     tempo2 = tempo-1
     --while (tempo2 <= (tempo*1000)) do
         addEvent(magicEffect8853, 1000, tempo2, 108,  cid)
+        doPlayerSendTextMessage(cid,18,"1 : "..getPlayerStorageValue(cid,storage_unica_dessa_spell).." / 2: "..getPlayerStorageValue(cid,storage_unica_dessa_spell2).." ")
         --tempo2 = tempo2 + 300
    -- end
     setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
