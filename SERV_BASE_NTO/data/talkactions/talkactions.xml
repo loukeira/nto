@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+<talkaction words="!saga" script="saga.lua"/>
 <talkaction words="!status;!playerinfo" script="status.lua"/>
 
 <talkaction words="!mijar;!xixi;!urinar" script="urina.lua"/>
