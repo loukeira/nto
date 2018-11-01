@@ -38,14 +38,14 @@ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " DIGITE CID!")
 
 
 
-        -- if(hasCondition(cid, CONDITION_EXHAUST_HEAL)) then 
-        --         doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED) 
-        --         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " se foder ")
+        if(hasCondition(cid, CONDITION_EXHAUST_HEAL)) then 
+            --doPlayerSendTextMessage(cid, RETURNVALUE_YOUAREEXHAUSTED) 
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " se foder ")
 
-        --         return true
-        -- end 
+                return true
+        end 
 
-        --doAddCondition(cid, exhaust) 
+        doAddCondition(cid, exhaust) 
 
 
 return true
