@@ -52,6 +52,7 @@ local skilldistance = 0 -- quantos ira aumentar o skill de Distance
 local skillshield = 0 -- quantos ira aumentar o skill de Shield
 local health = 0 -- A cada 1 segundo quantos aumentar de vida
 
+local tempo = 3
 
                         local combat = createCombatObject()
                         setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
