@@ -3,8 +3,8 @@ setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -50.2, 1, -80.2, 1)
 
 function onCastSpell(cid, var)
-target = getCreatureTarget(cid)
-if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
 
 local waittime = 40
