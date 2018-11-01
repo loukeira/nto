@@ -45,7 +45,7 @@ local storage = 113007
 
 local condition = createConditionObject(CONDITION_MANASHIELD)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 2000)
-setCombatCondition(combat, condition)
+--setCombatCondition(combat, condition)
 
    doPlayerSendTextMessage(cid,18,"coco!" ) 
 
