@@ -60,7 +60,7 @@ local level = 5 -- Limite para liberar uma saga nova
 local storage_exhaust = 183023
 function onSay(cid, words, param, channel)
 
-if exhaustion.check(cid, storage_exhaust) == true then
+if exhaustion.check(cid, storage_exhaust) >= 0 then
 doPlayerSendCancel(cid, "You are exhausted.")
 doSendMagicEffect(getCreaturePosition(cid), 3)
 return true
