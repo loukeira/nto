@@ -61,7 +61,7 @@ function onSay(cid, words, param, channel)
 
 local storage_exhaust = 183023
 
-if exhaustion.get(cid, storage_exhaust) == true then
+if exhaustion.get(cid, storage_exhaust)  then
 doPlayerSendCancel(cid, "You are exhausted.")
 doSendMagicEffect(getCreaturePosition(cid), 3)
 return true
