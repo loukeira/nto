@@ -32,14 +32,14 @@ function onSay(cid, words, param, channel)
 local waittime = 600000
 local storage = 113007
 
-if exhaustion.check(cid, storage) then
-doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
-return false
-end
-exhaustion.set(cid, storage,waittime) 
+--if exhaustion.check(cid, storage) then
+doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
+doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
+
+--return false
+--end
 
             --doPlayerSendTextMessage(cid, RETURNVALUE_YOUAREEXHAUSTED) 
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " se foder ")
 
      
 
