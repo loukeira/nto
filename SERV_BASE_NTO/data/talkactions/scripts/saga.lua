@@ -57,63 +57,75 @@ local saga = {
 local level = 5 -- Limite para liberar uma saga nova
 
 
+local storage_exhaust = 183023
 function onSay(cid, words, param, channel)
 
-if exhaustion.check(cid, 120) == TRUE then
+if exhaustion.check(cid, storage_exhaust) == true then
 doPlayerSendCancel(cid, "You are exhausted.")
 doSendMagicEffect(getCreaturePosition(cid), 3)
-return TRUE
+return true
 end
 
 
  if(param == '') then
-  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite o número da saga que você deseja.")
- exhaustion.set(cid, 120, 0.5) 
+  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!")
+ exhaustion.set(cid, storage_exhaust, 0.5) 
  return true
  end
 
 
-if not saga[getPlayerVocation(cid)] then
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao pode trocar de saga.")
-exhaustion.set(cid, 120, 0.5)
-return true
-end
+-- if not saga[getPlayerVocation(cid)] then
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao pode trocar de saga.")
+-- exhaustion.set(cid, storage_exhaust, 0.5) 
+-- return true
+-- end
 
-
-local t = string.explode(param, ",")
-
-
- if(t[2]) then
-  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Could not understand.")
-  return true
- end
-
-
- if not (tonumber(t[1])) then
-  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite o número da saga que você deseja.")
- exhaustion.set(cid, 120, 0.5) 
+ if(param == 'up') then
+ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
+ exhaustion.set(cid, storage_exhaust, 0.5) 
  return true
  end
 
+ if(param == 'down') then
+ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce desceu de saga!")
+ exhaustion.set(cid, storage_exhaust, 0.5) 
+ return true
+ end
 
-if tonumber(t[1]) > #saga[getPlayerVocation(cid)] or tonumber(t[1]) < 1  then
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Essa saga não existe.")
-exhaustion.set(cid, 120, 0.5)
-return true
-end
+-- local t = string.explode(param, ",")
+
+
+--  if(t[2]) then
+--   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Could not understand.")
+--   return true
+--  end
+
+
+--  if not (tonumber(t[1])) then
+--   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite o número da saga que você deseja.")
+--  exhaustion.set(cid, 120, 0.5) 
+--  return true
+--  end
+
+
+-- if tonumber(t[1]) > #saga[getPlayerVocation(cid)] or tonumber(t[1]) < 1  then
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Essa saga não existe.")
+-- exhaustion.set(cid, 120, 0.5)
+-- return true
+-- end
 
 
 
 
-if getPlayerLevel(cid) >= (tonumber(t[1])*level) then
-doCreatureChangeOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[1])]})
-doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce escolheu uma nova saga!")
-doPlayerSay(cid, "Saga!!", TALKTYPE_ORANGE_1)
-exhaustion.set(cid, 120, 0.5)
-else
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Desculpe, você precisa de level "..(tonumber(t[1]) * level).." usar essa saga.")
-end
+-- if getPlayerLevel(cid) >= (tonumber(t[1])*level) then
+-- doCreatureChangeOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[1])]})
+-- doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce escolheu uma nova saga!")
+-- doPlayerSay(cid, "Saga!!", TALKTYPE_ORANGE_1)
+-- exhaustion.set(cid, 120, 0.5)
+-- else
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Desculpe, você precisa de level "..(tonumber(t[1]) * level).." usar essa saga.")
+-- end
 
 
 return true
