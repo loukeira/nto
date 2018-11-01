@@ -67,9 +67,16 @@ doSendMagicEffect(getCreaturePosition(cid), 3)
 return true
 end
 
+local x = exhaustion.get(cid, 12346) or 0
+	exhaustion.set(cid, 12346, 60)
+	if x > 0 then
+	   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "The exhaustion is in "..x.." seconds.")
+	end
 
  if(param == '') then
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga! ")
+  	exhaustion.set(cid, 12346, 60)
+
  exhaustion.set(cid, storage_exhaust, 2000) 
  return true
  end
