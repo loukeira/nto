@@ -32,19 +32,22 @@ function onSay(cid, words, param, channel)
 local waittime = 3
 local storage = 113007
 
+
+-- if (getPlayerStorageValue(cid,storage) <= os.time()) then
+--         setPlayerStorageValue(cid,storage, os.time() + waittime)
+--         doPlayerSendTextMessage(cid,18,"coco!" ) 
+-- end
 --if exhaustion.check(cid, storage) then
 --doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
 --doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
-
-if (getPlayerStorageValue(cid,storage) <= os.time()) then
-        setPlayerStorageValue(cid,storage, os.time() + waittime)
-        doPlayerSendTextMessage(cid,18,"coco!" ) 
-
-
-end
 --return false
 --end
 
+local condition = createConditionObject(CONDITION_MANASHIELD)
+setConditionParam(condition, CONDITION_PARAM_TICKS, 2000)
+setCombatCondition(combat, condition)
+
+   doPlayerSendTextMessage(cid,18,"coco!" ) 
 
      
 
