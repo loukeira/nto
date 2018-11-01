@@ -33,7 +33,7 @@ function onSay(cid, words, param, channel)
 
 --doPlayerSendCancel(cid, "You are exhausted.?")
 --doSendMagicEffect(getCreaturePosition(cid), 3)
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite cid!  ")
+doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " DIGITE CID!")
    
 
 
