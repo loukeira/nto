@@ -5,7 +5,7 @@ setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -50.2, 1, -80.2, 1)
 function onCastSpell(cid, var)
 target = getCreatureTarget(cid)
 if target then
-local waittime = 1
+local waittime = 40
 local storage = 113007
 
 if exhaustion.check(cid, storage) then
