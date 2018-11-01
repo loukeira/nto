@@ -57,6 +57,15 @@ function onCastSpell(cid)
 local position1 = {x=getCreaturePosition(cid).x, y=getCreaturePosition(cid).y, z=getCreaturePosition(cid).z}
 target = getCreatureTarget(cid)
 if target then
+local waittime = 5
+local storage = 113011
+
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return false
+end
+
+exhaustion.set(cid, storage, waittime)
   spell54.start54(cid, target, getThingPos(cid), config.hits)
   doSendMagicEffect(position1, 134)
 end

@@ -22,7 +22,7 @@ setCombatArea(combat1, area1)
 
 function onCastSpell(cid, var)
 local waittime = 2 
-local storage = 5868
+local storage = 113008
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)

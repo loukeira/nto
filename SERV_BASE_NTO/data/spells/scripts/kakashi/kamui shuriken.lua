@@ -64,11 +64,13 @@ local function onCastSpell4(parameters)
 end
  
 function onCastSpell(cid, var)
-
-local waittime = 4 -- Tempo de exhaustion
-local storage = 15288
+target = getCreatureTarget(cid)
+if target then
+local waittime = 4
+local storage = 113010
 
 if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
 return false
 end
 

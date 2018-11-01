@@ -3,10 +3,13 @@ local item_id = 5750 -- id da magic wall
 
 function onCastSpell(cid, var)
 
-local waittime = 20 -- Tempo de exhaustion
-local storage = 15288
+target = getCreatureTarget(cid)
+if target then
+local waittime = 20
+local storage = 113012
 
 if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
 return false
 end
 

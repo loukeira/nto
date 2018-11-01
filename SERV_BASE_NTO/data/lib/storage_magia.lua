@@ -19,6 +19,8 @@ Raikiri = 113009
 Raikiri = 113010
 -- SPELL/KAMUI RAIKIRI --
 Raikiri = 113011
+-- SPELL/DOTON PRISION --
+Raikiri = 113012
 
 
 
