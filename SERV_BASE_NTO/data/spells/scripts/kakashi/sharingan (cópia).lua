@@ -35,21 +35,21 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
                         setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 
---                         local condition = createConditionObject(CONDITION_MANASHIELD)
---                         setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
---     setConditionParam(condition, CONDITION_PARAM_TICKS, 2000)
--- setCombatCondition(combat, condition)
+                        local condition = createConditionObject(CONDITION_MANASHIELD)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
+    setConditionParam(condition, CONDITION_PARAM_TICKS, 2000)
+setCombatCondition(combat, condition)
 
                         setCombatCondition(combat, condition)
                              
 
-                        -- local condition = createConditionObject(CONDITION_REGENERATION)
-                        -- setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
-                        -- setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-                        -- setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-                        -- setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
-                        -- setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
-                        -- setCombatCondition(combat, condition)
+                        local condition = createConditionObject(CONDITION_REGENERATION)
+                        setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
+                        setCombatCondition(combat, condition)
             
 --mudar aqui \/        
 function magicEffect001(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
