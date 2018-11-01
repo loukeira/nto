@@ -29,7 +29,7 @@ function onSay(cid, words, param, channel)
                         -- end
 
 local exhaust = createConditionObject(CONDITION_EXHAUST) 
---setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
+setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
 
 --doPlayerSendCancel(cid, "You are exhausted.?")
 --doSendMagicEffect(getCreaturePosition(cid), 3)
