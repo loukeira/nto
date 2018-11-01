@@ -6,6 +6,7 @@ function onCastSpell(cid, var)
 target = getCreatureTarget(cid)
 if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
+
 local waittime = 40
 local storage = 113007
 
