@@ -69,7 +69,7 @@ end
 
  if(param == '') then
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!")
- exhaustion.set(cid, storage_exhaust, 0.5) 
+ exhaustion.set(cid, storage_exhaust, 2) 
  return true
  end
 
@@ -82,13 +82,13 @@ end
 
  if(param == 'up') then
  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
- exhaustion.set(cid, storage_exhaust, 0.5) 
+ exhaustion.set(cid, storage_exhaust, 2) 
  return true
  end
 
  if(param == 'down') then
  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce desceu de saga!")
- exhaustion.set(cid, storage_exhaust, 0.5) 
+ exhaustion.set(cid, storage_exhaust, 2) 
  return true
  end
 
