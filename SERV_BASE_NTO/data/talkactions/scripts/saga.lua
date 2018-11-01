@@ -69,7 +69,7 @@ end
 
 
  if(param == '') then
-  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga! "..exhaustion.get(cid,storage_exhaust).." ")
+  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga! ")
  exhaustion.set(cid, storage_exhaust, 2000) 
  return true
  end
