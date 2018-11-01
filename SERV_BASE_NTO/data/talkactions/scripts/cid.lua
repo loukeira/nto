@@ -44,17 +44,7 @@ local storage = 113007
 --end
 
 
-                        local combat = createCombatObject()
-                        setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
-
-
-                        local condition = createConditionObject(CONDITION_HASTE)
-
-setConditionParam(condition, CONDITION_PARAM_TICKS, 9000)
-setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-
-
-                        setCombatCondition(combat, condition)
+           
 
    doPlayerSendTextMessage(cid,18,"coco!" ) 
 

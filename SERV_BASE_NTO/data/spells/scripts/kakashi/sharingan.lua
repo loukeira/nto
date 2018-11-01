@@ -39,14 +39,15 @@ local condition = createConditionObject(CONDITION_MANASHIELD)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
 setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 
-local condition = createConditionObject(CONDITION_HASTE)
+local condition2 = createConditionObject(CONDITION_HASTE)
 
 setConditionParam(condition, CONDITION_PARAM_TICKS, 9000)
 setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 
 
                         setCombatCondition(combat, condition)
-                             
+                        setCombatCondition(combat, condition2)
+
 
                         -- local condition = createConditionObject(CONDITION_REGENERATION)
                         -- setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
