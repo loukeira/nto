@@ -1,4 +1,4 @@
-<!--- Kakashi Storage -->
+--- Kakashi Storage śpells 
 
 -- BUFF/FUNCTION 001 ---
 sharingan1 = 113001 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
