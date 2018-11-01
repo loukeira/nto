@@ -33,7 +33,7 @@ local waittime = 600000
 local storage = 113007
 
 --if exhaustion.check(cid, storage) then
-doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
+--doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
 doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
 
 --return false
