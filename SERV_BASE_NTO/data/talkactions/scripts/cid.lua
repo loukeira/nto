@@ -28,8 +28,8 @@ function onSay(cid, words, param, channel)
 
                         -- end
 
-local exhaust = createConditionObject(CONDITION_EXHAUST) 
-setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
+--local exhaust = createConditionObject(CONDITION_EXHAUST) 
+--setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
 
 --doPlayerSendCancel(cid, "You are exhausted.?")
 --doSendMagicEffect(getCreaturePosition(cid), 3)
@@ -44,8 +44,8 @@ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite cid!  ")
 
         --         return true
         -- end 
-        
-        doAddCondition(cid, exhaust) 
+
+        --doAddCondition(cid, exhaust) 
 
 
 return true
