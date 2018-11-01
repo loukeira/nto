@@ -28,24 +28,20 @@ function onSay(cid, words, param, channel)
 
                         -- end
 
-local exhaust = createConditionObject(CONDITION_EXHAUST) 
-setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
 
---doPlayerSendCancel(cid, "You are exhausted.?")
---doSendMagicEffect(getCreaturePosition(cid), 3)
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " DIGITE CID!")
-   
+local waittime = 600000
+local storage = 113007
 
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return false
+end
+exhaustion.set(cid, storage,waittime) 
 
-
-        if(hasCondition(cid, CONDITION_EXHAUST_HEAL)) then 
             --doPlayerSendTextMessage(cid, RETURNVALUE_YOUAREEXHAUSTED) 
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " se foder ")
 
-                return true
-        end 
-
-        doAddCondition(cid, exhaust) 
+     
 
 
 return true
