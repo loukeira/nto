@@ -29,17 +29,22 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-local waittime = 600000
+local waittime = 3
 local storage = 113007
 
 --if exhaustion.check(cid, storage) then
 --doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
-doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
+--doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
 
+if (getPlayerStorageValue(cid,storage) < os.time()) then
+        setPlayerStorageValue(cid,storage, os.time() + waittime)
+        doPlayerSendTextMessage(cid,18,"coco!" ) 
+
+
+end
 --return false
 --end
 
-            --doPlayerSendTextMessage(cid, RETURNVALUE_YOUAREEXHAUSTED) 
 
      
 
