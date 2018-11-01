@@ -17,6 +17,8 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
 
 
                         local combat = createCombatObject()
+                                                local combat2 = createCombatObject()
+
                         setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
                         local condition = createConditionObject(CONDITION_ATTRIBUTES)
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
@@ -46,7 +48,7 @@ setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 
 
                         setCombatCondition(combat, condition)
-                        setCombatCondition(combat, condition2)
+                        setCombatCondition(combat2, condition2)
 
 
                         -- local condition = createConditionObject(CONDITION_REGENERATION)
@@ -83,6 +85,8 @@ addEvent(magicEffect001, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                     local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                     if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
                         doCombat(cid, combat, var)
+                        doCombat(cid, combat2, var)
+
                         tempo2 = tempo-1
 --mudar aqui \/        
 addEvent(magicEffect001, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
