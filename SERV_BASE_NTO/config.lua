@@ -152,7 +152,7 @@
 	houseCleanOld = 0
 	guildHalls = false
 
-	-- Item usage
+	-- Item usage exhaust
 	timeBetweenActions = 500
 	timeBetweenExActions = 1000
 	hotkeyAimbotEnabled = true

@@ -28,11 +28,25 @@ function onSay(cid, words, param, channel)
 
                         -- end
 
+local storage_exhaust = 18388
+local exhaust = createConditionObject(CONDITION_EXHAUST) 
+setConditionParam(exhaust, CONDITION_PARAM_TICKS, 2000)) 
 
-                   local position = {x=getPlayerPosition(cid).x + 2 , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                            doSendMagicEffect(position, 291) 
+doPlayerSendCancel(cid, "You are exhausted.?")
+doSendMagicEffect(getCreaturePosition(cid), 3)
+doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite cid!  ")
+   
 
-                            doPlayerSendTextMessage(cid,18,""..getPlayerStorageValue(cid,kakashisusano1).."/"..getPlayerStorageValue(cid,kakashisusano2).."/"..getPlayerStorageValue(cid,mangenkyousharingan1).."/"..getPlayerStorageValue(cid,mangenkyousharingan2).."")
+
+
+        if(hasCondition(cid, CONDITION_EXHAUST_HEAL)) then 
+                doPlayerSendDefaultCancel(cid, RETURNVALUE_YOUAREEXHAUSTED) 
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, " se foder ")
+
+                return true
+        end 
+        doAddCondition(cid, exhaust) 
+
 
 return true
 end
