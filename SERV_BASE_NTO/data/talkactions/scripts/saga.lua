@@ -13,62 +13,57 @@ end
 
 
  if(param == '') then
-  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!\nA sua saga atual e a: [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).." (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
-   setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
- return true
- --end
-
--- if not saga[getPlayerVocation(cid)] then
--- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao pode trocar de saga.")
--- exhaustion.set(cid, storage_exhaust, 0.5) 
--- return true
--- end
-
-
+		  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!\nA sua saga atual e a: [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).." (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
+		  setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+		 return true
+ 
 
  elseif(param == 'up') then
 
- if saga >= #sagas[getPlayerVocationName(cid)] then
- 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce ja esta na maior saga da vocation "..getPlayerVocationName(cid).."\n[ "..saga.." / "..my_saga_max.." ]! ")
-return true
-end
+		 if saga >= #sagas[getPlayerVocationName(cid)] then
+		 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce ja esta na maior saga da vocation "..getPlayerVocationName(cid).."\n[ "..saga.." / "..my_saga_max.." ]! ")
+		return true
+		end
 
+		 if saga == my_saga_max then
+		 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[SAGA UP]: Voce ja esta na maior das sagas conquistadas por voce da vocation "..getPlayerVocationName(cid).." [ "..saga.." / "..my_saga_max.." ] (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
+		return true
+		end
 
- if saga == my_saga_max then
- 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[SAGA UP]: Voce ja esta na maior das sagas conquistadas por voce da vocation "..getPlayerVocationName(cid).." [ "..saga.." / "..my_saga_max.." ] (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
-return true
-end
+		db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+		 setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+		local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
 
-db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
- setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
-local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
+		doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
+		doSendMagicEffect(getThingPos(cid), 3)
 
-doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
-doSendMagicEffect(getThingPos(cid), 3)
+		 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce esta na saga [ "..saga.."/ "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).." (MAX: "..#sagas[getPlayerVocationName(cid)]..")!")
 
- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce esta na saga [ "..saga.."/ "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).." (MAX: "..#sagas[getPlayerVocationName(cid)]..")!")
-
-return true 
+		return true 
 
 
 elseif(param == 'down') then
 
-	if saga == tonumber(1) then
-	 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[SAGA DOWN]: Voce ja esta na primeira saga da vocation "..getPlayerVocationName(cid).." [ "..saga.." / "..my_saga_max.." ] (MAX: "..#sagas[getPlayerVocationName(cid)]..")! ")
-	return true
-	end
+		if saga == tonumber(1) then
+		 	 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[SAGA DOWN]: Voce ja esta na primeira saga da vocation "..getPlayerVocationName(cid).." [ "..saga.." / "..my_saga_max.." ] (MAX: "..#sagas[getPlayerVocationName(cid)]..")! ")
+		return true
+		end
 
 
- 	db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
-    setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+	 	db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+	    setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
 
-	local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
+		local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
 
-	doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
-	doSendMagicEffect(getThingPos(cid), 3)
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce esta na saga [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).."! (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
- 
-return true
+		doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
+		doSendMagicEffect(getThingPos(cid), 3)
+	    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce esta na saga [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).."! (MAX: "..#sagas[getPlayerVocationName(cid)]..")")
+	 
+		return true
+else
+			 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!")
+		  setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+		 return true
 end
 
 
