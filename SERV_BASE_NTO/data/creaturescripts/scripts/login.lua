@@ -24,11 +24,10 @@ function onLogin(cid)
  end
 
 
-  local insere_db_player_saga = 28392
-  local marcos = "marcos"
+  local insere_db_player_saga = 8882222001
 
   if getPlayerStorageValue(cid, insere_db_player_saga) == -1 then
-  db.query("INSERT INTO `player_saga` (`id` , `name` , `vocation` , `saga` ) VALUES ("..getPlayerGUID(cid)..", "..marcos.." ,"..getPlayerVocationName(cid)..",1);")
+  db.query("INSERT INTO `player_saga` (`id` , `name` , `vocation` , `saga` ) VALUES ("..getPlayerGUID(cid)..", '"..getCreatureName(cid).."' , '"..getPlayerVocationName(cid).."',1);")
   setPlayerStorageValue(cid,insere_db_player_saga,1)
   end
 
