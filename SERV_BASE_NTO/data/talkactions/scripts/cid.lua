@@ -30,7 +30,6 @@ function onSay(cid, words, param, channel)
 
 
 --            db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+1 WHERE id = "..getPlayerGUID(cid).." ;")
--- local saga,my_saga_max = get_saga(cid)
 
 -- if type(my_saga_max) == "number" then
 --       doPlayerSendTextMessage(cid,18,"true")
@@ -44,11 +43,7 @@ function onSay(cid, words, param, channel)
 
    --doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
 
-local outfits = {
-        [348] = 385,
-        [349] = 390,
-}
- 
+
 --doCreatureSetLookDirection(cid, getDirectionTo(getPlayerPosition(cid), getPlayerPosition(target)))
 -- if getDistanceBetween(getPlayerPosition(cid), getPlayerPosition(target)) > 1 then
 -- return true
@@ -56,7 +51,16 @@ local outfits = {
         --local tmp = getCreatureOutfit(cid)
         --if sagas[getPlayerVocationName(cid)][9] then
                 --local tmp = sagas[getPlayerVocationName(cid)][9]
-                   doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 900)
+                  
+                  local saga,my_saga_max = get_saga(cid)
+                  local tempo_duracao = 10  -- TEMPO EM SEGUNDOS
+                   doSetCreatureOutfit(cid, {lookType = 10} , -2)
+                   doSetCreatureOutfit(cid, {lookType = 10} , tempo_duracao*60)
+                  addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
+
+
+
+                  -- doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 900)
 
                 --doSetCreatureOutfit(cid, tmp, 900)
 
@@ -66,3 +70,9 @@ local outfits = {
 return true
 end
 
+function voltar( cid,looktype,time2,time1)
+
+      doSetCreatureOutfit(cid,{lookType = looktype},time2)
+      doSetCreatureOutfit(cid,{lookType = looktype},time1)
+
+end
