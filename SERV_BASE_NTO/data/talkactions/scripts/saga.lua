@@ -72,12 +72,12 @@ function get_saga(cid) -- pega a saga, pela database.
 end
 
 function onSay(cid, words, param, channel)
-	
+
 
 
 
 local waittime = 2
-local storage_exhaust = 8883332
+local storage_exhaust = 613432
 if (getPlayerStorageValue(cid,storage_exhaust) <= os.time()) then
          doPlayerSendTextMessage(cid,18,"Voce so pode usar esse comando a cada "..waittime" segundos!" ) 
 return true
