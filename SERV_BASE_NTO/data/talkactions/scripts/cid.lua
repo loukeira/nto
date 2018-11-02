@@ -29,43 +29,40 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-           db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+1 WHERE id = "..getPlayerGUID(cid).." ;")
-local saga,my_saga_max = get_saga(cid)
+--            db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+-- local saga,my_saga_max = get_saga(cid)
 
-if type(my_saga_max) == "number" then
-      doPlayerSendTextMessage(cid,18,"true")
-else
-      doPlayerSendTextMessage(cid,18,"false")
-end
+-- if type(my_saga_max) == "number" then
+--       doPlayerSendTextMessage(cid,18,"true")
+-- else
+--       doPlayerSendTextMessage(cid,18,"false")
+-- end
 
-  doPlayerSendTextMessage(cid,18, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!\nA sua saga atual e a: [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).."")
+--   doPlayerSendTextMessage(cid,18, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!\nA sua saga atual e a: [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).."")
 
 
 
    --doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
 
-     
+local outfits = {
+        [348] = 385,
+        [349] = 390,
+}
+ 
+--doCreatureSetLookDirection(cid, getDirectionTo(getPlayerPosition(cid), getPlayerPosition(target)))
+-- if getDistanceBetween(getPlayerPosition(cid), getPlayerPosition(target)) > 1 then
+-- return true
+-- end
+        --local tmp = getCreatureOutfit(cid)
+        --if sagas[getPlayerVocationName(cid)][9] then
+                --local tmp = sagas[getPlayerVocationName(cid)][9]
+                   doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 1000)
+
+                doSetCreatureOutfit(cid, tmp, 900)
+
+        --end
 
 
 return true
 end
 
-
-
-function get_saga(cid) -- pega a saga, pela database.
-    local ult = db.getResult('select `saga`, `my_saga_max` from players where id = \''..getPlayerGUID(cid)..'\' ')
-
-    if (ult:getID() == -1) then
-    return false
-    end
-
-    local my_saga_max = ult:getDataString("my_saga_max")
-    local saga = ult:getDataString("saga")
-    ult:free()
-
-    saga = tonumber(saga)
-    my_saga_max = tonumber(my_saga_max)
-
-    return saga, my_saga_max
-
-end
