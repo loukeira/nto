@@ -63,5 +63,11 @@ registerCreatureEvent(cid, "Senha")
 registerCreatureEvent(cid, "eventotimes")
 registerCreatureEvent(cid, "report")
 registerCreatureEvent(cid, "Niwdeath")
+
+--MARCOS--
+local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
+doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
+
+
 return true
 end
