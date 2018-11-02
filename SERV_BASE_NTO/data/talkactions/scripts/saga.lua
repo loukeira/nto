@@ -50,7 +50,7 @@ local saga = {
 -- Sasuke ---
 [2] = {93,689,690,658,659,660,661,654,663,873}, 
 -- KAKASHI ---
-[1] = {9,10,11,12,13,14,15,16,17,effect = 3},
+[1] = {9,10,11,12,13,14,15,16,17},
 }
 
 
@@ -96,6 +96,9 @@ end
 -- return true
 -- end
 
+
+------------------------------------------------------------------------------------------------------------------
+
  if(param == 'up') then
  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
       setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
@@ -122,6 +125,10 @@ db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid
 
  return true
  end
+
+
+
+ -----------------------------------------------------------------------------------------------------------------
 
 -- local t = string.explode(param, ",")
 
