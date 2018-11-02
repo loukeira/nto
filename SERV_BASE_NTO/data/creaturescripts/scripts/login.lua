@@ -24,7 +24,7 @@ function onLogin(cid)
  end
 
 
-  local insere_db_player_saga = 28883392
+  local insere_db_player_saga = 28392
   
   if getPlayerStorageValue(cid, insere_db_player_saga) == -1 then
   db.query("INSERT INTO `player_saga` (`id` , `name` , `vocation` , `saga` ) VALUES ("..getPlayerGUID(cid)..", ""..getPlayerName(cid).."",""..getPlayerVocationName(cid).."",1);")
