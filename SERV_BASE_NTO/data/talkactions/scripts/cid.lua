@@ -30,7 +30,7 @@ function onSay(cid, words, param, channel)
 
 
 local waittime = 3
-local storage = 113007
+  local insere_db_player_saga = 8882222001
 -- if (getPlayerStorageValue(cid,storage) <= os.time()) then
 --         setPlayerStorageValue(cid,storage, os.time() + waittime)
 --         doPlayerSendTextMessage(cid,18,"coco!" ) 
