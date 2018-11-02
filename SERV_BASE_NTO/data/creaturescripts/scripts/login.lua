@@ -24,12 +24,6 @@ function onLogin(cid)
  end
 
 
-  local insere_db_player_saga = 8882222001
-
-  if getPlayerStorageValue(cid, insere_db_player_saga) == -1 then
-  db.query("INSERT INTO `player_saga` (`id` , `name` , `vocation` , `saga` ) VALUES ("..getPlayerGUID(cid)..", '"..getCreatureName(cid).."' , '"..getPlayerVocationName(cid).."',1);")
-  setPlayerStorageValue(cid,insere_db_player_saga,1)
-  end
 
  if(not isPlayerGhost(cid)) then
   doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)

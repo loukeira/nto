@@ -57,7 +57,7 @@ local saga = {
 
 
 function get_saga(cid) -- pega a saga, pela database.
-    local ult = db.getResult('select `saga` from player_saga where id = \''..getPlayerGUID(cid)..'\' ')
+    local ult = db.getResult('select `saga` from players where id = \''..getPlayerGUID(cid)..'\' ')
 
     if (ult:getID() == -1) then
     return false
@@ -103,7 +103,7 @@ end
 doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)+1])]}, -1)
 ﻿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
 
-db.query("UPDATE `player_saga` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 
 
  return true
@@ -117,7 +117,7 @@ db.query("UPDATE `player_saga` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID
          doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)-1])]}, -1)
 ﻿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
 
-db.query("UPDATE `player_saga` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
 
 
  return true
