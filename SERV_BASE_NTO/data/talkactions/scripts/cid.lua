@@ -29,22 +29,20 @@ function onSay(cid, words, param, channel)
                         -- end
 
 
-local waittime = 3
-  local insere_db_player_saga = 8882222001
--- if (getPlayerStorageValue(cid,storage) <= os.time()) then
---         setPlayerStorageValue(cid,storage, os.time() + waittime)
---         doPlayerSendTextMessage(cid,18,"coco!" ) 
--- end
---if exhaustion.check(cid, storage) then
---doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
---doPlayerSendTextMessage(cid,18, "Aguarde " .. exhaustion.check(cid, storage) .. " segundos para usar a spell novamente.")
---return false
---end
+           db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+local saga,my_saga_max = get_saga(cid)
+
+if type(my_saga_max) == "number" then
+      doPlayerSendTextMessage(cid,18,"true")
+else
+      doPlayerSendTextMessage(cid,18,"false")
+end
+
+  doPlayerSendTextMessage(cid,18, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga!\nA sua saga atual e a: [ "..saga.." / "..my_saga_max.." ] da vocation "..getPlayerVocationName(cid).."")
 
 
-           
 
-   doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
+   --doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
 
      
 
@@ -52,3 +50,22 @@ local waittime = 3
 return true
 end
 
+
+
+function get_saga(cid) -- pega a saga, pela database.
+    local ult = db.getResult('select `saga`, `my_saga_max` from players where id = \''..getPlayerGUID(cid)..'\' ')
+
+    if (ult:getID() == -1) then
+    return false
+    end
+
+    local my_saga_max = ult:getDataString("my_saga_max")
+    local saga = ult:getDataString("saga")
+    ult:free()
+
+    saga = tonumber(saga)
+    my_saga_max = tonumber(my_saga_max)
+
+    return saga, my_saga_max
+
+end
