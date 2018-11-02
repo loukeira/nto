@@ -1,5 +1,44 @@
 -- The Forgotten Server Config
 
+	-- Connection config
+	worldId = 0
+	ip = "142.4.206.124"
+	loginPort = 7171
+	gamePort = 7172
+	loginTries = 10
+	retryTimeout = 5 * 1000
+	loginTimeout = 60 * 1000
+	maxPlayers = 1000
+	motd = "Bem vindo ao NTO GRAN!"
+	displayOnOrOffAtCharlist = false
+	onePlayerOnlinePerAccount = false
+	allowClones = true
+	serverName = "NTO GRAN"
+	loginMessage = "Bem Vindo ao NTO GRAN!"
+	statusTimeout = 5 * 60 * 1000
+	replaceKickOnLogin = true
+	forceSlowConnectionsToDisconnect = false
+	loginOnlyWithLoginServer = false
+	premiumPlayerSkipWaitList = false
+	enableCast = true
+
+	-- Database
+	-- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
+	-- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
+	-- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
+	sqlType = "mysql"
+	sqlHost = "localhost"
+	sqlPort = 3306
+	sqlUser = "root"
+	sqlPass = "AsDf-0810"
+	sqlDatabase = "ntogran"
+	sqlFile = "forgottenserver.s3db"
+	sqlKeepAlive = 0
+	mysqlReadTimeout = 10
+	mysqlWriteTimeout = 10
+	encryptionType = "sha1"
+
+	
 	-- Account manager
 	accountManager = true
 	namelockManager = true
@@ -84,43 +123,7 @@
 	fistBaseAttack = 7
 	optionalWarAttackableAlly = false
 
-	-- Connection config
-	worldId = 0
-	ip = "142.4.206.124"
-	loginPort = 7171
-	gamePort = 7172
-	loginTries = 10
-	retryTimeout = 5 * 1000
-	loginTimeout = 60 * 1000
-	maxPlayers = 1000
-	motd = "Bem vindo ao NTO GRAN!"
-	displayOnOrOffAtCharlist = false
-	onePlayerOnlinePerAccount = false
-	allowClones = true
-	serverName = "NTO GRAN"
-	loginMessage = "Bem Vindo ao NTO GRAN!"
-	statusTimeout = 5 * 60 * 1000
-	replaceKickOnLogin = true
-	forceSlowConnectionsToDisconnect = false
-	loginOnlyWithLoginServer = false
-	premiumPlayerSkipWaitList = false
-	enableCast = true
 
-	-- Database
-	-- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
-	-- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
-	-- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
-	sqlType = "mysql"
-	sqlHost = "localhost"
-	sqlPort = 3306
-	sqlUser = "root"
-	sqlPass = "AsDf-0810"
-	sqlDatabase = "ntogran"
-	sqlFile = "forgottenserver.s3db"
-	sqlKeepAlive = 0
-	mysqlReadTimeout = 10
-	mysqlWriteTimeout = 10
-	encryptionType = "sha1"
 
 	-- Deathlist
 	deathListEnabled = true

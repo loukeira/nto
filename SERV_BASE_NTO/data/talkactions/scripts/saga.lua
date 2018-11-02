@@ -99,32 +99,32 @@ end
 
 ------------------------------------------------------------------------------------------------------------------
 
- if(param == 'up') then
- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
-      setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+--  if(param == 'up') then
+--  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
+--       setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
 
-doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)+1])]}, -1)
-﻿doSendMagicEffect(getThingPos(cid), 3)
+-- doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)+1])]}, -1)
+-- ﻿doSendMagicEffect(getThingPos(cid), 3)
 
-db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
-
-
- return true
- end
+-- db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 
 
- if(param == 'down') then
- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce desceu de saga!")
-         setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
-
-         doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)-1])]}, -1)
-﻿doSendMagicEffect(getThingPos(cid), 3
-
-db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+--  return true
+--  end
 
 
- return true
- end
+--  if(param == 'down') then
+--  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce desceu de saga!")
+--          setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+
+--          doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)-1])]}, -1)
+-- ﻿doSendMagicEffect(getThingPos(cid), 3
+
+-- db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+
+
+--  return true
+--  end
 
 
 
