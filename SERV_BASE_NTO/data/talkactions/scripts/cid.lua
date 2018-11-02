@@ -53,6 +53,8 @@ function onSay(cid, words, param, channel)
                 --local tmp = sagas[getPlayerVocationName(cid)][9]
                   
                   local saga,my_saga_max = get_saga(cid)
+                                    local saga,my_saga_max = get_saga(cid)
+
                   local tempo_duracao = 10  -- TEMPO EM SEGUNDOS
                    doSetCreatureOutfit(cid, {lookType = 10} , -2)
                    doSetCreatureOutfit(cid, {lookType = 10} , tempo_duracao*60)
