@@ -17,8 +17,6 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
 
 
                         local combat = createCombatObject()
-                                                local combat2 = createCombatObject()
-
                         setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, 0)
                         local condition = createConditionObject(CONDITION_ATTRIBUTES)
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
@@ -32,32 +30,21 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setConditionParam(condition, CONDITION_PARAM_OUTFIT, outfit)
                         setCombatCondition(combat, condition)
                              
-                        -- local condition = createConditionObject(CONDITION_HASTE)
-                        -- setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
-                        -- setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-                        -- setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-
-local condition = createConditionObject(CONDITION_MANASHIELD)
-setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
-setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-
-local condition2 = createConditionObject(CONDITION_HASTE)
-
-setConditionParam(condition, CONDITION_PARAM_TICKS, 9000)
-setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-
+                        local condition = createConditionObject(CONDITION_HASTE)
+                        setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 
                         setCombatCondition(combat, condition)
-                        setCombatCondition(combat2, condition2)
+                             
 
-
-                        -- local condition = createConditionObject(CONDITION_REGENERATION)
-                        -- setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
-                        -- setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
-                        -- setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
-                        -- setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
-                        -- setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
-                        -- setCombatCondition(combat, condition)
+                        local condition = createConditionObject(CONDITION_REGENERATION)
+                        setConditionParam(condition, CONDITION_PARAM_SUBID, 1)
+                        setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
+                        setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHGAIN, health)
+                        setConditionParam(condition, CONDITION_PARAM_HEALTHTICKS, 1000)
+                        setCombatCondition(combat, condition)
             
 --mudar aqui \/        
 function magicEffect001(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
@@ -85,8 +72,6 @@ addEvent(magicEffect001, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                     local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                     if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
                         doCombat(cid, combat, var)
-                        doCombat(cid, combat2, var)
-
                         tempo2 = tempo-1
 --mudar aqui \/        
 addEvent(magicEffect001, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)

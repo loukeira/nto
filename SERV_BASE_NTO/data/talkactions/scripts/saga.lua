@@ -49,38 +49,46 @@ local saga = {
 [3] = {844,848,846,845,850,847,851,852,606,756},
 -- Sasuke ---
 [2] = {93,689,690,658,659,660,661,654,663,873}, 
--- Naruto ---
-[1] = {840,91,841,676,842,40,842,40,305,677,686,179,683,397,607,752,875},
+-- KAKASHI ---
+[1] = {9,10,11,12,13,14,15,16,17,effect = 3},
 }
 
 
-local level = 5 -- Limite para liberar uma saga nova
 
+
+function get_saga(cid) -- pega a saga, pela database.
+    local ult = db.getResult('select `saga` from player_saga where id = \''..getPlayerGUID(cid)..'\' ')
+
+    if (ult:getID() == -1) then
+    return false
+    end
+
+    local saga = ult:getDataString("saga")
+    ult:free()
+
+    valor_saga = tonumber(saga)
+    return valor_saga
+
+end
 
 function onSay(cid, words, param, channel)
+	
 
-local storage_exhaust = 183023
 
-if exhaustion.get(cid, storage_exhaust)  then
-doPlayerSendCancel(cid, "You are exhausted.")
-doSendMagicEffect(getCreaturePosition(cid), 3)
+
+local waittime = 2
+local storage_exhaust = 8883332
+if (getPlayerStorageValue(cid,storage_exhaust) <= os.time()) then
+         doPlayerSendTextMessage(cid,18,"Voce so pode usar esse comando a cada "..waittime" segundos!" ) 
 return true
 end
 
-local x = exhaustion.get(cid, 12346) or 0
-	exhaustion.set(cid, 12346, 60)
-	if x > 0 then
-	   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "The exhaustion is in "..x.." seconds.")
-	end
 
  if(param == '') then
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite {!saga up} para subir de saga, ou {!saga down} para descer de saga! ")
-  	exhaustion.set(cid, 12346, 60)
-
- exhaustion.set(cid, storage_exhaust, 2000) 
+   setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
  return true
  end
-
 
 -- if not saga[getPlayerVocation(cid)] then
 -- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce nao pode trocar de saga.")
@@ -90,13 +98,28 @@ local x = exhaustion.get(cid, 12346) or 0
 
  if(param == 'up') then
  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce subiu de saga!")
- exhaustion.set(cid, storage_exhaust, 2000) 
+      setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+
+doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)+1])]}, -1)
+ï»¿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
+
+db.query("UPDATE `player_saga` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+
+
  return true
  end
 
+
  if(param == 'down') then
  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Voce desceu de saga!")
- exhaustion.set(cid, storage_exhaust, 2000) 
+         setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
+
+         doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)-1])]}, -1)
+ï»¿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
+
+db.query("UPDATE `player_saga` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
+
+
  return true
  end
 
@@ -110,14 +133,14 @@ local x = exhaustion.get(cid, 12346) or 0
 
 
 --  if not (tonumber(t[1])) then
---   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite o número da saga que você deseja.")
+--   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Digite o nÃºmero da saga que vocÃª deseja.")
 --  exhaustion.set(cid, 120, 0.5) 
 --  return true
 --  end
 
 
 -- if tonumber(t[1]) > #saga[getPlayerVocation(cid)] or tonumber(t[1]) < 1  then
--- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Essa saga não existe.")
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Essa saga nÃ£o existe.")
 -- exhaustion.set(cid, 120, 0.5)
 -- return true
 -- end
@@ -132,7 +155,7 @@ local x = exhaustion.get(cid, 12346) or 0
 -- doPlayerSay(cid, "Saga!!", TALKTYPE_ORANGE_1)
 -- exhaustion.set(cid, 120, 0.5)
 -- else
--- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Desculpe, você precisa de level "..(tonumber(t[1]) * level).." usar essa saga.")
+-- doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Desculpe, vocÃª precisa de level "..(tonumber(t[1]) * level).." usar essa saga.")
 -- end
 
 
