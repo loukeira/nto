@@ -44,7 +44,7 @@ local storage = 113007
 
            
 
-   doPlayerSendTextMessage(cid,18,"coco!" ) 
+   doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
 
      
 
