@@ -17,7 +17,7 @@ function get_saga(cid) -- pega a saga, pela database.
 
 end
 
-local sagas = {
+sagas = {
 -- Orochimaru ---
 [26] = {},
 -- Kankuro ---
