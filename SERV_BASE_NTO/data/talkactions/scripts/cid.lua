@@ -56,7 +56,7 @@ local outfits = {
         --local tmp = getCreatureOutfit(cid)
         --if sagas[getPlayerVocationName(cid)][9] then
                 --local tmp = sagas[getPlayerVocationName(cid)][9]
-                   doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 1000)
+                   doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, -1)
 
                 --doSetCreatureOutfit(cid, tmp, 900)
 
