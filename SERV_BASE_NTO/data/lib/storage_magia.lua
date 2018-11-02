@@ -12,15 +12,15 @@ kakashisusano2 = 113006
 -- SPELL/RAIKIRI --
 Raikiri = 113007
 -- SPELL/RAITON RAIJU TSUIGA --
-Raiton Raiju Tsuiga = 113008
+Raiton_Raiju_Tsuiga = 113008
 -- SPELL/KAMUI ATTACK --
-Kamui Attack = 113009
+Kamui_Attack = 113009
 -- SPELL/KAMUI SHURIKEN --
-Kamui Shuriken = 113010
+Kamui_Shuriken = 113010
 -- SPELL/KAMUI RAIKIRI --
-Kamui Raikiri = 113011
+Kamui_Raikiri = 113011
 -- SPELL/DOTON PRISION --
-Doton Prision = 113012
+Doton_Prision = 113012
 
 
 
