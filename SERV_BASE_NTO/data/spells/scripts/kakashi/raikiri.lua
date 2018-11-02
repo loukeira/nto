@@ -7,7 +7,7 @@ function onCastSpell(cid, var)
 --if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
 
-local waittime = 40
+local waittime = 1
 local storage = 113007
 
 if exhaustion.check(cid, storage) then

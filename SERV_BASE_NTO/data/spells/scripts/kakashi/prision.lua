@@ -2,15 +2,15 @@ local remove_time = 2 -- tempo em segundos para remover as magic wall
 local item_id = 5750 -- id da magic wall
 
 function onCastSpell(cid, var)
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
-target = getCreatureTarget(cid)
-if target then
 local waittime = 20
 local storage = 113012
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
-return false
+return true
 end
 
 exhaustion.set(cid, storage, waittime)

@@ -1,7 +1,7 @@
 local config = {
 efeitoTele = 196, -- efeito q ira aparacer a cada teleport.
 efeitoDamage = 139, -- efeito q ira aparecer ao hitar no alvo
-hits = 4, -- quantos hits vai dar
+hits = 2, -- quantos hits vai dar
 delay = 1000, -- intervalo de tempo a cada hit
 min = 500, -- dano minimo
 max = 800, -- dano maximo
