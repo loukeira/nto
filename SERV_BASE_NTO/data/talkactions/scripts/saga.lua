@@ -101,7 +101,7 @@ end
       setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
 
 doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)+1])]}, -1)
-﻿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
+﻿doSendMagicEffect(getThingPos(cid), 3)
 
 db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 
@@ -115,7 +115,7 @@ db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid
          setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
 
          doSetCreatureOutfit(cid, {lookType = saga[getPlayerVocation(cid)][tonumber(t[get_saga(cid)-1])]}, -1)
-﻿doSendMagicEffect(getThingPos(cid), saga[getPlayerVocation(cid)].effect)
+﻿doSendMagicEffect(getThingPos(cid), 3
 
 db.query("UPDATE `players` SET `saga` = `saga`-1 WHERE id = "..getPlayerGUID(cid).." ;")
 
