@@ -72,9 +72,11 @@ function onSay(cid, words, param, channel)
                                     setPlayerStorageValue(cid,storage_akatsuki,-1)
    doPlayerSendTextMessage(cid,18,"anbu! "..getPlayerStorageValue(cid, storage_anbu).." " ) 
    doPlayerSendTextMessage(cid,18,"akatsuki! "..getPlayerStorageValue(cid, storage_akatsuki).." " ) 
+         
+      db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+10 WHERE id = "..getPlayerGUID(cid).." ;")
+            db.query("UPDATE `players` SET `vocation` = `vocation`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 
-
-
+   doPlayerSendTextMessage(cid,18,"Vocation "..getPlayerVocationName(cid).." " ) 
    doPlayerSendTextMessage(cid,18,"SAgas "..#sagas[getPlayerVocationName(cid)].." " ) 
 
                   -- doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 900)
@@ -82,10 +84,7 @@ function onSay(cid, words, param, channel)
                 --doSetCreatureOutfit(cid, tmp, 900)
 
         --end
-local tempo_de_intervalo_da_effect = 41
 
-addEvent(teste, 1000, tempo_de_intervalo_da_effect, cid)
-addEvent(parar,5000,cid)
 return true
 end
 
@@ -97,30 +96,3 @@ function voltar( cid,looktype,time2,time1)
 end
 
 
-function teste(tempo_de_intervalo_da_effect ,cid)
-
-                        if (isCreature(cid)) then
-                  
-                      
---mudar aqui \/       
---local effect = 3 
-addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid)
-        
-  --                          local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                            --doSendMagicEffect(position, effect) 
-
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , -2) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 20) 
-
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -2) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 20) 
-
-
-
-
-                            end
-
-end
-function parar( cid)
-return stopEvent(teste)
-end
