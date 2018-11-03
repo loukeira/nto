@@ -1,10 +1,10 @@
-local storage_unica_dessa_spell = mangenkyousharingan1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
-local storage_unica_dessa_spell_2 = mangenkyousharingan2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
-local tempo_de_intervalo_da_effect = 2500  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
+local storage_unica_dessa_spell = kuramachakra1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+local storage_unica_dessa_spell_2 = kuramachakra2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
+local tempo_de_intervalo_da_effect = 2500 --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 10 -- TEMPO DE DURAÇÃO DA MAGIA
-local effect = 265 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "MANGEKYO SHARINGAN!!"
-
+local effect = 249 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
+local nome_da_magia_que_ira_aparecer_ao_soltar = "KURAMA CHAKRA!!"
+local looktype = 691
      
 local ml = 10 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
@@ -45,22 +45,38 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setCombatCondition(combat, condition)
 
 --mudar aqui \/        
-function magicEffect002(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+function magicEffect005(tempo2, tempo_de_intervalo_da_effect ,effect,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2,looktype)
 
                         if (isCreature(cid)) then
                         local stor = getPlayerStorageValue(cid,storage_unica_dessa_spell_2)
                         if stor == -1  then
 --mudar aqui \/        
-addEvent(pararmagicEffect002, tempo2*1000 ,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+addEvent(pararmagicEffect005, tempo2*1000 ,cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
                         setPlayerStorageValue(cid, storage_unica_dessa_spell_2,1)
+                     --------------- INICIO SPELL COM OUTFIT ----
+                                      local saga,my_saga_max = get_saga(cid)
+                                      local tempo_duracao = tempo2  -- TEMPO EM SEGUNDOS
+                                       doSetCreatureOutfit(cid, {lookType = looktype} , -2)
+                                       doSetCreatureOutfit(cid, {lookType = looktype} , tempo_duracao*60)
+
+                                       local maximo = (#sagas[getPlayerVocationName(cid)]) -1
+
+                                                      if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
+                                                         addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
+                                                      else
+                                                         addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)  
+                                                      end
+                    -------------- FIM ------
                          end
 
                         if getPlayerStorageValue(cid, storage_unica_dessa_spell) > 0 and getCreatureCondition(cid, CONDITION_REGENERATION, 1) then
 --mudar aqui \/        
-addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+addEvent(magicEffect005, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2,looktype)
         
                             local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                            doSendMagicEffect(position, effect)  
+                            doSendMagicEffect(position, effect) 
+
+                     
 
                             end
                         end
@@ -68,11 +84,11 @@ addEvent(magicEffect002, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                           
                     function onCastSpell(cid, var)
                     local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                    if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+                    if (getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false) and (get_buff_on(cid) < 1)then
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
 --mudar aqui \/        
-addEvent(magicEffect002, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
+addEvent(magicEffect005, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2,looktype)
 
                         setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
                         doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
@@ -83,10 +99,10 @@ addEvent(magicEffect002, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid
                     end
 
 --mudar aqui \/        
-function pararmagicEffect002( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
+function pararmagicEffect005( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
 
 --mudar aqui \/        
-stopEvent(magicEffect002)
+stopEvent(magicEffect005)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
                     end

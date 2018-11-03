@@ -29,17 +29,21 @@ Doton_Prision = 113012
 sennin1 = 113016 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
 sennin2 = 113017 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
 -- BUFF/FUNCTION 005 --
-mangenkyousharingan1 = 113018
-mangenkyousharingan2 = 113019
+kuramachakra1 = 113018
+kuramachakra2 = 113019
 -- BUFF/FUNCTION 006 --
 kakashisusano1 = 113020
 kakashisusano2 = 113021
 
 
+
 buff = {
 
 ["kakashi"] = {sharingan1,sharingan2,mangenkyousharingan1,mangenkyousharingan2,kakashisusano1,kakashisusano2},
-["naruto"] = {sennin1,sennin2},
+
+["naruto"] = {sennin1,sennin2,kuramachakra1,kuramachakra2},
+
+["itachi"] = {sharingan1, sharingan2},
 
 }
 
