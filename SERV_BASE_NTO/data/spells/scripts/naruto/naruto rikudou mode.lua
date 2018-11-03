@@ -3,7 +3,7 @@ local storage_unica_dessa_spell_2 = narutorikudo2 --MUDAR ESSA STORAGE... CUIDAD
 local tempo_de_intervalo_da_effect = 2500 --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 249 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "RIKUDO MODE!!"
+local nome_da_magia_que_ira_aparecer_ao_soltar = "RIKUDOU MODE!!"
 local look = 693
      
 local ml = 10 -- quantos ira aumentar o skill de ML
@@ -71,7 +71,7 @@ addEvent(magicEffect006, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                           
                     function onCastSpell(cid, var)
                     local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                    if (getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false) and (get_buff_on(cid) < 1)then
+                    if (getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false) and (get_buff_on(cid) < 1) then
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
 --mudar aqui \/        
@@ -100,10 +100,10 @@ addEvent(magicEffect006, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid
                     end
 
 --mudar aqui \/        
-function pararmagicEffect005( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
+function pararmagicEffect006( cid,storage_unica_dessa_spell,storage_unica_dessa_spell_2 )
 
 --mudar aqui \/        
-stopEvent(magicEffect005)
+stopEvent(magicEffect006)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell,-1)
                                  setPlayerStorageValue(cid,storage_unica_dessa_spell_2,-1)
                     end
