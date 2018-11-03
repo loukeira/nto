@@ -51,20 +51,20 @@ function onSay(cid, words, param, channel)
         --if sagas[getPlayerVocationName(cid)][9] then
                 --local tmp = sagas[getPlayerVocationName(cid)][9]
                   
-                  -- INICIO SPELL COM OUTFIT --
-                  local saga,my_saga_max = get_saga(cid)
-                  local tempo_duracao = 3  -- TEMPO EM SEGUNDOS
-                   doSetCreatureOutfit(cid, {lookType = 691} , -2)
-                   doSetCreatureOutfit(cid, {lookType = 691} , tempo_duracao*1000)
+                  -- INICIO SPELL COM OUTFIT -- 12,15
+                  -- local saga,my_saga_max = get_saga(cid)
+                  -- local tempo_duracao = 3  -- TEMPO EM SEGUNDOS
+                  --  doSetCreatureOutfit(cid, {lookType = 691} , -2)
+                  --  doSetCreatureOutfit(cid, {lookType = 691} , tempo_duracao*1000)
 
-                   local maximo = (#sagas[getPlayerVocationName(cid)]) -1
+                  --  local maximo = (#sagas[getPlayerVocationName(cid)]) -1
 
-                                  if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
-                                    --addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+1, cid,{lookType = 13}, -2)
-                                     addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
-                                    else
-                                   addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
-                                  end
+                  --                 if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
+                  --                   --addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+1, cid,{lookType = 13}, -2)
+                  --                    addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
+                  --                   else
+                  --                  addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
+                  --                 end
                   -- FIM --
 
 
@@ -82,7 +82,9 @@ function onSay(cid, words, param, channel)
                 --doSetCreatureOutfit(cid, tmp, 900)
 
         --end
+local tempo_de_intervalo_da_effect = 1000
 
+addEvent(teste, 1000, tempo_de_intervalo_da_effect, effect, cid)
 
 return true
 end
@@ -91,5 +93,30 @@ function voltar( cid,looktype,time2,time1)
 
       doSetCreatureOutfit(cid,{lookType = looktype},time2)
       doSetCreatureOutfit(cid,{lookType = looktype},time1)
+
+end
+
+
+function teste(tempo_de_intervalo_da_effect ,effect,cid)
+
+                        if (isCreature(cid)) then
+                  
+                      
+--mudar aqui \/        
+addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, effect )
+        
+                            local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                            doSendMagicEffect(position, effect) 
+
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , -2) )
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 499) )
+
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -2) )
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 499) )
+
+ 
+
+
+                            end
 
 end
