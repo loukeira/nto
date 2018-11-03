@@ -4822,7 +4822,7 @@ void Player::manageAccount(const std::string &text)
 			{
 				talkState[8] = true;
 				talkState[9] = false;
-				msg << "Tell me... would you like to be a 'male' or a 'female'?";
+				msg << "Tell me  would you like to be a 'male' or a 'female'?";
 			}
 			else if(checkText(text, "yes") && talkState[9])
 			{
@@ -4838,13 +4838,13 @@ void Player::manageAccount(const std::string &text)
 						{
 							if(firstPart)
 							{
-								msg << "What do you want to be... {" << it->second->getDescription()<< "}";
+								msg << "{"<< it->second->getName()<<"}";
 								firstPart = false;
 							}
 							else if(it->first - 1 != 0)
-								msg << ", {" << it->second->getDescription()<< "}";
+								msg << "{"<< it->second->getName()<<"}";
 							else
-								msg << " or " << it->second->getDescription() << ".";
+								msg << "or"<< it->second->getName() <<"";
 						}
 					}
 				}

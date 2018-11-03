@@ -41,7 +41,6 @@ function onSay(cid, words, param, channel)
 
 
 
-   --doPlayerSendTextMessage(cid,18,"coco! "..getPlayerStorageValue(cid, insere_db_player_saga).." " ) 
 
 
 --doCreatureSetLookDirection(cid, getDirectionTo(getPlayerPosition(cid), getPlayerPosition(target)))
@@ -52,15 +51,30 @@ function onSay(cid, words, param, channel)
         --if sagas[getPlayerVocationName(cid)][9] then
                 --local tmp = sagas[getPlayerVocationName(cid)][9]
                   
+                  -- INICIO SPELL COM OUTFIT --
                   local saga,my_saga_max = get_saga(cid)
-                                    local saga,my_saga_max = get_saga(cid)
-
                   local tempo_duracao = 10  -- TEMPO EM SEGUNDOS
                    doSetCreatureOutfit(cid, {lookType = 10} , -2)
                    doSetCreatureOutfit(cid, {lookType = 10} , tempo_duracao*60)
+
+                   local maximo = (#sagas[getPlayerVocationName(cid)]) -1
+
+                                  if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
+                                     addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
+                                  return true
+                                  end
                   addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
+                  -- FIM --
 
 
+                                    setPlayerStorageValue(cid,storage_anbu,1)
+                                    setPlayerStorageValue(cid,storage_akatsuki,-1)
+   doPlayerSendTextMessage(cid,18,"anbu! "..getPlayerStorageValue(cid, storage_anbu).." " ) 
+   doPlayerSendTextMessage(cid,18,"akatsuki! "..getPlayerStorageValue(cid, storage_akatsuki).." " ) 
+
+
+
+   doPlayerSendTextMessage(cid,18,"SAgas "..#sagas[getPlayerVocationName(cid)].." " ) 
 
                   -- doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 900)
 
