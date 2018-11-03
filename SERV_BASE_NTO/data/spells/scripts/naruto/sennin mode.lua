@@ -1,7 +1,7 @@
 local storage_unica_dessa_spell = sennin1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
 local storage_unica_dessa_spell_2 = sennin2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
-local tempo_de_intervalo_da_effect = 2500  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
-local tempo = 10 -- TEMPO DE DURAÇÃO DA MAGIA
+local tempo_de_intervalo_da_effect = 4000  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
+local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 260 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
 local nome_da_magia_que_ira_aparecer_ao_soltar = "SENNIN MODE!"
 

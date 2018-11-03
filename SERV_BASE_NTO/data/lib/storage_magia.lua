@@ -32,8 +32,8 @@ sennin2 = 113017 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
 kuramachakra1 = 113018
 kuramachakra2 = 113019
 -- BUFF/FUNCTION 006 --
-kakashisusano1 = 113020
-kakashisusano2 = 113021
+narutorikudo1 = 113020
+narutorikudo2 = 113021
 
 
 
@@ -41,9 +41,9 @@ buff = {
 
 ["kakashi"] = {sharingan1,sharingan2,mangenkyousharingan1,mangenkyousharingan2,kakashisusano1,kakashisusano2},
 
-["naruto"] = {sennin1,sennin2,kuramachakra1,kuramachakra2},
+["naruto"] = {sennin1,sennin2,kuramachakra1,kuramachakra2,narutorikudo1,narutorikudo2},
 
-["itachi"] = {sharingan1, sharingan2},
+["itachi"] = {sharingan1, sharingan2,},
 
 }
 

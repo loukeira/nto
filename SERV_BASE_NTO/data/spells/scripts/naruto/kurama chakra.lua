@@ -1,18 +1,18 @@
 local storage_unica_dessa_spell = kuramachakra1 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
 local storage_unica_dessa_spell_2 = kuramachakra2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
 local tempo_de_intervalo_da_effect = 2500 --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
-local tempo = 10 -- TEMPO DE DURAÇÃO DA MAGIA
+local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 249 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
 local nome_da_magia_que_ira_aparecer_ao_soltar = "KURAMA CHAKRA!!"
 local look = 692
      
-local ml = 10 -- quantos ira aumentar o skill de ML
+local ml = 6 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
 local skillsword = 0 -- quantos ira aumentar o skill de Sword
 local skillaxe = 0 -- quantos ira aumentar o skill de Axe
-local skillclub = 10 -- quantos ira aumentar o skill de Club
+local skillclub = 6 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance
-local skillshield = 10 -- quantos ira aumentar o skill de Shield
+local skillshield = 0 -- quantos ira aumentar o skill de Shield
 local health = 0 -- A cada 1 segundo quantos aumentar de vida
 
 
