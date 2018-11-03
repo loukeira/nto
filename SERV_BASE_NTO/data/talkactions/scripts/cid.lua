@@ -82,7 +82,7 @@ function onSay(cid, words, param, channel)
                 --doSetCreatureOutfit(cid, tmp, 900)
 
         --end
-local tempo_de_intervalo_da_effect = 1000
+local tempo_de_intervalo_da_effect = 10
 
 addEvent(teste, 1000, tempo_de_intervalo_da_effect, cid)
 
@@ -106,14 +106,14 @@ function teste(tempo_de_intervalo_da_effect ,cid)
 local effect = 3 
 addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid)
         
-                            local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                            doSendMagicEffect(position, effect) 
+  --                          local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+                            --doSendMagicEffect(position, effect) 
 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , -2) )
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 499) )
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , -2) 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 1) 
 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -2) )
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 499) )
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -2) 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 1) 
 
  
 
