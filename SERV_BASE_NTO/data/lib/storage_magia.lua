@@ -47,7 +47,7 @@ buff = {
 function get_buff_on(cid)
  	local i = 0
 
-	for mar,cos in ipairs(buff[getPlayerVocationName(cid)]) do
+	for mar,cos in pairs(buff[getPlayerVocationName(cid)]) do
 		if getPlayerStorageValue(cid, cos ) == 1 then
 			i = i + 1
 		end
