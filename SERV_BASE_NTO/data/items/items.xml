@@ -13883,17 +13883,6 @@
         <attribute key="decayTo" value="7383" />
         <attribute key="showcharges" value="1" />
     </item>
-    <item id="7871" article="a" name="mystic blade">
-        <attribute key="weight" value="350" />
-        <attribute key="defense" value="25" />
-        <attribute key="attack" value="44" />
-        <attribute key="weaponType" value="sword" />
-        <attribute key="extradef" value="2" />
-        <attribute key="elementEnergy" value="8" />
-        <attribute key="charges" value="1000" />
-        <attribute key="decayTo" value="7384" />
-        <attribute key="showcharges" value="1" />
-    </item>
     <item id="7872" article="a" name="blacksteel sword">
         <attribute key="weight" value="5900" />
         <attribute key="defense" value="22" />
@@ -20146,7 +20135,7 @@
 		<attribute key="elementEnergy" value="600" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7472" article="a [Rare]" name="Sannin Shuriken's">
+	  <item id="7871" article="a [Rare]" name="Sannin Shuriken's">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="600" />
         <attribute key="weaponType" value="distance" />

@@ -36,17 +36,17 @@ narutorikudo1 = 113020
 narutorikudo2 = 113021
 
 -- SPELL/RASENGAN --
-Rasengan = 113007
+Rasengan = 113022
 -- SPELL/ODAMA RASENGAN --
-Odama_Rasengan = 113008
+Odama_Rasengan = 113023
 -- SPELL/FUUTON RASENSHURIKEN --
-Fuuton_Rasenshuriken = 113009
+Fuuton_Rasenshuriken = 113024
 -- SPELL/ODAMA RASENSHURIKEN --
-Odama_Rasenshuriken = 113010
+Odama_Rasenshuriken = 113025
 -- SPELL/YOTON RASENSHURIKEN --
-Yoton_Rasenshuriken = 113011
+Yoton_Rasenshuriken = 113026
 -- SPELL/KIIROI SENKO  --
-Kiiroi_Senko = 113012
+Kiiroi_Senko = 113027
 
 
 
