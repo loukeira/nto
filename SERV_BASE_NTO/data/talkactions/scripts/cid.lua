@@ -85,7 +85,7 @@ function onSay(cid, words, param, channel)
 local tempo_de_intervalo_da_effect = 10
 
 addEvent(teste, 1000, tempo_de_intervalo_da_effect, cid)
-
+addEvent(stopEvent,15000,teste)
 return true
 end
 
@@ -99,7 +99,7 @@ end
 
 function teste(tempo_de_intervalo_da_effect ,cid)
 
-                        --if (isCreature(cid)) then
+                        if (isCreature(cid)) then
                   
                       
 --mudar aqui \/       
@@ -110,14 +110,14 @@ addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid
                             --doSendMagicEffect(position, effect) 
 
                    addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , -2) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 1) 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 12} , 2) 
 
                    addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -2) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 1) 
-
- 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 2) 
 
 
-                            --end
+
+
+                            end
 
 end
