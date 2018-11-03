@@ -85,7 +85,6 @@ addEvent(magicEffect005, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid
                    local maximo = (#sagas[getPlayerVocationName(cid)]) -1
 
                                   if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
-                                    --addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+1, cid,{lookType = 13}, -2)
                                      addEvent(doSetCreatureOutfit, (tempo*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
                                     else
                                    addEvent(doSetCreatureOutfit, (tempo*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
