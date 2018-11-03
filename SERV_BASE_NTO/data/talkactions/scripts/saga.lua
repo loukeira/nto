@@ -30,11 +30,11 @@ end
 		return true
 		end
 
-storage_anbu = 674911
-storage_akatsuki = 674921
-		if saga == (#sagas[getPlayerVocationName(cid)] - 2 ) then
-			if getPlayerStorageValue(cid,)
-		end
+-- storage_anbu = 674911
+-- storage_akatsuki = 674921
+-- 		if saga == (#sagas[getPlayerVocationName(cid)] - 2 ) then
+-- 			if getPlayerStorageValue(cid,)
+-- 		end
 		db.query("UPDATE `players` SET `saga` = `saga`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 		 setPlayerStorageValue(cid,storage_exhaust, os.time() + waittime)
 		local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
