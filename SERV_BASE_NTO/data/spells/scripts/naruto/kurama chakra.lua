@@ -4,7 +4,7 @@ local tempo_de_intervalo_da_effect = 2500 --TEMPO EM MILISEGUNDOS... (2500 = 2,5
 local tempo = 10 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 249 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
 local nome_da_magia_que_ira_aparecer_ao_soltar = "KURAMA CHAKRA!!"
-local looktype = 691
+local look = 692
      
 local ml = 10 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
@@ -78,20 +78,20 @@ addEvent(magicEffect005, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
 addEvent(magicEffect005, 1000, tempo2, tempo_de_intervalo_da_effect, effect, cid, storage_unica_dessa_spell, storage_unica_dessa_spell_2)
 
  --------------- INICIO SPELL COM OUTFIT ----
-                                      local saga,my_saga_max = get_saga(cid)
-                                      local tempo_duracao = tempo2  -- TEMPO EM SEGUNDOS
-                                       doSetCreatureOutfit(cid, {lookType = looktype} , -2)
-                                       doSetCreatureOutfit(cid, {lookType = looktype} , tempo_duracao*60)
+                   local saga,my_saga_max = get_saga(cid)
+                   doSetCreatureOutfit(cid, {lookType = look} , -2)
+                   doSetCreatureOutfit(cid, {lookType = look} , tempo*1000)
 
-                                       local maximo = (#sagas[getPlayerVocationName(cid)]) -1
+                   local maximo = (#sagas[getPlayerVocationName(cid)]) -1
 
-                                                      if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
-                                                         addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
-                                                      else
-                                                         addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)  
-                                                      end
+                                  if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
+                                    --addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+1, cid,{lookType = 13}, -2)
+                                     addEvent(doSetCreatureOutfit, (tempo*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
+                                    else
+                                   addEvent(doSetCreatureOutfit, (tempo*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
+                                  end
                     -------------- FIM ------
-                    
+
                         setPlayerStorageValue(cid, storage_unica_dessa_spell,1) -- storage verifica transformado, quando = 1 player esta transformado.
                         doCreatureSay(cid, ""..nome_da_magia_que_ira_aparecer_ao_soltar.."", TALKTYPE_MONSTER)
                         doSendMagicEffect(position127, effect)

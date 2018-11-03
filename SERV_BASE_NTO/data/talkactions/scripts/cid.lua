@@ -53,17 +53,18 @@ function onSay(cid, words, param, channel)
                   
                   -- INICIO SPELL COM OUTFIT --
                   local saga,my_saga_max = get_saga(cid)
-                  local tempo_duracao = 10  -- TEMPO EM SEGUNDOS
-                   doSetCreatureOutfit(cid, {lookType = 10} , -2)
-                   doSetCreatureOutfit(cid, {lookType = 10} , tempo_duracao*60)
+                  local tempo_duracao = 3  -- TEMPO EM SEGUNDOS
+                   doSetCreatureOutfit(cid, {lookType = 691} , -2)
+                   doSetCreatureOutfit(cid, {lookType = 691} , tempo_duracao*1000)
 
                    local maximo = (#sagas[getPlayerVocationName(cid)]) -1
 
                                   if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
-                                     addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
-                                  return true
+                                    --addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+1, cid,{lookType = 13}, -2)
+                                     addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga+1]},-1)
+                                    else
+                                   addEvent(doSetCreatureOutfit, (tempo_duracao*1000)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
                                   end
-                  addEvent(doSetCreatureOutfit, (tempo_duracao*60)+2, cid,{lookType = sagas[getPlayerVocationName(cid)][saga]},-1)
                   -- FIM --
 
 
