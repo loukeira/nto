@@ -61,7 +61,7 @@
 <instant name="Naruto Sennin Mode" words="naruto sennin mode" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="naruto/sennin mode.lua">   
         <vocation id="1"/>   
         </instant>  
-<instant name="Naruto Kyuubi Chakra" words="naruto kyuubi chakra" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="naruto/kyuubi chakra.lua">   
+<instant name="Kurama Chakra" words="kurama chakra" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="naruto/kurama chakra.lua">   
         <vocation id="1"/>   
        </instant> 
 <instant name="Naruto Rikudo Mode" words="naruto rikudo mode" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/rikudo mode.lua">   

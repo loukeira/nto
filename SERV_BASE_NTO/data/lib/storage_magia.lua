@@ -22,5 +22,20 @@ Kamui_Raikiri = 113011
 -- SPELL/DOTON PRISION --
 Doton_Prision = 113012
 
+--- Naruto Storage śpells 
+
+-- BUFF/FUNCTION 004 ---
+sennin1 = 113016 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+sennin2 = 113017 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
+-- BUFF/FUNCTION 005 --
+mangenkyousharingan1 = 113018
+mangenkyousharingan2 = 113019
+-- BUFF/FUNCTION 006 --
+kakashisusano1 = 113020
+kakashisusano2 = 113021
+
+
+
+
 
 
