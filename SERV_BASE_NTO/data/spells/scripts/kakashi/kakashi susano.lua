@@ -68,7 +68,7 @@ addEvent(magicEffect003, tempo_de_intervalo_da_effect ,0,tempo_de_intervalo_da_e
                           
                     function onCastSpell(cid, var)
                     local position127 = {x=getPlayerPosition(cid).x +2, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
-                    if getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false then
+                    if (getPlayerStorageValue(cid, storage_unica_dessa_spell) ~= 1 or getCreatureCondition(cid, CONDITION_REGENERATION, 1) == false) and (get_buff_on(cid) < 1) then
                         doCombat(cid, combat, var)
                         tempo2 = tempo-1
 --mudar aqui \/        
