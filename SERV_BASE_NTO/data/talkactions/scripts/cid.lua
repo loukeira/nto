@@ -99,10 +99,11 @@ end
 
 function teste(tempo_de_intervalo_da_effect ,cid)
 
-                        if (isCreature(cid)) then
+                        --if (isCreature(cid)) then
                   
                       
---mudar aqui \/        
+--mudar aqui \/       
+local effect = 3 
 addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid)
         
                             local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
@@ -117,6 +118,6 @@ addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid
  
 
 
-                            end
+                            --end
 
 end
