@@ -1,18 +1,24 @@
 local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat, COMBAT_PARAM_EFFECT, 25)
-setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -105.2, 1, -97.2, 1)
+setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -50.2, 1, -80.2, 1)
 
 function onCastSpell(cid, var)
-local waittime = 1 -- Tempo de exhaustion
-local storage = 115818
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
+
+
+local waittime = 1
+local storage = 113022
 
 if exhaustion.check(cid, storage) then
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
-return false
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return true
 end
-local position1 = {x=getThingPosition(getCreatureTarget(cid)).x+7, y=getThingPosition(getCreatureTarget(cid)).y+1, z=getThingPosition(getCreatureTarget(cid)).z}
-doSendMagicEffect(position1, 2)
+
 exhaustion.set(cid, storage, waittime)
+local position1 = {x=getThingPosition(getCreatureTarget(cid)).x, y=getThingPosition(getCreatureTarget(cid)).y, z=getThingPosition(getCreatureTarget(cid)).z}
+
+doSendMagicEffect(position1, 25)
+
 return doCombat(cid, combat, var)
 end

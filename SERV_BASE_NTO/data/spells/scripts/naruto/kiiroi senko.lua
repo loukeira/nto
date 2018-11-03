@@ -1,9 +1,9 @@
 -- dash as it was in avaOT by Night Wolf 
 
 local damage = 1000 -- dano que toma qnd bate em algum obstáculo
-local speed = 1000 -- velocidade do player ao usar o dash (vai de 0 a mil)
+local speed = 2000 -- velocidade do player ao usar o dash (vai de 0 a mil)
 local pzprotect = true -- nao deixa entrar em pz com a spell
-local distance = 8 -- quantos sqms anda
+local distance = 6 -- quantos sqms anda
 
 local function isWalkable(pos, creature, proj, pz)-- by Nord
     if getTileThingByPos({x = pos.x, y = pos.y, z = pos.z, stackpos = 0}).itemid == 0 then return false end
@@ -45,6 +45,16 @@ return true
 end
 
 function onCastSpell(cid, var)	
+
+local waittime = 20
+local storage = 113027
+
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return true
+end
+
+exhaustion.set(cid, storage, waittime)
 	for i = 0, distance do
 		addEvent(onWalk, (1001- math.min(speed, 1000)) *i, cid)
 	end

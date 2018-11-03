@@ -35,6 +35,19 @@ kuramachakra2 = 113019
 narutorikudo1 = 113020
 narutorikudo2 = 113021
 
+-- SPELL/RASENGAN --
+Rasengan = 113007
+-- SPELL/ODAMA RASENGAN --
+Odama_Rasengan = 113008
+-- SPELL/FUUTON RASENSHURIKEN --
+Fuuton_Rasenshuriken = 113009
+-- SPELL/ODAMA RASENSHURIKEN --
+Odama_Rasenshuriken = 113010
+-- SPELL/YOTON RASENSHURIKEN --
+Yoton_Rasenshuriken = 113011
+-- SPELL/KIIROI SENKO  --
+Kiiroi_Senko = 113012
+
 
 
 buff = {

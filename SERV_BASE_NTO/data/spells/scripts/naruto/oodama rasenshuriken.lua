@@ -6,7 +6,7 @@ setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -105.2, 1, -97.2, 1)
 
 function onCastSpell(cid, var)
 local waittime = 4 -- Tempo de exhaustion
-local storage = 115818
+local storage = 113025
 
 if exhaustion.check(cid, storage) then
 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.")
