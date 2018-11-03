@@ -82,10 +82,10 @@ function onSay(cid, words, param, channel)
                 --doSetCreatureOutfit(cid, tmp, 900)
 
         --end
-local tempo_de_intervalo_da_effect = 10
+local tempo_de_intervalo_da_effect = 2000
 
 addEvent(teste, 1000, tempo_de_intervalo_da_effect, cid)
-addEvent(parar,2000)
+addEvent(parar,5000,cid)
 return true
 end
 
@@ -110,10 +110,10 @@ addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid
                             --doSendMagicEffect(position, effect) 
 
                    addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 11} , -1000) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 11} , 5) 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 11} , 1000) 
 
                    addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , -1000) 
-                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 5) 
+                   addEvent(doSetCreatureOutfit, tempo_de_intervalo_da_effect, cid, {lookType = 15} , 1000) 
 
 
 
@@ -121,6 +121,6 @@ addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid
                             end
 
 end
-function parar(  )
-stopEvent(teste)
+function parar( cid)
+return stopEvent(teste)
 end
