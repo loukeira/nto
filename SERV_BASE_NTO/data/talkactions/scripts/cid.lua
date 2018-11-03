@@ -84,7 +84,7 @@ function onSay(cid, words, param, channel)
         --end
 local tempo_de_intervalo_da_effect = 1000
 
-addEvent(teste, 1000, tempo_de_intervalo_da_effect, effect, cid)
+addEvent(teste, 1000, tempo_de_intervalo_da_effect, cid)
 
 return true
 end
@@ -97,13 +97,13 @@ function voltar( cid,looktype,time2,time1)
 end
 
 
-function teste(tempo_de_intervalo_da_effect ,effect,cid)
+function teste(tempo_de_intervalo_da_effect ,cid)
 
                         if (isCreature(cid)) then
                   
                       
 --mudar aqui \/        
-addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, effect )
+addEvent(teste, tempo_de_intervalo_da_effect , tempo_de_intervalo_da_effect, cid)
         
                             local position = {x=getPlayerPosition(cid).x , y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
                             doSendMagicEffect(position, effect) 
