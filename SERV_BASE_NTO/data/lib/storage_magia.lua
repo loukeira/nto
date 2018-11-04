@@ -56,7 +56,9 @@ buff = {
 
 ["naruto"] = {sennin1,sennin2,kuramachakra1,kuramachakra2,narutorikudo1,narutorikudo2},
 
-["itachi"] = {sharingan1, sharingan2,},
+["itachi"] = {sharingan1, sharingan2},
+
+
 
 }
 
@@ -69,6 +71,7 @@ function get_buff_on(cid)
 			i = i + 1
 		end
 	end
+
 
  return i
 end

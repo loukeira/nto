@@ -81,7 +81,62 @@ sagas = {
 }
 
 
+classes = {
 
+lutador = { 'kakashi','naruto', 'guy', 'lee',  'neji' ,  'asuma' ,  'hinata' ,  'kiba' ,  'raikage'   },    
+assassin = { 'sasuke',   'orochimaru' ,  'itachi' ,  'kisame' ,  'nagato' ,  'obito' ,  'suigetsu' ,  'kimimaro' ,  'bee' ,  'minato' ,  'sarutobi' ,  'tobirama' ,  'danzou' ,  'madara'  },
+suporte = {  'sakura' ,  'ino' ,  'shikamaru' ,  'tsunade' ,  'kabuto' ,  'zetsu' ,  'guren'   },
+atirador = {  'sai' ,  'tenten' ,  'shino' ,  'gaara' ,  'kankuro' , 'temari' ,  'deidara' ,  'sasori' ,  'kakuzu' ,  'konan' ,  'yamato' ,  'shisui' ,  'mu' ,  'tshuchikage'  },
+tanker = {  'chouji' ,  'jiraya' ,  'hidan' ,  'juugo' ,  'hashirama'  }
+
+
+}
+
+function get_classes(cid)
+
+            for vod,ka in pairs(classes.lutador) do
+                    doPlayerSendTextMessage(cid,18,"lutador")
+                if getPlayerVocationName(cid) == ka then
+                    classe = 'lutador'
+                    return classe
+                end
+            end
+
+            for vod,ka in pairs(classes.assassin) do
+                     doPlayerSendTextMessage(cid,18,"assassin")
+                if getPlayerVocationName(cid) == ka then
+                    classe = 'assassin'
+                    return classe
+                end
+            end
+
+            for vod,ka in pairs(classes.suporte) do
+                     doPlayerSendTextMessage(cid,18,"suporte")
+                if getPlayerVocationName(cid) == ka then
+                    classe = 'suporte'
+                    return classe
+                end
+            end
+
+            for vod,ka in pairs(classes.atirador) do
+                     doPlayerSendTextMessage(cid,18,"atirador")
+                if getPlayerVocationName(cid) == ka then
+                    classe = 'atirador'
+                    return classe
+                end
+            end
+
+            for vod,ka in pairs(classes.tanker) do
+                    doPlayerSendTextMessage(cid,18,"tanker")
+                if getPlayerVocationName(cid) == ka then
+                    classe = 'tanker'
+                    return classe
+                end
+            end
+
+    
+    return true
+end
 
 
 
