@@ -19879,7 +19879,7 @@
         <attribute key="manaGain" value="500" />
         <attribute key="manaTicks" value="1000" />
 		<attribute key="healthGain" value="500" />
-        <attribute key="healthTicks" value="3000" />
+        <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="legs" />
     </item>
