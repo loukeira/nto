@@ -1,7 +1,7 @@
 local config = {
 efeitoTele = 196, -- efeito q ira aparacer a cada teleport.
 efeitoDamage = 139, -- efeito q ira aparecer ao hitar no alvo
-hits = 2, -- quantos hits vai dar
+hits = 1, -- quantos hits vai dar
 delay = 1000, -- intervalo de tempo a cada hit
 min = 500, -- dano minimo
 max = 800, -- dano maximo
@@ -67,7 +67,7 @@ end
 
 exhaustion.set(cid, storage, waittime)
   spell54.start54(cid, target, getThingPos(cid), config.hits)
-  doSendMagicEffect(position1, 134)
+  doSendMagicEffect(position1, 139)
 end
 return true
 end

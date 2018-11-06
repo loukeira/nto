@@ -3,7 +3,7 @@ local storage_unica_dessa_spell_2 = narutorikudo2 --MUDAR ESSA STORAGE... CUIDAD
 local tempo_de_intervalo_da_effect = 2500 --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 249 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "RIKUDOU MODE!!"
+local nome_da_magia_que_ira_aparecer_ao_soltar = "RIKUDOU MODE!"
 local look = 693
      
 local ml = 10 -- quantos ira aumentar o skill de ML

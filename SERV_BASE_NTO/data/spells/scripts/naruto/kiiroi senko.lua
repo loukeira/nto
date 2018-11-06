@@ -1,9 +1,9 @@
 -- dash as it was in avaOT by Night Wolf 
 
 local damage = 1000 -- dano que toma qnd bate em algum obstáculo
-local speed = 2000 -- velocidade do player ao usar o dash (vai de 0 a mil)
+local speed = 1000 -- velocidade do player ao usar o dash (vai de 0 a mil)
 local pzprotect = true -- nao deixa entrar em pz com a spell
-local distance = 6 -- quantos sqms anda
+local distance = 7 -- quantos sqms anda
 
 local function isWalkable(pos, creature, proj, pz)-- by Nord
     if getTileThingByPos({x = pos.x, y = pos.y, z = pos.z, stackpos = 0}).itemid == 0 then return false end
@@ -29,16 +29,16 @@ function onWalk(cid)
 		if isWalkable(poslook, false, false, pzprotect) then
 			if not isCreature(getThingfromPos(poslook).uid) then
 				doMoveCreature(cid, getPlayerLookDirection(cid))
-				doSendMagicEffect(getPlayerPosition(cid), 1)
+				doSendMagicEffect(getPlayerPosition(cid), 87)
 			else
 				doCreatureAddHealth(cid, -damage)
 				doSendMagicEffect(getPlayerPosition(cid), 87)
-				doSendAnimatedText(getPlayerPosition(cid), "-"..damage , 180) 
+				doSendAnimatedText(getPlayerPosition(cid), "-"..damage , 1) 
 			end
 		else      
 			doCreatureAddHealth(cid, -damage)
 			doSendMagicEffect(getPlayerPosition(cid), 87)
-			doSendAnimatedText(getPlayerPosition(cid), "-"..damage , 180) 
+			doSendAnimatedText(getPlayerPosition(cid), "-"..damage , 1) 
 		end
 	end
 return true

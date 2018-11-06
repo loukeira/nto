@@ -5,17 +5,17 @@ setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -20.1, 1, -20.2, 1)
 
 local combat2 = createCombatObject()
 setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat2, COMBAT_PARAM_EFFECT, 79)
+setCombatParam(combat2, COMBAT_PARAM_EFFECT, 80)
 setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
 
 local combat3 = createCombatObject()
 setCombatParam(combat3, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat3, COMBAT_PARAM_EFFECT, 79)
+setCombatParam(combat3, COMBAT_PARAM_EFFECT, 80)
 setCombatFormula(combat3, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.1, 1)
 
 local combat4 = createCombatObject()
 setCombatParam(combat4, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat4, COMBAT_PARAM_EFFECT, 79)
+setCombatParam(combat4, COMBAT_PARAM_EFFECT, 80)
 setCombatFormula(combat4, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
 
 
@@ -64,7 +64,7 @@ function onCastSpell(cid, var)
 
 if isPlayer(cid) and exhaustion.check(cid, 12000) then
 doPlayerSendCancel(cid, "You are exhausted.")
-doSendMagicEffect(playerpos, 2)
+doSendMagicEffect(playerpos, 1)
 return FALSE
 end
 
@@ -75,6 +75,6 @@ addEvent(onCastSpell1, 200, parameters)
 addEvent(onCastSpell2, 600, parameters)
 addEvent(onCastSpell2, 1000, parameters)
 addEvent(onCastSpell2, 1400, parameters)
-doSendMagicEffect(position127, 110)
+doSendMagicEffect(position127, 1)
 return TRUE
 end 

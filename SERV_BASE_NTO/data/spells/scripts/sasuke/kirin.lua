@@ -1,6 +1,6 @@
 local combat1 = createCombatObject()
 setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_NONE)
-setCombatParam(combat1, COMBAT_PARAM_EFFECT, 167)
+setCombatParam(combat1, COMBAT_PARAM_EFFECT, 78)
 setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -1.2, 1, -1.2, 1)
 
 local combat2 = createCombatObject()
@@ -41,6 +41,6 @@ end
 function onCastSpell(cid, var)
 local parameters = { cid = cid, var = var}
 addEvent(onCastSpell1, 100, parameters)
-addEvent(onCastSpell2, 2300, parameters)
+addEvent(onCastSpell2, 2000, parameters)
 return TRUE
 end 

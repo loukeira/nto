@@ -4,8 +4,8 @@
 sharingan1 = 113001 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
 sharingan2 = 113002 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
 -- BUFF/FUNCTION 002 --
-mangenkyousharingan1 = 113003
-mangenkyousharingan2 = 113004
+kakashimangekyou1 = 113003
+kakashimangekyou2 = 113004
 -- BUFF/FUNCTION 003 --
 kakashisusano1 = 113005
 kakashisusano2 = 113006
@@ -48,15 +48,36 @@ Yoton_Rasenshuriken = 113026
 -- SPELL/KIIROI SENKO  --
 Kiiroi_Senko = 113027
 
+--- Sasuke Storage śpells 
+
+-- BUFF/FUNCTION 007 ---
+sasukemangekyou1 = 113028 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+sasukemangekyou2 = 113029 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
+-- BUFF/FUNCTION 008 --
+sasukesusano1 = 113030
+sasukesusano2 = 113031
+
+-- SPELL/CHIDORI --
+Chidori = 113032
+-- SPELL/CHIDORI NAGASHI --
+Chidori_Nagashi = 113033
+-- SPELL/AMATERASU --
+Amaterasu = 113034
+-- SPELL/ENTON SUSANOO KAGUTSUCHI --
+Enton_Susano_Kagutsuchi = 113035
+-- SPELL/KIRIN --
+Kirin = 113036
+-- SPELL/AMATERASU ENTENKA  --
+Amaterasu_Entenka = 113037
 
 
 buff = {
 
-["kakashi"] = {sharingan1,sharingan2,mangenkyousharingan1,mangenkyousharingan2,kakashisusano1,kakashisusano2},
+["kakashi"] = {sharingan1,sharingan2,kakashimangekyou1,kakashimangekyou2,kakashisusano1,kakashisusano2},
 
 ["naruto"] = {sennin1,sennin2,kuramachakra1,kuramachakra2,narutorikudo1,narutorikudo2},
 
-["itachi"] = {sharingan1, sharingan2},
+["sasuke"] = {sharingan1, sharingan2, sasukemangekyou1,sasukemangekyou2, sasukesusano1,sasukesusano2},
 
 
 
