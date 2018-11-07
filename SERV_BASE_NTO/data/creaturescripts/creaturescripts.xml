@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+<!-- JINCHUURIKI SYSTEM --> 
+<event type="look" name="JinSystemLook" event="script" value="jincreatures.lua"/>
+<event type="death" name="JinSystemDeath" event="script" value="jincreatures.lua"/>
+<event type="login" name="JinSystemLogin" event="script" value="jincreatures.lua"/>
+<event type="logout" name="JinSystemLogout" event="script" value="jincreatures.lua"/>﻿      
+
 <event type="death" name="aol_protect_iniciante" event="script" value="aol_protect_iniciante.lua"/> 
 
 <!--<event type="death" name="aol" event="script" value="aol.lua"/> -->
