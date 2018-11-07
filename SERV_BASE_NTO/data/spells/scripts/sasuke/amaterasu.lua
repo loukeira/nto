@@ -71,10 +71,10 @@ end
 exhaustion.set(cid, 12000, 1)
 local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 local parameters = { cid = cid, var = var}
-addEvent(onCastSpell1, 200, parameters)
-addEvent(onCastSpell2, 600, parameters)
+addEvent(onCastSpell1, 100, parameters)
 addEvent(onCastSpell2, 1000, parameters)
-addEvent(onCastSpell2, 1400, parameters)
+addEvent(onCastSpell2, 2000, parameters)
+addEvent(onCastSpell2, 3000, parameters)
 doSendMagicEffect(position127, 1)
 return TRUE
 end 

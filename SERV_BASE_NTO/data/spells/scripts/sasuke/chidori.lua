@@ -8,7 +8,7 @@ function onCastSpell(cid, var)
 
 
 local waittime = 1
-local storage = 113022
+local storage = 113032
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)

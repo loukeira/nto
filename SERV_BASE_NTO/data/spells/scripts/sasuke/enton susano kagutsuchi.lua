@@ -1,18 +1,37 @@
-local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 38)
-setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -100.2, 1, -100.2, 1)
+local combat1 = createCombatObject()
+setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat1, COMBAT_PARAM_DISTANCEEFFECT, 38)
+setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
+
+
+arr1 = {
+ {3}
+}
+
+local area1 = createCombatArea(arr1)
+setCombatArea(combat1, area1)
+ 
+local function onCastSpell1(parameters)
+    return isPlayer(parameters.cid) and doCombat(parameters.cid, combat1, parameters.var)
+end
 
 function onCastSpell(cid, var)
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
-if isPlayer(cid) and exhaustion.check(cid, 120) then
-doPlayerSendCancel(cid, "You are exhausted.")
-doSendMagicEffect(playerpos, 2)
-return FALSE
+
+local waittime = 4
+local storage = 113035
+
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return trye
 end
 
-exhaustion.set(cid, 120, 1)
-local position1 = {x=getThingPosition(getCreatureTarget(cid)).x+1, y=getThingPosition(getCreatureTarget(cid)).y, z=getThingPosition(getCreatureTarget(cid)).z}
-doSendMagicEffect(position1, 300)
-return doCombat(cid, combat, var)
-end
+exhaustion.set(cid, storage, waittime)
+local position348 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+local parameters = { cid = cid, var = var}
+addEvent(onCastSpell1, 200, parameters)
+    doSendMagicEffect(position348, 300)
+return TRUE
+end 
