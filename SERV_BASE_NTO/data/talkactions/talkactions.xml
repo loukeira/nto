@@ -8,7 +8,7 @@
 <talkaction words="!spy" script="checkitem.lua"/>
 
 <talkaction words="!saga" script="saga.lua"/>
-<talkaction words="!status;!playerinfo" script="status.lua"/>
+<talkaction words="/status;!status;!playerinfo" script="status.lua"/>
 
 <talkaction words="!mijar;!xixi;!urinar" script="urina.lua"/>
 

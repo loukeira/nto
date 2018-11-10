@@ -2397,7 +2397,7 @@ bool Player::onDeath()
 				sumSkillTries += vocation->getReqSkillTries(i, c);
 
 			sumSkillTries += skills[i][SKILL_TRIES];
-			lostSkillTries = (uint32_t)std::ceil(sumSkillTries * ((double)(percent * lossPercent[LOSS_SKILLS]) / 0.));
+			lostSkillTries = (uint32_t)std::ceil(sumSkillTries * ((double)(percent * lossPercent[LOSS_SKILLS]) / 100.));
 			while(lostSkillTries > skills[i][SKILL_TRIES])
 			{
 				lostSkillTries -= skills[i][SKILL_TRIES];

@@ -25,7 +25,7 @@
 <!--<event type="kill" name="ChunninKill" event="script" value="chunnin.lua"/>-->
 
 
-<event type="death" name="DeathHP" event="script" value="deathhp.lua"/>
+<!--<event type="death" name="DeathHP" event="script" value="deathhp.lua"/> -->
 <event type="login" name="LoginHP﻿" event="script" value="loginhp.lua"/>
 <event type="login" name="PlayerLogin" event="script" value="login.lua"/>
 <event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua"/>

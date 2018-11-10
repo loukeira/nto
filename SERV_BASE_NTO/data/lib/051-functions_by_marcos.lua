@@ -19,7 +19,6 @@ end
 
 storage_anbu = 674911
 storage_akatsuki = 674921
-
 -- function number_sagas(cid)
 -- local i = 0
 -- for mar,cos in pairs(sagas[getPlayerVocationName(cid)]) do
@@ -95,7 +94,7 @@ tanker = {  'chouji' ,  'jiraya' ,  'hidan' ,  'juugo' ,  'hashirama'  }
 function get_classes(cid)
 
             for vod,ka in pairs(classes.lutador) do
-                    doPlayerSendTextMessage(cid,18,"lutador")
+                    --doPlayerSendTextMessage(cid,18,"lutador")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'lutador'
                     return classe
@@ -103,7 +102,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.assassin) do
-                     doPlayerSendTextMessage(cid,18,"assassin")
+                     --doPlayerSendTextMessage(cid,18,"assassin")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'assassin'
                     return classe
@@ -111,7 +110,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.suporte) do
-                     doPlayerSendTextMessage(cid,18,"suporte")
+                     --doPlayerSendTextMessage(cid,18,"suporte")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'suporte'
                     return classe
@@ -119,7 +118,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.atirador) do
-                     doPlayerSendTextMessage(cid,18,"atirador")
+                     --doPlayerSendTextMessage(cid,18,"atirador")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'atirador'
                     return classe
@@ -127,7 +126,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.tanker) do
-                    doPlayerSendTextMessage(cid,18,"tanker")
+                    --doPlayerSendTextMessage(cid,18,"tanker")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'tanker'
                     return classe
@@ -137,6 +136,7 @@ function get_classes(cid)
     
     return true
 end
+
 
 
 

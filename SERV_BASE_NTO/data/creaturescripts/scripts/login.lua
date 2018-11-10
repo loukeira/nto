@@ -12,6 +12,15 @@ function onLogin(cid)
   if(lastLogin > 0) then
    doPlayerSendTextMessage(cid, MESSAGE_STATUS_DEFAULT, str)
    str = "Your last visit was on " .. os.date("%a %b %d %X %Y", lastLogin) .. "."
+  else
+
+  --MARCOS--
+if getPlayerGUID(cid) > 20600 then
+local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
+
+doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
+end
+
   end
 
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_DEFAULT, str)
@@ -64,7 +73,7 @@ registerCreatureEvent(cid, "eventotimes")
 registerCreatureEvent(cid, "report")
 registerCreatureEvent(cid, "Niwdeath")
 
---MARCOS--
+  --MARCOS--
 if getPlayerGUID(cid) > 20600 then
 local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
 local maximo = (#sagas[getPlayerVocationName(cid)]) -1
