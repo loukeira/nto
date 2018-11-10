@@ -67,8 +67,14 @@ Amaterasu = 113034
 Enton_Susano_Kagutsuchi = 113035
 -- SPELL/KIRIN --
 Kirin = 113036
--- SPELL/AMATERASU ENTENKA  --
+-- SPELL/GENJUTSU TRAP  --
 Amaterasu_Entenka = 113037
+-- SPELL/SUMMON --
+SUMMON = 113038
+-- SPELL/AMATERASU ENTENKA  --
+Amaterasu_Entenka = 113039
+-- SPELL/NINJUTSU ESPAÇO-TEMPO  --
+NINJUTSU_ESPAÇO_TEMPO = 113040
 
 
 buff = {

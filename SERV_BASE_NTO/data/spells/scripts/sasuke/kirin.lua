@@ -39,8 +39,21 @@ local function onCastSpell2(parameters)
 end
  
 function onCastSpell(cid, var)
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
+
+
+local waittime = 5
+local storage = 113036
+
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return trye
+end
+
+exhaustion.set(cid, storage, waittime)
 local parameters = { cid = cid, var = var}
 addEvent(onCastSpell1, 100, parameters)
-addEvent(onCastSpell2, 900, parameters)
+addEvent(onCastSpell2, 1000, parameters)
 return TRUE
 end 

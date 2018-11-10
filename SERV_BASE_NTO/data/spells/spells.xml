@@ -59,6 +59,10 @@
     
 <instant name="Throw Shuriken no jutsu" words="throw shuriken" lvl="5" mana="50" prem="0" range="4" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="shuriken.lua">
     </instant>
+<instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
+        <vocation id="1"/>  
+        <vocation id="2"/>   		
+        </instant>
     
     
 <!--- Naruto Jutsus -->
@@ -107,10 +111,7 @@
         </instant>
          
 <!--- Sasuke Jutsus -->
-
-<instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
-        <vocation id="2"/>   
-        </instant>  
+  
 <instant name="Sasuke Mangekyou Sharingan" words="sasuke mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="sasuke/sasuke mangekyou.lua">   
         <vocation id="2"/>   
        </instant> 
@@ -158,10 +159,7 @@
 <!--- Killer Bee Jutsus -->
                          
 <!--- Kakashi Jutsus -->
-        
-<instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
-        <vocation id="1"/>   
-        </instant>  
+          
 <instant name="Kakashi Mangekyou Sharingan" words="kakashi mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="kakashi/kakashi mangekyou.lua">   
         <vocation id="1"/>   
        </instant> 

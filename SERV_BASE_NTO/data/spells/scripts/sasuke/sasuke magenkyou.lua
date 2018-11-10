@@ -3,7 +3,7 @@ local storage_unica_dessa_spell_2 = sasukemagenkyou2 --MUDAR ESSA STORAGE... CUI
 local tempo_de_intervalo_da_effect = 4000  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 110 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "MANGEKYO SHARINGAN!"
+local nome_da_magia_que_ira_aparecer_ao_soltar = "MANGEKYOU SHARINGAN!"
 
      
 local ml = 6 -- quantos ira aumentar o skill de ML

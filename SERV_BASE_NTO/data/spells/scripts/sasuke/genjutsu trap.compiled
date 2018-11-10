@@ -1,11 +1,11 @@
 local function voltar(cid, pos, target)
-local storage = 666
+local storage = 113037
 setPlayerStorageValue(target, storage, getPlayerStorageValue(target, storage) == -1 )
 doCreatureSetNoMove(target, getPlayerStorageValue(target, storage) == 1 and false)
 end
 
 function onCastSpell(cid, var)
-local stor = 099
+local stor = 113037
 local waittime = 20
 
 if exhaustion.check(cid, stor) then

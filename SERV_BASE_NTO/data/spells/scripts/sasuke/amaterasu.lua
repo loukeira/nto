@@ -1,22 +1,22 @@
 local combat1 = createCombatObject()
 setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat1, COMBAT_PARAM_EFFECT, 79)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -20.1, 1, -20.2, 1)
+setCombatParam(combat1, COMBAT_PARAM_EEFFECT, 79)
+setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
 
 local combat2 = createCombatObject()
 setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat2, COMBAT_PARAM_EFFECT, 80)
-setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
+setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -20.1, 1, -20.6, 1)
 
 local combat3 = createCombatObject()
 setCombatParam(combat3, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat3, COMBAT_PARAM_EFFECT, 80)
-setCombatFormula(combat3, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.1, 1)
+setCombatFormula(combat3, COMBAT_FORMULA_LEVELMAGIC, -20.4, 1, -20.5, 1)
 
 local combat4 = createCombatObject()
 setCombatParam(combat4, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat4, COMBAT_PARAM_EFFECT, 80)
-setCombatFormula(combat4, COMBAT_FORMULA_LEVELMAGIC, -20.2, 1, -20.2, 1)
+setCombatFormula(combat4, COMBAT_FORMULA_LEVELMAGIC, -20.3, 1, -20.5, 1)
 
 
 arr1 = {
@@ -61,20 +61,25 @@ local function onCastSpell4(parameters)
 end
  
 function onCastSpell(cid, var)
+--target = getCreatureTarget(cid)
+--if not target then doPlayerSendCancel(cid, "Voce tem que estar mirando em alguem!") return true end
 
-if isPlayer(cid) and exhaustion.check(cid, 12000) then
-doPlayerSendCancel(cid, "You are exhausted.")
-doSendMagicEffect(playerpos, 1)
-return FALSE
+
+local waittime = 3
+local storage = 113034
+
+if exhaustion.check(cid, storage) then
+doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
+return trye
 end
 
-exhaustion.set(cid, 12000, 1)
-local position127 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
+exhaustion.set(cid, storage, waittime)
+local position348 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 local parameters = { cid = cid, var = var}
-addEvent(onCastSpell1, 100, parameters)
+addEvent(onCastSpell1, 200, parameters)
 addEvent(onCastSpell2, 1000, parameters)
 addEvent(onCastSpell2, 2000, parameters)
 addEvent(onCastSpell2, 3000, parameters)
-doSendMagicEffect(position127, 1)
+    doSendMagicEffect(position348, 1)
 return TRUE
 end 
