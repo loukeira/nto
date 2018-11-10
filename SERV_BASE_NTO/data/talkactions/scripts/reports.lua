@@ -1,3 +1,4 @@
+
 local config = {
 	expireReportsAfterReads = getConfigValue('reportsExpirationAfterReads')
 }

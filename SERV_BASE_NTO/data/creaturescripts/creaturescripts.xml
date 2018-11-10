@@ -59,7 +59,7 @@
 <event type="look" name="showVoc" event="script" value="showvoc.lua"/>
 <event type="kill" name="Recompensa" event="script" value="oinin.lua"/>
 <event type="target" name="MonsterTarget" script="mtarget.lua"/>
-<event type="login" name="Outfit" event="script" value="outfit.lua"/>
+<!--<event type="login" name="Outfit" event="script" value="outfit.lua"/>-->
 <event type="death" name="Tp" event="script" value="Tp.lua"/>
 <event type="death" name="TelePort" event="script" value="teleportmon.lua"/> 
 <event type="death" name="removewall" event="script" value="removeWall.lua"/>
