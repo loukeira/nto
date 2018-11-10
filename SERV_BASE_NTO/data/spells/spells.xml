@@ -59,61 +59,61 @@
 <!--- Naruto Jutsus -->
 
 <instant name="Naruto Sennin Mode" words="naruto sennin mode" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="naruto/sennin mode.lua">   
-        <vocation id="1"/>   
+        <vocation id="4"/>   
         </instant>  
 <instant name="Kurama Chakra" words="kurama chakra" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="naruto/kurama chakra.lua">   
-        <vocation id="1"/>   
+        <vocation id="4"/>   
        </instant> 
 <instant name="Naruto Rikudo Mode" words="naruto rikudo mode" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/naruto rikudou mode.lua">   
-        <vocation id="1"/>   
+        <vocation id="4"/>   
        </instant> 
 <instant name="Kiiroi Senko" words="kiiroi senko" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/kiiroi senko.lua">
-        <vocation id="1"/>    
+        <vocation id="4"/>    
         </instant>
 <instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="1" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/rasengan.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant>    
 <instant name="Oodama Rasengan" words="oodama rasengan" lvl="250" mana="4700" prem="0" needtarget="1" range="1" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodama rasengan.lua">
-        <vocation id="1"/>   
+        <vocation id="4"/>   
     </instant>          
 <instant name="Fuuton Rasengan Shuriken" words="fuuton rasenshuriken" lvl="300" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/fuuton rasenshuriken.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant>  
 <instant name="Oodama Rasengan Shuriken" words="oodama rasenshuriken" lvl="350" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/oodama rasenshuriken.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant> 	
 	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="400" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/yoton rasenshuriken.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant> 
 <instant name="Renzoko Bijudama" words="renzoko bijudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/renzoko bijudama.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant>
 <instant name="Kyuubi Attack" words="kyuubi attack" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/kyuubi attack.lua">
-        <vocation id="1"/>
+        <vocation id="4"/>
     </instant>
 <instant name="Bijudama" words="bijudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/bijudama.lua">
-        <vocation id="1"/>   
+        <vocation id="4"/>   
    </instant>
    <instant name="Odama Biju Rasenshuriken" words="oodama biju rasenshuriken" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/oodama biju rasenshuriken.lua">
-        <vocation id="1"/>   
+        <vocation id="4"/>   
    </instant>
    <instant name="Issen Bijudama" words="issen bijudama" lvl="500" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/issen bijudama.lua">
-        <vocation id="1"/>    
+        <vocation id="4"/>    
         </instant>
          
 <!--- Sasuke Jutsus -->
 
 <instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
-        <vocation id="1"/>   
+        <vocation id="2"/>   
         </instant>  
 <instant name="Sasuke Mangekyou Sharingan" words="sasuke mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="sasuke/sasuke mangekyou.lua">   
-        <vocation id="1"/>   
+        <vocation id="2"/>   
        </instant> 
 <instant name="Sasuke Susano" words="sasuke susano" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="sasuke/sasuke susano.lua">   
-        <vocation id="1"/>   
+        <vocation id="2"/>   
        </instant> 
 <instant name="Amaterasu Entenka" words="amaterasu entenka" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="sasuke/amaterasu entenka.lua">   
-        <vocation id="1"/>   
+        <vocation id="2"/>   
        </instant> 	
 <instant name="Genjutsu Trap" words="genjutsu trap" lvl="200" mana="1500" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="1000" needlearn="0" event="script" value="sasuke/chidori.lua">
         <vocation id="2"/>  

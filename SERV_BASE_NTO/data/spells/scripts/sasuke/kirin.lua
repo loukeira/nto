@@ -41,6 +41,6 @@ end
 function onCastSpell(cid, var)
 local parameters = { cid = cid, var = var}
 addEvent(onCastSpell1, 100, parameters)
-addEvent(onCastSpell2, 1000, parameters)
+addEvent(onCastSpell2, 900, parameters)
 return TRUE
 end 

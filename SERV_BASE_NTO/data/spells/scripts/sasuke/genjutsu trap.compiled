@@ -13,7 +13,7 @@ doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Aguarde " .. exhausti
 return false
 end
 local sayP = 'O Player foi paralyzado durante 2 segundos.'
-local sayT = 'Você foi paralyzado durante 2 segundos.Aguarde e você voltará a se mover.'
+local sayT = 'Você será paralyzado durante 2 segundos. Aguarde e você voltará a se mover.'
 local pos = getCreaturePosition(cid)
 local target = getCreatureTarget(cid)
 local postarget = getCreaturePosition(target)
