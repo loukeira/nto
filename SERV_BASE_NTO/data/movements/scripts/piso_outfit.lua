@@ -13,7 +13,6 @@ if getCreatureName(cid) == "Account Manager" then return true end
   if (item.actionid == 111) 
 
       local lastLogin = getPlayerLastLoginSaved(cid)
-  if(lastLogin <= 0) then
 
  --MARCOS--
 if getPlayerGUID(cid) > 20600 then
@@ -29,7 +28,7 @@ doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -
             doSendMagicEffect(getCreaturePosition(cid), 3)
             
     end
-  end
+  
  
 
 
