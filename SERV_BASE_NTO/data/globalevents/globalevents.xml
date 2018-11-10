@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
+
+<globalevent name="JinSystem" interval="60000" script="jinglobal.lua"/>
+
+
 	<globalevent name="iniciodochunnin" time="17:06" event="script" value="chunninglobal.lua"/>
 	<globalevent name="xprank_reinicio" interval="1000" event="script" value="xprank_reinicio.lua"/>
 <globalevent name="save" interval="6000000" event="script" value="save.lua"/>

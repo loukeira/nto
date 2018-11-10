@@ -2,8 +2,13 @@
 
 
 <spells>
+<!-- JINCHUURIKI SYSTEM -->
 
-    
+<instant name="Shiki Fuujin" words="shiki fuujin" lvl="1" mana="1" prem="0" exhaustion="10" needlearn="1" enabled="1" needtarget="1" event="script" value="jinselo.lua">
+</instant>
+<instant name="Buff Jin" words="buff jin" lvl="1" mana="0" prem="0" selftarget="1" exhaustion="1000" enabled="1" event="script" value="jinbuff.lua">
+</instant>
+
 
 <!--- Jutsus para todos -->
     

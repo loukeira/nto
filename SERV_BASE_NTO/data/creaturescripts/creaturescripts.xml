@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 
+<!-- JINCHUURIKI SYSTEM --> 
+<event type="look" name="JinSystemLook" event="script" value="jincreatures.lua"/>
+<event type="death" name="JinSystemDeath" event="script" value="jincreatures.lua"/>
+<event type="login" name="JinSystemLogin" event="script" value="jincreatures.lua"/>
+<event type="logout" name="JinSystemLogout" event="script" value="jincreatures.lua"/>﻿      
+
 <event type="death" name="aol_protect_iniciante" event="script" value="aol_protect_iniciante.lua"/> 
 
 <!--<event type="death" name="aol" event="script" value="aol.lua"/> -->
@@ -19,7 +25,7 @@
 <!--<event type="kill" name="ChunninKill" event="script" value="chunnin.lua"/>-->
 
 
-<event type="death" name="DeathHP" event="script" value="deathhp.lua"/>
+<!--<event type="death" name="DeathHP" event="script" value="deathhp.lua"/> -->
 <event type="login" name="LoginHP﻿" event="script" value="loginhp.lua"/>
 <event type="login" name="PlayerLogin" event="script" value="login.lua"/>
 <event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua"/>
@@ -53,7 +59,7 @@
 <event type="look" name="showVoc" event="script" value="showvoc.lua"/>
 <event type="kill" name="Recompensa" event="script" value="oinin.lua"/>
 <event type="target" name="MonsterTarget" script="mtarget.lua"/>
-<event type="login" name="Outfit" event="script" value="outfit.lua"/>
+<!--<event type="login" name="Outfit" event="script" value="outfit.lua"/>-->
 <event type="death" name="Tp" event="script" value="Tp.lua"/>
 <event type="death" name="TelePort" event="script" value="teleportmon.lua"/> 
 <event type="death" name="removewall" event="script" value="removeWall.lua"/>

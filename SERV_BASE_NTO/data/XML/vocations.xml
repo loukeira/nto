@@ -97,10 +97,10 @@
 <skill fist="2.0" club="4.0" sword="4.0" axe="4.0" distance="2.0" shielding="2.0" fishing="2.0" experience="2.0"/>
 	</vocation>
 
-<vocation id="18" name="kankuro" description="a kankuro" needpremium="0" gaincap="30" gainhp="35" gainmana="45" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="18">
+ <vocation id="18" name="kankuro" description="a kankuro" needpremium="0" gaincap="30" gainhp="35" gainmana="45" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="18">
 		<formula meleeDamage="2.0" distDamage="2.0" wandDamage="2.0" magDamage="2.0" magHealingDamage="2.0" defense="2.0" magDefense="2.0" armor="2.0"/>
 <skill fist="2.0" club="4.0" sword="4.0" axe="4.0" distance="2.0" shielding="2.0" fishing="2.0" experience="2.0"/>
-	</vocation>
+	</vocation> 
 
 
 <vocation id="19" name="temari" description="a temari" needpremium="0" gaincap="30" gainhp="35" gainmana="45" gainhpticks="1" gainhpamount="150" gainmanaticks="1" gainmanaamount="250" manamultiplier="1.1" attackspeed="2000" soulmax="300" gainsoulticks="60" fromvoc="19">

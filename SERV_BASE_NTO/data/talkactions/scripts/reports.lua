@@ -1,5 +1,6 @@
+
 local config = {
-	expireReportsAfterReads = getConfigValue('expireReportsAfterReads')
+	expireReportsAfterReads = getConfigValue('reportsExpirationAfterReads')
 }
 
 function onSay(cid, words, param, channel)

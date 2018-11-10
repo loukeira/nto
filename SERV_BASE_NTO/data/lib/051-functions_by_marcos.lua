@@ -19,7 +19,6 @@ end
 
 storage_anbu = 674911
 storage_akatsuki = 674921
-
 -- function number_sagas(cid)
 -- local i = 0
 -- for mar,cos in pairs(sagas[getPlayerVocationName(cid)]) do
@@ -44,7 +43,7 @@ sagas = {
 ["chouji"] = {340, 341, 342, 343 , 344, 345, 346, 347},
 ["hinata"] = {852, 853, 854, 855, 856, 857, 858, 859, 860},
 ["kiba"] = {644, 645, 646, 647, 648, 649, 650, 651, 652},
-["gaara"] = { 739, 740, 741, 742, 743, 744, 745, 746, 747 },
+["gaara"] = {739, 740, 741, 742, 743, 744, 745, 746, 747 },
 ["temari"] = { 182, 183, 184, 185, 186, 187, 188, 189, 190 },
 ["kankuro"] = { 191, 192, 193, 194, 195, 196, 197, 198, 199 },
 ["jiraya"] = { 927, 931, 935, 936, 937, 938, 939, 940, 941  },
@@ -76,8 +75,7 @@ sagas = {
 ["madara"] = { 714, 715, 716, 717, 718, 719, 720, 721, 722, 723 },
 ["mu"] = { 91, 92, 93, 94, 95, 96, 97, 98, 99 },
 ["raikage"] = { 401, 402, 403, 404, 405, 406, 407, 408, 409 },
-["tshuchikage"] = { 463, 464, 465, 466, 467, 468, 469, 470, 471 },
-
+["tshuchikage"] = { 463, 464, 465, 466, 467, 468, 469, 470, 471 }
 }
 
 
@@ -95,7 +93,7 @@ tanker = {  'chouji' ,  'jiraya' ,  'hidan' ,  'juugo' ,  'hashirama'  }
 function get_classes(cid)
 
             for vod,ka in pairs(classes.lutador) do
-                    doPlayerSendTextMessage(cid,18,"lutador")
+                    --doPlayerSendTextMessage(cid,18,"lutador")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'lutador'
                     return classe
@@ -103,7 +101,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.assassin) do
-                     doPlayerSendTextMessage(cid,18,"assassin")
+                     --doPlayerSendTextMessage(cid,18,"assassin")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'assassin'
                     return classe
@@ -111,7 +109,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.suporte) do
-                     doPlayerSendTextMessage(cid,18,"suporte")
+                     --doPlayerSendTextMessage(cid,18,"suporte")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'suporte'
                     return classe
@@ -119,7 +117,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.atirador) do
-                     doPlayerSendTextMessage(cid,18,"atirador")
+                     --doPlayerSendTextMessage(cid,18,"atirador")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'atirador'
                     return classe
@@ -127,7 +125,7 @@ function get_classes(cid)
             end
 
             for vod,ka in pairs(classes.tanker) do
-                    doPlayerSendTextMessage(cid,18,"tanker")
+                    --doPlayerSendTextMessage(cid,18,"tanker")
                 if getPlayerVocationName(cid) == ka then
                     classe = 'tanker'
                     return classe
@@ -137,6 +135,7 @@ function get_classes(cid)
     
     return true
 end
+
 
 
 

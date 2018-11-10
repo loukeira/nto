@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 
+
+<talkaction words="!jincheck" event="script" value="jincheck.lua"/>
+
+
 <talkaction words="!spy" script="checkitem.lua"/>
 
 <talkaction words="!saga" script="saga.lua"/>
-<talkaction words="!status;!playerinfo" script="status.lua"/>
+<talkaction words="/status;!status;!playerinfo" script="status.lua"/>
 
 <talkaction words="!mijar;!xixi;!urinar" script="urina.lua"/>
 

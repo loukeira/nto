@@ -64,7 +64,7 @@ registerCreatureEvent(cid, "eventotimes")
 registerCreatureEvent(cid, "report")
 registerCreatureEvent(cid, "Niwdeath")
 
---MARCOS--
+  --MARCOS--
 if getPlayerGUID(cid) > 20600 then
 local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
 local maximo = (#sagas[getPlayerVocationName(cid)]) -1
