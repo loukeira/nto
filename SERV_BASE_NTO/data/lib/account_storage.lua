@@ -18,4 +18,4 @@ else
 db.executeQuery("INSERT INTO `account_storage` (`account_id`, `key`, `value`) VALUES (" .. accid .. ", " .. key .. ", '"..value.."');")
 return 1
 end
-end﻿
+end
