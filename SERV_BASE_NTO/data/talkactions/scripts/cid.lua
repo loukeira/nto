@@ -114,8 +114,8 @@ function onSay(cid, words, param, channel)
 
 
 
-print(getVocationInfo(cid).id)
-print(getVocationInfo(cid).name)
+print(getVocationInfo(getPlayerVocation(cid)).id )
+print(getVocationInfo(getPlayerVocation(cid)).name)
 
 
 
