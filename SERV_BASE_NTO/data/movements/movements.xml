@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
 
+	<movevent type="StepIn" actionid="111" event="script" value="piso_outfit.lua"/>
+
 	<movevent type="StepIn" actionid="14101" event="script" value="mapmark_konoha.lua"/>
 
 	<movevent type="StepIn" actionid="13245" event="script" value="bomba.lua"/>

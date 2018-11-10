@@ -65,16 +65,16 @@ registerCreatureEvent(cid, "report")
 registerCreatureEvent(cid, "Niwdeath")
 
   --MARCOS--
--- if getPlayerGUID(cid) > 20600 then
--- local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
--- local maximo = (#sagas[getPlayerVocationName(cid)]) -1
---     if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
---     doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga+1]}, -1)
---     return true
---     end
+if getPlayerGUID(cid) > 20600 then
+local saga, my_saga_max = get_saga(cid) -- PEGA AS SAGAS DA DATABASE.
+local maximo = (#sagas[getPlayerVocationName(cid)]) -1
+    if (getPlayerStorageValue(cid,storage_akatsuki) == 1) and (saga >= maximo) then
+    doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga+1]}, -1)
+    return true
+    end
 
--- doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
--- end
+doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][saga]}, -1)
+end
 
 return true
 end
