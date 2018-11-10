@@ -114,48 +114,49 @@ function onSay(cid, words, param, channel)
 
 
 
+print(getVocationInfo(cid).id)
+print(getVocationInfo(cid).name)
 
 
 
 
-
-                                    setPlayerStorageValue(cid,storage_anbu,1)
-                                    setPlayerStorageValue(cid,storage_akatsuki,-1)
-   doPlayerSendTextMessage(cid,18,"anbu! "..getPlayerStorageValue(cid, storage_anbu).." " ) 
-   doPlayerSendTextMessage(cid,18,"akatsuki! "..getPlayerStorageValue(cid, storage_akatsuki).." " ) 
+ --                                    --setPlayerStorageValue(cid,storage_anbu,1)
+ --                                    --setPlayerStorageValue(cid,storage_akatsuki,-1)
+ --   doPlayerSendTextMessage(cid,18,"anbu! "..getPlayerStorageValue(cid, storage_anbu).." " ) 
+ --   doPlayerSendTextMessage(cid,18,"akatsuki! "..getPlayerStorageValue(cid, storage_akatsuki).." " ) 
          
-      --db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+10 WHERE id = "..getPlayerGUID(cid).." ;")
-            --db.query("UPDATE `players` SET `vocation` = `vocation`+1 WHERE id = "..getPlayerGUID(cid).." ;")
+ --      --db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+10 WHERE id = "..getPlayerGUID(cid).." ;")
+ --            --db.query("UPDATE `players` SET `vocation` = `vocation`+1 WHERE id = "..getPlayerGUID(cid).." ;")
 
-   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.healthGain.." " )
-      doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.healthTicks.." " )
+ --   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.healthGain.." " )
+ --      doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.healthTicks.." " )
 
-   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.manaGain .." " )
-   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.manaTicks.." " )
+ --   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.manaGain .." " )
+ --   doPlayerSendTextMessage(cid,18," ITEM INFO: "..getItemInfo(11459).abilities.manaTicks.." " )
 
-      doPlayerSendTextMessage(cid,18," COCO INFO: "..getPlayerSlotItem(cid,i).itemid.." " )
-
-
-
-        --             local getitemhp = getItemInfo(item.id).abilities.healthGain 
-        --              local getitemhpticks = getItemInfo(item.id).abilities.healthTicks
-        --             local getitemmana = getItemInfo(item.id).abilities.manaGain 
-        --              local getitemmanaticks = getItemInfo(item.id).abilities.manaTicks 
+ --      doPlayerSendTextMessage(cid,18," COCO INFO: "..getPlayerSlotItem(cid,i).itemid.." " )
 
 
-      -- setField(L, "speed", item->abilities.speed);
-      -- setField(L, "healthGain", item->abilities.healthGain);
-      -- setField(L, "healthTicks", item->abilities.healthTicks);
-      -- setField(L, "manaGain", item->abilities.manaGain);
-      -- setField(L, "manaTicks", item->abilities.manaTicks);
 
-   doPlayerSendTextMessage(cid,18,"Classe: "..getVocationInfo(getPlayerVocation(cid)).healthGainAmount.." " ) 
- doPlayerSendTextMessage(cid,18,"Classe: "..getVocationInfo(getPlayerVocation(cid)).healthGainTicks.." " ) 
+ --        --             local getitemhp = getItemInfo(item.id).abilities.healthGain 
+ --        --              local getitemhpticks = getItemInfo(item.id).abilities.healthTicks
+ --        --             local getitemmana = getItemInfo(item.id).abilities.manaGain 
+ --        --              local getitemmanaticks = getItemInfo(item.id).abilities.manaTicks 
 
 
-   --doPlayerSendTextMessage(cid,18,"buff: "..get_buff_on(cid).." " ) 
-   doPlayerSendTextMessage(cid,18,"Vocation "..getPlayerVocationName(cid).." " ) 
-   doPlayerSendTextMessage(cid,18,"SAgas "..#sagas[getPlayerVocationName(cid)].." " ) 
+ --      -- setField(L, "speed", item->abilities.speed);
+ --      -- setField(L, "healthGain", item->abilities.healthGain);
+ --      -- setField(L, "healthTicks", item->abilities.healthTicks);
+ --      -- setField(L, "manaGain", item->abilities.manaGain);
+ --      -- setField(L, "manaTicks", item->abilities.manaTicks);
+
+ --   doPlayerSendTextMessage(cid,18,"Classe: "..getVocationInfo(getPlayerVocation(cid)).healthGainAmount.." " ) 
+ -- doPlayerSendTextMessage(cid,18,"Classe: "..getVocationInfo(getPlayerVocation(cid)).healthGainTicks.." " ) 
+
+
+ --   --doPlayerSendTextMessage(cid,18,"buff: "..get_buff_on(cid).." " ) 
+ --   doPlayerSendTextMessage(cid,18,"Vocation "..getPlayerVocationName(cid).." " ) 
+ --   doPlayerSendTextMessage(cid,18,"SAgas "..#sagas[getPlayerVocationName(cid)].." " ) 
 
                   -- doSetCreatureOutfit(cid, {lookType = sagas[getPlayerVocationName(cid)][9]}, 900)
 
