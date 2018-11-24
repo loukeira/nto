@@ -20,8 +20,14 @@ Kamui_Attack = 113009
 Kamui_Shuriken = 113010
 -- SPELL/KAMUI RAIKIRI --
 Kamui_Raikiri = 113011
+-- SPELL/RAITON BUSHIN --
+Raiton_Bushin = 113012
 -- SPELL/DOTON PRISION --
-Doton_Prision = 113012
+Doton_Prision = 113013
+-- SPELL/KUCHYOSE --
+Kuchyose = 113014
+-- SPELL/KAMUI GO--
+Kamui_Go = 113015
 
 --- Naruto Storage śpells 
 
@@ -45,42 +51,74 @@ Fuuton_Rasenshuriken = 113024
 Odama_Rasenshuriken = 113025
 -- SPELL/YOTON RASENSHURIKEN --
 Yoton_Rasenshuriken = 113026
--- SPELL/KIIROI SENKO  --
-Kiiroi_Senko = 113027
+-- SPELL/KAGE BUSHIN  --
+Kage_Bushin = 113027
+-- SPELL/TAIJU KAGE BUSHIN  --
+Taiju_Kage_Bushin = 113028
+-- SPELL/KUCHYOSE  --
+Kuchyose = 113029
+-- SPELL/KIIROI SENKO --
+Kiiroi_Senko = 113030
 
 --- Sasuke Storage śpells 
 
 -- BUFF/FUNCTION 007 ---
-sasukemangekyou1 = 113028 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
-sasukemangekyou2 = 113029 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
+sasukemangekyou1 = 113031 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+sasukemangekyou2 = 113032 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
 -- BUFF/FUNCTION 008 --
-sasukesusano1 = 113030
-sasukesusano2 = 113031
+sasukesusano1 = 113033
+sasukesusano2 = 113034
 
 -- SPELL/CHIDORI --
-Chidori = 113032
+Chidori = 113035
 -- SPELL/CHIDORI NAGASHI --
-Chidori_Nagashi = 113033
+Chidori_Nagashi = 113036
 -- SPELL/AMATERASU --
-Amaterasu = 113034
+Amaterasu = 113037
 -- SPELL/ENTON SUSANOO KAGUTSUCHI --
-Enton_Susano_Kagutsuchi = 113035
+Enton_Susano_Kagutsuchi = 113038
 -- SPELL/KIRIN --
-Kirin = 113036
+Kirin = 113039
 -- SPELL/GENJUTSU TRAP  --
-Amaterasu_Entenka = 113037
--- SPELL/SUMMON --
-SUMMON = 113038
+Genjutsu_Trap = 113040
 -- SPELL/AMATERASU ENTENKA  --
-Amaterasu_Entenka = 113039
-<<<<<<< HEAD
+Amaterasu_Entenka = 113041
+-- SPELL/KUCHYOSE --
+Kuchyose = 113042
 -- SPELL/NINJUTSU ESPACO-TEMPO  --
-NINJUTSU_ESPACO_TEMPO = 113040
-=======
--- SPELL/NINJUTSU ESPAÇO-TEMPO--
->>>>>>> 837c06cca5044298414e47dd66065db5d7136fb0
+Ninjutsu_Espaco_Tempo = 113043
 
-NINJUTSU_ESPACO_TEMPO = 113040
+--- Sakura Storage śpells 
+
+-- BUFF/FUNCTION 009 ---
+sozosaisei1 = 113044 -- MUDAR ESSA STORAGE.. CUIDADO COM A SEQUENCIA...
+sozosaisei2 = 113045 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA.. 
+-- BUFF/FUNCTION 010 --
+byakugo1 = 113046
+byakugo2 = 113047
+-- BUFF/FUNCTION 011 --
+ninposozosaisei1 = 113048
+ninposozosaisei2 = 113049
+
+-- SPELL/KONGOKEN --
+Kongoken = 113050
+-- SPELL/OKASHO --
+Okasho = 113051
+-- SPELL/PASENTO SHINGURUPANCHI --
+Pasento_Shingurupanchi = 113052
+-- SPELL/SEIKENTSUKI --
+Seikentsuki = 113053
+-- SPELL/HYAKU CHIKARA  --
+Hyaku_Chikara = 113054
+-- SPELL/SHOSEN NO JUTSU --
+Shosen_No_Jutsu = 113055
+-- SPELL/INFUIN KAI --
+Infuin_kai = 113056
+-- SPELL/KUCHYOSE  --
+Kuchyose = 113057
+-- SPELL/CHAKURA TENSO  --
+Chakura_Tenso = 113058
+
 
 buff = {
 
@@ -90,6 +128,7 @@ buff = {
 
 ["sasuke"] = {sharingan1, sharingan2, sasukemangekyou1,sasukemangekyou2, sasukesusano1,sasukesusano2},
 
+["sakura"] = {sozosaisei1, sozosaisei2, byakugo1,byakugo2, ninposozosaisei1,ninposozosaisei2},
 
 
 }

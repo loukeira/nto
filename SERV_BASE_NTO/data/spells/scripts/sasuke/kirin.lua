@@ -5,7 +5,7 @@ setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -1.2, 1, -1.2, 1)
 
 local combat2 = createCombatObject()
 setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat2, COMBAT_PARAM_EFFECT, 132)
+setCombatParam(combat2, COMBAT_PARAM_EFFECT, 174)
 setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -99.2, 2, -80.2, 2)
 
 
@@ -44,7 +44,7 @@ function onCastSpell(cid, var)
 
 
 local waittime = 5
-local storage = 113036
+local storage = 113039
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)

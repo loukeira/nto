@@ -2,7 +2,7 @@ local storage_unica_dessa_spell = sasukesusano1 -- MUDAR ESSA STORAGE.. CUIDADO 
 local storage_unica_dessa_spell_2 = sasukesusano2 --MUDAR ESSA STORAGE... CUIDADO COM A SEQUENCIA..
 local tempo_de_intervalo_da_effect = 500  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
-local effect = 308 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
+local effect = 168 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
 local nome_da_magia_que_ira_aparecer_ao_soltar = "SUSANOO!"
 
      
@@ -31,7 +31,7 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setCombatCondition(combat, condition)
                              
                         local condition = createConditionObject(CONDITION_HASTE)
-                        setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
+                        setConditionParam(condition, CONDITION_PARAM_SPEED, 0)
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
                         setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
                         setCombatCondition(combat, condition)

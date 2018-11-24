@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[Kuchyose] Raiton Bunshin" nameDescription="a [Kuchyose] Raiton Bunshin" race="blood" experience="35" speed="500" manacost="300">
+	<health now="50" max="50"/>
+	<look type="192" corpse="0"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="5" attack="15"/>
+		<attack name="Raikiri" interval="2000" chance="40" range="1" min="-247" max="-263"/>
+	</attacks>
+	<defenses armor="2" defense="9"/>
+	  <defense name="healing" interval="2000" chance="20" min="3000" max="6000">
+   <attribute key="areaEffect" value="blueshimmer"/>
+ </defense>
+  <defense name="speed" interval="4000" chance="40" speedchange="500" duration="8000">
+   <attribute key="areaEffect" value="redshimmer"/>
+  </defense>
+  </defenses>
+	<elements>
+		<element holyPercent="0"/>
+	</elements>
+	<loot>
+	</loot>
+</monster>

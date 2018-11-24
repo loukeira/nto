@@ -66,7 +66,7 @@ function onCastSpell(cid, var)
 
 
 local waittime = 3
-local storage = 113034
+local storage = 113037
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
@@ -76,10 +76,10 @@ end
 exhaustion.set(cid, storage, waittime)
 local position348 = {x=getPlayerPosition(cid).x, y=getPlayerPosition(cid).y, z=getPlayerPosition(cid).z}
 local parameters = { cid = cid, var = var}
-addEvent(onCastSpell1, 200, parameters)
+addEvent(onCastSpell1, 500, parameters)
 addEvent(onCastSpell2, 1000, parameters)
 addEvent(onCastSpell2, 2000, parameters)
 addEvent(onCastSpell2, 3000, parameters)
-    doSendMagicEffect(position348, 1)
+    doSendMagicEffect(position348, 79)
 return TRUE
 end 

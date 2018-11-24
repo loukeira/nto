@@ -31,7 +31,7 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setCombatCondition(combat, condition)
                              
                         local condition = createConditionObject(CONDITION_HASTE)
-                        setConditionParam(condition, CONDITION_PARAM_SPEED, 250)
+                        setConditionParam(condition, CONDITION_PARAM_SPEED, 0)
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
                         setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
 

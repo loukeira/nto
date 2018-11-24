@@ -5,7 +5,7 @@ setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -2.0, -150, -1.6, -150)
 
 local condition = createConditionObject(CONDITION_PARALYZE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
---setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
+setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
 setConditionFormula(condition, -0.9, 0, -0.9, 0)
 setCombatCondition(combat, condition)
 
@@ -16,7 +16,7 @@ setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -2.0, -150, -1.6, -150)
 
 local condition = createConditionObject(CONDITION_PARALYZE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
---setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
+setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
 setConditionFormula(condition, -0.9, 0, -0.9, 0)
 setCombatCondition(combat, condition)
 
@@ -70,7 +70,7 @@ function onCastSpell(cid, var)
 
 
 local waittime = 2
-local storage = 113033
+local storage = 113036
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
