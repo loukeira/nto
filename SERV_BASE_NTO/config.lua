@@ -30,7 +30,7 @@
 	sqlHost = "localhost"
 	sqlPort = 3306
 	sqlUser = "root"
-	sqlPass = "AsDf-0810"
+	sqlPass = "root"
 	sqlDatabase = "ntogran"
 	sqlFile = "forgottenserver.s3db"
 	sqlKeepAlive = 0

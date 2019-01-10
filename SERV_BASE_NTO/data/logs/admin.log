@@ -9,3 +9,15 @@
 [10/11/2018 16:54:3] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
 [10/11/2018 17:56:59] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
 [10/11/2018 17:56:59] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 14:39:49] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[10/1/2019 14:39:49] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 14:40:27] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[10/1/2019 14:40:27] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 15:1:42] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[10/1/2019 15:1:42] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 15:4:20] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[10/1/2019 15:4:20] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 15:4:20] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 15:8:6] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Cannot assign requested address
+[10/1/2019 15:8:6] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[10/1/2019 15:8:6] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
