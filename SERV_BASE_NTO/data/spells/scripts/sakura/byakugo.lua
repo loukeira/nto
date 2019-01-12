@@ -3,17 +3,17 @@ local storage_unica_dessa_spell_2 = byakugo2 --MUDAR ESSA STORAGE... CUIDADO COM
 local tempo_de_intervalo_da_effect = 4000  --TEMPO EM MILISEGUNDOS... (2500 = 2,5 SEGUNDOS // 4000 = 4 SEGUNDOS)
 local tempo = 20 -- TEMPO DE DURAÇÃO DA MAGIA
 local effect = 319 -- effect no player, caso queira apenas 1, basta remover os outros numeros.
-local nome_da_magia_que_ira_aparecer_ao_soltar = "SUSANOO!"
+local nome_da_magia_que_ira_aparecer_ao_soltar = "BYAKUGO!"
 
      
-local ml = 6 -- quantos ira aumentar o skill de ML
+local ml = 10 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
 local skillsword = 0 -- quantos ira aumentar o skill de Sword
 local skillaxe = 0 -- quantos ira aumentar o skill de Axe
 local skillclub = 0 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance
 local skillshield = 0 -- quantos ira aumentar o skill de Shield
-local health = 300 -- A cada 1 segundo quantos aumentar de vida
+local health = 500 -- A cada 1 segundo quantos aumentar de vida
 
 
                         local combat = createCombatObject()

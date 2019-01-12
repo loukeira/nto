@@ -5,7 +5,7 @@ local playerpos = getPlayerPosition(cid)
 local cloth = getCreatureOutfit(cid)
 local health = getCreatureHealth(cid)
 local maxhealth = getCreatureMaxHealth(cid)
-local MaximoSummon = 3 --- Maximo de Monstros Sumonados!! No Caso So Posso Sumonar 1 Clones
+local MaximoSummon = 4 --- Maximo de Monstros Sumonados!! No Caso So Posso Sumonar 4 Clones
 
 local summons = getCreatureSummons(cid)
 if isInRange(getCreaturePosition(cid), from, to) or isInRange(getCreaturePosition(cid), from2, to2) then

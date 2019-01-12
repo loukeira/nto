@@ -6,15 +6,15 @@ local effect = 321 -- effect no player, caso queira apenas 1, basta remover os o
 local nome_da_magia_que_ira_aparecer_ao_soltar = "NINPO SOZO SAISEI!"
 
      
-local ml = 10 -- quantos ira aumentar o skill de ML
+local ml = 15 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
 local skillsword = 0 -- quantos ira aumentar o skill de Sword
 local skillaxe = 0 -- quantos ira aumentar o skill de Axe
 local skillclub = 0 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance
 local skillshield = 0 -- quantos ira aumentar o skill de Shield
-local health = 500 -- A cada 1 segundo quantos aumentar de vida
-local mana = 500 -- A cada 1 segundo quantos aumentar de mana
+local health = 1000 -- A cada 1 segundo quantos aumentar de vida
+local mana = 1000 -- A cada 1 segundo quantos aumentar de mana
 
 
 

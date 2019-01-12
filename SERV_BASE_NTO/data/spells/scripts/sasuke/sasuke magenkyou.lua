@@ -6,9 +6,9 @@ local effect = 110 -- effect no player, caso queira apenas 1, basta remover os o
 local nome_da_magia_que_ira_aparecer_ao_soltar = "MANGEKYOU SHARINGAN!"
 
      
-local ml = 6 -- quantos ira aumentar o skill de ML
+local ml = 10 -- quantos ira aumentar o skill de ML
 local skillfist = 0 -- quantos ira aumentar o skill de Fist
-local skillsword = 6 -- quantos ira aumentar o skill de Sword
+local skillsword = 10 -- quantos ira aumentar o skill de Sword
 local skillaxe = 0 -- quantos ira aumentar o skill de Axe
 local skillclub = 0 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance

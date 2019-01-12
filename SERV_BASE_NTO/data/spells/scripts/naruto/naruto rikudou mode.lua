@@ -6,11 +6,11 @@ local effect = 249 -- effect no player, caso queira apenas 1, basta remover os o
 local nome_da_magia_que_ira_aparecer_ao_soltar = "RIKUDOU MODE!"
 local look = 693
      
-local ml = 10 -- quantos ira aumentar o skill de ML
-local skillfist = 10 -- quantos ira aumentar o skill de Fist
+local ml = 15 -- quantos ira aumentar o skill de ML
+local skillfist = 0 -- quantos ira aumentar o skill de Fist
 local skillsword = 0 -- quantos ira aumentar o skill de Sword
 local skillaxe = 0 -- quantos ira aumentar o skill de Axe
-local skillclub = 10 -- quantos ira aumentar o skill de Club
+local skillclub = 15 -- quantos ira aumentar o skill de Club
 local skilldistance = 0 -- quantos ira aumentar o skill de Distance
 local skillshield = 0 -- quantos ira aumentar o skill de Shield
 local health = 0 -- A cada 1 segundo quantos aumentar de vida
@@ -31,7 +31,7 @@ local health = 0 -- A cada 1 segundo quantos aumentar de vida
                         setCombatCondition(combat, condition)
                              
                         local condition = createConditionObject(CONDITION_HASTE)
-                        setConditionParam(condition, CONDITION_PARAM_SPEED, 0)
+                        setConditionParam(condition, CONDITION_PARAM_SPEED, 30000)
                         setConditionParam(condition, CONDITION_PARAM_TICKS, tempo*1000)
                         setConditionParam(condition, CONDITION_PARAM_BUFF, TRUE)
                         setCombatCondition(combat, condition)
