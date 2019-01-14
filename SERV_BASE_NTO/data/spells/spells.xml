@@ -64,9 +64,7 @@
         <vocation id="2"/>   		
         </instant>
 		
-<!--- Runa Jutsus -->
- <rune name="Teste" id="2285" allowfaruse="1" charges="3" lvl="8" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="teste.lua"/>|
-		
+
     
     
 <!--- Naruto Jutsus -->
@@ -143,8 +141,8 @@
 <instant name="Kuchyose No Jutsu: Taka" words="kuchyose no jutsu taka" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="sasuke/kuchyose no jutsu taka.lua">   
         <vocation id="2"/>   
        </instant> 
-	   <rune name="Teste" id="2285" allowfaruse="1" charges="3" lvl="8" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="teste.lua"/>
-	   </instant>
+
+
 <instant name="Chidori" words="chidori" lvl="20" mana="1500" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
         <vocation id="2"/>  
     </instant>
@@ -237,6 +235,13 @@
         <vocation id="1"/>
     </instant>
 	
+  <instant name="Teste" words="seila" lvl="1" mana="1" aggressive="0" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="teste.lua">
+    </instant>
+
+    <instant name="Testing" words="teste" aggressive="0" prem="0" selftarget="1" lvl="2" mana="1"  exhaustion="100" event="script" value="teste.lua"> 
+    </instant>  
+
+    <rune name="Teste" id="2285" allowfaruse="1" charges="3" lvl="2" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="teste.lua"/>
 <!--- Madara Jutsus -->
          
 <!--- Tobi Jutusus -->

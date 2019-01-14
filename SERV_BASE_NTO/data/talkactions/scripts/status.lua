@@ -72,7 +72,7 @@ dodgeTotal = math.floor(dodgePercent*10)/10
 
                     if getitemmana > 0 then
                     	matematica2 = getitemmana / (getitemmanaticks/1000)
-                        managain = managain + getitemmana
+                        managain = managain + matematica2
 
                     end
 
@@ -93,7 +93,7 @@ dodgeTotal = math.floor(dodgePercent*10)/10
 
 
 local cap = getPlayerFreeCap(cid)
-local text = "[+] NTO GRAN STATUS [+]\n\nVocation: "..string.upper(vocation).."\nLevel: ".. level .."\nClasse: "..string.upper(get_classes(cid)).."\nHP: ".. health .."/".. maxhealth .."\nMP: ".. mana .."/".. maxmana .."\nCapacity: ".. cap .."\nBalance: "..getPlayerBalance(cid).."\n\nMagic Level: ".. magic .."\nFist: ".. fist .."\nGloves: ".. club .."\nSword: ".. sword .."\nDistance: ".. distance .."\nShield: ".. shield .."\nSpeed: "..getCreatureSpeed(cid).."\n\nEACH LVL GAIN:  "..getVocationInfo(getPlayerVocation(cid)).healthGain.." HP  /  "..getVocationInfo(getPlayerVocation(cid)).manaGain.." MP  \nREGEN:  ["..getVocationInfo(getPlayerVocation(cid)).healthGainAmount.." HP/ "..getVocationInfo(getPlayerVocation(cid))	.healthGainTicks.." seg]  +  ["..math.ceil(hpgain,4).." HP /  Seg ]\nREGEN:  ["..getVocationInfo(getPlayerVocation(cid)).manaGainAmount.." MANA/ "..getVocationInfo(getPlayerVocation(cid)).manaGainTicks.." seg] + ["..math.ceil(managain).." MP /  Seg ]"
+local text = "[+] NTO GRAN STATUS [+]\n\nVocation: "..string.upper(vocation).."\nLevel: ".. level .."\nClasse: "..string.upper(get_classes(cid)).."\nHP: ".. health .."/".. maxhealth .."\nMP: ".. mana .."/".. maxmana .."\nCapacity: ".. cap .."\nBalance: "..getPlayerBalance(cid).."\n\nMagic Level: ".. magic .."\nFist: ".. fist .."\nGloves: ".. club .."\nSword: ".. sword .."\nDistance: ".. distance .."\nShield: ".. shield .."\nSpeed: "..getCreatureSpeed(cid).."\n\nEACH LVL GAIN:  "..getVocationInfo(getPlayerVocation(cid)).healthGain.." HP  /  "..getVocationInfo(getPlayerVocation(cid)).manaGain.." MP  \nREGEN:  ["..getVocationInfo(getPlayerVocation(cid)).healthGainAmount.." HP/ "..getVocationInfo(getPlayerVocation(cid)).healthGainTicks.." seg]  +  ["..math.ceil(hpgain,4).." HP /  Seg ]\nREGEN:  ["..getVocationInfo(getPlayerVocation(cid)).manaGainAmount.." MANA/ "..getVocationInfo(getPlayerVocation(cid)).manaGainTicks.." seg] + ["..math.ceil(managain).." MP /  Seg ]"
 --doShowTextDialog(cid, 5808, text)
 doPlayerPopupFYI(cid, text)
             
