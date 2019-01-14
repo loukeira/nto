@@ -59,50 +59,57 @@
     
 <instant name="Throw Shuriken no jutsu" words="throw shuriken" lvl="5" mana="50" prem="0" range="4" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="shuriken.lua">
     </instant>
-<instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
+<instant name="Sharingan" words="sharingan" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1500"  exhaustion="2000" event="script" value="kakashi/sharingan.lua">   
         <vocation id="1"/>  
         <vocation id="2"/>   		
         </instant>
+		
+<!--- Runa Jutsus -->
+ <rune name="Teste" id="2285" allowfaruse="1" charges="3" lvl="8" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="teste.lua"/>|
+		
     
     
 <!--- Naruto Jutsus -->
 
-<instant name="Naruto Sennin Mode" words="naruto sennin mode" aggressive="0" prem="0" selftarget="1" lvl="50" mana="500"  exhaustion="2000" event="script" value="naruto/sennin mode.lua">   
+<instant name="Naruto Sennin Mode" words="naruto sennin mode" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1500"  exhaustion="2000" event="script" value="naruto/sennin mode.lua">   
         <vocation id="4"/>   
         </instant>  
-<instant name="Kurama Chakra" words="kurama chakra" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="naruto/kurama chakra.lua">   
+<instant name="Kurama Chakra" words="kurama chakra" aggressive="0" prem="0" selftarget="1" lvl="200" mana="2000"  exhaustion="2000" event="script" value="naruto/kurama chakra.lua">   
         <vocation id="4"/>   
        </instant> 
-<instant name="Naruto Rikudo Mode" words="naruto rikudo mode" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/naruto rikudou mode.lua">   
+<instant name="Naruto Rikudo Mode" words="naruto rikudo mode" aggressive="0" prem="0" selftarget="1" lvl="300" mana="3000"  exhaustion="2000" event="script" value="naruto/naruto rikudou mode.lua">   
         <vocation id="4"/>   
        </instant> 
-<instant name="Kage Bunshin" words="kage bunshin" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/kage bunshin.lua">   
+<instant name="Kage Bunshin" words="kage bunshin" aggressive="0" prem="0" selftarget="1" lvl="100" mana="1000"  exhaustion="5000" event="script" value="naruto/kage bunshin.lua">   
         <vocation id="4"/>   
        </instant>
-<instant name="Taiju Kage Bunshin" words="taiju kage bunshin" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/taiju kage bunshin.lua">   
+<instant name="Taiju Kage Bunshin" words="taiju kage bunshin" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1500"  exhaustion="5000" event="script" value="naruto/taiju kage bunshin.lua">   
         <vocation id="4"/>   
        </instant>
-<instant name="Kuchyose No Jutsu: Gama" words="kuchyose no jutsu gama" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="naruto/taiju kage bunshin.lua">   
+<instant name="Kuchyose No Jutsu: Gama" words="kuchyose no jutsu gama" aggressive="0" prem="0" selftarget="1" lvl="225" mana="2250"  exhaustion="15000" event="script" value="naruto/taiju kage bunshin.lua">   
         <vocation id="4"/>   
        </instant>
-<instant name="Kiiroi Senko" words="kiiroi senko" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="naruto/kiiroi senko.lua">
+<instant name="Kiiroi Senko" words="kiiroi senko" lvl="300" mana="3000" prem="0" exhaustion="20000" direction="1" event="script" value="naruto/kiiroi senko.lua">
         <vocation id="4"/>    
         </instant>
-<instant name="Rasengan" words="rasengan" lvl="200" mana="1300" prem="0" needtarget="1" range="1" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/rasengan.lua">
+<instant name="Rasengan" words="rasengan" lvl="100" mana="500" prem="0" needtarget="1" range="1" exhaustion="0" blockwalls="1" needlearn="0" script="naruto/rasengan.lua">
         <vocation id="4"/>
     </instant>    
-<instant name="Oodama Rasengan" words="oodama rasengan" lvl="250" mana="4700" prem="0" needtarget="1" range="1" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodama rasengan.lua">
+<instant name="Oodama Rasengan" words="oodama rasengan" lvl="150" mana="750" prem="0" needtarget="1" range="1" exhaustion="1000" blockwalls="1" needlearn="0" script="naruto/oodama rasengan.lua">
         <vocation id="4"/>   
     </instant>          
-<instant name="Fuuton Rasengan Shuriken" words="fuuton rasenshuriken" lvl="300" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/fuuton rasenshuriken.lua">
+<instant name="Fuuton Rasengan Shuriken" words="fuuton rasenshuriken" lvl="200" mana="1000" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="0" needlearn="0" event="script" value="naruto/fuuton rasenshuriken.lua">
         <vocation id="4"/>
     </instant>  
-<instant name="Oodama Rasengan Shuriken" words="oodama rasenshuriken" lvl="350" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/oodama rasenshuriken.lua">
+<instant name="Oodama Rasengan Shuriken" words="oodama rasenshuriken" lvl="250" mana="1250" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="0" needlearn="0" event="script" value="naruto/oodama rasenshuriken.lua">
         <vocation id="4"/>
     </instant> 	
-	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="400" mana="7500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="naruto/yoton rasenshuriken.lua">
+	<instant name="Yoton Rasengan Shuriken" words="yoton rasenshuriken" lvl="300" mana="1500" prem="0" needtarget="1" range="3" blockwalls="1" exhaustion="0" needlearn="0" event="script" value="naruto/yoton rasenshuriken.lua">
         <vocation id="4"/>
     </instant> 
+	
+<!--- Kyuubi Jutsus -->
+
 <instant name="Renzoko Bijudama" words="renzoko bijudama" lvl="500" mana="8400" prem="0" needtarget="1" range="6" exhaustion="2000" blockwalls="1" needlearn="0" script="naruto/renzoko bijudama.lua">
         <vocation id="4"/>
     </instant>
@@ -136,6 +143,8 @@
 <instant name="Kuchyose No Jutsu: Taka" words="kuchyose no jutsu taka" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="sasuke/kuchyose no jutsu taka.lua">   
         <vocation id="2"/>   
        </instant> 
+	   <rune name="Teste" id="2285" allowfaruse="1" charges="3" lvl="8" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="teste.lua"/>
+	   </instant>
 <instant name="Chidori" words="chidori" lvl="20" mana="1500" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
         <vocation id="2"/>  
     </instant>
@@ -154,10 +163,10 @@
 
 <!--- Sakura Jutsus -->
 
-<instant name="Sozo Saisei" words="sozo saisei" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="0" event="script" value="sakura/sozo saisei.lua">   
+<instant name="Sozo Saisei" words="sozo saisei" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1000"  exhaustion="2000" event="script" value="sakura/sozo saisei.lua">   
         <vocation id="2"/>   
        </instant> 
-<instant name="Byakugo" words="byakugo" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="0" event="script" value="sakura/byakugo.lua">   
+<instant name="Byakugo" words="byakugo" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="2000" event="script" value="sakura/byakugo.lua">   
         <vocation id="2"/>   
        </instant>    
 <instant name="Kongoken" words="kongoken" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="sakura/kongoken.lua">
@@ -194,34 +203,37 @@
                          
 <!--- Kakashi Jutsus -->
           
-<instant name="Kakashi Mangekyou Sharingan" words="kakashi mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="1000" event="script" value="kakashi/kakashi mangekyou.lua">   
+<instant name="Kakashi Mangekyou Sharingan" words="kakashi mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="2000"  exhaustion="1000" event="script" value="kakashi/kakashi mangekyou.lua">   
         <vocation id="1"/>   
        </instant> 
-<instant name="Kakashi Susano" words="kakashi susano" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="kakashi/kakashi susano.lua">   
+<instant name="Kakashi Susano" words="kakashi susano" aggressive="0" prem="0" selftarget="1" lvl="300" mana="3000"  exhaustion="2000" event="script" value="kakashi/kakashi susano.lua">   
         <vocation id="1"/>   
        </instant> 	   
-<instant name="Raiton Bushin" words="raiton bushin" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="kakashi/raiton bushin.lua">   
+<instant name="Raiton Bushin" words="raiton bushin" aggressive="0" prem="0" selftarget="1" lvl="100" mana="1000"  exhaustion="5000" event="script" value="kakashi/raiton bushin.lua">   
         <vocation id="1"/>   
        </instant> 
-<instant name="Doton Prision" words="doton prision" lvl="200" mana="5000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/prision.lua">
+ <instant name="Doton Prision" words="doton prision" lvl="150" mana="1500" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/prision.lua">
        <vocation id="1"/>   
        </instant>
-<instant name="Kuchyose No Jutsu: Ninken" words="kuchyose no jutsu ninken" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="kakashi/kuchyose no jutsu ninken.lua">   
+<instant name="Kuchyose No Jutsu: Ninken" words="kuchyose no jutsu ninken" aggressive="0" prem="0" selftarget="1" lvl="225" mana="2250"  exhaustion="15000" event="script" value="kakashi/kuchyose no jutsu ninken.lua">   
         <vocation id="1"/>   
        </instant> 
-<instant name="Raikiri" words="raikiri" lvl="200" mana="1500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/raikiri.lua">
+ <instant name="Kamui go" words="kamui go" lvl="3250" mana="3250" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="20000" needlearn="0" event="script" value="kakashi/prision.lua">
+       <vocation id="1"/>   
+       </instant>
+<instant name="Raikiri" words="raikiri" lvl="100" mana="1500" aggressive="500" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/raikiri.lua">
         <vocation id="1"/>    
 		</instant> 
-<instant name="Raiton Raiju Tsuiga" words="raiton raiju tsuiga" lvl="250" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="kakashi/raiton raiju tsuiga.lua">
+<instant name="Raiton Raiju Tsuiga" words="raiton raiju tsuiga" lvl="150" mana="750" prem="0" exhaustion="0" direction="1" event="script" value="kakashi/raiton raiju tsuiga.lua">
         <vocation id="1"/>    
         </instant>
-<instant name="Kamui attack" words="kamui attack" lvl="300" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui attack.lua">
+<instant name="Kamui attack" words="kamui attack" lvl="200" mana="1000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui attack.lua">
         <vocation id="1"/>
     </instant>
-<instant name="Kamui Shuriken" words="kamui shuriken" lvl="350" mana="9000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui shuriken.lua">
+<instant name="Kamui Shuriken" words="kamui shuriken" lvl="250" mana="1250" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui shuriken.lua">
         <vocation id="1"/>
     </instant>
-<instant name="Kamui Raikiri" words="kamui raikiri" lvl="400" mana="9000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui raikiri.lua">
+<instant name="Kamui Raikiri" words="kamui raikiri" lvl="300" mana="1500" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="kakashi/kamui raikiri.lua">
         <vocation id="1"/>
     </instant>
 	
