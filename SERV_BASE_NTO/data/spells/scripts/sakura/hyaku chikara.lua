@@ -12,7 +12,7 @@ local playerpos = getCreaturePosition(cid)
 local enemypos = getCreaturePosition(getCreatureTarget(cid))
 
 local waittime = 5
-local storage = 113055
+local storage = 113054
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
@@ -22,7 +22,7 @@ end
 exhaustion.set(cid, storage, waittime)
 
 local positions = {
-[1] = {{x=enemypos.x-1, y=enemypos.y, z=enemypos.z}, 193},
+[1] = {{x=enemypos.x-1, y=enemypos.y, z=enemypos.z}, 51},
 }
 
 doTeleportThing(cid, enemypos)

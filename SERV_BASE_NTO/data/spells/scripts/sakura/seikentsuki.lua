@@ -1,8 +1,8 @@
 local quant_hit = 1 -- quantidade de hit's que ira dar no target 
 local timeHit = 1 -- segundos de diferença para cada hit
 
-local quant_sqm = 6 -- sqms que ira empurrar o target
-local sqmTime = 0.5 -- segundos para empurrar após hitar, exemplo de meio segundo.
+local quant_sqm = 3 -- sqms que ira empurrar o target
+local sqmTime = 0 -- segundos para empurrar após hitar, exemplo de meio segundo.
 
 local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_BLOCKARMOR, 1)
@@ -21,7 +21,7 @@ function onCastSpell(cid, var)
 
 
 local waittime = 4
-local storage = 113054
+local storage = 113053
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
@@ -92,7 +92,7 @@ end
 
 function hitTarget(cid, target)
 if isCreature(target) and isPlayer(cid) then
-	local effect = 140 -- efeito do hit na creatura.
+	local effect = 307 -- efeito do hit na creatura.
 	doAddCondition(target, condition)
 	doTargetCombatHealth(cid, target, COMBAT_PHYSICALDAMAGE, -getHit(cid), -getHit(cid), effect)
 end
