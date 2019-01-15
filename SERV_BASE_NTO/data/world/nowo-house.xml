@@ -1,12 +1,2 @@
 <?xml version="1.0"?>
-<houses>
-	<house name="" houseid="8" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
-	<house name="" houseid="9" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
-	<house name="" houseid="11" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
-	<house name="" houseid="13" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
-	<house name="" houseid="268435748" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
-	<house name="" houseid="268435749" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="20" />
-	<house name="" houseid="268435750" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="21" />
-	<house name="" houseid="268435751" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" />
-	<house name="" houseid="268435752" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="21" />
-</houses>
+<houses />

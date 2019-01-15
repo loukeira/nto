@@ -126,62 +126,64 @@
          
 <!--- Sasuke Jutsus -->
   
-<instant name="Sasuke Mangekyou Sharingan" words="sasuke mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="1000"  exhaustion="0" event="script" value="sasuke/sasuke mangekyou.lua">   
+<instant name="Sasuke Mangekyou Sharingan" words="sasuke mangekyou sharingan" aggressive="0" prem="0" selftarget="1" lvl="200" mana="2000"  exhaustion="2000" event="script" value="sasuke/sasuke mangekyou.lua">   
         <vocation id="2"/>   
        </instant> 
-<instant name="Sasuke Susano" words="sasuke susano" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="0" event="script" value="sasuke/sasuke susano.lua">   
+<instant name="Sasuke Susano" words="sasuke susano" aggressive="0" prem="0" selftarget="1" lvl="300" mana="3000"  exhaustion="200" event="script" value="sasuke/sasuke susano.lua">   
         <vocation id="2"/>   
        </instant> 	
-<instant name="Genjutsu Trap" words="genjutsu trap" lvl="200" mana="1500" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
+<instant name="Genjutsu Trap" words="genjutsu trap" lvl="100" mana="1000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
         <vocation id="2"/>  
     </instant>
-<instant name="Amaterasu Entenka" words="amaterasu entenka" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="0" event="script" value="sasuke/amaterasu entenka.lua">   
+<instant name="Amaterasu Entenka" words="amaterasu entenka" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1500"  exhaustion="0" event="script" value="sasuke/amaterasu entenka.lua">   
         <vocation id="2"/>   
        </instant> 	
-<instant name="Kuchyose No Jutsu: Taka" words="kuchyose no jutsu taka" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="1000" event="script" value="sasuke/kuchyose no jutsu taka.lua">   
+<instant name="Kuchyose No Jutsu: Taka" words="kuchyose no jutsu taka" aggressive="0" prem="0" selftarget="1" lvl="225" mana="2250"  exhaustion="15000" event="script" value="sasuke/kuchyose no jutsu taka.lua">   
         <vocation id="2"/>   
        </instant> 
-
-
-<instant name="Chidori" words="chidori" lvl="20" mana="1500" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
+<instant name="Chidori" words="chidori" lvl="100" mana="500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/chidori.lua">
         <vocation id="2"/>  
     </instant>
-<instant name="Chidori Nagashi" words="chidori nagashi" lvl="125" mana="5500" aggressive="1"  exhaustion="0" needlearn="0" event="script" value="sasuke/chidori nagashi.lua">
+<instant name="Chidori Nagashi" words="chidori nagashi" lvl="150" mana="750" aggressive="1"  exhaustion="0" needlearn="0" event="script" value="sasuke/chidori nagashi.lua">
         <vocation id="2"/>
     </instant>
-<instant name="Amaterasu" words="amaterasu" lvl="225" mana="8000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/amaterasu.lua">
+<instant name="Amaterasu" words="amaterasu" lvl="200" mana="1000" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/amaterasu.lua">
         <vocation id="2"/>
        </instant>
-<instant name="Enton Susano Kagutsuchi" words="enton susano kagutsuchi" lvl="225" mana="8000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/enton susano kagutsuchi.lua">
+<instant name="Enton Susano Kagutsuchi" words="enton susano kagutsuchi" lvl="250" mana="1250" aggressive="1" range="3" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/enton susano kagutsuchi.lua">
         <vocation id="2"/>
        </instant>
-<instant name="Kirin" words="Kirin" lvl="400" mana="8000" aggressive="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/kirin.lua">
+<instant name="Kirin" words="Kirin" lvl="300" mana="1500" aggressive="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sasuke/kirin.lua">
         <vocation id="2"/>
     </instant>
 
 <!--- Sakura Jutsus -->
 
-<instant name="Sozo Saisei" words="sozo saisei" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1000"  exhaustion="2000" event="script" value="sakura/sozo saisei.lua">   
+<instant name="Sozo Saisei" words="sozo saisei" aggressive="0" prem="0" selftarget="1" lvl="150" mana="1500"  exhaustion="2000" event="script" value="sakura/sozo saisei.lua">   
         <vocation id="2"/>   
        </instant> 
-<instant name="Byakugo" words="byakugo" aggressive="0" prem="0" selftarget="1" lvl="400" mana="3000"  exhaustion="2000" event="script" value="sakura/byakugo.lua">   
+<instant name="Byakugo" words="byakugo" aggressive="0" prem="0" selftarget="1" lvl="200" mana="2000"  exhaustion="2000" event="script" value="sakura/byakugo.lua">   
         <vocation id="2"/>   
-       </instant>    
-<instant name="Kongoken" words="kongoken" lvl="200" mana="6200" prem="0" exhaustion="0" direction="1" event="script" value="sakura/kongoken.lua">
-        <vocation id="1"/>    
-        </instant>
-<instant name="Okasho" words="okasho" lvl="125" mana="5500" aggressive="1"  exhaustion="0" needlearn="0" event="script" value="sakura/okasho.lua">
+       </instant>     
+<instant name="Ninpou Sozo Saisei" words="ninpou sozo saisei" aggressive="0" prem="0" selftarget="1" lvl="300" mana="3000"  exhaustion="2000" event="script" value="sakura/ninpou sozo saisei.lua">   
+        <vocation id="2"/>   
+       </instant> 
+<instant name="Kongoken" words="kongoken" lvl="100" mana="500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/kongoken.lua">
+        <vocation id="2"/>
+       </instant>
+<instant name="Okasho" words="okasho" lvl="150" mana="750" aggressive="1"  exhaustion="0" needlearn="0" event="script" value="sakura/okasho.lua">
         <vocation id="2"/>
     </instant>
-<instant name="Pasento Shingurupanchi" words="pasento shingurupanchi" lvl="225" mana="8000" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/pasento shingurupanchi.lua">
+<instant name="Pasento Shingurupanchi" words="pasento shingurupanchi" lvl="200" mana="1000" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/pasento shingurupanchi.lua">
         <vocation id="2"/>
        </instant>
-<instant name="Seikentsuki" words="seikentsuki" lvl="225" mana="8000" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/seikentsuki.lua">
+<instant name="Hyaku Chikara" words="hyaku chikara" lvl="250" mana="1250" aggressive="1" range="2" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/hyaku chikara.lua">
         <vocation id="2"/>
        </instant>
-<instant name="Hyaku Chikara" words="hyaku chikara" lvl="400" mana="8000" aggressive="1" range="4" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/hyaku chikara.lua">
+<instant name="Seikentsuki" words="seikentsuki" lvl="300" mana="1500" aggressive="1" range="1" blockwalls="1" needtarget="1" exhaustion="0" needlearn="0" event="script" value="sakura/seikentsuki.lua">
         <vocation id="2"/>
        </instant>
+
     
 <!--- Kiba Jutsus -->
 
