@@ -9,7 +9,7 @@ if getCreatureName(cid) == "Account Manager" then return true end
 
 
 
-  if (item.actionid == 111) 
+  if (item.actionid == 111) then
 
 
 
