@@ -3,6 +3,10 @@
 
 <actions>
 
+		<action itemid="1481" script="trainer_tempo.lua"/>
+		<action itemid="1484" script="trainer_tempo2.lua"/>
+
+
 <action actionid="35600" event="script" value="itens_iniciais.lua"/>	
 
 

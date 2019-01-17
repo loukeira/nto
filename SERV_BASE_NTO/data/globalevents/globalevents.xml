@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <globalevents>
+
+
+<globalevent name="Check Trainer" interval="10000" event="script" value="trainer_tempo.lua"/>
 
 <globalevent name="JinSystem" interval="60000" script="jinglobal.lua"/>
 

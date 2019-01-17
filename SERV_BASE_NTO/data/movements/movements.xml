@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
 
-	<movevent type="StepIn" itemid="4526-4527" event="script" value="trainer_tempo.lua"/>
-	<movevent type="StepIn" itemid="4540" event="script" value="trainer_tempo.lua"/>
-	<movevent type="StepIn" actionid="4540" event="script" value="trainer_tempo.lua"/>
+
+	<movevent type="StepIn" actionid="4541-4543" event="script" value="trainer_tempo.lua"/>
 
 
 	<movevent type="StepIn" actionid="111" event="script" value="piso_outfit.lua"/>

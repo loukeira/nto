@@ -1,5 +1,62 @@
 
-function onSay(cid, words, param, channel)
+function onSay(cid, words, param, channel,fromPosition)
+_invite_friends = {
+   
+    rewards = { -- a cada tantos pontos, que tipo de reward ele irá receber(automático onLogin)
+        [400] = {items = {{10127,1},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
+        
+    }
+}
+--setGlobalStorageValue(sto_global_trainer_tempo[1],-1)
+soma =0 
+        for vod,ka in pairs(aid_trainer) do
+   
+        --doPlayerSendTextMessage(cid, 18, ""..vod..",  "..#ka..", ")
+        soma = soma + 1
+
+end
+k = 1
+-- while k < 10 do
+
+-- repeat
+--     if  (k%2 ==0) then
+--     break
+--     end
+--      doPlayerSendTextMessage(cid, 18, ""..k.." : Passou ")
+
+                        
+--                         for p =1, 2 do
+--                         doPlayerSendTextMessage(cid, 18, " "..p.." : True ")
+--                         end
+-- until true
+
+-- k = k + 1
+-- end
+-- local destino
+
+            --doTeleportThing(cid, osition) 
+ --doTeleportThing(cid,fromPosition)   
+
+    
+doPlayerSendTextMessage(cid, 18, ""..getPlayerStorageValue(cid,trainer_player_power).."")
+doPlayerSendTextMessage(cid, 18, "WORK")
+
+--             local oi = math.floor(getGlobalStorageValue(sto_global_trainer_tempo[1]) - os.time() )
+
+
+--                         doPlayerSendTextMessage(cid, 18, "Xau! Voce tem mais "..trainer_tempo(cid).." seg de trainer.")
+
+-- if (getGlobalStorageValue(sto_global_acc_id[i]) == getPlayerAccountId(cid)) and (trainer_tempo(cid) > 0) then 
+--     doPlayerSendTextMessage(cid, 18, "TRUEE")
+
+-- end
+
+                 
+
+
+
+
+
 
                         -- local coco = 1114
                         -- local xixi = 373
@@ -70,52 +127,52 @@ function onSay(cid, words, param, channel)
 
       
         --local text = " "  
-        local hpgain,hpticks,managain,manaticks = 0,0,0,0
-        for i=1, 10 do 
-            --text = text.."\n" 
-            local item = getPlayerSlotItem(cid, i) 
+        -- local hpgain,hpticks,managain,manaticks = 0,0,0,0
+        -- for i=1, 10 do 
+        --     --text = text.."\n" 
+        --     local item = getPlayerSlotItem(cid, i) 
       
 
-            if item.itemid > 0 then 
+        --     if item.itemid > 0 then 
 
-                        if i == getItemInfo(item.itemid).wieldPosition then
-
-
-                    --text = text.." "..getItemNameById(item.itemid)  
-                   local getitemhp = getItemInfo(item.itemid).abilities.healthGain 
-                    local getitemhpticks = getItemInfo(item.itemid).abilities.healthTicks
-                    local getitemmana = getItemInfo(item.itemid).abilities.manaGain 
-                     local getitemmanaticks = getItemInfo(item.itemid).abilities.manaTicks                      
-
-                    if getitemhp > 0 then
-                        hpgain = hpgain + getitemhp
-                    end
-
-                    if getitemhpticks > 0 then
-                        hpticks = hpticks + (getitemhpticks/1000)
-                    end
-
-                    if getitemmana > 0 then
-                        managain = managain + getitemmana
-                    end
-
-                    if getitemmanaticks > 0 then
-                        manaticks = manaticks + (getitemmanaticks/1000)
-                    end
+        --                 if i == getItemInfo(item.itemid).wieldPosition then
 
 
-                   --text = text.." "..getItemNameById(item.itemid).." -"..getItemInfo(item.itemid).wieldPosition.." -"..hpgain.."- "..hpticks.."- "..managain.."- "..manaticks.."  "  
-             end
-            end 
-        end 
+        --             --text = text.." "..getItemNameById(item.itemid)  
+        --            local getitemhp = getItemInfo(item.itemid).abilities.healthGain 
+        --             local getitemhpticks = getItemInfo(item.itemid).abilities.healthTicks
+        --             local getitemmana = getItemInfo(item.itemid).abilities.manaGain 
+        --              local getitemmanaticks = getItemInfo(item.itemid).abilities.manaTicks                      
+
+        --             if getitemhp > 0 then
+        --                 hpgain = hpgain + getitemhp
+        --             end
+
+        --             if getitemhpticks > 0 then
+        --                 hpticks = hpticks + (getitemhpticks/1000)
+        --             end
+
+        --             if getitemmana > 0 then
+        --                 managain = managain + getitemmana
+        --             end
+
+        --             if getitemmanaticks > 0 then
+        --                 manaticks = manaticks + (getitemmanaticks/1000)
+        --             end
+
+
+        --            --text = text.." "..getItemNameById(item.itemid).." -"..getItemInfo(item.itemid).wieldPosition.." -"..hpgain.."- "..hpticks.."- "..managain.."- "..manaticks.."  "  
+        --      end
+        --     end 
+        -- end 
        -- doShowTextDialog(cid, 6528, text) 
     
 
 
 
 
-print(getVocationInfo(getPlayerVocation(cid)).id )
-print(getVocationInfo(getPlayerVocation(cid)).name)
+-- print(getVocationInfo(getPlayerVocation(cid)).id )
+-- print(getVocationInfo(getPlayerVocation(cid)).name)
 
 
 
