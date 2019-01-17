@@ -107,3 +107,6 @@ MarcosGOD: INICIOU EM:  Wed Jan 16 18:52:26 2019   NO TRAINER, tempo_de_trainer2
 MarcosGOD: INICIOU EM:  Wed Jan 16 18:52:49 2019   NO TRAINER, tempo_de_trainer2 
 MarcosGOD: INICIOU EM:  Wed Jan 16 18:53:47 2019   NO TRAINER, tempo_de_trainer2 
 MarcosGOD: INICIOU EM:  Wed Jan 16 18:53:55 2019   NO TRAINER , trainer_tempo 1 
+Matheus: INICIOU EM:  Wed Jan 16 23:53:45 2019   NO TRAINER , trainer_tempo 1 
+MarcosGOD: INICIOU EM:  Wed Jan 16 23:55:39 2019   NO TRAINER, tempo_de_trainer2 
+Matheus: INICIOU EM:  Wed Jan 16 23:56:11 2019   NO TRAINER, tempo_de_trainer2 

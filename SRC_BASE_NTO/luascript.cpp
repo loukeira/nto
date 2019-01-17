@@ -3402,7 +3402,7 @@ int32_t LuaInterface::luaDoPlayerAddCastMute(lua_State* L)
 
 int32_t LuaInterface::luaGetPlayerCastViewers(lua_State* L)
 {
-	//getPlayerCastBan(cid)
+	//getCastViewers(cid)
 	ScriptEnviroment* env = getEnv();
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{

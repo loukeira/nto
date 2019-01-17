@@ -24,9 +24,9 @@ end
 
      		repeat
 	     		 if getPlayerStorageValue(getPlayersOnline()[i],trainer_player_power) == 0 then  
-	     		 doPlayerSendTextMessage(getPlayersOnline()[i],18,"TRUE")
+	     		 --doPlayerSendTextMessage(getPlayersOnline()[i],18,"TRUE")
 
-	     		 doPlayerSendTextMessage(getPlayersOnline()[i],18,"desligado")
+	     		 --doPlayerSendTextMessage(getPlayersOnline()[i],18,"desligado")
 	     		 break 
 	     		 end
 
