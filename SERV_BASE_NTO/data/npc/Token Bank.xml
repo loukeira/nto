@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Token Bank" script="data/npc/scripts/token_npc.lua" walkinterval="0" floorchange="0" access="5" level="1" maglevel="1">
+    <health now="150" max="150"/>
+    <look type="132" head="115" body="0" legs="114" feet="0" addons="3" corpse="2212"/>
+    
+    <parameters>
+        <parameter key="message_greet" value="Welcome |PLAYERNAME|! Here, you can {deposit}, {withdraw} , {balance}, or {transfer} your token from your TOKEN bank account."/>
+        <parameter key="message_alreadyfocused" value="You are drunked ? I talk with you."/>
+        <parameter key="message_farewell" value="Goodbye. I wanna see your tokens... oh you again."/>
+    </parameters>
+</npc>

@@ -1,21 +1,14 @@
 
 function onSay(cid, words, param, channel,fromPosition)
-_invite_friends = {
-   
-    rewards = { -- a cada tantos pontos, que tipo de reward ele irá receber(automático onLogin)
-        [400] = {items = {{10127,1},{2160,10}}, p_days = 0, p_points = 0 , out = {0,0}},
-        
-    }
-}
---setGlobalStorageValue(sto_global_trainer_tempo[1],-1)
-soma =0 
-        for vod,ka in pairs(aid_trainer) do
-   
-        --doPlayerSendTextMessage(cid, 18, ""..vod..",  "..#ka..", ")
-        soma = soma + 1
 
-end
-k = 1
+
+
+    doSendMagicEffect(getCreaturePosition(cid), 19)
+        --doSendMagicEffect(getCreaturePosition(cid),69)
+
+  doPlayerSendTextMessage(cid, 18, " Passou ")
+
+
 -- while k < 10 do
 
 -- repeat
@@ -70,7 +63,6 @@ k = 1
 --doPlayerAddCastBan(cid, "Viewer 4")
 
 --doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Foi")
-
 
 
 
