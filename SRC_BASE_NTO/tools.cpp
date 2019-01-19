@@ -1024,7 +1024,17 @@ MagicEffectNames magicEffectNames[] =
 	{"smoke",		MAGIC_EFFECT_SMOKE},
 	{"insects",		MAGIC_EFFECT_INSECTS},
 	{"dragonhead",	MAGIC_EFFECT_DRAGONHEAD},
-	{"semfim",        MAGIC_EFFECT_SEMFIM}
+	{"semfim",        MAGIC_EFFECT_SEMFIM},
+	{"setenta",	MAGIC_EFFECT_NEW001}, //70    -NEW IS HEAR!
+    {"setentaeum", MAGIC_EFFECT_NEW002 }, //71
+    {"72",MAGIC_EFFECT_NEW003 }, //72
+    {"setenta_e_tres",MAGIC_EFFECT_NEW004 }, //73 
+    {"setentaequatro",MAGIC_EFFECT_NEW005 }, //74 --A
+   {"setentaecinco", MAGIC_EFFECT_NEW006 }, //75 --B
+    {"setentaeseis",MAGIC_EFFECT_NEW007 }, //76 --C
+    {"setentaesete",MAGIC_EFFECT_NEW008 }, //77 --D
+    {"setentaeoito",MAGIC_EFFECT_NEW009 }, //78 --E
+    {"setentaenove",MAGIC_EFFECT_NEW010 }, //79 --F
 };
 
 ShootTypeNames shootTypeNames[] =

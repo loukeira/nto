@@ -1,35 +1,18 @@
-function onCastSpell(cid, var, isHotkey)
-if not cid then
-	return true
-	end    
-	--local cordenadas = {x=1010 , y=877 , z=7 }
 
-local cordenadas = {x=1010 , y=877 , z=7 }
-local position1 = getCreaturePosition(cid)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+
+--setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -50.2, 1, -80.2, 1)
+
+function onCastSpell(cid, var)
+   
+local position1 = {x=getThingPosition(getCreatureTarget(cid)).x, y=getThingPosition(getCreatureTarget(cid)).y, z=getThingPosition(getCreatureTarget(cid)).z}
+
+doSendMagicEffect(position1, 196)
+
+	--local cordenadas = {x=1010 , y=877 , z=7 }
 --local quadrantes = getCreatureLookDirection(cid)
 --local position = variantToPosition(var)
-
-if getTileInfo(position1).protection then
-       		  doPlayerSendTextMessage(cid,18, "PZ ZONE!")
-	return true
-end
-
-local variavelx = math.random(2,10)
-local variavely = math.random(2,10)
-local quadrantes = math.random(1,4)
-
-if quadrantes == 1 then
-position = {x= position1.x+variavelx,y = position1.y+variavely,z = position1.z}
-elseif quadrantes == 2 then
-	variavelx,variavely = -variavelx, variavely
-position = {x= position1.x-variavelx,y = position1.y+variavely,z = position1.z}
-elseif quadrantes == 3 then
-	variavelx, variavely = -variavelx, -variavely
-position = {x= position1.x-variavelx,y = position1.y-variavely,z = position1.z}
-elseif quadrantes == 4 then
-	variavelx, variavely = variavelx, -variavely
-position = {x= position1.x+variavelx,y = position1.y-variavely,z = position1.z}
-end
 
 
 -- METODO POR DIREÇAO DO OLHAR
@@ -54,24 +37,11 @@ end
 -- position = {x= position1.x-variavelx,y = position1.y+variavely,z = position1.z}
 -- end
 
-if not position then        
-	return  true  
-	 end   
-		  
-			local path = getCreaturePathTo(cid, position, 20)  
-		  	if path then  
 
-		        --doPlayerSendTextMessage(cid,18, "quadr: "..quadrantes.."")
-		         --doPlayerSendTextMessage(cid,18, "x: "..variavelx.."")
-		         --doPlayerSendTextMessage(cid,18, "y: "..variavely.."")
-		         --doPlayerSendTextMessage(cid,18, "lugar: "..lugar.."")
+doCreatureSay(cid, "Pau no seu cu!", TALKTYPE_MONSTER)
 
-       		  --doPlayerSendTextMessage(cid,18, ""..position.y.."")
-
-		   	  doTeleportThing(cid, position)
-       		  doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
-		    return true 
-		    else 
+return doCombat(cid, combat, var)
+			
 		 --    	local i = 1
 		 --    	local j = 1
 		 --    		while j < 5 do
@@ -93,12 +63,12 @@ if not position then
 
 	 -- doTeleportThing(cid, position)
        		 -- doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
-       		  doPlayerSendTextMessage(cid,18, "NAO DEU!")
        		  		        -- doPlayerSendTextMessage(cid,18, "lugar: "..lugar.."")
 
+--local position1 = {x=getThingPosition(getCreatureTarget(cid)).x, y=getThingPosition(getCreatureTarget(cid)).y, z=getThingPosition(getCreatureTarget(cid)).z}
 
-		        doSendMagicEffect(getCreaturePosition(cid), CONST_ME_POFF)
-		      end  
+--doSendMagicEffect(position1, 69)
+		      --return true
 
 
 		    end

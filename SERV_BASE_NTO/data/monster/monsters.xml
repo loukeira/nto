@@ -8,11 +8,10 @@
 
 
 <monster name="Teste" file="ntogran/teste.xml"/>
-<monster name="Danteste" file="Danteste.xml"/>
+<!-- <monster name="Danteste" file="Danteste.xml"/>
 
 
 
-<!-- Hunt Monsters -->
 	
 
 
@@ -106,7 +105,6 @@
 
 
 
--- Quest Boss --
 
 
 <monster name="deidara da pedra" file="akatsuki/quest/deidara.xml"/>
@@ -189,7 +187,6 @@
 	
 
 
-<!-- Vip Monsters -->
 	
 
 
@@ -213,7 +210,6 @@
 	
 
 
-<!-- Boss Monsters -->
 	
 
 
@@ -237,7 +233,6 @@
 
 	
 
-<!-- Quest Monsters -->
 	
 
 
@@ -307,7 +302,6 @@
 	
 
 
-<!-- Akatsuki Quest Monsters -->
 	
 
 
@@ -367,7 +361,6 @@
 
 	
 
-<!-- Summon Normal Monsters -->
     
 
 
@@ -395,7 +388,6 @@
 
 	
 
-<!-- Summon Monsters -->
 	
 
 
@@ -425,7 +417,6 @@
 	
 	
 
-<!-- MVP Monsters -->
 	
 
 
@@ -434,7 +425,6 @@
 
 	
 
-<!-- Monster Event -->
     
 
 
@@ -574,7 +564,7 @@
 
 <monster name="Mokuton Bunshin Madara" file="Mokuton Bunshin Madara.xml"/>
 
-
+ -->
 
 
 </monsters>
