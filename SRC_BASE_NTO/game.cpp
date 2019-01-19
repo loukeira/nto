@@ -5032,8 +5032,8 @@ bool Game::playerInviteToParty(uint32_t playerId, uint32_t invitedId)
 
 
 	if (invitedPlayer == player)
-       return false;﻿
-	Party* party = player->getParty();
+       return false;
+   Party* party = player->getParty();
 	if(!party)
 		party = new Party(player);
 	else if(party->getLeader() != player)
