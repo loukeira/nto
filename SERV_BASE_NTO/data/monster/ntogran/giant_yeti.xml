@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Giant Yeti" nameDescription="a giant yeti" race="blood" experience="4200" speed="260" manacost="0">
+	<health now="4700" max="4700"/>
+	<look type="44" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="120"/>
+		<attack name="speed" interval="2000" chance="18" range="7" radius="4" target="1" speedchange="-1200" duration="20000">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="18" length="8" spread="3" min="-300" max="-500">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" length="8" spread="3" min="-120" max="-600">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>
+	</attacks>
+	<defenses armor="32" defense="70">
+		<defense name="healing" interval="2000" chance="25" min="400" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="GROAAAAR" yell="1" />
+		<voice sentence="HUNGER!!!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="24000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="24000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="24000"/><!-- gold coin -->
+
+	</loot>
+</monster>

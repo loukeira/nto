@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bandit" nameDescription="a bandit" race="blood" experience="390" speed="205" manacost="0">
+	<health now="610" max="610"/>
+	<look type="123" corpse="1987"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="95" defense="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="160"/>
+	</attacks>
+	<defenses armor="19" defense="30">
+		<defense name="speed" interval="2000" chance="18" speedchange="245" duration="40000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="2000" chance="20">
+		<voice sentence="YAAAHEEE!"/>
+		<voice sentence="SLAUGHTER!"/>
+		<voice sentence="You can run but you can't hide! hahahaha!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="12" chance="31250"/><!-- gold coin -->
+
+	</loot>
+</monster>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Swordsman Bandit" nameDescription="a swordsman bandit" race="blood" experience="510" speed="220" manacost="0">
+	<health now="870" max="870"/>
+	<look type="239" corpse="1987"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="70" defense="0"/>
+
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="63" attack="100"/>
+		<attack name="physical" interval="1000" chance="15" range="7" min="-92" max="-148">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="48"/>
+
+	<voices interval="5000" chance="15">
+		<voice sentence="Slice !!!"/>
+		<voice sentence="Whack da humy!"/>
+		<voice sentence="My sword is the power!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="69" chance="31000"/><!-- gold coin -->
+
+	</loot>
+</monster>

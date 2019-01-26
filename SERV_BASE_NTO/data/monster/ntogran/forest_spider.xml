@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<monster name="Forest Tarantula" nameDescription="a forest tarantula" race="venom" experience="170" speed="270" manacost="0">
+	<health now="200" max="200"/>
+	<look type="385" corpse="1987"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="70"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="40"/>
+		<attack name="physical" interval="2000" chance="15" range="7" radius="1" target="1" min="-60" max="-120">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="38" defense="60"/>
+
+
+	<loot>
+		<item id="2148" countmax="30" chance="39000"/><!-- gold coin -->
+	</loot>
+</monster>

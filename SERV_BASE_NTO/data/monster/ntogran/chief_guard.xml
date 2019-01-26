@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chief Guard" nameDescription="a chief guard" race="blood" experience="8000" speed="300" manacost="0">
+	<health now="7300" max="7300"/>
+	<look type="965" corpse="1987"/>
+	<targetchange interval="5000" chance="40"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="95"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="130"/>
+	
+		<attack name="manadrain" interval="1000" chance="20" target="1" range="7" radius="3" min="-100" max="-250">
+			<attribute key="areaEffect" value="blueshimmer"/>		
+		</attack>
+
+		<attack name="physical" interval="2000" chance="20" target="1" min="-400" max="-500">
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="50">
+		<defense name="healing" interval="1000" chance="15" min="120" max="400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="10" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<summons maxSummons="1">
+		<summon name="Bandit" interval="1000" chance="15"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Nothing will remain but your scorched bones!"/>
+		<voice sentence="I'M WILL KILL YOU!" yell="1" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="70" chance="36500"/><!-- gold coin -->
+		<item id="2148" countmax="45" chance="36500"/><!-- gold coin -->
+
+	</loot>
+</monster>

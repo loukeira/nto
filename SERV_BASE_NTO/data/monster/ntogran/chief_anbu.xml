@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chief Anbu" nameDescription="a chief anbu" race="blood" experience="9200" speed="410" manacost="0">
+<health now="15600" max="15600"/>
+<look type="961" corpse="1987"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="115" attack="200" physical="2400"/>
+<attack name="physical" interval="2000" chance="20" length="8" spread="3" min="-100" max="-500">
+<attribute key="areaEffect" value="bluebubble"/>
+</attack>
+<attack name="physical" interval="2000" chance="10" range="7" min="-500" max="-1000">
+<attribute key="shootEffect" value="suddendeath"/>
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+		<attack name="speed" interval="1000" chance="10" range="7" speedchange="-1200" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-400" max="-900">
+<attribute key="areaEffect" value="poff"/>
+</attack>
+</attacks>
+<defenses armor="58" defense="70"/>
+
+<voices interval="5000" chance="10">
+<voice sentence="EMBRACE MY GIFTS!" />
+<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
+</voices>
+<loot>
+<item id="2148" countmax="80" chance="40500"/><!-- gold coin -->
+<item id="2148" countmax="70" chance="40500"/><!-- gold coin -->
+<item id="2148" countmax="55" chance="40500"/><!-- gold coin -->
+<item id="2152" countmax="2" chance="26500"/><!-- platinum coin -->
+
+</loot>
+</monster>

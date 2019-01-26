@@ -1,17 +1,15 @@
 function buff_bijuu(cid, pointsSkill, time, subId)
-﻿
-local buff_bijuu = createConditionObject(CONDITION_ATTRIBUTES)
+  local buff_bijuu = createConditionObject(CONDITION_ATTRIBUTES)
  setConditionParam(buff_bijuu, CONDITION_PARAM_TICKS, time*1000)
  setConditionParam(buff_bijuu, CONDITION_PARAM_STAT_MAGICLEVEL, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_FIST, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_SWORD, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_AXE, pointsSkill)
- setConditionParam(buff_bijuu, ﻿CONDITION_PARAM_SKILL_CLUB, pointsSkill)
+ setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_CLUB, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_DISTANCE, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SKILL_SHIELD, pointsSkill)
  setConditionParam(buff_bijuu, CONDITION_PARAM_SUBID, subId)
 return doAddCondition(cid, buff_bijuu)
-
 end
 
 function onCastSpell(cid, var)
@@ -22,10 +20,10 @@ function onCastSpell(cid, var)
    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "Bijuu Buff Mode Ativado!!")
    doSendMagicEffect(getThingPosition(cid), jin_bijuus[jin.getPlayerBijuu(cid):lower()].effBuff)
   else
-   return false, doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Você já está com o buff de sua bijuu.")
-  end﻿
+   return false, doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce ja esta com o buff de sua bijuu.")
+  end
  else
-  return false, doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Você precisa selar algum bijuu para usar seu buff.")
+  return false, doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Voce precisa selar algum bijuu para usar seu buff.")
  end
   return true
-end﻿﻿
+end

@@ -12,5 +12,5 @@ doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Char salvo com sucesso.")
 else
 doPlayerSendCancel(cid, "Você tem que esperar " .. config.exhau .. " segundos para salvar novamente.")
 end
-return TRUE 
+return true 
 end

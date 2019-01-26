@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Anbu NE" nameDescription="a anbu ne" race="blood" experience="9000" speed="340" manacost="0">
+	<health now="16500" max="16500"/>
+	<look type="963" corpse="1987"/>
+	<targetchange interval="5000" chance="25"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="115" attack="200" physical="400"/>
+		<attack name="physical" interval="4000" chance="20" range="7" radius="4" target="0" min="-120" max="-220">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+		<attack name="physical" interval="5000" chance="17" length="4" spread="3" min="-200" max="-700">
+			<attribute key="areaEffect" value="duzentosecinquenta"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="20" range="1" target="0" speedchange="-1600" duration="45000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="32" defense="50">
+		<defense name="healing" interval="5000" chance="10" min="150" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="4000" chance="25" speedchange="370" duration="12000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="3000" chance="30">
+		<voice sentence="You don't look that good!"/>
+	    <voice sentence="I'M ANBU NE!" yell="1" />
+
+	</voices>
+	<loot>
+		<item id="2148" countmax="70" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="75" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="85" chance="50000"/><!-- gold coin -->
+
+	</loot>
+</monster>

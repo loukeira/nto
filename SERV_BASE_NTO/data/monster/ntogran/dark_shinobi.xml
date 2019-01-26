@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Shinobi" nameDescription="a dark shinobi" race="blood" experience="8800" speed="280" manacost="0">
+	<health now="7900" max="7900"/>
+	<look type="294" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="50"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="115" attack="190"/>
+		<attack name="physical" interval="2000" chance="10" range="7" radius="4" target="1" min="-300" max="-600">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+	
+		<attack name="manadrain" interval="3000" chance="25" range="7" min="-200" max="-600">
+			<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+	</attacks>
+	<defenses armor="32" defense="40">
+		<defense name="healing" interval="1000" chance="50" min="150" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="Oh my, you are weak!"/>
+		<voice sentence="Its nothing but a fight!"/>
+		<voice sentence="Give in!"/>
+	</voices>
+	<summons maxSummons="2">
+		<summon name="Bandit" interval="3000" chance="20" max="2"/>
+	</summons>
+	<loot>
+		<item id="2148" countmax="96" chance="58000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="58000"/><!-- gold coin -->
+
+	</loot>
+</monster>

@@ -2,7 +2,7 @@ function onSay(cid, words, param)
 
         if words == "!twitt" then
                 if getGlobalStorageValue(30070) == -1 then
-                        db.executeQuery("ALTER TABLE `players` ADD twits TEXT NOT NULL DEFAULT twitter;")
+                        db.executeQuery("ALTER TABLE `players` ADD twits VARCHAR(255) NOT NULL DEFAULT 'twitter';")
                         setGlobalStorageValue(30070, 1)
                 end
                 if param == "" then
@@ -21,7 +21,7 @@ function onSay(cid, words, param)
                         doPlayerSendCancel(cid, "Param required.")
                         doSendMagicEffect(getCreaturePosition(cid), 2)
                 else
-                        local id = playerExists(tostring(param)) and getPlayerGUIDByName(tostring(param)) or getPlayerGUID(cid)
+                        local id = player_existe(tostring(param)) and getPlayerGUIDByName(tostring(param)) or getPlayerGUID(cid)
                         local datas = db.getResult("SELECT `twits` FROM `players` WHERE `id` = ".. id .. ";")
                         local name = id == getPlayerGUID(cid) and getCreatureName(cid) or param
                         doShowTextDialog(cid, 1951, name .. " " .. datas:getDataString("twits"))

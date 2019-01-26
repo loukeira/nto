@@ -8,12 +8,54 @@
 
 
 <monster name="Teste" file="ntogran/teste.xml"/>
+
+<monster name="Beez" file="ntogran/beez.xml"/>
+<monster name="Spider" file="ntogran/spider.xml"/>
+<monster name="Sand Spider" file="ntogran/sand_spider.xml"/>
+<monster name="Forest Spider" file="ntogran/forest_spider.xml"/>
+<monster name="Snake" file="ntogran/snake.xml"/>
+
+<monster name="Frozen Yeti" file="ntogran/frozen_yeti.xml"/>
+<monster name="Bandit" file="ntogran/bandit.xml"/>
+<monster name="Swordsman Bandit" file="ntogran/swordsman_bandit.xml"/>
+<monster name="Swordsman Guard" file="ntogran/swordsman_guard.xml"/>
+<monster name="Lancer Guard" file="ntogran/lancer_guard.xml"/>
+<monster name="Corrupt Guard" file="ntogran/corrupt_guard.xml"/>
+<monster name="Sand Shinobi" file="ntogran/sand_shinobi.xml"/>
+<monster name="Water Shinobi" file="ntogran/water_shinobi.xml"/>
+<monster name="Leaf Shinobi" file="ntogran/leaf_shinobi.xml"/>
+
+<monster name="Venom Serpent" file="ntogran/venom_serpent.xml"/>
+<monster name="Jay Ermida" file="ntogran/jay_ermida.xml"/>
+<monster name="Dark Serpent" file="ntogran/dark_serpent.xml"/>
+<monster name="Giant Insect" file="ntogran/giant_insect.xml"/>
+<monster name="Giant Centipede" file="ntogran/giant_centipede.xml"/>
+<monster name="Giant Scorpion" file="ntogran/giant_scorpion.xml"/>
+<monster name="Giant Bandit" file="ntogran/giant_bandit.xml"/>
+<monster name="Giant Bandit Fighter" file="ntogran/giant_bandit_fighter.xml"/>
+<monster name="Giant Yeti" file="ntogran/giant_yeti.xml"/>
+
+<monster name="Giant Spider" file="ntogran/giant_spider.xml"/>
+<monster name="Chief Bandit" file="ntogran/chief_bandit.xml"/>
+<monster name="Chief Guard" file="ntogran/chief_guard.xml"/>
+<monster name="Chief Jay Ermida" file="ntogran/chief_jay_ermida.xml"/>
+<monster name="Gedou Dog" file="ntogran/gedou_dog.xml"/>
+<monster name="Dark Shinobi" file="ntogran/dark_shinobi.xml"/>
+<monster name="Swordsman Shinobi" file="ntogran/swordsman_shinobi.xml"/>
+<monster name="Elite Swordsman Shinobi" file="ntogran/elite_swordsman_shinobi.xml"/>
+<monster name="Nukenin" file="ntogran/nukenin.xml"/>
+<monster name="Novice Anbu" file="ntogran/novice_anbu.xml"/>
+<monster name="Elite Anbu" file="ntogran/elite_anbu.xml"/>
+<monster name="Swordsman Anbu" file="ntogran/swordsman_anbu.xml"/>
+<monster name="Chief Anbu" file="ntogran/chief_anbu.xml"/>
+<monster name="Assassin Anbu" file="ntogran/assassin_anbu.xml"/>
+<monster name="Anbu NE" file="ntogran/anbu_ne.xml"/>
+<monster name="Supreme Anbu" file="ntogran/supreme_anbu.xml"/>
+
+
+
+
 <!-- <monster name="Danteste" file="Danteste.xml"/>
-
-
-
-	
-
 
 <monster name="severium snake" file="hunts/severium snake.xml"/>
     

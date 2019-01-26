@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chief Bandit" nameDescription="a chief bandit" race="blood" experience="6100" speed="500" manacost="0">
+	<health now="6000" max="6000"/>
+	<look type="219" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="60"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="200"/>
+		<attack name="poison" interval="2000" chance="20" range="7" min="-200" max="-600">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		
+		<attack name="speed" interval="1000" chance="20" range="7" radius="4" target="1" speedchange="-1700" duration="120000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="15" length="8" spread="0" min="-300" max="-800">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="17" length="8" spread="3" min="-100" max="-1000">
+			<attribute key="areaEffect" value="stun"/>
+		</attack>
+		
+	</attacks>
+	<defenses armor="23" defense="50">
+		<defense name="healing" interval="2000" chance="15" min="600" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="9" speedchange="720" duration="10000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="C'mon guys! "/>
+		<voice sentence="I bring your deathhh!!" yell="1" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="80" chance="40500"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="40500"/><!-- gold coin -->
+		<item id="2148" countmax="69" chance="40500"/><!-- gold coin -->
+
+
+<!-- 		<item id="1987" chance="100000"> bag 
+			<inside>
+		<item id="7386" chance="2070"/> 
+		<item id="7456" chance="750"/> 
+		<item id="2148" countmax="3" chance="1000"/>
+
+			</inside>
+		</item> -->
+
+	</loot>
+</monster>

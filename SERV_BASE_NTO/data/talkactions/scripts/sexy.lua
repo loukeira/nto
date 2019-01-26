@@ -31,9 +31,9 @@ function onSay(cid, words, param)
 	if words == "!sex" then
 		x = getPlayerByName(param)
 		if x then
-			if getPlayerSex(cid) == 0 then
-				return doPlayerSendTextMessage(cid, 27, "Uma garota tem que ser convidada.")
-			end
+			--if getPlayerSex(cid) == 0 then
+			--	return doPlayerSendTextMessage(cid, 27, "Uma garota tem que ser convidada.")
+			--end
 			if param == getCreatureName(cid) then
 				return doPlayerSendTextMessage(cid, 27, "Isto n&#227;o &#233; possivel")
 			end

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Leaf Shinobi" nameDescription="a leaf shinobi" race="blood" experience="1500" speed="245" manacost="0">
+	<health now="2200" max="2200"/>
+	<look type="205" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="120"/>
+		<attack name="fire" interval="3000" chance="17" length="8" spread="3" min="-60" max="-260">
+			<attribute key="areaEffect" value="oitentaenove"/>
+		</attack>
+	</attacks>
+	<defenses armor="38" defense="60">
+		<defense name="invisible" interval="1000" chance="15" duration="1800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="25" min="300" max="600">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="2500" chance="10">
+		<voice sentence="TO THE LEAF!" yell="1"/>
+		<voice sentence="YAAAAAAAAAH!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="96" chance="20000"/><!-- gold coin -->
+
+	</loot>
+</monster>

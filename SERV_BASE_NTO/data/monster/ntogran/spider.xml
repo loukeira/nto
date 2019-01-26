@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spider" nameDescription="a spider" race="venom" experience="46" speed="190" manacost="0">
+	<health now="110" max="110"/>
+	<look type="388" corpse="1987"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="80" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="38" attack="20"/>
+	</attacks>
+	<defenses armor="9" defense="18"/>
+	<loot>
+		<item id="2148" countmax="12" chance="26250"/><!-- gold coin -->
+		
+		
+	</loot>
+
+	
+</monster>

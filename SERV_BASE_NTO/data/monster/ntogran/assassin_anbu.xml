@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Assassin Anbu" nameDescription="a assassin anbu" race="blood" experience="12000" speed="360" manacost="0">
+	<health now="16400" max="16400"/>
+	<look type="962" corpse="1987"/>
+	<targetchange interval="5000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="'00" attack="240"/>
+		<attack name="manadrain" interval="3000" chance="15" range="7" min="-120" max="-240"/>
+		<attack name="fire" interval="4000" chance="60" range="7" radius="7" target="1" min="-300" max="-500">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="duzentosedoze"/>
+		</attack>
+		
+		<attack name="physical" interval="3000" chance="10" length="8" spread="0" min="-600" max="-920">
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="7" range="3" radius="1" target="1" min="-420" max="-600">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="duzentoseoitentaeoito"/>
+		</attack>
+		<attack name="speed" interval="5000" chance="10" range="7" speedchange="-440" duration="10000">
+		</attack>
+	</attacks>
+	<defenses armor="39" defense="60">
+		<defense name="healing" interval="2000" chance="10" min="180" max="400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="5" speedchange="150" duration="40000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<summons maxSummons="1">
+		<summon name="Swordsman Bandit" interval="4000" chance="10" max="1"/>
+	</summons>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="THE SHADOW IS MINE!" yell="1"/>
+		<voice sentence="I KILL YOU FAST!" />
+		<voice sentence="Assassin is the order!" yell="1"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="38" chance="40000"/><!-- gold coin -->
+		<item id="2152" countmax="1" chance="69660"/><!-- platinum coin -->
+
+	</loot>
+</monster>

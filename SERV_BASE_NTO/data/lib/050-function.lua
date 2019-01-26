@@ -17,6 +17,52 @@ function doPlayerGiveItem(cid, itemid, amount, subType)
 	return true
 end
 
+
+function player_existe(name)  
+local ult = db.getResult("select `name` from players where account_id = "..getAccountIdByName(tostring(name)).." ")
+
+if (ult:getID() == -1) then
+return false
+end
+
+local mamae = ult:getDataString("name")
+ult:free()
+
+if mamae == nil then 
+    resposta = false
+else
+    resposta = true
+end
+
+return resposta
+
+end
+
+
+
+function convertTime(time)
+local t_table = {}
+t_table.days = math.floor(time / 86400)
+time = time - (t_table.days * 86400)
+t_table.hours = math.floor(time / 3600)
+time = time - (t_table.hours * 3600)
+t_table.minutes = math.floor(time / 60)
+t_table.seconds = time - (t_table.minutes * 60)
+return t_table
+end
+
+function falta_tempo_player(cid,storage )
+--local time_model = "%d dia(s), %d hora(s), %d minuto(s) e %d segundo(s)."
+local time_model = "%d hora(s), %d minuto(s) e %d segundo(s)."
+
+local timeLeft = convertTime(getPlayerStorageValue(cid, storage) - os.time())
+--doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, 'As bananas so vao nascer daqui ' ..time_model:format(timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds))
+
+return time_model:format(timeLeft.hours, timeLeft.minutes, timeLeft.seconds)
+
+end
+
+
 function doPlayerGiveItemContainer(cid, containerid, itemid, amount, subType)
 	for i = 1, amount do
 		local container = doCreateItemEx(containerid, 1)

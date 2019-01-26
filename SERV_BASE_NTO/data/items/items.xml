@@ -1153,9 +1153,11 @@
     <item id="1770" article="a" name="barrel">
         <attribute key="containerSize" value="25" />
     </item>
+
     <item id="1771" article="a" name="water cask">
         <attribute key="fluidSource" value="water" />
     </item>
+
     <item id="1772" article="a" name="beer cask">
         <attribute key="fluidSource" value="beer" />
     </item>
@@ -2999,7 +3001,6 @@
         <attribute key="weight" value="450" />
         <attribute key="defense" value="45" />
         <attribute key="attack" value="3000" />
-		<attribute key="slotType" value="weapon" />
         <attribute key="weaponType" value="club" />
     </item>
     <item id="2389" article="a" name="spear" plural="spears">
@@ -3170,7 +3171,6 @@
         <attribute key="weight" value="100" />
         <attribute key="attack" value="15" />
         <attribute key="weaponType" value="distance" />
-        <attribute key="shootType" value="8" />
         <attribute key="range" value="6" />
         <attribute key="breakChance" value="33" />
         <attribute key="ammoAction" value="moveback" />
@@ -4322,7 +4322,6 @@
         <attribute key="weight" value="100" />
         <attribute key="attack" value="3000" />
         <attribute key="weaponType" value="distance" />
-		<attribute key="slotType" value="weapon" />
         <attribute key="shootType" value="flammingarrow" />
         <attribute key="range" value="6" />
         <attribute key="ammoAction" value="moveback" />
@@ -12433,6 +12432,9 @@
     <item id="7439" article="a" name="berserk potion">
         <attribute key="description" value="Drinking this potion increases temporarily your fighting skill while decreasing your defense." />
         <attribute key="weight" value="200" />
+                <attribute key="fluidSource" value="wine" />
+
+
     </item>
     <item id="7440" article="a" name="chakra potion">
         <attribute key="weight" value="200" />
@@ -12575,7 +12577,7 @@
         <attribute key="skillClub" value="4" />
         <attribute key="skillSword" value="4" />
         <attribute key="skillDist" value="4" />
-        <attribute key="magiclevelpoints" value="4" />		
+        <attribute key="magiclevelpoints" value="4" />
     </item>
     <item id="7464" article="a" name="mammoth fur shorts">
         <attribute key="description" value="They offer little protection but will at least provide some comfort and warmth." />
@@ -15132,7 +15134,7 @@
         <attribute key="slotType" value="body" />
     </item>
     <item id="8868" article="a" name="taijutsu legs">
-        <attribute key="description" value="Taijutsu skill increases in four and speed increases seventy." />    
+        <attribute key="description" value="Taijutsu skill increases in four and speed increases seventy." />
         <attribute key="weight" value="4800" />
         <attribute key="armor" value="17" />
         <attribute key="skillAxe" value="4" />
@@ -16897,14 +16899,14 @@
         <attribute key="magiclevelpoints" value="4" />
         <attribute key="slotType" value="head" />
         <attribute key="showattributes" value="1" />
-    </item>    
+    </item>
     <item id="10048" article="a" name="Hat For Eclesius">
         <attribute key="weight" value="350" />
         <attribute key="magiclevelpoints" value="6" />
         <attribute key="absorbPercentPhysical" value="40" />
         <attribute key="slotType" value="head" />
         <attribute key="showattributes" value="1" />
-    </item>    
+    </item>
     <item fromid="10052" toid="10059" article="a" name="crystal column" />
     <item id="10062" name="amarie's favourite book">
         <attribute key="weight" value="800" />
@@ -17018,7 +17020,7 @@
     </item>
     <item id="10136" article="a" name="medal rank a">
         <attribute key="description" value="Comprovante que completaste uma missao RANK A." />
-        <attribute key="weight" value="100" />    
+        <attribute key="weight" value="100" />
     </item>
     <item id="10137" article="a" name="medal rank s">
         <attribute key="description" value="Comprovante que completaste uma missao RANK S." />
@@ -18120,9 +18122,8 @@
         <attribute key="containerSize" value="6" />
     </item>
     <item id="11112" article="a" name="leaft's" />
-    <item id="11113" article="a" name="orc tooth" plural="orc teeth">
-        <attribute key="weight" value="100" />
-    </item>
+
+
     <item id="11114" article="a" name="jungle grass" />
     <item id="11115" name="tribal crest">
         <attribute key="description" value="This crest seems important. You shouldn't lose it." />
@@ -18810,6 +18811,7 @@
         <attribute key="duration" value="300" />
         <attribute key="corpseType" value="venom" />
     </item>
+    <!--
     <item id="11359" name="dead sandcrawler">
         <attribute key="weight" value="6300" />
         <attribute key="decayTo" value="0" />
@@ -18831,7 +18833,7 @@
         <attribute key="duration" value="10" />
         <attribute key="corpseType" value="blood" />
         <attribute key="fluidSource" value="blood" />
-    </item>
+    </item> -->
     <item id="11363" article="a" name="slain ghastly dragon">
         <attribute key="containerSize" value="10" />
         <attribute key="decayTo" value="11364" />
@@ -19003,9 +19005,9 @@
         <attribute key="healthGain" value="10000" />
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="1" />
-        <attribute key="slotType" value="feet" />	
+        <attribute key="slotType" value="feet" />
     </item>
- 
+<!--
    <item id="11408" article="a" name="Rikudou boots">
         <attribute key="description" value="Chakra and health recovery 15000/s and add life +35000." />
         <attribute key="weight" value="3100" />
@@ -19025,7 +19027,8 @@
         <attribute key="slotType" value="feet" />
 		<attribute key="maxhealthpoints" value="+35000." />
     </item>
-	
+  -->
+
     <item id="115" article="a" name="pergaminho itachi">
         <attribute key="description" value="Use isso para se torna um itachi." />
         <attribute key="weight" value="100" />
@@ -19060,7 +19063,6 @@
         <attribute key="defense" value="80" />
         <attribute key="attack" value="3000" />
         <attribute key="weaponType" value="sword" />
-		<attribute key="slotType" value="weapon" />
     </item>
 
     <item id="112" article="a" name="Nagato Ring">
@@ -19117,11 +19119,11 @@
     <item id="3261" article="a" name="Chakra Bijuu Shichibi">
         <attribute key="slotType" value="ring" />
     </item>
-    
+
     <item id="3262" article="a" name="Chakra Bijuu Hachibi">
         <attribute key="slotType" value="ring" />
     </item>
-    
+
     <item id="3266" article="a" name="Chakra Bijuu Kyuuby">
         <attribute key="slotType" value="ring" />
     </item>
@@ -19178,13 +19180,13 @@
         <attribute key="weaponType" value="sword" />
     </item>
 
-	
+
 	  <item id="11405" article="a" name="pergaminho sarutobi">
         <attribute key="description" value="Use isso para se torna um Sarutobi." />
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
     </item>
-	
+
 	  <item id="11406" article="a" name="pergaminho shin">
         <attribute key="description" value="Use isso para se torna um Shin." />
         <attribute key="weight" value="100" />
@@ -19280,7 +19282,6 @@
 
     <item id="855" article="a" name="gunbai temporaria">
         <attribute key="weight" value="80" />
-        <attribute key="slotType" value="weapon" />
         <attribute key="transformEquipTo" value="838" />
         <attribute key="stopduration" value="1" />
         <attribute key="showduration" value="1" />
@@ -19422,13 +19423,13 @@
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
 		</item>
-		
+
 		 <item id="11393" article="a" name="pergaminho Onoki">
         <attribute key="description" value="use isso para vira um Onoki" />
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
 		</item>
-		
+
 		<item id="11403" article="a" name="pergaminho konan">
         <attribute key="description" value="use isso para vira um konan" />
         <attribute key="weight" value="100" />
@@ -19457,6 +19458,7 @@
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="body" />
     </item>
+    <!--
    <item id="11395" article="a" name="kakashi mask">
         <attribute key="description" value="chakra/health recovery 15000/s" />
         <attribute key="weight" value="3500" />
@@ -19475,8 +19477,9 @@
 		<attribute key="maxhealthpoints" value="+15000" />
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="head" />
-    </item>
-  	 <item id="11397" article="a" name="rikudou armor">
+    </item>-->
+
+  	<!-- <item id="11397" article="a" name="rikudou armor">
      <attribute key="description" value="Health recovery 25000/s and Chakra 30000/s." />
         <attribute key="weight" value="350" />
         <attribute key="armor" value="35" />
@@ -19491,7 +19494,7 @@
         <attribute key="healthTicks" value="1000" />
         <attribute key="showattributes" value="1" />
         <attribute key="slotType" value="body" />
-    </item>
+    </item> -->
 	    <item id="11398" article="a" name="pergaminho Rikudou sennin">
         <attribute key="description" value="Use isso para se torna um Rikudou sennin." />
         <attribute key="weight" value="100" />
@@ -19507,25 +19510,25 @@
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
     </item>
-	
-	<item id="11460" article="a" name="pergaminho Might Guy">
+
+<!--	<item id="11460" article="a" name="pergaminho Might Guy">
         <attribute key="description" value="Use isso para se torna um Might Guy." />
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
     </item>
-	
+
 	<item id="11461" article="a" name="pergaminho Sasuke Gaiden">
         <attribute key="description" value="Use isso para se torna um Sasuke Gaiden." />
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
-    </item>
-	
-	<item id="11462" article="a" name="pergaminho Shisui">
+    </item>-->
+
+	<!--<item id="11462" article="a" name="pergaminho Shisui">
         <attribute key="description" value="Use isso para se torna um Shisui." />
         <attribute key="weight" value="100" />
         <attribute key="showattributes" value="1" />
-    </item>
-	
+    </item>-->
+
 	<item id="11463" article="a" name="pergaminho Mei Terumi">
         <attribute key="description" value="Use isso para se tornar Mei Terumi." />
         <attribute key="weight" value="100" />
@@ -19548,8 +19551,8 @@
         <attribute key="showattributes" value="1" />
     </item>
     <item id="741" article="a" name="white jutsu tile" />
-	    
-    
+
+
 
 <!-- ITENS FEITOS POR M@THEUS -->
 
@@ -19900,19 +19903,19 @@
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7468" article="a [Magic]" name="Blue Kurama Shuriken's">
+	  <item id="7568" article="a [Magic]" name="Blue Kurama Shuriken's">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="poisonarrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="7467" article="a [Magic]" name="Blue Kurama Gloves">
+	 <item id="7567" article="a [Magic]" name="Blue Kurama Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
     </item>
-	<item id="7469" article="a [Magic]" name="Blue Kurama Shield">
+	<item id="7569" article="a [Magic]" name="Blue Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
 	    <attribute key="absorbPercentAll" value="5" />
@@ -19963,24 +19966,24 @@
         <attribute key="speed" value="60" />
         <attribute key="slotType" value="feet" />
     </item>
-		  <item id="7470" article="a [Magic]" name="Kurama Sword">
+		  <item id="7570" article="a [Magic]" name="Kurama Sword">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7472" article="a [Magic]" name="Kurama Shuriken's">
+	  <item id="7572" article="a [Magic]" name="Kurama Shuriken's">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="burstarrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="7471" article="a [Magic]" name="Kurama Gloves">
+	 <item id="7571" article="a [Magic]" name="Kurama Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
     </item>
-	<item id="7473" article="a [Magic]" name="Kurama Shield">
+	<item id="7573" article="a [Magic]" name="Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
 	    <attribute key="absorbPercentAll" value="10" />
@@ -20142,7 +20145,7 @@
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-	 <item id="7471" article="a [Rare]" name="Slayer Gloves">
+	 <item id="7574" article="a [Rare]" name="Slayer Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="1" />
 	    <attribute key="elementHoly" value="600" />
@@ -20186,7 +20189,7 @@
 	    <attribute key="absorbPercentAll" value="5" />
 		<attribute key="showattributes" value="5" />
     </item>
-		 <item id="11779" article="a [Rare]" name="Yin Yang Amulet">
+		 <item id="11780" article="a [Rare]" name="Yin Yang Amulet">
         <attribute key="weight" value="3500" />
         <attribute key="slotType" value="necklace" />
 	    <attribute key="armor" value="10" />
@@ -20289,7 +20292,7 @@
         <attribute key="showattributes" value="4" />
         <attribute key="slotType" value="legs" />
     </item>
-	    <item id="11512" article="a [Epic]" name="Tobirama War Boots">
+	    <item id="11514" article="a [Epic]" name="Tobirama War Boots">
 	    <attribute key="description" value="Chakra and life recovery 700/s." />
         <attribute key="weight" value="3500" />
         <attribute key="armor" value="70" />
@@ -20303,7 +20306,7 @@
         <attribute key="showattributes" value="4" />
         <attribute key="slotType" value="feet" />
     </item>
-	    <item id="11742" article="a [Epic]" name="Naruto War Helmet">
+	    <item id="11741" article="a [Epic]" name="Naruto War Helmet">
         <attribute key="description" value="Chakra recovery 900/s and life recovery 700/s." />
         <attribute key="weight" value="3500" />
         <attribute key="armor" value="80" />
@@ -20389,7 +20392,7 @@
         <attribute key="showattributes" value="4" />
         <attribute key="slotType" value="legs" />
     </item>
-	    <item id="11512" article="a [Epic]" name="Hashirama War Boots">
+	    <item id="11515" article="a [Epic]" name="Hashirama War Boots">
         <attribute key="description" value="Chakra recovery 700/s and life recovery 900/s." />
         <attribute key="weight" value="3500" />
         <attribute key="armor" value="70" />
@@ -20500,14 +20503,14 @@
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-	<item id="11508" article="a [Epic]" name="Dokuton Cetro">
+	<item id="11506" article="a [Epic]" name="Dokuton Cetro">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="700" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-	<item id="11508" article="a [Epic]" name="Suiton Cetro">
+	<item id="11507" article="a [Epic]" name="Suiton Cetro">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="700" />
         <attribute key="weaponType" value="distance" />
@@ -20700,7 +20703,7 @@
         <attribute key="slotType" value="necklace" />
         <attribute key="preventDrop" value="1" />
     </item>
-	    <item id="11762" article="a [Epic]" name="Sennin Eye">
+	    <item id="11761" article="a [Epic]" name="Sennin Eye">
         <attribute key="weight" value="40" />
         <attribute key="slotType" value="ring" />
 	    <attribute key="skillClub" value="8" />
@@ -20865,7 +20868,7 @@
 	    <attribute key="absorbPercentAll" value="25" />
         <attribute key="weaponType" value="shield" />
     </item>
-	  <item id="11754" article="a [Legendary]" name="Hagoromo Backpack">
+	  <item id="11755" article="a [Legendary]" name="Hagoromo Backpack">
         <attribute key="description" value="Chakra and life increased 1500." />
         <attribute key="weight" value="3500" />
         <attribute key="containerSize" value="35" />

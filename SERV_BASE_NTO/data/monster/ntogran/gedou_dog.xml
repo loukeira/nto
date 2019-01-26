@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gedou Dog" nameDescription="a gedou dog" race="undead" experience="10100" speed="400" manacost="0">
+	<health now="8200" max="8200"/>
+	<look type="115" corpse="1987"/>
+	<targetchange interval="5000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="130" attack="280"/>
+		<attack name="death" interval="1000" chance="12" range="7" min="-350" max="-700">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="9" length="7" spread="0" min="-600" max="-1200">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="8" range="7" radius="4" target="1" min="-395" max="-800">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="redspark"/>
+	 	</attack>
+		<attack name="physical" interval="1000" chance="11" lenght="7" spread="3" min="-300" max="-600">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="63" defense="100">
+		<defense name="healing" interval="1000" chance="20" min="200" max="400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="You life is over!!" yell="1"/>
+		<voice sentence="Come a little closer!" />
+		<voice sentence="The end is near!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="43750"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="43750"/><!-- gold coin -->
+		<item id="2148" countmax="75" chance="43750"/><!-- gold coin -->
+
+	</loot>
+</monster>
