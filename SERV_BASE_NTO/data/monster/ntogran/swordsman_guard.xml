@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Swordsman Guard" nameDescription="a Swordsman guard" race="blood" experience="1160" speed="210" manacost="0">
+	<health now="1030" max="1030"/>
+	<look type="42" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="160" poison="220"/>
+		<attack name="physical" interval="1000" chance="15" range="7" min="-50" max="-130">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="15" radius="3" target="0" min="-60" max="-100">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="15" radius="3" target="0" min="-120" max="-160">
+			<attribute key="shootEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="70">
+		<defense name="healing" interval="1000" chance="15" min="60" max="120">
+			<attribute key="areaEffect" value="greenspark"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="30">
+		<voice sentence="Knorrr!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="55" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="35" chance="15000"/><!-- gold coin -->
+
+	</loot>
+</monster>

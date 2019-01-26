@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Novice Anbu" nameDescription="a novice anbu" race="blood" experience="8000" speed="250" manacost="0">
+	<health now="11600" max="11600"/>
+	<look type="958" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="75" attack="240"/>
+		<attack name="lifedrain" interval="2000" chance="20" range="7" radius="4" target="0" min="-300" max="-500">
+			<attribute key="shootEffect" value="burstarrow"/>
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="20" range="1" target="1" speedchange="-800" duration="40000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" range="7" radius="7" target="0" min="-200" max="-440">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="70">
+		<defense name="speed" interval="1000" chance="35" speedchange="800" duration="30000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="30">
+		<voice sentence="Forgive Meeeee!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="90" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="80" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="40000"/><!-- gold coin -->
+
+		<item id="2152" countmax="3" chance="4500"/><!-- platinum coin -->
+
+	</loot>
+</monster>

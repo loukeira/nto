@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Supreme Anbu" nameDescription="a supreme anbu" race="blood" experience="6700" speed="240" manacost="0">
+	<health now="17800" max="17800"/>
+	<look type="964" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="105" attack="200"/>
+		<attack name="physical" interval="2000" chance="34" range="7" min="-210" max="-320">
+			<attribute key="areaEffect" value="duzentosedoze"/>
+		</attack>
+		<attack name="manadrain" interval="2000" chance="23" range="7" min="-280" max="-440">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="1000" chance="50" min="150" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="I can see you decaying!"/>
+		<voice sentence="Let me taste your mortality!"/>
+	</voices>
+
+	<loot>
+		<item id="2148" countmax="80" chance="627500"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="627500"/><!-- gold coin -->
+
+	</loot>
+</monster>

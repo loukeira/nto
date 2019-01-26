@@ -1,0 +1,9 @@
+!bug --> retorna ao templo caso tenha bugado!
+!menu  -->  informaçoes, novidades
+!aleta sio --> expulsa convidado house
+!autoloot -->  usar autoloot
+!saga --> troca p/ a outfit conquistada 
+!status --> informações do player
+
+
+!etc --> exemplos exemplos exemplos

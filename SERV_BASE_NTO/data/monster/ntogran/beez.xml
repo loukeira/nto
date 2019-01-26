@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="Beez" namedescription="a beez" race="venom" experience="36" speed="160" manacost="0">
+	<health now="58" max="58"/>
+	<look type="263" corpse="1987"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="25" attack="30"/>
+	</attacks>
+	<defenses armor="4" defense="6"/>
+	<loot>
+		<item id="2148" countmax="6" chance="21000"/><!-- gold coin -->
+	</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>

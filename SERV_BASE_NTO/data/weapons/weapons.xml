@@ -29,14 +29,15 @@
 	</wand>
 	<wand id="2189" level="26" mana="8" min="42" max="48" type="energy" event="function" value="default">
 	</wand>
-	<wand id="2187" level="33" mana="13" min="55" max="75" type="fire" event="function" value="default"> 
+	<wand id="2187" level="33" mana="13" min="55" max="75" type="fire" event="function" value="default">
 	</wand>
 	<wand id="8920" level="37" mana="13" min="55" max="75" type="energy" event="function" value="default">
 	</wand>
 	<wand id="8922" level="42" mana="13" min="55" max="75" type="death" event="function" value="default">
 	</wand>
 
-<melee id="2413" level="2" event="function" value="default"/>
+<!--
+<melee id="2413" level="2" event="function" value="default"/> -->
 	<!-- Swords -->
 	<melee id="2396" event="function" value="default"/>
 	<melee id="2377" level="20" unproperly="1" event="function" value="default"/>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Water Shinobi" nameDescription="a water shinobi" race="blood" experience="1800" speed="220" manacost="0">
+	<health now="2000" max="2000"/>
+	<look type="206" corpse="1987"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="200"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="38" attack="200" />
+		<attack name="speed" interval="1000" chance="15" range="7" speedchange="-1200" duration="20000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+		<attack name="undefined" interval="2000" chance="35" radius="4" target="0" min="-240" max="-500">
+			<attribute key="areaEffect" value="noventaeum"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="40">
+		<defense name="healing" interval="1000" chance="25" min="226" max="380">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+
+	<voices interval="5000" chance="10">
+		<voice sentence="Are you ready to water pump???"/>
+		<voice sentence="Let the water play!"/>
+		<voice sentence="I will mourn your death!"/>
+		<voice sentence="Water Attack!!!!" yell="1" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="60" chance="11250"/><!-- gold coin -->
+		<item id="2148" countmax="40" chance="11250"/><!-- gold coin -->
+	</loot>
+</monster>

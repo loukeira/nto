@@ -2,6 +2,7 @@ local ranks = {
 
 ['fist'] = {0},
 
+['gloves'] = {1},
 ['club'] = {1},
 ['sword'] = {2},
 ['axe'] = {3},

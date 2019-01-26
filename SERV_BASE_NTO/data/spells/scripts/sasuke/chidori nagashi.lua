@@ -7,7 +7,7 @@ local condition = createConditionObject(CONDITION_PARALYZE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
 setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
 setConditionFormula(condition, -0.9, 0, -0.9, 0)
-setCombatCondition(combat, condition)
+setCombatCondition(combat1, condition)
 
 local combat2 = createCombatObject()
 setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_POISONDAMAGE)
@@ -18,7 +18,7 @@ local condition = createConditionObject(CONDITION_PARALYZE)
 setConditionParam(condition, CONDITION_PARAM_TICKS, 10000)
 setConditionParam(condition, CONDITION_PARAM_SPEED, -70)
 setConditionFormula(condition, -0.9, 0, -0.9, 0)
-setCombatCondition(combat, condition)
+setCombatCondition(combat2, condition)
 
 
 arr1 = {
@@ -58,7 +58,7 @@ setCombatArea(combat2, area2)
 local function onCastSpell1(parameters)
     return isPlayer(parameters.cid) and doCombat(parameters.cid, combat1, parameters.var)
 end
- 
+
 local function onCastSpell2(parameters)
     return isPlayer(parameters.cid) and doCombat(parameters.cid, combat2, parameters.var)
 end
@@ -74,12 +74,12 @@ local storage = 113036
 
 if exhaustion.check(cid, storage) then
 doCreatureSay(cid, "Aguarde " .. exhaustion.get(cid, storage) .. " segundos para usar a spell novamente.", TALKTYPE_MONSTER)
-return trye
+return true
 end
 
 exhaustion.set(cid, storage, waittime)
 local parameters = { cid = cid, var = var}
 addEvent(onCastSpell1, 100, parameters)
 addEvent(onCastSpell2, 500, parameters)
-return TRUE
+return true
 end

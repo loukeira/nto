@@ -5893,7 +5893,7 @@ std::string Game::getHighscoreString(uint16_t skill)
 {
 	Highscore hs = highscoreStorage[skill];
 	std::stringstream ss;
-	ss << "Highscore for " << getSkillName(skill) << "\n\nRank Level - Player Name";
+	ss << "Highscore for " << getSkillName(skill) << "\n\nRank - Nivel - Player Name";
 	for(uint32_t i = 0; i < hs.size(); i++)
 		ss << "\n" << (i + 1) << ".  " << hs[i].second << "  -  " << hs[i].first;
 

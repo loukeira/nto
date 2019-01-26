@@ -41,8 +41,8 @@
 <instant name="Kawarimi no Jutsu" words="kawarimi" lvl="150" mana="500" prem="0" exhaustion="1000" needlearn="0" needtarget="1" blockwalls="1" enabled="1" event="script" value="todos/kawarimi.lua">
     </instant>
     
-<instant name="Bunshin no Jutsu" words="bunshin no jutsu" lvl="100" mana="300" prem="0" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="todos/bunshin.lua"> 
-    </instant>
+<!--<instant name="Bunshin no Jutsu" words="bunshin no jutsu" lvl="100" mana="300" prem="0" blockwalls="1" exhaustion="1000" needlearn="0" event="script" value="todos/bunshin.lua"> 
+    </instant> -->
    
 <instant name="Regeneration" words="regeneration" lvl="10" mana="10" prem="0" aggressive="0" exhaustion="1000" needlearn="0" blockwalls="1" enabled="1" event="script" value="todos/heal.lua">
     </instant>
