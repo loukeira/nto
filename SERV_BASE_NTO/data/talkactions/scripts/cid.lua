@@ -5,6 +5,17 @@ function onSay(cid, words, param, channel,fromPosition)
 --XXX
 
 
+
+setPlayerStorageValue(cid,123, getPlayerStorageValue(cid, 123) <= 0 and 1 or 0)
+doPlayerSendTextMessage(cid, 18,""..(getPlayerStorageValue(cid,123) > 0 and "Stopped" or "Started")..".")
+doPlayerSendTextMessage(cid ,18,"STORAGE: "..getPlayerStorageValue(cid ,123) .."") 
+
+
+
+
+
+
+
 -- local TYPE_EMPTY = 0
 -- local TYPE_WATER = 1
 -- local TYPE_BLOOD = 2
@@ -280,11 +291,6 @@ function onSay(cid, words, param, channel,fromPosition)
 
 
 
-
-
-
-
-
                         -- local coco = 1114
                         -- local xixi = 373
                         -- local stak = 1
@@ -311,6 +317,7 @@ function onSay(cid, words, param, channel,fromPosition)
                         -- xixi = 373
 
                         -- end
+
 
 
 --            db.query("UPDATE `players` SET `my_saga_max` = `my_saga_max`+1 WHERE id = "..getPlayerGUID(cid).." ;")

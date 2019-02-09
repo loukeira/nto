@@ -19898,6 +19898,12 @@
         <attribute key="showattributes" value="2" />
         <attribute key="slotType" value="feet" />
     </item>
+
+  	  <item id="11718" article="a" name="paper bomb">
+    	<attribute key="description" value="A paper Explosive! Use in the tile and plant the bomb! 10 seconds to explode, or stepping" />
+        <attribute key="weight" value="100" />
+    </item>
+
 		  <item id="11719" article="a [Magic]" name="Blue Kurama Sword">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="500" />
@@ -20145,6 +20151,8 @@
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
+
+
 	 <item id="7574" article="a [Rare]" name="Slayer Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="1" />

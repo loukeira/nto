@@ -23,7 +23,9 @@
 	<defenses armor="9" defense="18"/>
 	<loot>
 		<item id="2148" countmax="12" chance="26250"/><!-- gold coin -->
-		
+		<item id="2403" chance="66250"/><!-- gold coin -->
+		<item id="11718" countmax="80" chance="99250"/><!-- gold coin -->
+
 		
 	</loot>
 

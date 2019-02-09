@@ -12,6 +12,7 @@ function buff_bijuu(cid, pointsSkill, time, subId)
 return doAddCondition(cid, buff_bijuu)
 end
 
+
 function onCastSpell(cid, var)
  if jin.getPlayerBijuu(cid) ~= 0 then
   if not getCreatureCondition(cid, CONDITION_ATTRIBUTES, jin_cond_id) then

@@ -17,7 +17,7 @@ end
 
 function vip.getVip(cid)
 		 assert(tonumber(cid),'Parameter must be a number')
-		 if isPlayer(cid) == FALSE then error('Player don\'t find') end;
+		 if isPlayer(cid) == false then error('Player don\'t find') end;
 		 ae = db.getResult("SELECT `vip_time` FROM `accounts` WHERE `name` = '"..getPlayerAccount(cid).."';")
 		 if ae:getID() == -1 then
 			return 0
@@ -53,12 +53,12 @@ end
 
 function vip.hasVip(cid)
 		 assert(tonumber(cid),'Parameter must be a number')
-		 if isPlayer(cid) == FALSE then return end;
+		 if isPlayer(cid) == false then return end;
 		 local t = vip.getVip(cid) or 0
 		 if os.time(day) < t then
-			return TRUE
+			return true
 		 else
-			return FALSE
+			return false
 		 end
 end
 

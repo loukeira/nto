@@ -5,7 +5,7 @@ info = {
 	AutomaticDeposit = true,
 	BlockMonsters = {},
 	BlockItemsList = {2123,2515},
-	Max_Slots = {free = 2, premium = 5},
+	Max_Slots = {free = 3, premium = 6},
 	Storages = {27000,28001,28002}
 }
 function getAutoLootTime(cid)
@@ -21,7 +21,7 @@ end
 function addAutoLootDays(cid, days)
 	local add = (days <= 0 and 1 or days)*86400
 	local time = getAutoLootDays(cid) == 0 and (os.time() + add) or (getAutoLootTime(cid) + add)
-	return setAutoLootTime(cid, time) 
+	return setAutoLootTime(cid, time)
 end
 function setPlayerStorageTable(cid, storage, tab)
 	local tabstr = "&"
@@ -80,7 +80,7 @@ function removeItemTable(cid, item)
 	return setPlayerStorageTable(cid, info.Storages[1], x)
 end
 function ShowItemsTabble(cid)
-	local n,str = 0,"[+] Auto Loot Commands [+]\n\n!autoloot item name --> To add ou Remove item from list.\n!autoloot money --> To collect gold automatically.\n!autoloot clear --> To clear the list.\n!autoloot on/off --> To enable or disable the collecting of items in the system.\n\n[+] Auto Loot Info [+]\n\nSystem: "..(getPlayerStorageValue(cid, info.Storages[3]) <= 0 and "Activated" or "Disabled")..".\nTime: "..(getAutoLootTime(cid) > 0 and "you have ["..getAutoLootDays(cid).."] days --> ends in "..os.date("%d/%m/%y %X", getAutoLootTime(cid)).."." or "no have Auto Loot time.").."\nGold Collecting: "..(getPlayerStorageValue(cid, info.Storages[2]) > 0 and "Activated" or "Disabled")..".\nBalance Total: ["..getPlayerBalance(cid).."] gp's.\nMaximum Slots: ["..#getPlayerStorageTable(cid, info.Storages[1]).."/"..((vip.hasVip(cid) == true) and info.Max_Slots.premium or info.Max_Slots.free).."]\n\n[+] Auto Loot Slots [+]\n\n"
+	local n,str = 0,"[+] Auto Loot Commands [+]\n\n!autoloot item name --> To add ou Remove item from list.\n!autoloot money --> To collect gold automatically.\n!autoloot clear --> To clear the list.\n!autoloot on/off --> To enable or disable the collecting of items in the system.\n\n[+] Auto Loot Info [+]\n\nSystem: "..(getPlayerStorageValue(cid, info.Storages[3]) >= 1 and "Activated" or "Disabled")..".\nTime: "..(getAutoLootTime(cid) > 0 and "you have ["..getAutoLootDays(cid).."] days --> ends in "..os.date("%d/%m/%y %X", getAutoLootTime(cid)).."." or "no have Auto Loot time.").."\nGold Collecting: "..(getPlayerStorageValue(cid, info.Storages[2]) > 0 and "Activated" or "Disabled")..".\nBalance Total: ["..getPlayerBalance(cid).."] gp's.\nMaximum Slots: ["..#getPlayerStorageTable(cid, info.Storages[1]).."/"..((vip.hasVip(cid) == true) and info.Max_Slots.premium or info.Max_Slots.free).."]\n\n[+] Auto Loot Slots [+]\n\n"
 	for i = 1,#getPlayerStorageTable(cid, info.Storages[1]) do
 		n = n + 1
 		str = str.."Slot "..n.." - "..getItemNameById(getPlayerStorageTable(cid, info.Storages[1])[i]).."\n"
@@ -144,7 +144,7 @@ function doPlayerAddItemStacking(cid, itemid, amount) -- revisado
 		for _ ,x in pairs(item) do
 			local ret = getThing(x)
 			if ret.type < 100 then
-				doTransformItem(ret.uid, itemid, ret.type+amount) 
+				doTransformItem(ret.uid, itemid, ret.type+amount)
 				if ret.type+amount > 100 then
 					doPlayerAddItem(cid, itemid, ret.type+amount-100)
 				end
@@ -169,10 +169,11 @@ function corpseRetireItems(cid, pos)
 	for i = 0, 255 do
 		pos.stackpos = i
 		tile = getTileThingByPos(pos)
-		if tile.uid > 0 and isCorpse(tile.uid) then
+		if tile.uid > 0 and isContainer(tile.uid) then
 			check = true break
 		end
 	end
+
 	if check == true then
 		local items = getContainerItems(tile.uid)
 		for i,x in pairs(items) do
@@ -188,6 +189,11 @@ function corpseRetireItems(cid, pos)
 				doRemoveItem(x.uid)
 			end
 		end
+	end
+	if check == true then
+	return doPlayerSendTextMessage(cid ,18,"True")
+	else
+		return doPlayerSendTextMessage(cid ,18,"FALSE")
 	end
 end
 ]]></config>
@@ -205,9 +211,10 @@ function onLogin(cid)
 end]]></event>
 <event type="kill" name="LootEventKIll" event="script"><![CDATA[
 domodlib('Loot_func')
-function onKill(cid, target, lastHit) 
-	if isPlayer(cid) and getAutoLootDays(cid) > 0 and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
-		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+function onKill(cid, target, lastHit)
+	if isPlayer(cid) and getAutoLootDays(cid) > 0 and getPlayerStorageValue(cid, info.Storages[3]) >= 1 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+		addEvent(corpseRetireItems, 0, cid ,getThingPosition(target))
+
 	end
 	return true
 end]]></event>
@@ -221,36 +228,62 @@ elseif tonumber(param) then
 elseif isInArray({"clean","limpar", "clear"}, param) then
 	setPlayerStorageValue(cid, info.Storages[1], -1)
 	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] Your list has been cleaned.") return true
-elseif isInArray({"start","stop","on","off"}, param) then
-	setPlayerStorageValue(cid, info.Storages[3], getPlayerStorageValue(cid, info.Storages[3]) <= 0 and 1 or 0)
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] "..(getPlayerStorageValue(cid, info.Storages[3]) > 0 and "Stopped" or "Started")..".") return true
+elseif isInArray({"start","enable","on"}, param) then
+	if getPlayerStorageValue(cid, info.Storages[3]) >= 1 then
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Auto Loot]: Voce ja esta com autoloot ligado!") return true
+	else
+		setPlayerStorageValue(cid, info.Storages[3], 1)
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Auto Loot]: Started AUTOLOOT!") return true
+	end
+
+elseif isInArray({"stop","off","disable"}, param) then
+	if getPlayerStorageValue(cid, info.Storages[3]) <= 0 then
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Auto Loot]: Voce ja esta com autoloot desativado!") return true
+	else
+		setPlayerStorageValue(cid, info.Storages[3], 0)
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Auto Loot]: Stopped AUTOLOOT!") return true
+	end
+
 elseif isInArray({"money","gold","gps","dinheiro"}, param) then
 	setPlayerStorageValue(cid, info.Storages[2], getPlayerStorageValue(cid, info.Storages[2]) <= 0 and 1 or 0)
 	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] Gold Colleting "..(getPlayerStorageValue(cid, info.Storages[2]) > 0 and "Activated" or "disabled")..".") return true
 end
-local item = ExistItemByName(tostring(param))
+
+palavra =""
+local tmp = param:explode(" ")
+if tmp[2] ~= nil and tmp[3] ~= nil then
+	palavra = ""..tmp[1].." "..tmp[2].." "..tmp[3]..""
+elseif tmp[3] == nil and tmp[2]~= nil then
+  palavra = ""..tmp[1].." "..tmp[2]..""
+elseif tmp[2] == nil and tmp[3] == nil then
+	palavra = ""..tmp[1]..""
+end
+
+local item = ExistItemByName(palavra)
 if not item then
 	doPlayerSendCancel(cid, "This item does not exist.") return true
 end
-local item = getItemIdByName(tostring(param))
+local item = getItemIdByName(palavra)
 local var = isInTable(cid, item)
-if isInArray({2148,2152,2160},item) then 
-	doPlayerSendTextMessage(cid, MESSAGE_FIRST, "Enter !autoloot money to add money in your list!") return true	
+if isInArray({2148,2152,2160},item) then
+	doPlayerSendTextMessage(cid, MESSAGE_FIRST, "Enter !autoloot money to add money in your list!") return true
 elseif isInArray(info.BlockItemsList, item) then
 	doPlayerSendTextMessage(cid, MESSAGE_FIRST, "You can not add this item in the list!") return true
 elseif not var and #getPlayerStorageTable(cid, info.Storages[1]) >= slots then
 	doPlayerSendTextMessage(cid, MESSAGE_FIRST, "max "..slots.." from auto loot") return true
 end
+
 if not var then
 	addItemTable(cid, item)
 else
 	removeItemTable(cid, item)
 end
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,not var and "you added the item "..param.." in the list" or "you removed the item "..param.." from the list")
+
+doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,not var and "you added the item "..palavra.." in the list" or "you removed the item "..palavra.." from the list")
 return true]]></talkaction>
 <action itemid="7703" event="script"><![CDATA[
 domodlib('Loot_func')
-function onUse(cid, item, fromPosition, itemEx, toPosition) 
+function onUse(cid, item, fromPosition, itemEx, toPosition)
 	local days = 3
 	addAutoLootDays(cid, days)
 	doSendMagicEffect(getCreaturePosition(cid), 29)
