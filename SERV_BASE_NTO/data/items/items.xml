@@ -449,7 +449,11 @@
     <item id="1385" name="stairs">
         <attribute key="floorchange" value="north" />
     </item>
+	   <item id="11608" name="stairs">
+        <attribute key="floorchange" value="north" />
+    </item>
     <item id="1386" article="a" name="ladder" />
+	<item id="11613" article="a" name="ladder" />
     <item id="1387" article="a" name="magic forcefield">
         <attribute key="description" value="You can see the other side through it." />
         <attribute key="type" value="teleport" />
@@ -6542,6 +6546,12 @@
     <item fromid="3135" toid="3136" article="a" name="ladder">
         <attribute key="floorchange" value="down" />
     </item>
+	 <item fromid="11946" toid="11827" article="a" name="ladder">
+        <attribute key="floorchange" value="down" />
+    </item>
+	 <item fromid="11946" toid="11945" article="a" name="ladder">
+        <attribute key="floorchange" value="down" />
+    </item>
     <item id="3137" article="a" name="trapdoor">
         <attribute key="floorchange" value="down" />
     </item>
@@ -8250,6 +8260,9 @@
     <item fromid="5254" toid="5255" article="a" name="wooden railing" />
     <item fromid="5256" toid="5257" article="a" name="window" />
     <item id="5258" name="stairs">
+        <attribute key="floorchange" value="west" />
+    </item>
+	<item id="11609" name="stairs">
         <attribute key="floorchange" value="west" />
     </item>
     <item id="5259" name="stairs">
@@ -19603,19 +19616,19 @@
     </item>
 	  <item id="2379" article="a [Normal]" name="Konohamaru Kunai">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="100" />
+        <attribute key="attack" value="50" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="2545" article="a [Normal]" name="Konohamaru Shuriken's">
+	  <item id="2545" article="a [Normal]" name="Konohamaru Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="100" />
+        <attribute key="attack" value="50" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="bolt" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="6091" article="a [Normal]" name="Konohamaru Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="100" />
+        <attribute key="attack" value="50" />
         <attribute key="weaponType" value="club" />
     </item>
 	 <item id="11760" article="a [Normal]" name="Konohamaru Bag">
@@ -19682,19 +19695,19 @@
     </item>
 	  <item id="3962" article="a [Normal]" name="Chunin Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="200" />
+        <attribute key="attack" value="100" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="2546" article="a [Normal]" name="Chunin Shuriken's">
+	  <item id="2546" article="a [Normal]" name="Chunin Shuriken">
         <attribute key="weight" value="3800" />
-        <attribute key="attack" value="200" />
+        <attribute key="attack" value="100" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="arrow" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2434" article="a [Normal]" name="Chunin Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="200" />
+        <attribute key="attack" value="100" />
         <attribute key="weaponType" value="club" />
     </item>
 	 <item id="11759" article="a [Normal]" name="Chunin Backpack">
@@ -19749,19 +19762,19 @@
     </item>
 	  <item id="2433" article="a [Normal]" name="Hanzou Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="300" />
+        <attribute key="attack" value="150" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="2183" article="a [Normal]" name="Hanzou Shuriken's">
+	  <item id="2183" article="a [Normal]" name="Hanzou Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="300" />
+        <attribute key="attack" value="150" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="fire" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2524" article="a [Normal]" name="Hanzou Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="300" />
+        <attribute key="attack" value="150" />
         <attribute key="weaponType" value="club" />
     </item>
 		<item id="11440" article="a [Normal]" name="Orochimaru Hat">
@@ -19811,19 +19824,19 @@
     </item>
 	  <item id="7868" article="a [Normal]" name="Orochimaru Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="400" />
+        <attribute key="attack" value="200" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="2399" article="a [Normal]" name="Orochimaru Shuriken's">
+	  <item id="2399" article="a [Normal]" name="Orochimaru Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="400" />
+        <attribute key="attack" value="200" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="energy" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="2373" article="a [Normal]" name="Orochimaru Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="400" />
+        <attribute key="attack" value="200" />
         <attribute key="weaponType" value="club" />
     </item>
     <item id="11773" article="an [Normal]" name="Energy Ring">
@@ -19903,22 +19916,21 @@
     	<attribute key="description" value="A paper Explosive! Use in the tile and plant the bomb! 10 seconds to explode, or stepping" />
         <attribute key="weight" value="100" />
     </item>
-
-		  <item id="11719" article="a [Magic]" name="Blue Kurama Sword">
+  <item id="11719" article="a [Magic]" name="Blue Kurama Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7568" article="a [Magic]" name="Blue Kurama Shuriken's">
+	  <item id="7468" article="a [Magic]" name="Blue Kurama Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="poisonarrow" />
         <attribute key="range" value="4" />
     </item>
 	 <item id="7567" article="a [Magic]" name="Blue Kurama Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="club" />
     </item>
 	<item id="7569" article="a [Magic]" name="Blue Kurama Shield">
@@ -19974,22 +19986,22 @@
     </item>
 		  <item id="7570" article="a [Magic]" name="Kurama Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7572" article="a [Magic]" name="Kurama Shuriken's">
+	  <item id="7472" article="a [Magic]" name="Kurama Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="burstarrow" />
         <attribute key="range" value="4" />
     </item>
-	 <item id="7571" article="a [Magic]" name="Kurama Gloves">
+	 <item id="7471" article="a [Magic]" name="Kurama Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="500" />
+        <attribute key="attack" value="250" />
         <attribute key="weaponType" value="club" />
     </item>
-	<item id="7573" article="a [Magic]" name="Kurama Shield">
+	<item id="7473" article="a [Magic]" name="Kurama Shield">
         <attribute key="weight" value="6900" />
         <attribute key="defense" value="100" />
 	    <attribute key="absorbPercentAll" value="10" />
@@ -20141,22 +20153,20 @@
 	  <item id="7869" article="a [Rare]" name="Raijin Nidaime Sword">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="1" />
-		<attribute key="elementEnergy" value="600" />
+		<attribute key="elementEnergy" value="300" />
         <attribute key="weaponType" value="sword" />
     </item>
-	  <item id="7871" article="a [Rare]" name="Sannin Shuriken's">
+	  <item id="7871" article="a [Rare]" name="Sannin Shuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="600" />
+        <attribute key="attack" value="300" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-
-
-	 <item id="7574" article="a [Rare]" name="Slayer Gloves">
+	 <item id="7870" article="a [Rare]" name="Slayer Gloves">
         <attribute key="weight" value="3500" />
         <attribute key="attack" value="1" />
-	    <attribute key="elementHoly" value="600" />
+	    <attribute key="elementHoly" value="300" />
         <attribute key="weaponType" value="club" />
     </item>
 	<item id="7408" article="a [Rare]" name="Madara Shield">
@@ -20197,7 +20207,7 @@
 	    <attribute key="absorbPercentAll" value="5" />
 		<attribute key="showattributes" value="5" />
     </item>
-		 <item id="11780" article="a [Rare]" name="Yin Yang Amulet">
+		 <item id="11778" article="a [Rare]" name="Yin Yang Amulet">
         <attribute key="weight" value="3500" />
         <attribute key="slotType" value="necklace" />
 	    <attribute key="armor" value="10" />
@@ -20466,68 +20476,68 @@
     </item>
 	    <item id="11451" article="a [Epic]" name="Shibuki Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="sword" />
     </item>
 		<item id="11513 " article="a [Epic]" name="Gunbai Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="sword" />
     </item>
 	<item id="11723 " article="a [Epic]" name="Samehada Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="sword" />
     </item>
 	<item id="4448 " article="a [Epic]" name="Eletro Guard Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="sword" />
     </item>
 	    <item id="11456 " article="a [Epic]" name="Raiger Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="club" />
     </item>
 		<item id="11113" article="a [Epic]" name="Embroidery Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="club" />
     </item>
 	<item id="11721 " article="a [Epic]" name="Tiger Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="club" />
     </item>
 		<item id="11784" article="a [Epic]" name="Tempest Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="club" />
     </item>
-		<item id="11457" article="a [Epic]" name="Futon Rasenshuriken's">
+		<item id="11457" article="a [Epic]" name="Futon Rasenshuriken">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
 	<item id="11506" article="a [Epic]" name="Dokuton Cetro">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
 	<item id="11507" article="a [Epic]" name="Suiton Cetro">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
     </item>
-		<item id="11508" article="a [Epic]" name="Blue Susano'o Arc">
+		<item id="11508" article="a [Epic]" name="Blue Susanoo Arc">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="700" />
+        <attribute key="attack" value="350" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
         <attribute key="range" value="5" />
@@ -20584,7 +20594,7 @@
 	    <attribute key="absorbPercentAll" value="6" />
 		<attribute key="showattributes" value="6" />
     </item>
-		<item id="11777" article="a [Epic]" name="Kurama Amulet">
+		<item id="11776" article="a [Epic]" name="Uchiha Amulet">
 	   <attribute key="description" value="Chakra recovery 500/s and life recovery 500/s." />
         <attribute key="weight" value="3500" />
         <attribute key="slotType" value="necklace" />
@@ -20660,19 +20670,19 @@
      </item>
 	 	<item id="11736" article="a [Epic]" name="Imperial Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="850" />
+        <attribute key="attack" value="500" />
         <attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="5" />
     </item>
-		<item id="11737 " article="a [Epic]" name="Furious Raiger Gloves">
+		<item id="11735 " article="a [Epic]" name="Furious Raiger Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="850" />
+        <attribute key="attack" value="500" />
         <attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="5" />
     </item>
-		<item id="11738" article="a [Epic]" name="Susanoo Barisuta">
+		<item id="11737" article="a [Epic]" name="Susanoo Barisuta">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="850" />
+        <attribute key="attack" value="500" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
 		<attribute key="skillDist" value="5" />
@@ -20705,10 +20715,20 @@
 		<attribute key="maxmanapoints" value= "1500" />
     </item>
 	    <item id="11775" article="a [Epic]" name="Kesshoseki Amulet">
-	    <attribute key="description" value="Não perde itens ao morrer Red/Black Skull." />
+	    <attribute key="description" value="Don't lose item Red/Black Skull." />
+        <attribute key="description" value="Chakra recovery 800/s and life recovery 800/s." />
         <attribute key="weight" value="3500" />
-        <attribute key="armor" value="1" />
         <attribute key="slotType" value="necklace" />
+	    <attribute key="skillClub" value="8" />
+        <attribute key="skillSword" value="8" />
+        <attribute key="skillDist" value="8" />
+        <attribute key="magiclevelpoints" value="8" />
+	    <attribute key="speed" value="20" />
+	    <attribute key="manaGain" value="800" />
+        <attribute key="manaTicks" value="1000" />
+		<attribute key="healthGain" value="800" />
+        <attribute key="healthTicks" value="1000" />
+		<attribute key="showattributes" value="5" />
         <attribute key="preventDrop" value="1" />
     </item>
 	    <item id="11761" article="a [Epic]" name="Sennin Eye">
@@ -20851,19 +20871,19 @@
      </item>
 	    <item id="11752" article="a [Legendary]" name="Hagoromo Sword">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="1000" />
+        <attribute key="attack" value="600" />
         <attribute key="weaponType" value="sword" />
 		<attribute key="skillSword" value="8" />
     </item>
 		<item id="11753" article="a [Legendary]" name="Hagoromo Gloves">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="1000" />
+        <attribute key="attack" value="600" />
         <attribute key="weaponType" value="club" />
 		<attribute key="skillClub" value="8" />
     </item>
 		<item id="11750" article="a [Legendary]" name="Hagoromo Cetro">
         <attribute key="weight" value="3500" />
-        <attribute key="attack" value="1000" />
+        <attribute key="attack" value="600" />
         <attribute key="weaponType" value="distance" />
         <attribute key="shootType" value="throwingstar" />
 		<attribute key="skillDist" value="8" />
@@ -20897,21 +20917,6 @@
 		<attribute key="skillFist" value="10" />
         <attribute key="magiclevelpoints" value="10" />
 	    <attribute key="absorbPercentAll" value="10" />
-		<attribute key="showattributes" value="5" />
-    </item>
-		<item id="11776" article="a [Legendary]" name="Hagoromo Amulet">
-         <attribute key="description" value="Chakra recovery 800/s and life recovery 800/s." />
-        <attribute key="weight" value="3500" />
-        <attribute key="slotType" value="necklace" />
-	    <attribute key="skillClub" value="8" />
-        <attribute key="skillSword" value="8" />
-        <attribute key="skillDist" value="8" />
-        <attribute key="magiclevelpoints" value="8" />
-	    <attribute key="speed" value="20" />
-	    <attribute key="manaGain" value="800" />
-        <attribute key="manaTicks" value="1000" />
-		<attribute key="healthGain" value="800" />
-        <attribute key="healthTicks" value="1000" />
 		<attribute key="showattributes" value="5" />
     </item>
 

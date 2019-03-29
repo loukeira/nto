@@ -2,8 +2,8 @@
 	<border id="1"> -- mountain edge border --	
 		<borderitem edge="n"   item="891"/>
 		<borderitem edge="w"   item="894"/>
-		<borderitem edge="e"   item="892"/>
-		<borderitem edge="s"   item="893"/>
+		<borderitem edge="e"   item="11788"/>
+		<borderitem edge="s"   item="11789"/>
 		<borderitem edge="cnw" item="895"/>
 		<borderitem edge="cne" item="896"/>
 		<borderitem edge="cse" item="897"/>
