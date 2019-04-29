@@ -1,4 +1,19 @@
 <?xml version="1.0"?>
 <houses>
 	<house name="" houseid="11" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" />
+	<house name="" houseid="748" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="122" />
+	<house name="" houseid="749" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="46" />
+	<house name="" houseid="750" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="33" />
+	<house name="" houseid="751" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="46" />
+	<house name="" houseid="752" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" />
+	<house name="" houseid="753" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="25" />
+	<house name="" houseid="754" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="20" />
+	<house name="" houseid="755" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="23" />
+	<house name="" houseid="756" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="18" />
+	<house name="" houseid="757" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="30" />
+	<house name="" houseid="758" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="57" />
+	<house name="" houseid="759" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" />
+	<house name="" houseid="760" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="21" />
+	<house name="" houseid="761" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="161" />
+	<house name="" houseid="762" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="58" />
 </houses>
